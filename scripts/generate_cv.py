@@ -242,6 +242,11 @@ def build_latex_document(data: dict, track_name: str = "it_support", lang: str =
 \\ifPDFTeX
   \\input{{glyphtounicode}}
   \\pdfgentounicode=1
+  \\usepackage{{microtype}}
+  \\DisableLigatures[f]{{encoding = *, family = *}}
+\\else
+  \\usepackage{{fontspec}}
+  \\defaultfontfeatures{{Ligatures=NoCommon}}
 \\fi
 
 % Blue accent matching the Word version (#2563EB)
@@ -427,7 +432,10 @@ def main():
         track_suffix = "IT_Support" if args.track == "it_support" else "FullStack"
         tex_filename = f"Mohamed_Amine_Nasfi_CV_{track_suffix}_{lang_suffix}.tex"
 
-    tex_path = outdir / tex_filename
+    # Each CV gets its own subfolder inside outdir (folder name = CV name)
+    cv_dir = outdir / Path(tex_filename).stem
+    cv_dir.mkdir(parents=True, exist_ok=True)
+    tex_path = cv_dir / tex_filename
 
     # Build LaTeX code
     latex_content = build_latex_document(data, track_name=args.track, lang=args.lang)
@@ -439,7 +447,7 @@ def main():
 
     # Compile to PDF
     if args.compile:
-        pdf_success = compile_with_tectonic(tex_path, outdir)
+        pdf_success = compile_with_tectonic(tex_path, cv_dir)
         pdf_path = tex_path.with_suffix(".pdf")
         if pdf_success and pdf_path.exists():
             print(f"Generated PDF CV at: {pdf_path.resolve()}")

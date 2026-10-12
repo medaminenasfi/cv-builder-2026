@@ -1,0 +1,119 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie (Mobile — Ouverture Lyon)",
+      "en": "Gabes, Tunisia (Mobile — Open to Lyon)"
+    },
+    "links": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/" },
+      { "name": "GitHub", "url": "https://github.com/medaminenasfi" },
+      { "name": "Portfolio", "url": "https://mohamedamine-portfolio.onrender.com" }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Développeur Junior | SQL · Web (HTML/CSS/JS) | Automatisation de Processus | Support L2",
+        "summary": "Développeur junior diplômé d'une Licence en Systèmes d'Information (Mention Très Bien), avec une première expérience concrète de transformation digitale : conception d'un outil d'automatisation de flux de données (SQL, PHP) réduisant de **70%** le temps de traitement d'une équipe opérationnelle en environnement industriel. Solides bases en développement web (HTML/CSS/JavaScript, React, Node.js) et en SQL (modélisation, requêtes complexes), complétées par une expérience de support utilisateurs L1/L2 et de maintenance de postes Windows. Curieux des écosystèmes Microsoft (M365 au quotidien) et de la veille technologique, avec une montée en compétence rapide visée sur la Power Platform (low-code). Autonome, rigoureux, apprecié pour son relationnel avec les utilisateurs métier.",
+        "skills": [
+          { "category": "Développement Web", "items": "JavaScript (ES6+), HTML5, CSS3, React.js, Node.js, PHP." },
+          { "category": "Données & Automatisation", "items": "SQL (PostgreSQL : modélisation, requêtes complexes), automatisation de flux métier, API REST, webhooks." },
+          { "category": "Écosystème Microsoft", "items": "M365 (usage quotidien), SharePoint (intégration), montée en compétence rapide visée sur Power Apps / Power Automate / Power BI." },
+          { "category": "Support & Exploitation", "items": "Support utilisateurs L1/L2, diagnostic matériel/logiciel, maintenance Windows, formation des utilisateurs." },
+          { "category": "Qualité & Outils", "items": "Git, GitHub, tests, CI/CD (GitHub Actions), documentation, veille technologique (Microsoft & GenAI)." }
+        ]
+      },
+      "experience_ids": ["exp_freelance_fullstack", "exp_ortho", "exp_gct"],
+      "project_ids": ["proj_eventify", "proj_applyflow", "proj_realestate"]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_freelance_fullstack",
+      "company": "Projets Clients Internationaux",
+      "fr": {
+        "title": "Développeur Web Full-Stack --- Indépendant",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Développé 4 applications web complètes (JavaScript, React.js, Node.js, SQL) avec intégrations API REST sécurisées (Stripe, Twilio, JWT/OAuth).",
+          "Automatisé des processus métier récurrents : notifications, synchronisations de données et génération de rapports.",
+          "Assuré les tests, la documentation et le suivi en production (monitoring des logs) pour chaque livrable."
+        ]
+      }
+    },
+    {
+      "id": "exp_ortho",
+      "company": "Cabinet d'Orthodontie Dr Meriem Nasfi",
+      "fr": {
+        "title": "Technicien Support IT & Maintenance --- Freelance",
+        "location": "Gabès, Tunisie",
+        "dates": "Mai 2026 -- Présent",
+        "highlights": [
+          "Assuré le support L1/L2 et la maintenance préventive/corrective de 10+ postes Windows, avec résolution des pannes en moins de 2 heures.",
+          "Formé et accompagné des utilisateurs non-techniques au quotidien (montage, mise en service, assistance).",
+          "Déployé une infrastructure réseau IP complète : câblage Ethernet, plan d'adressage, configuration routeur/pare-feu et accès distant sécurisé."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Développeur Web --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Piloté un projet de transformation digitale : outil d'automatisation des flux de données (SQL, PHP) réduisant de **70%** le temps de traitement d'une équipe opérationnelle.",
+          "Analyse des besoins métier, développement, tests et documentation ; accompagnement des utilisateurs pour l'appropriation de l'outil."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_applyflow",
+      "tech": "Next.js · NestJS · TypeScript · MongoDB · Stripe",
+      "fr": {
+        "title": "ApplyFlow --- Outil d'Automatisation & Tableau Kanban",
+        "description": "Application web de productivité : automatisation de tâches, gestion de formulaires et suivi visuel de processus."
+      }
+    },
+    {
+      "id": "proj_realestate",
+      "tech": "Next.js · Node.js · PostgreSQL",
+      "fr": {
+        "title": "Plateforme d'Investissement & Dashboards",
+        "description": "Dashboards analytiques et reporting : collecte de données SQL, indicateurs métier et visualisations pour le pilotage."
+      }
+    },
+    {
+      "id": "proj_eventify",
+      "tech": "React.js · Node.js · PostgreSQL · Flutter · Stripe",
+      "fr": {
+        "title": "Eventify --- Plateforme de Réservation en Ligne",
+        "description": "Application complète : front-end React, back-end Node.js, base SQL et tunnel de paiement sécurisé."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information (Bac +3) --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      { "name": "Français", "level": "Courant / Professionnel" },
+      { "name": "Anglais", "level": "Professionnel" },
+      { "name": "Arabe", "level": "Langue maternelle" }
+    ]
+  }
+}

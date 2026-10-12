@@ -1,0 +1,186 @@
+\documentclass[letterpaper,9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+  \usepackage{microtype}
+  \DisableLigatures[f]{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \defaultfontfeatures{Ligatures=NoCommon}
+\fi
+
+% Blue accent matching the Word version (#2563EB)
+\definecolor{accent}{HTML}{2563EB}
+\definecolor{navy}{HTML}{1F2937}
+\definecolor{greytext}{HTML}{555555}
+
+\hypersetup{
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent,
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+\raggedright
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+
+% Section titles — blue, matching Word headers
+\titleformat{\section}{
+  \vspace{-1pt}\color{accent}\scshape\raggedright\large
+}{}{0em}{}[\color{accent}\titlerule \vspace{-1pt}]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{\color{greytext}#2} \\
+    \textit{\small\color{greytext} #3} & \textit{\small\color{greytext} #4}
+  \end{tabular*}\vspace{-2pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & #2
+  \end{tabular*}\vspace{-1pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=2.5pt, parsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.24in, label={}, itemsep=0.9pt, topsep=1.2pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeProjectListStart}{\begin{itemize}[leftmargin=0.24in, label={}, itemsep=0.9pt, topsep=1.2pt, parsep=0pt]}
+\newcommand{\resumeProjectListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeLangHeading}[2]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2
+  \end{tabular*}\vspace{-1pt}
+}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+    \textbf{\Huge \scshape \color{navy} Mohamed Amine Nasfi} \\[3pt]
+    \small \textbf{\color{accent} Full-Stack Developer | React/Next.js \textperiodcentered{} Node.js/NestJS \textperiodcentered{} PostgreSQL | E-Commerce \& Booking Platforms} \\[3pt]
+    \footnotesize \color{greytext}
+    +216 27 711 810 $\quad|\quad$
+    \href{mailto:medaminenasfy@gmail.com}{\underline{medaminenasfy@gmail.com}} $\quad|\quad$
+    Gabes, Tunisia (Remote-First — Available for monthly Paris visits) \\[2pt]
+    \href{https://www.linkedin.com/in/mohamed-amine-nasfi/}{\underline{LinkedIn}} $\quad|\quad$ \href{https://github.com/medaminenasfi}{\underline{GitHub}} $\quad|\quad$ \href{https://mohamedamine-portfolio.onrender.com}{\underline{Portfolio}}
+\end{center}
+\vspace{-5pt}
+
+% ---------- SUMMARY ----------
+\section{Summary}
+\begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=1.5pt, parsep=0pt]
+\item \footnotesize{Full-stack developer who has shipped \textbf{4 end-to-end B2C products} (React/Next.js, Node.js/NestJS, PostgreSQL) as an independent remote contractor, owning every stage from problem definition with clients to production deployment and monitoring. Built secure booking and e-commerce flows (Stripe checkout, Twilio OTP, JWT/OAuth), including Eventify, a complete online ticketing platform. Strong SQL and PostgreSQL skills (schema design, complex queries) complemented by MongoDB, plus production operations on Linux VPS (Docker, Nginx, log monitoring, automated SSL). Sensitive to code quality: CI/CD pipelines running unit tests and linting before every release, pragmatic refactoring. Bachelor in Information Systems (Highest Honors), fluent French and professional English, used to asynchronous collaboration in distributed teams.}
+\end{itemize}\vspace{-3pt}
+
+% ---------- EXPERIENCE ----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading{Full-Stack Developer --- Freelance}{Nov 2025 -- Present}{International Clients (Freelance)}{Remote}
+    \resumeItemListStart
+      \resumeItem{Shipped 4 end-to-end web applications (React.js, Next.js, Node.js, PostgreSQL) with full ownership: problem definition, estimation, development, deployment, and production monitoring.}
+      \resumeItem{Engineered secure B2C booking and payment flows: Stripe checkout (webhooks, failure handling), Twilio SMS OTP verification, and JWT/OAuth authentication.}
+      \resumeItem{Owned production reliability: Docker containerization, Nginx reverse proxy, automated SSL renewal, and active log monitoring on Linux VPS.}
+      \resumeItem{Enforced pragmatic testing strategies: unit test suites and linting executed by GitHub Actions CI/CD pipelines before every production release.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Full-Stack Developer --- Final-Year Project}{Feb 2025 -- Jun 2025}{Laghazala du Désert}{Gabes, Tunisia}
+    \resumeItemListStart
+      \resumeItem{Built a complete web platform featuring an interactive booking module, dynamic geolocation mapping, and secure JWT/SSL authentication.}
+      \resumeItem{Worked in Scrum methodology: clear increments, regular demonstrations to end users, and integration of their feedback.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Web Developer --- Intern}{Jul 2024 -- Aug 2024}{Groupe Chimique Tunisien (GCT)}{Gabes, Tunisia}
+    \resumeItemListStart
+      \resumeItem{Turned an ambiguous business problem into a reliable production solution: data-flow automation tool (PHP, SQL) cutting processing time by \textbf{70\%}.}
+      \resumeItem{Documented technical decisions and wrote handover documentation for the operations team.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd\vspace{-2pt}
+
+% ---------- TECHNICAL SKILLS ----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
+\footnotesize{
+  \item \textbf{Front-End:} React.js, Next.js, TypeScript, Tailwind CSS, Redux, HTML5, CSS3, Material Design.
+  \item \textbf{Back-End \& API:} Node.js, NestJS, Express.js, RESTful microservices, webhooks, JWT/OAuth authentication.
+  \item \textbf{Databases:} PostgreSQL (relational modeling, complex queries), SQL, MongoDB.
+  \item \textbf{Quality \& Production:} Automated unit testing, code reviews, refactoring, CI/CD (GitHub Actions), log monitoring, incident diagnosis.
+  \item \textbf{Cloud \& DevOps:} Docker, Linux VPS, Nginx reverse proxy, SSL certificates, uptime monitoring.
+  \item \textbf{Mobile:} Flutter, Dart (cross-platform apps).
+  \item \textbf{Tools:} Git, GitHub, Postman, Agile/Scrum workflows.
+}
+\end{itemize}\vspace{-3pt}
+
+% ---------- PROJECTS ----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading{\textbf{Eventify --- B2C Online Booking Platform} $\quad$ --- $\quad$ \emph{\color{greytext}React.js \textperiodcentered{} Node.js \textperiodcentered{} PostgreSQL \textperiodcentered{} Flutter \textperiodcentered{} Stripe}}{}
+    \resumeProjectListStart
+      \resumeItem{E-commerce ticketing: event catalog, secure Stripe checkout flow, OTP notifications, and an admin dashboard for sales management; Flutter mobile companion.}
+    \resumeProjectListEnd
+
+  \resumeProjectHeading{\textbf{ApplyFlow --- SaaS Productivity Tool} $\quad$ --- $\quad$ \emph{\color{greytext}Next.js \textperiodcentered{} NestJS \textperiodcentered{} TypeScript \textperiodcentered{} MongoDB \textperiodcentered{} Stripe}}{}
+    \resumeProjectListStart
+      \resumeItem{TypeScript productivity application: Kanban board, form management, and Stripe subscription model.}
+    \resumeProjectListEnd
+
+  \resumeProjectHeading{\textbf{Investment Platform \& Admin Dashboard} $\quad$ --- $\quad$ \emph{\color{greytext}Next.js \textperiodcentered{} Node.js \textperiodcentered{} PostgreSQL}}{}
+    \resumeProjectListStart
+      \resumeItem{Dynamic onboarding interfaces, administrative lead-management dashboard, and analytics reporting.}
+    \resumeProjectListEnd
+
+\resumeSubHeadingListEnd\vspace{-3pt}
+
+% ---------- EDUCATION ----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading{Bachelor in Information Systems --- Highest Honors}{2022 -- 2025}{ESSAT Gabès}{Gabes, Tunisia}
+\resumeSubHeadingListEnd\vspace{-1pt}
+
+% ---------- LANGUAGES ----------
+\section{Languages}
+\begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
+\footnotesize{
+  \item French (Fluent / Professional) \textperiodcentered{} English (Professional Working) \textperiodcentered{} Arabic (Native)
+}
+\end{itemize}
+
+\end{document}

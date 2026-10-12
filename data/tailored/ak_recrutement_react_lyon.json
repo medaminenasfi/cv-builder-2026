@@ -1,0 +1,119 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie (Mobile — Ouverture Lyon)",
+      "en": "Gabes, Tunisia (Mobile — Open to Lyon)"
+    },
+    "links": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/" },
+      { "name": "GitHub", "url": "https://github.com/medaminenasfi" },
+      { "name": "Portfolio", "url": "https://mohamedamine-portfolio.onrender.com" }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Développeur Front-End React.js | Next.js & TypeScript | SQL/NoSQL | Scrum",
+        "summary": "Développeur front-end spécialisé React.js/Next.js (TypeScript, Tailwind CSS), diplômé d'une Licence en Systèmes d'Information (Bac +3, Mention Très Bien), avec une expérience de conception d'interfaces web performantes et ergonomiques pour des logiciels métiers : dashboards d'administration, plateformes de réservation et tunnels de vente. Solide expérience en conception et gestion de bases de données SQL/NoSQL (PostgreSQL, MongoDB) et en chaînes de qualité (tests automatisés, CI/CD GitHub Actions). Habitué aux rituels Scrum, à la coordination directe avec les clients et aux phases de recette, de livraison et de démonstration. A mené une réflexion algorithmique concrète (outil d'automatisation réduisant de **70%** le temps de traitement) et pratique une veille technologique active. Atout complémentaire : Python (PyQt5).",
+        "skills": [
+          { "category": "Front-End & UI", "items": "React.js, Next.js, TypeScript, Tailwind CSS, JavaScript (ES6+), HTML5, CSS3, Redux, Material Design." },
+          { "category": "Qualité & Performance", "items": "Tests unitaires automatisés, linting, pipelines CI/CD (GitHub Actions), revues de code, interfaces ergonomiques et responsive." },
+          { "category": "Bases de Données", "items": "SQL : PostgreSQL (modélisation relationnelle, requêtes complexes) · NoSQL : MongoDB." },
+          { "category": "Back-End & Langages", "items": "Node.js, Express.js, NestJS, architecture RESTful, webhooks, Python (PyQt5)." },
+          { "category": "Méthodes & Outils", "items": "Scrum/Agile, Git, GitHub, Docker, Postman, veille technologique." }
+        ]
+      },
+      "experience_ids": ["exp_freelance_fullstack", "exp_pfe", "exp_gct"],
+      "project_ids": ["proj_eventify", "proj_applyflow", "proj_realestate"]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_freelance_fullstack",
+      "company": "Projets Clients Internationaux",
+      "fr": {
+        "title": "Développeur Full-Stack --- Indépendant",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Développé les interfaces web de 4 applications complètes (React.js, Next.js, TypeScript, Tailwind CSS) : logiciels de gestion, plateformes de réservation et tunnels de vente.",
+          "Garanti la qualité et la performance des livrables front-end : tests automatisés, linting et pipelines CI/CD exécutés avant chaque mise en production.",
+          "Coordonné directement avec les clients internationaux : recueil des besoins, points d'avancement réguliers, recette, livraison et démonstrations.",
+          "Conçu des dashboards d'administration temps réel (gestion de leads, reporting statistique) connectés à des API REST sécurisées (PostgreSQL, MongoDB)."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack --- Projet de Fin d'Études",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 -- Juin 2025",
+        "highlights": [
+          "Développé le front-end d'une plateforme web complète : module de réservation interactif, cartographie dynamique et authentification sécurisée JWT/SSL.",
+          "Participé activement aux rituels Scrum (daily, sprint review) avec démonstrations et accompagnement des utilisateurs finaux à chaque livraison."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Développeur Web --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Conçu un outil web d'automatisation des flux de données (PHP, SQL) : réflexion algorithmique réduisant de **70%** le temps de traitement d'une équipe opérationnelle.",
+          "Recueilli les spécifications auprès des utilisateurs métier et rédigé la documentation technique associée."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_eventify",
+      "tech": "React.js · Node.js · PostgreSQL · Flutter · Stripe",
+      "fr": {
+        "title": "Eventify --- Plateforme de Réservation en Ligne",
+        "description": "Système de billetterie avec catalogue d'événements, tunnel d'achat sécurisé Stripe, notifications OTP et dashboard administrateur de gestion des ventes."
+      }
+    },
+    {
+      "id": "proj_applyflow",
+      "tech": "Next.js · NestJS · TypeScript · MongoDB · Stripe",
+      "fr": {
+        "title": "ApplyFlow --- Outil Métier & Automatisation",
+        "description": "Application web TypeScript orientée productivité : tableau Kanban, gestion de formulaires et modèle d'abonnement en ligne via Stripe."
+      }
+    },
+    {
+      "id": "proj_realestate",
+      "tech": "Next.js · Node.js · PostgreSQL",
+      "fr": {
+        "title": "Plateforme d'Investissement & Dashboard Admin",
+        "description": "Interfaces web dynamiques d'onboarding, dashboard administratif de gestion de leads et reporting analytique."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information (Bac +3) --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      { "name": "Français", "level": "Courant / Professionnel" },
+      { "name": "Anglais", "level": "Professionnel" },
+      { "name": "Arabe", "level": "Langue maternelle" }
+    ]
+  }
+}

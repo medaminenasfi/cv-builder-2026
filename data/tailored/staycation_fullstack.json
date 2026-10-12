@@ -1,0 +1,185 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie (Remote-First — Disponible pour présences mensuelles à Paris)",
+      "en": "Gabes, Tunisia (Remote-First — Available for monthly Paris visits)"
+    },
+    "links": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/" },
+      { "name": "GitHub", "url": "https://github.com/medaminenasfi" },
+      { "name": "Portfolio", "url": "https://mohamedamine-portfolio.onrender.com" }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "en": {
+        "subtitle": "Full-Stack Developer | React/Next.js · Node.js/NestJS · PostgreSQL | E-Commerce & Booking Platforms",
+        "summary": "Full-stack developer who has shipped **4 end-to-end B2C products** (React/Next.js, Node.js/NestJS, PostgreSQL) as an independent remote contractor, owning every stage from problem definition with clients to production deployment and monitoring. Built secure booking and e-commerce flows (Stripe checkout, Twilio OTP, JWT/OAuth), including Eventify, a complete online ticketing platform. Strong SQL and PostgreSQL skills (schema design, complex queries) complemented by MongoDB, plus production operations on Linux VPS (Docker, Nginx, log monitoring, automated SSL). Sensitive to code quality: CI/CD pipelines running unit tests and linting before every release, pragmatic refactoring. Bachelor in Information Systems (Highest Honors), fluent French and professional English, used to asynchronous collaboration in distributed teams.",
+        "skills": [
+          { "category": "Front-End", "items": "React.js, Next.js, TypeScript, Tailwind CSS, Redux, HTML5, CSS3, Material Design." },
+          { "category": "Back-End & API", "items": "Node.js, NestJS, Express.js, RESTful microservices, webhooks, JWT/OAuth authentication." },
+          { "category": "Databases", "items": "PostgreSQL (relational modeling, complex queries), SQL, MongoDB." },
+          { "category": "Quality & Production", "items": "Automated unit testing, code reviews, refactoring, CI/CD (GitHub Actions), log monitoring, incident diagnosis." },
+          { "category": "Cloud & DevOps", "items": "Docker, Linux VPS, Nginx reverse proxy, SSL certificates, uptime monitoring." },
+          { "category": "Mobile", "items": "Flutter, Dart (cross-platform apps)." },
+          { "category": "Tools", "items": "Git, GitHub, Postman, Agile/Scrum workflows." }
+        ]
+      },
+      "fr": {
+        "subtitle": "Développeur Full-Stack | React/Next.js · Node.js/NestJS · PostgreSQL | E-Commerce & Réservation",
+        "summary": "Développeur full-stack ayant livré **4 produits B2C complets** (React/Next.js, Node.js/NestJS, PostgreSQL) en tant que prestataire indépendant à distance, avec la responsabilité de toutes les étapes : de la définition du besoin avec les clients jusqu'au déploiement et à la surveillance en production. Conçu des flux sécurisés de réservation et d'e-commerce (Stripe, OTP Twilio, JWT/OAuth), dont Eventify, une plateforme complète de billetterie en ligne. Solide maîtrise de SQL et PostgreSQL (modélisation, requêtes complexes) complétée par MongoDB, et exploitation production sous Linux VPS (Docker, Nginx, monitoring des logs, SSL automatisé). Attention portée à la qualité du code : pipelines CI/CD avec tests unitaires et linting avant chaque mise en production. Licence en Systèmes d'Information (Mention Très Bien), français courant et anglais professionnel, habitué à la collaboration asynchrone en équipe distribuée.",
+        "skills": [
+          { "category": "Front-End", "items": "React.js, Next.js, TypeScript, Tailwind CSS, Redux, HTML5, CSS3, Material Design." },
+          { "category": "Back-End & API", "items": "Node.js, NestJS, Express.js, microservices RESTful, webhooks, authentification JWT/OAuth." },
+          { "category": "Bases de Données", "items": "PostgreSQL (modélisation relationnelle, requêtes complexes), SQL, MongoDB." },
+          { "category": "Qualité & Production", "items": "Tests unitaires automatisés, revues de code, refactoring, CI/CD (GitHub Actions), monitoring des logs, diagnostic d'incidents." },
+          { "category": "Cloud & DevOps", "items": "Docker, VPS Linux, reverse-proxy Nginx, certificats SSL, supervision de disponibilité." },
+          { "category": "Mobile", "items": "Flutter, Dart (applications cross-platform)." },
+          { "category": "Outils", "items": "Git, GitHub, Postman, workflows Agile/Scrum." }
+        ]
+      },
+      "experience_ids": ["exp_freelance_fullstack", "exp_pfe", "exp_gct"],
+      "project_ids": ["proj_eventify", "proj_applyflow", "proj_realestate"]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_freelance_fullstack",
+      "company": "International Clients (Freelance)",
+      "fr": {
+        "title": "Développeur Full-Stack --- Indépendant",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Livré 4 applications web complètes (React.js, Next.js, Node.js, PostgreSQL) en ownership de bout en bout : définition du besoin, estimation, développement, déploiement et monitoring.",
+          "Développé des flux B2C de réservation et de paiement sécurisés : tunnel Stripe (webhooks, gestion des échecs), vérification OTP Twilio, authentification JWT/OAuth.",
+          "Garanti la fiabilité en production : conteneurisation Docker, reverse-proxy Nginx, renouvellement SSL automatisé et surveillance active des logs sur VPS Linux.",
+          "Appliqué des stratégies de test pragmatiques : suites de tests unitaires et linting exécutés par pipelines CI/CD (GitHub Actions) avant chaque mise en production."
+        ]
+      },
+      "en": {
+        "title": "Full-Stack Developer --- Freelance",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Present",
+        "highlights": [
+          "Shipped 4 end-to-end web applications (React.js, Next.js, Node.js, PostgreSQL) with full ownership: problem definition, estimation, development, deployment, and production monitoring.",
+          "Engineered secure B2C booking and payment flows: Stripe checkout (webhooks, failure handling), Twilio SMS OTP verification, and JWT/OAuth authentication.",
+          "Owned production reliability: Docker containerization, Nginx reverse proxy, automated SSL renewal, and active log monitoring on Linux VPS.",
+          "Enforced pragmatic testing strategies: unit test suites and linting executed by GitHub Actions CI/CD pipelines before every production release."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack --- Projet de Fin d'Études",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 -- Juin 2025",
+        "highlights": [
+          "Développé une plateforme web complète avec module de réservation interactif, cartographie dynamique et authentification sécurisée JWT/SSL.",
+          "Travaillé en méthodologie Scrum : incréments clairs, démonstrations régulières aux utilisateurs finaux et intégration de leurs retours."
+        ]
+      },
+      "en": {
+        "title": "Full-Stack Developer --- Final-Year Project",
+        "location": "Gabes, Tunisia",
+        "dates": "Feb 2025 -- Jun 2025",
+        "highlights": [
+          "Built a complete web platform featuring an interactive booking module, dynamic geolocation mapping, and secure JWT/SSL authentication.",
+          "Worked in Scrum methodology: clear increments, regular demonstrations to end users, and integration of their feedback."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Développeur Web --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Transformé un problème métier flou en solution de production fiable : outil d'automatisation des flux de données (PHP, SQL) réduisant de **70%** le temps de traitement.",
+          "Documenté les décisions techniques et rédigé la documentation pour l'équipe opérationnelle."
+        ]
+      },
+      "en": {
+        "title": "Web Developer --- Intern",
+        "location": "Gabes, Tunisia",
+        "dates": "Jul 2024 -- Aug 2024",
+        "highlights": [
+          "Turned an ambiguous business problem into a reliable production solution: data-flow automation tool (PHP, SQL) cutting processing time by **70%**.",
+          "Documented technical decisions and wrote handover documentation for the operations team."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_eventify",
+      "tech": "React.js · Node.js · PostgreSQL · Flutter · Stripe",
+      "fr": {
+        "title": "Eventify --- Plateforme B2C de Réservation en Ligne",
+        "description": "Billetterie e-commerce : catalogue d'événements, tunnel d'achat Stripe sécurisé, notifications OTP et dashboard administrateur de gestion des ventes ; déclinaison mobile Flutter."
+      },
+      "en": {
+        "title": "Eventify --- B2C Online Booking Platform",
+        "description": "E-commerce ticketing: event catalog, secure Stripe checkout flow, OTP notifications, and an admin dashboard for sales management; Flutter mobile companion."
+      }
+    },
+    {
+      "id": "proj_applyflow",
+      "tech": "Next.js · NestJS · TypeScript · MongoDB · Stripe",
+      "fr": {
+        "title": "ApplyFlow --- Outil SaaS & Automatisation",
+        "description": "Application TypeScript orientée productivité : tableau Kanban, gestion de formulaires et modèle d'abonnement Stripe."
+      },
+      "en": {
+        "title": "ApplyFlow --- SaaS Productivity Tool",
+        "description": "TypeScript productivity application: Kanban board, form management, and Stripe subscription model."
+      }
+    },
+    {
+      "id": "proj_realestate",
+      "tech": "Next.js · Node.js · PostgreSQL",
+      "fr": {
+        "title": "Plateforme d'Investissement & Dashboard Admin",
+        "description": "Interfaces d'onboarding dynamiques, dashboard administratif de gestion de leads et reporting analytique."
+      },
+      "en": {
+        "title": "Investment Platform & Admin Dashboard",
+        "description": "Dynamic onboarding interfaces, administrative lead-management dashboard, and analytics reporting."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information (Bac +3) --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      },
+      "en": {
+        "degree": "Bachelor in Information Systems --- Highest Honors",
+        "dates": "2022 -- 2025",
+        "location": "Gabes, Tunisia"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      { "name": "Français", "level": "Courant / Professionnel" },
+      { "name": "Anglais", "level": "Professionnel" },
+      { "name": "Arabe", "level": "Langue maternelle" }
+    ],
+    "en": [
+      { "name": "French", "level": "Fluent / Professional" },
+      { "name": "English", "level": "Professional Working" },
+      { "name": "Arabic", "level": "Native" }
+    ]
+  }
+}

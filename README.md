@@ -39,11 +39,14 @@ cv-builder/
 │   └── generate_cv.py                    # Python script that renders LaTeX and compiles PDF
 ├── bin/
 │   └── tectonic.exe                      # Standalone, portable LaTeX-to-PDF compiler
-├── output/                               # Generated .tex and .pdf results
-│   ├── Mohamed_Amine_Nasfi_CV_IT_Support_FR.pdf
-│   ├── Mohamed_Amine_Nasfi_CV_IT_Support_FR.tex
-│   ├── Mohamed_Amine_Nasfi_CV_FullStack_EN.pdf
-│   └── Mohamed_Amine_Nasfi_CV_FullStack_EN.tex
+├── output/                               # Generated results — one folder per CV
+│   ├── Mohamed_Amine_Nasfi_CV_IT_Support_FR/
+│   │   ├── Mohamed_Amine_Nasfi_CV_IT_Support_FR.pdf
+│   │   └── Mohamed_Amine_Nasfi_CV_IT_Support_FR.tex
+│   ├── Mohamed_Amine_Nasfi_CV_FullStack_EN/
+│   │   ├── Mohamed_Amine_Nasfi_CV_FullStack_EN.pdf
+│   │   └── Mohamed_Amine_Nasfi_CV_FullStack_EN.tex
+│   └── ...                               # every build creates its own named folder
 ├── MASTER_PROFILE.md                     # Comprehensive human-readable master profile
 ├── .agents/skills/
 │   ├── cv-builder/                       # Harvard / Prospects / NCS career standards & templates
@@ -82,7 +85,7 @@ python scripts/generate_cv.py --track fullstack --lang en
 | `--track` | `-t` | `it_support` | Profile track (`it_support` or `fullstack`). |
 | `--lang` | `-l` | `fr` | Target language (`fr` for French, `en` for English). |
 | `--output` | `-o` | Auto-named | Custom filename (e.g. `My_Custom_CV.tex`). |
-| `--outdir` | | `output` | Target folder for `.tex` and `.pdf` files. |
+| `--outdir` | | `output` | Target folder — each build creates its own subfolder named after the CV. |
 | `--compile`| `-c` | `True` | Automatically runs Tectonic to build `.pdf`. |
 
 ---

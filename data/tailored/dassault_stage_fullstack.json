@@ -1,0 +1,118 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie (Mobile — Disponible en France)",
+      "en": "Gabes, Tunisia (Mobile — Available in France)"
+    },
+    "links": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/" },
+      { "name": "GitHub", "url": "https://github.com/medaminenasfi" },
+      { "name": "Portfolio", "url": "https://mohamedamine-portfolio.onrender.com" }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Développeur Full-Stack (Stage) | React · Node.js/PHP · SQL | APIs & Modernisation",
+        "summary": "Développeur full-stack diplômé d'une Licence en Systèmes d'Information (Mention Très Bien), avec une expérience concrète de développement front/back et de modernisation d'applications : interfaces React.js performantes, API REST sécurisées et bases de données SQL (PostgreSQL). A modernisé un flux de données métier en PHP/SQL lors d'un stage au Groupe Chimique Tunisien (temps de traitement réduit de **70%**) et développé des fonctionnalités temps réel (chat, géolocalisation) sur une plateforme complète. Habitué aux POC, à l'expérimentation de nouvelles technologies (veille technologique active : Next.js, NestJS, Docker) et au partage de connaissances (documentation, démonstrations utilisateurs). Rigoureux, persévérant et à l'aise en équipe internationale.",
+        "skills": [
+          { "category": "Front-End", "items": "React.js, Next.js, JavaScript (ES6+), TypeScript, HTML5, CSS3, Tailwind CSS, Redux." },
+          { "category": "Back-End & API", "items": "Node.js, Express.js, NestJS, PHP, API REST, HTTPS, intégration d'API tierces (Stripe, Twilio), flux temps réel (chat)." },
+          { "category": "Bases de Données", "items": "SQL : PostgreSQL (modélisation relationnelle, requêtes complexes) · NoSQL : MongoDB." },
+          { "category": "Qualité & Outils", "items": "Git, GitHub, CI/CD (GitHub Actions), tests unitaires, Docker, Postman, veille technologique." },
+          { "category": "Mobile", "items": "Flutter, Dart (développement mobile cross-platform)." }
+        ]
+      },
+      "experience_ids": ["exp_freelance_fullstack", "exp_pfe", "exp_gct"],
+      "project_ids": ["proj_eventify", "proj_applyflow", "proj_realestate"]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Développeur Web --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Modernisé un flux de traitement de données métier (PHP, SQL) : outil d'automatisation réduisant de **70%** le temps de traitement d'une équipe opérationnelle.",
+          "Recueilli les besoins métier auprès des utilisateurs et rédigé la documentation technique pour assurer le partage de connaissances."
+        ]
+      }
+    },
+    {
+      "id": "exp_freelance_fullstack",
+      "company": "Projets Clients Internationaux",
+      "fr": {
+        "title": "Développeur Web Full-Stack --- Indépendant",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Développé 4 applications web complètes (React.js, Next.js, Node.js, PostgreSQL) : nouvelles fonctionnalités, refontes d'interfaces et évolutions continues.",
+          "Intégré des API tierces sécurisées : paiement Stripe (webhooks), vérification OTP Twilio, authentification JWT/OAuth.",
+          "Réalisé des POC et expérimentations pour valider les choix techniques avant chaque développement, avec pipelines CI/CD (GitHub Actions)."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack --- Projet de Fin d'Études",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 -- Juin 2025",
+        "highlights": [
+          "Développé une plateforme web complète : module de réservation interactif, chat temps réel, cartographie dynamique et authentification sécurisée JWT/SSL.",
+          "Travaillé en méthodologie Scrum avec démonstrations régulières et intégration des retours utilisateurs finaux."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_eventify",
+      "tech": "React.js · Node.js · PostgreSQL · Flutter · Stripe",
+      "fr": {
+        "title": "Eventify --- Plateforme de Services & Réservation en Ligne",
+        "description": "Plateforme complète : catalogue d'événements, tunnel d'achat sécurisé Stripe, notifications automatisées et back-office d'administration ; déclinaison mobile Flutter."
+      }
+    },
+    {
+      "id": "proj_realestate",
+      "tech": "Next.js · Node.js · PostgreSQL",
+      "fr": {
+        "title": "Plateforme d'Investissement & Dashboard Admin",
+        "description": "Espace client dynamique, dashboard administratif de gestion de leads et reporting analytique."
+      }
+    },
+    {
+      "id": "proj_applyflow",
+      "tech": "Next.js · NestJS · TypeScript · MongoDB · Stripe",
+      "fr": {
+        "title": "ApplyFlow --- Outil SaaS & Automatisation",
+        "description": "Application TypeScript orientée productivité : tableau Kanban, gestion de formulaires et modèle d'abonnement en ligne."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information (Bac +3) --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      { "name": "Français", "level": "Courant / Professionnel" },
+      { "name": "Anglais", "level": "Professionnel" },
+      { "name": "Arabe", "level": "Langue maternelle" }
+    ]
+  }
+}

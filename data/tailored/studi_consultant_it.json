@@ -1,0 +1,110 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie (Mobile — Ouverture Paris)",
+      "en": "Gabes, Tunisia (Mobile — Open to Paris)"
+    },
+    "links": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/" },
+      { "name": "GitHub", "url": "https://github.com/medaminenasfi" },
+      { "name": "Portfolio", "url": "https://mohamedamine-portfolio.onrender.com" }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Consultant IT Junior | Analyse des Besoins · Spécifications · Pilotage de Projet | Culture Full-Stack",
+        "summary": "Consultant IT junior diplômé d'une Licence en Systèmes d'Information (Mention Très Bien), avec une expérience concrète de formalisation des besoins et d'accompagnement de clients internationaux : recueil du besoin, rédaction de spécifications fonctionnelles, estimation, suivi d'avancement et validation des solutions en recette. A piloté 4 projets web de bout en bout en autonomie, de l'expression de besoin à l'adoption par l'utilisateur final, ce qui lui donne une double culture métier ET technique (React/Next.js, Node.js, SQL) pour dialoguer efficacement avec les équipes de développement. A également formalisé les besoins d'utilisateurs métier en environnement industriel (Groupe Chimique Tunisien) et rédigé les documentations associées. Rigoureux, autonome, à l'aise en français et en anglais professionnel.",
+        "skills": [
+          { "category": "Analyse & Spécifications", "items": "Recueil et formalisation des besoins, rédaction de spécifications fonctionnelles, cahiers des charges, recette fonctionnelle (UAT), validation de solutions." },
+          { "category": "Pilotage & Méthodes", "items": "Gestion de projet (estimation, planning, suivi), Agile/Scrum, coordination client, conduite de démonstrations." },
+          { "category": "Culture Technique", "items": "React.js, Next.js, Node.js, Express.js, NestJS, PostgreSQL, MongoDB, API REST — aisance pour échanger avec les équipes de développement." },
+          { "category": "Outils & Documentation", "items": "Git, GitHub (gestion de projets), Postman, documentation technique et fonctionnelle, veille technologique." }
+        ]
+      },
+      "experience_ids": ["exp_freelance_fullstack", "exp_gct", "exp_pfe"],
+      "project_ids": ["proj_eventify", "proj_realestate"]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_freelance_fullstack",
+      "company": "Projets Clients Internationaux",
+      "fr": {
+        "title": "Prestataire IT & Chef de Projet --- Indépendant",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Formalisé les besoins de clients internationaux et rédigé les spécifications fonctionnelles de 4 projets web, du cahier des charges à la validation finale.",
+          "Assuré l'interface métier/développement : traduit les attentes non-techniques des clients en solutions concrètes (React.js, Node.js, PostgreSQL).",
+          "Estimé et planifié les itérations, assuré le suivi d'avancement et l'organisation des phases de recette, de livraison et de démonstration.",
+          "Accompagné l'adoption des solutions livrées : formation des utilisateurs, documentation et support post-livraison."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Chargé d'Études & Développeur Web --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Recueilli et formalisé les besoins d'une équipe opérationnelle en environnement industriel, aboutissant à un outil d'automatisation réduisant de **70%** le temps de traitement.",
+          "Rédigé la documentation fonctionnelle et technique, garantissant l'appropriation de la solution par les utilisateurs."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Projet de Fin d'Études --- Full-Stack",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 -- Juin 2025",
+        "highlights": [
+          "Travaillé en méthodologie Agile Scrum : incréments planifiés, points d'avancement réguliers et démonstrations aux utilisateurs finaux.",
+          "Intégré les retours utilisateurs à chaque itération pour valider la solution face au besoin métier initial."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_eventify",
+      "tech": "React.js · Node.js · PostgreSQL · Flutter · Stripe",
+      "fr": {
+        "title": "Eventify --- Plateforme de Réservation en Ligne",
+        "description": "Projet client mené de l'expression de besoin à l'adoption : catalogue, paiement sécurisé Stripe et back-office d'administration."
+      }
+    },
+    {
+      "id": "proj_realestate",
+      "tech": "Next.js · Node.js · PostgreSQL",
+      "fr": {
+        "title": "Plateforme d'Investissement & Dashboard Admin",
+        "description": "Formalisation des règles de gestion, onboarding dynamique et dashboard de reporting analytique."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information (Bac +3) --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      { "name": "Français", "level": "Courant / Professionnel" },
+      { "name": "Anglais", "level": "Professionnel (atout)" },
+      { "name": "Arabe", "level": "Langue maternelle" }
+    ]
+  }
+}

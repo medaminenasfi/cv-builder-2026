@@ -1,0 +1,178 @@
+\documentclass[letterpaper,9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+  \usepackage{microtype}
+  \DisableLigatures[f]{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \defaultfontfeatures{Ligatures=NoCommon}
+\fi
+
+% Blue accent matching the Word version (#2563EB)
+\definecolor{accent}{HTML}{2563EB}
+\definecolor{navy}{HTML}{1F2937}
+\definecolor{greytext}{HTML}{555555}
+
+\hypersetup{
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent,
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+\raggedright
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+
+% Section titles — blue, matching Word headers
+\titleformat{\section}{
+  \vspace{-1pt}\color{accent}\scshape\raggedright\large
+}{}{0em}{}[\color{accent}\titlerule \vspace{-1pt}]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{\color{greytext}#2} \\
+    \textit{\small\color{greytext} #3} & \textit{\small\color{greytext} #4}
+  \end{tabular*}\vspace{-2pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & #2
+  \end{tabular*}\vspace{-1pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=2.5pt, parsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.24in, label={}, itemsep=0.9pt, topsep=1.2pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeProjectListStart}{\begin{itemize}[leftmargin=0.24in, label={}, itemsep=0.9pt, topsep=1.2pt, parsep=0pt]}
+\newcommand{\resumeProjectListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeLangHeading}[2]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2
+  \end{tabular*}\vspace{-1pt}
+}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+    \textbf{\Huge \scshape \color{navy} Mohamed Amine Nasfi} \\[3pt]
+    \small \textbf{\color{accent} Consultant IT Junior | Analyse des Besoins \textperiodcentered{} Spécifications \textperiodcentered{} Pilotage de Projet | Culture Full-Stack} \\[3pt]
+    \footnotesize \color{greytext}
+    +216 27 711 810 $\quad|\quad$
+    \href{mailto:medaminenasfy@gmail.com}{\underline{medaminenasfy@gmail.com}} $\quad|\quad$
+    Gabès, Tunisie (Mobile — Ouverture Paris) \\[2pt]
+    \href{https://www.linkedin.com/in/mohamed-amine-nasfi/}{\underline{LinkedIn}} $\quad|\quad$ \href{https://github.com/medaminenasfi}{\underline{GitHub}} $\quad|\quad$ \href{https://mohamedamine-portfolio.onrender.com}{\underline{Portfolio}}
+\end{center}
+\vspace{-5pt}
+
+% ---------- SUMMARY ----------
+\section{Résumé}
+\begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=1.5pt, parsep=0pt]
+\item \footnotesize{Consultant IT junior diplômé d'une Licence en Systèmes d'Information (Mention Très Bien), avec une expérience concrète de formalisation des besoins et d'accompagnement de clients internationaux : recueil du besoin, rédaction de spécifications fonctionnelles, estimation, suivi d'avancement et validation des solutions en recette. A piloté 4 projets web de bout en bout en autonomie, de l'expression de besoin à l'adoption par l'utilisateur final, ce qui lui donne une double culture métier ET technique (React/Next.js, Node.js, SQL) pour dialoguer efficacement avec les équipes de développement. A également formalisé les besoins d'utilisateurs métier en environnement industriel (Groupe Chimique Tunisien) et rédigé les documentations associées. Rigoureux, autonome, à l'aise en français et en anglais professionnel.}
+\end{itemize}\vspace{-3pt}
+
+% ---------- EXPERIENCE ----------
+\section{Expérience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading{Prestataire IT \& Chef de Projet --- Indépendant}{Nov 2025 -- Présent}{Projets Clients Internationaux}{Remote}
+    \resumeItemListStart
+      \resumeItem{Formalisé les besoins de clients internationaux et rédigé les spécifications fonctionnelles de 4 projets web, du cahier des charges à la validation finale.}
+      \resumeItem{Assuré l'interface métier/développement : traduit les attentes non-techniques des clients en solutions concrètes (React.js, Node.js, PostgreSQL).}
+      \resumeItem{Estimé et planifié les itérations, assuré le suivi d'avancement et l'organisation des phases de recette, de livraison et de démonstration.}
+      \resumeItem{Accompagné l'adoption des solutions livrées : formation des utilisateurs, documentation et support post-livraison.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Chargé d'Études \& Développeur Web --- Stagiaire}{Juil 2024 -- Août 2024}{Groupe Chimique Tunisien (GCT)}{Gabès, Tunisie}
+    \resumeItemListStart
+      \resumeItem{Recueilli et formalisé les besoins d'une équipe opérationnelle en environnement industriel, aboutissant à un outil d'automatisation réduisant de \textbf{70\%} le temps de traitement.}
+      \resumeItem{Rédigé la documentation fonctionnelle et technique, garantissant l'appropriation de la solution par les utilisateurs.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Projet de Fin d'Études --- Full-Stack}{Fév 2025 -- Juin 2025}{Laghazala du Désert}{Gabès, Tunisie}
+    \resumeItemListStart
+      \resumeItem{Travaillé en méthodologie Agile Scrum : incréments planifiés, points d'avancement réguliers et démonstrations aux utilisateurs finaux.}
+      \resumeItem{Intégré les retours utilisateurs à chaque itération pour valider la solution face au besoin métier initial.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd\vspace{-2pt}
+
+% ---------- TECHNICAL SKILLS ----------
+\section{Compétences Techniques}
+\begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
+\footnotesize{
+  \item \textbf{Analyse \& Spécifications:} Recueil et formalisation des besoins, rédaction de spécifications fonctionnelles, cahiers des charges, recette fonctionnelle (UAT), validation de solutions.
+  \item \textbf{Pilotage \& Méthodes:} Gestion de projet (estimation, planning, suivi), Agile/Scrum, coordination client, conduite de démonstrations.
+  \item \textbf{Culture Technique:} React.js, Next.js, Node.js, Express.js, NestJS, PostgreSQL, MongoDB, API REST — aisance pour échanger avec les équipes de développement.
+  \item \textbf{Outils \& Documentation:} Git, GitHub (gestion de projets), Postman, documentation technique et fonctionnelle, veille technologique.
+}
+\end{itemize}\vspace{-3pt}
+
+% ---------- PROJECTS ----------
+\section{Projets}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading{\textbf{Eventify --- Plateforme de Réservation en Ligne} $\quad$ --- $\quad$ \emph{\color{greytext}React.js \textperiodcentered{} Node.js \textperiodcentered{} PostgreSQL \textperiodcentered{} Flutter \textperiodcentered{} Stripe}}{}
+    \resumeProjectListStart
+      \resumeItem{Projet client mené de l'expression de besoin à l'adoption : catalogue, paiement sécurisé Stripe et back-office d'administration.}
+    \resumeProjectListEnd
+
+  \resumeProjectHeading{\textbf{Plateforme d'Investissement \& Dashboard Admin} $\quad$ --- $\quad$ \emph{\color{greytext}Next.js \textperiodcentered{} Node.js \textperiodcentered{} PostgreSQL}}{}
+    \resumeProjectListStart
+      \resumeItem{Formalisation des règles de gestion, onboarding dynamique et dashboard de reporting analytique.}
+    \resumeProjectListEnd
+
+\resumeSubHeadingListEnd\vspace{-3pt}
+
+% ---------- EDUCATION ----------
+\section{Formation}
+\resumeSubHeadingListStart
+  \resumeSubheading{Licence en Systèmes d'Information (Bac +3) --- Mention Très Bien}{2022 -- 2025}{ESSAT Gabès}{Gabès, Tunisie}
+\resumeSubHeadingListEnd\vspace{-1pt}
+
+% ---------- LANGUAGES ----------
+\section{Langues}
+\begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
+\footnotesize{
+  \item Français (Courant / Professionnel) \textperiodcentered{} Anglais (Professionnel (atout)) \textperiodcentered{} Arabe (Langue maternelle)
+}
+\end{itemize}
+
+\end{document}

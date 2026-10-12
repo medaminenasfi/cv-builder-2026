@@ -15,6 +15,11 @@
 \ifPDFTeX
   \input{glyphtounicode}
   \pdfgentounicode=1
+  \usepackage{microtype}
+  \DisableLigatures[f]{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \defaultfontfeatures{Ligatures=NoCommon}
 \fi
 
 % Blue accent matching the Word version (#2563EB)
@@ -88,7 +93,7 @@
 % ---------- HEADER ----------
 \begin{center}
     \textbf{\Huge \scshape \color{navy} Mohamed Amine Nasfi} \\[3pt]
-    \small \textbf{\color{accent} IT Support Technician | Helpdesk \& Service Desk | Systems \& Hardware Diagnostics | Windows/Linux} \\[3pt]
+    \small \textbf{\color{accent} Full-Stack Software Engineer | React/Next.js | Node.js | DevOps (Docker, CI/CD, Linux)} \\[3pt]
     \footnotesize \color{greytext}
     +216 27 711 810 $\quad|\quad$
     \href{mailto:medaminenasfy@gmail.com}{\underline{medaminenasfy@gmail.com}} $\quad|\quad$
@@ -100,24 +105,19 @@
 % ---------- SUMMARY ----------
 \section{Summary}
 \begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=1.5pt, parsep=0pt]
-\item \footnotesize{IT Support Technician with hands-on on-site support and computer maintenance experience: hardware/software troubleshooting, PC assembly and deployment, software and peripheral installation for non-technical users. Managed end-to-end deployment of an IP video surveillance system, including structured cabling and network configuration. Complements fieldwork with Linux server administration (VPS, Docker, Nginx) and strong Windows/Linux systems acumen. Bachelor in Information Systems (Highest Honors), service-oriented, methodical, and adept at rapid issue resolution and technical documentation.}
+\item \footnotesize{Full-stack engineer proficient in React.js/Next.js, Node.js/Express.js, and PHP, with proven experience designing and integrating end-to-end RESTful APIs across PostgreSQL and MongoDB databases. Strong DevOps acumen: deploying and hardening Linux infrastructure (Docker, Nginx, VPS), automating CI/CD pipelines (GitHub Actions), and version control. Delivered 4 commercial client web apps end-to-end from requirements gathering to live production release, alongside an Agile full-stack team platform. Bachelor in Information Systems (Highest Honors), self-driven, analytical, and bilingual in French and English.}
 \end{itemize}\vspace{-3pt}
 
 % ---------- EXPERIENCE ----------
 \section{Experience}
 \resumeSubHeadingListStart
 
-  \resumeSubheading{IT Support Technician --- Freelance}{May 2026 -- Present}{Cabinet d'Orthodontie Dr Meriem Nasfi}{Gabes, Tunisia}
+  \resumeSubheading{Full-Stack Software Engineer --- Freelance (Remote)}{Nov 2025 -- Present}{}{}
     \resumeItemListStart
-      \resumeItem{Delivered proactive and corrective maintenance for Windows workstations: diagnosed hardware/software faults, assembled systems, and deployed peripherals for non-technical staff.}
-      \resumeItem{Engineered and deployed complete IP video surveillance infrastructure: ran Ethernet cabling, established static IP schemes, and configured router firewall for encrypted remote access.}
-    \resumeItemListEnd
-
-  \resumeSubheading{Web Developer \& Linux Systems Administrator --- Freelance (Remote)}{Nov 2025 -- Present}{}{}
-    \resumeItemListStart
-      \resumeItem{Architected, built, and deployed 4 full-stack client web applications (JavaScript, React.js, Node.js, PostgreSQL) from requirement analysis to live production.}
-      \resumeItem{Administered and hardened Linux servers: VPS hosting, Docker containerization, Nginx configuration, SSL certificates, uptime supervision, and incident resolution.}
-      \resumeItem{Managed relational PostgreSQL databases (schema design, SQL query optimization) supporting deployed client systems.}
+      \resumeItem{Designed and shipped 4 production client web applications end-to-end (React.js, Next.js, Node.js, Express.js, PostgreSQL) from specification to live release.}
+      \resumeItem{Deployed and maintained server infrastructure on Linux (Docker, Nginx, VPS), providing active system monitoring and production troubleshooting.}
+      \resumeItem{Engineered resilient REST APIs integrating critical third-party services: secure Stripe payment checkouts and Twilio SMS OTP verification.}
+      \resumeItem{Configured automated GitHub Actions CI/CD pipelines running linting and automated unit testing prior to every release.}
     \resumeItemListEnd
 
   \resumeSubheading{Full-Stack Developer --- Final Year Project (PFE)}{Feb 2025 -- Jun 2025}{Laghazala du Désert}{Gabes, Tunisia}
@@ -137,13 +137,13 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
 \footnotesize{
-  \item \textbf{Hardware \& Maintenance:} PC assembly and deployment, hardware troubleshooting, preventative/corrective maintenance, peripheral installation.
-  \item \textbf{Operating Systems:} Windows (installation, setup, troubleshooting), Linux (CLI, server administration).
-  \item \textbf{Networking \& Security:} Ethernet cabling, IP addressing/subnetting, router configuration, secure remote access, SSL certificates.
-  \item \textbf{Surveillance:} IP security camera installation, cabling, and remote streaming setup.
-  \item \textbf{Infrastructure:} Docker, Nginx, Linux VPS hosting.
+  \item \textbf{Languages:} JavaScript, TypeScript, Python, PHP, HTML5, CSS3.
+  \item \textbf{Front-End:} React.js, Next.js, Tailwind CSS.
+  \item \textbf{Back-End:} Node.js, Express.js, NestJS, RESTful APIs.
+  \item \textbf{APIs \& Integrations:} REST API design \& consumption, third-party payments (Stripe), SMS OTP (Twilio), JWT, SSL.
   \item \textbf{Databases:} PostgreSQL, MongoDB, SQL.
-  \item \textbf{Tools:} Git, GitHub, Postman.
+  \item \textbf{Testing \& Quality:} Automated CI/CD testing, debugging, comprehensive technical documentation.
+  \item \textbf{DevOps \& Tools:} Git, GitHub, GitHub Actions (CI/CD), Docker, Linux VPS, Postman.
 }
 \end{itemize}\vspace{-3pt}
 
@@ -156,9 +156,14 @@
       \resumeItem{Full-stack web \& mobile booking platform with secure Stripe payment flow, Twilio SMS OTP verification, and JWT role-based authentication.}
     \resumeProjectListEnd
 
-  \resumeProjectHeading{\textbf{Rental Management System --- Windows Desktop ERP} $\quad$ --- $\quad$ \emph{\color{greytext}Python \textperiodcentered{} PyQt5 \textperiodcentered{} SQLite \textperiodcentered{} PyInstaller}}{}
+  \resumeProjectHeading{\textbf{ApplyFlow --- Job Application Assistant \& Autofill Extension} $\quad$ --- $\quad$ \emph{\color{greytext}Next.js \textperiodcentered{} NestJS \textperiodcentered{} TypeScript \textperiodcentered{} MongoDB \textperiodcentered{} Stripe}}{}
     \resumeProjectListStart
-      \resumeItem{Offline-first Windows desktop ERP managing equipment rental agreements, automated contract billing cycles, real-time analytics, and SQLite backups.}
+      \resumeItem{Kanban job application tracker with multi-resume management and a Manifest V3 Chrome Extension that autofills application forms from saved profile data.}
+    \resumeProjectListEnd
+
+  \resumeProjectHeading{\textbf{Universal Web Scraper --- Automated Data Harvester} $\quad$ --- $\quad$ \emph{\color{greytext}Python \textperiodcentered{} BeautifulSoup \textperiodcentered{} Scrapy \textperiodcentered{} Selenium \textperiodcentered{} Pandas}}{}
+    \resumeProjectListStart
+      \resumeItem{Python data harvesting engine automatically handling static and dynamic DOM rendering, extracting and cleaning structured datasets into JSON/CSV.}
     \resumeProjectListEnd
 
 \resumeSubHeadingListEnd\vspace{-3pt}

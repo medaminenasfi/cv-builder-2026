@@ -15,6 +15,11 @@
 \ifPDFTeX
   \input{glyphtounicode}
   \pdfgentounicode=1
+  \usepackage{microtype}
+  \DisableLigatures[f]{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \defaultfontfeatures{Ligatures=NoCommon}
 \fi
 
 % Blue accent matching the Word version (#2563EB)
