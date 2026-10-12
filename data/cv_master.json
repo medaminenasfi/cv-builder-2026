@@ -1,0 +1,283 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie",
+      "en": "Gabes, Tunisia"
+    },
+    "links": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/" },
+      { "name": "GitHub", "url": "https://github.com/medaminenasfi" },
+      { "name": "Portfolio", "url": "https://mohamedamine-portfolio.onrender.com" }
+    ]
+  },
+  "profiles": {
+    "it_support": {
+      "fr": {
+        "subtitle": "Technicien IT Support | Helpdesk & Service Desk | Maintenance & Diagnostic | Windows/Linux",
+        "summary": "Technicien IT avec une expérience concrète de support de proximité et de maintenance informatique : diagnostic de pannes matérielles/logicielles, montage et mise en service de postes de travail, installation de logiciels et périphériques pour des utilisateurs non-techniques. A géré l'installation complète d'un système de vidéosurveillance, incluant le câblage et la configuration réseau de base. Complète cette expérience terrain par une administration de serveurs sous Linux (VPS, Docker, Nginx) et une bonne compréhension des systèmes Windows/Linux. Diplômé en Systèmes d'Information (Licence), sens du service, rigoureux, capable de diagnostiquer rapidement une panne et de documenter ses interventions.",
+        "skills": [
+          { "category": "Matériel & Maintenance", "items": "Montage et mise en service de postes de travail, diagnostic de pannes, maintenance préventive/corrective, installation de périphériques." },
+          { "category": "Systèmes", "items": "Windows (installation, configuration, dépannage), Linux (ligne de commande, administration serveur)." },
+          { "category": "Réseau & Sécurité", "items": "Câblage (installation vidéosurveillance), adressage IP, configuration routeur, accès distant sécurisé, certificats SSL." },
+          { "category": "Vidéosurveillance", "items": "Installation et configuration de systèmes de caméras de sécurité." },
+          { "category": "Infrastructure", "items": "Docker, Nginx, hébergement VPS." },
+          { "category": "Bases de Données", "items": "PostgreSQL, MongoDB, SQL." },
+          { "category": "Outils", "items": "Git, GitHub, Postman." }
+        ]
+      },
+      "en": {
+        "subtitle": "IT Support Technician | Helpdesk & Service Desk | Systems & Hardware Diagnostics | Windows/Linux",
+        "summary": "IT Support Technician with hands-on on-site support and computer maintenance experience: hardware/software troubleshooting, PC assembly and deployment, software and peripheral installation for non-technical users. Managed end-to-end deployment of an IP video surveillance system, including structured cabling and network configuration. Complements fieldwork with Linux server administration (VPS, Docker, Nginx) and strong Windows/Linux systems acumen. Bachelor in Information Systems (Highest Honors), service-oriented, methodical, and adept at rapid issue resolution and technical documentation.",
+        "skills": [
+          { "category": "Hardware & Maintenance", "items": "PC assembly and deployment, hardware troubleshooting, preventative/corrective maintenance, peripheral installation." },
+          { "category": "Operating Systems", "items": "Windows (installation, setup, troubleshooting), Linux (CLI, server administration)." },
+          { "category": "Networking & Security", "items": "Ethernet cabling, IP addressing/subnetting, router configuration, secure remote access, SSL certificates." },
+          { "category": "Surveillance", "items": "IP security camera installation, cabling, and remote streaming setup." },
+          { "category": "Infrastructure", "items": "Docker, Nginx, Linux VPS hosting." },
+          { "category": "Databases", "items": "PostgreSQL, MongoDB, SQL." },
+          { "category": "Tools", "items": "Git, GitHub, Postman." }
+        ]
+      },
+      "experience_ids": ["exp_ortho", "exp_freelance_web", "exp_pfe", "exp_gct"],
+      "project_ids": ["proj_eventify", "proj_rental"]
+    },
+    "fullstack": {
+      "fr": {
+        "subtitle": "Développeur Full-Stack | React/Next.js | Node.js | DevOps (Docker, CI/CD, Linux)",
+        "summary": "Développeur full-stack maîtrisant React.js/Next.js, Node.js/Express.js et PHP, avec une expérience concrète de conception et d'intégration d'API REST de bout en bout, sur des bases de données relationnelles et NoSQL (PostgreSQL, MongoDB). Compétences DevOps solides : déploiement et administration d'infrastructures sous Linux (Docker, Nginx, VPS), pipelines CI/CD (GitHub Actions), gestion de versions Git. A livré 4 projets clients de bout en bout — de l'analyse des besoins à la mise en production et au support — ainsi qu'une plateforme full-stack en équipe (PFE). Diplômé en Systèmes d'Information, autonome, rigoureux, à l'aise en français et en anglais.",
+        "skills": [
+          { "category": "Langages", "items": "JavaScript, TypeScript, Python, PHP, HTML, CSS." },
+          { "category": "Front-End", "items": "React.js, Next.js." },
+          { "category": "Back-End", "items": "Node.js, Express.js, NestJS." },
+          { "category": "API & Intégrations", "items": "Conception & consommation d'API REST, intégration d'API tierces et de paiement (Stripe, Twilio), JWT, SSL." },
+          { "category": "Bases de Données", "items": "PostgreSQL, MongoDB, SQL." },
+          { "category": "Tests & Qualité", "items": "Tests avant déploiement (CI/CD), correction de bugs, documentation technique." },
+          { "category": "Outils & DevOps", "items": "Git, GitHub, GitHub Actions (CI/CD), Docker, Linux, Postman." }
+        ]
+      },
+      "en": {
+        "subtitle": "Full-Stack Software Engineer | React/Next.js | Node.js | DevOps (Docker, CI/CD, Linux)",
+        "summary": "Full-stack engineer proficient in React.js/Next.js, Node.js/Express.js, and PHP, with proven experience designing and integrating end-to-end RESTful APIs across PostgreSQL and MongoDB databases. Strong DevOps acumen: deploying and hardening Linux infrastructure (Docker, Nginx, VPS), automating CI/CD pipelines (GitHub Actions), and version control. Delivered 4 commercial client web apps end-to-end from requirements gathering to live production release, alongside an Agile full-stack team platform. Bachelor in Information Systems (Highest Honors), self-driven, analytical, and bilingual in French and English.",
+        "skills": [
+          { "category": "Languages", "items": "JavaScript, TypeScript, Python, PHP, HTML5, CSS3." },
+          { "category": "Front-End", "items": "React.js, Next.js, Tailwind CSS." },
+          { "category": "Back-End", "items": "Node.js, Express.js, NestJS, RESTful APIs." },
+          { "category": "APIs & Integrations", "items": "REST API design & consumption, third-party payments (Stripe), SMS OTP (Twilio), JWT, SSL." },
+          { "category": "Databases", "items": "PostgreSQL, MongoDB, SQL." },
+          { "category": "Testing & Quality", "items": "Automated CI/CD testing, debugging, comprehensive technical documentation." },
+          { "category": "DevOps & Tools", "items": "Git, GitHub, GitHub Actions (CI/CD), Docker, Linux VPS, Postman." }
+        ]
+      },
+      "experience_ids": ["exp_freelance_fullstack", "exp_pfe", "exp_gct"],
+      "project_ids": ["proj_eventify", "proj_applyflow", "proj_scraper"]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_ortho",
+      "company": "Cabinet d'Orthodontie Dr Meriem Nasfi",
+      "fr": {
+        "title": "Technicien Support IT --- Freelance",
+        "location": "Gabès, Tunisie",
+        "dates": "Mai 2026 -- Présent",
+        "highlights": [
+          "Maintenance préventive et corrective de postes de travail sous Windows : diagnostic de pannes matérielles/logicielles, montage et mise en service, installation de logiciels et périphériques.",
+          "Installation et configuration complète d'un système de vidéosurveillance (caméras) : câblage des caméras, adressage IP et configuration du routeur pour un accès à distance sécurisé."
+        ]
+      },
+      "en": {
+        "title": "IT Support Technician --- Freelance",
+        "location": "Gabes, Tunisia",
+        "dates": "May 2026 -- Present",
+        "highlights": [
+          "Delivered proactive and corrective maintenance for Windows workstations: diagnosed hardware/software faults, assembled systems, and deployed peripherals for non-technical staff.",
+          "Engineered and deployed complete IP video surveillance infrastructure: ran Ethernet cabling, established static IP schemes, and configured router firewall for encrypted remote access."
+        ]
+      }
+    },
+    {
+      "id": "exp_freelance_web",
+      "company": "",
+      "fr": {
+        "title": "Développeur Web & Administrateur Système --- Freelance (Remote)",
+        "location": "",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Développement et déploiement de 4 applications web clients de bout en bout (JavaScript, React.js, Node.js, PostgreSQL), de l'analyse des besoins à la mise en production.",
+          "Administration des serveurs sous Linux : hébergement VPS, conteneurisation Docker, configuration Nginx, certificats SSL, supervision et résolution d'incidents en production.",
+          "Gestion de bases de données relationnelles PostgreSQL (schéma, requêtes SQL) au support des applications déployées."
+        ]
+      },
+      "en": {
+        "title": "Web Developer & Linux Systems Administrator --- Freelance (Remote)",
+        "location": "",
+        "dates": "Nov 2025 -- Present",
+        "highlights": [
+          "Architected, built, and deployed 4 full-stack client web applications (JavaScript, React.js, Node.js, PostgreSQL) from requirement analysis to live production.",
+          "Administered and hardened Linux servers: VPS hosting, Docker containerization, Nginx configuration, SSL certificates, uptime supervision, and incident resolution.",
+          "Managed relational PostgreSQL databases (schema design, SQL query optimization) supporting deployed client systems."
+        ]
+      }
+    },
+    {
+      "id": "exp_freelance_fullstack",
+      "company": "",
+      "fr": {
+        "title": "Développeur Full-Stack --- Freelance (Remote)",
+        "location": "",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Conception et développement de 4 applications clients de bout en bout (React.js, Next.js, Node.js, Express.js, PostgreSQL), de l'analyse des besoins à la mise en production.",
+          "Déploiement et administration de l'infrastructure serveur sous Linux (Docker, Nginx, VPS), avec supervision et résolution d'incidents en production.",
+          "Conception et intégration d'API REST, y compris des API tierces sensibles : tunnel de paiement sécurisé (Stripe) et vérification par API externe (Twilio OTP).",
+          "Mise en place de pipelines CI/CD (GitHub Actions) incluant tests automatisés avant chaque déploiement."
+        ]
+      },
+      "en": {
+        "title": "Full-Stack Software Engineer --- Freelance (Remote)",
+        "location": "",
+        "dates": "Nov 2025 -- Present",
+        "highlights": [
+          "Designed and shipped 4 production client web applications end-to-end (React.js, Next.js, Node.js, Express.js, PostgreSQL) from specification to live release.",
+          "Deployed and maintained server infrastructure on Linux (Docker, Nginx, VPS), providing active system monitoring and production troubleshooting.",
+          "Engineered resilient REST APIs integrating critical third-party services: secure Stripe payment checkouts and Twilio SMS OTP verification.",
+          "Configured automated GitHub Actions CI/CD pipelines running linting and automated unit testing prior to every release."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack --- Projet de Fin d'Études (PFE)",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 -- Juin 2025",
+        "highlights": [
+          "Développement d'une plateforme full-stack (React.js, Node.js, Express.js, MongoDB) intégrant des API externes ; authentification JWT et SSL, livré en sprints Agile."
+        ]
+      },
+      "en": {
+        "title": "Full-Stack Developer --- Final Year Project (PFE)",
+        "location": "Gabes, Tunisia",
+        "dates": "Feb 2025 -- Jun 2025",
+        "highlights": [
+          "Developed full-stack tourism web platform (React.js, Node.js, Express.js, MongoDB) consuming third-party APIs, JWT authentication, and SSL encryption, delivered via Agile sprints."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Développeur Web --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Développement d'un outil d'automatisation de données (PHP, SQL) réduisant le temps de saisie de **70%** pour une équipe de 5 personnes.",
+          "Documentation des procédures techniques et recueil des besoins directement avec l'équipe métier."
+        ]
+      },
+      "en": {
+        "title": "Web Developer --- Intern",
+        "location": "Gabes, Tunisia",
+        "dates": "Jul 2024 -- Aug 2024",
+        "highlights": [
+          "Engineered internal data automation tool (PHP, SQL), slashing manual data entry turnaround time by **70%** for an operational team of 5 staff.",
+          "Gathered business specifications and authored comprehensive technical documentation and user guides for operational teams."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_eventify",
+      "tech": "Node.js · PostgreSQL · React.js · Flutter · Stripe",
+      "fr": {
+        "title": "Eventify --- Plateforme de Réservation d'Événements",
+        "description": "Plateforme complète (web + mobile) avec tunnel de paiement sécurisé Stripe, vérification OTP via Twilio et authentification JWT."
+      },
+      "en": {
+        "title": "Eventify --- Event Ticketing & Booking Platform",
+        "description": "Full-stack web & mobile booking platform with secure Stripe payment flow, Twilio SMS OTP verification, and JWT role-based authentication."
+      }
+    },
+    {
+      "id": "proj_realestate",
+      "tech": "Next.js · Node.js · PostgreSQL",
+      "fr": {
+        "title": "Plateforme d'Investissement Immobilier",
+        "description": "Plateforme immobilière destinée aux investisseurs : parcours d'onboarding, formulaires dynamiques et tableau de bord admin de gestion des leads."
+      },
+      "en": {
+        "title": "Club Rendement+ --- Real Estate Investment SaaS",
+        "description": "Investor portal featuring interactive onboarding workflows, dynamic lead capture forms, and administrative pipeline management dashboard."
+      }
+    },
+    {
+      "id": "proj_scraper",
+      "tech": "Python · BeautifulSoup · Scrapy · Selenium · Pandas",
+      "fr": {
+        "title": "Universal Web Scraper",
+        "description": "Outil de collecte de données en Python détectant automatiquement les sites statiques et dynamiques, avec extraction et nettoyage automatisés."
+      },
+      "en": {
+        "title": "Universal Web Scraper --- Automated Data Harvester",
+        "description": "Python data harvesting engine automatically handling static and dynamic DOM rendering, extracting and cleaning structured datasets into JSON/CSV."
+      }
+    },
+    {
+      "id": "proj_applyflow",
+      "tech": "Next.js · NestJS · TypeScript · MongoDB · Stripe",
+      "fr": {
+        "title": "ApplyFlow --- Job Application Tracker & Extension Chrome",
+        "description": "Assistant de candidature avec suivi Kanban, gestion multi-CV et extension Chrome (MV3) de remplissage automatique des formulaires d'emploi."
+      },
+      "en": {
+        "title": "ApplyFlow --- Job Application Assistant & Autofill Extension",
+        "description": "Kanban job application tracker with multi-resume management and a Manifest V3 Chrome Extension that autofills application forms from saved profile data."
+      }
+    },
+    {
+      "id": "proj_rental",
+      "tech": "Python · PyQt5 · SQLite · PyInstaller",
+      "fr": {
+        "title": "Rental Management System --- ERP Desktop",
+        "description": "Application desktop Windows offline-first pour la gestion des locations : contrats, facturation, statistiques et sauvegardes de données automatisées."
+      },
+      "en": {
+        "title": "Rental Management System --- Windows Desktop ERP",
+        "description": "Offline-first Windows desktop ERP managing equipment rental agreements, automated contract billing cycles, real-time analytics, and SQLite backups."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      },
+      "en": {
+        "degree": "Bachelor in Information Systems --- Highest Honors (Mention Très Bien)",
+        "dates": "2022 -- 2025",
+        "location": "Gabes, Tunisia"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      { "name": "Français", "level": "Professionnel" },
+      { "name": "Anglais", "level": "Professionnel" },
+      { "name": "Arabe", "level": "Langue maternelle" }
+    ],
+    "en": [
+      { "name": "French", "level": "Professional Working" },
+      { "name": "English", "level": "Professional Working" },
+      { "name": "Arabic", "level": "Native" }
+    ]
+  }
+}

@@ -1,0 +1,180 @@
+\documentclass[letterpaper,9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+% Blue accent matching the Word version (#2563EB)
+\definecolor{accent}{HTML}{2563EB}
+\definecolor{navy}{HTML}{1F2937}
+\definecolor{greytext}{HTML}{555555}
+
+\hypersetup{
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent,
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+\raggedright
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+
+% Section titles — blue, matching Word headers
+\titleformat{\section}{
+  \vspace{-1pt}\color{accent}\scshape\raggedright\large
+}{}{0em}{}[\color{accent}\titlerule \vspace{-1pt}]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{\color{greytext}#2} \\
+    \textit{\small\color{greytext} #3} & \textit{\small\color{greytext} #4}
+  \end{tabular*}\vspace{-2pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & #2
+  \end{tabular*}\vspace{-1pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=2.5pt, parsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.24in, label={}, itemsep=0.9pt, topsep=1.2pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeProjectListStart}{\begin{itemize}[leftmargin=0.24in, label={}, itemsep=0.9pt, topsep=1.2pt, parsep=0pt]}
+\newcommand{\resumeProjectListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeLangHeading}[2]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2
+  \end{tabular*}\vspace{-1pt}
+}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+    \textbf{\Huge \scshape \color{navy} Mohamed Amine Nasfi} \\[3pt]
+    \small \textbf{\color{accent} IT Support Technician | Helpdesk \& Service Desk | Systems \& Hardware Diagnostics | Windows/Linux} \\[3pt]
+    \footnotesize \color{greytext}
+    +216 27 711 810 $\quad|\quad$
+    \href{mailto:medaminenasfy@gmail.com}{\underline{medaminenasfy@gmail.com}} $\quad|\quad$
+    Gabes, Tunisia \\[2pt]
+    \href{https://www.linkedin.com/in/mohamed-amine-nasfi/}{\underline{LinkedIn}} $\quad|\quad$ \href{https://github.com/medaminenasfi}{\underline{GitHub}} $\quad|\quad$ \href{https://mohamedamine-portfolio.onrender.com}{\underline{Portfolio}}
+\end{center}
+\vspace{-5pt}
+
+% ---------- SUMMARY ----------
+\section{Summary}
+\begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=1.5pt, parsep=0pt]
+\item \footnotesize{IT Support Technician with hands-on on-site support and computer maintenance experience: hardware/software troubleshooting, PC assembly and deployment, software and peripheral installation for non-technical users. Managed end-to-end deployment of an IP video surveillance system, including structured cabling and network configuration. Complements fieldwork with Linux server administration (VPS, Docker, Nginx) and strong Windows/Linux systems acumen. Bachelor in Information Systems (Highest Honors), service-oriented, methodical, and adept at rapid issue resolution and technical documentation.}
+\end{itemize}\vspace{-3pt}
+
+% ---------- EXPERIENCE ----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading{IT Support Technician --- Freelance}{May 2026 -- Present}{Cabinet d'Orthodontie Dr Meriem Nasfi}{Gabes, Tunisia}
+    \resumeItemListStart
+      \resumeItem{Delivered proactive and corrective maintenance for Windows workstations: diagnosed hardware/software faults, assembled systems, and deployed peripherals for non-technical staff.}
+      \resumeItem{Engineered and deployed complete IP video surveillance infrastructure: ran Ethernet cabling, established static IP schemes, and configured router firewall for encrypted remote access.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Web Developer \& Linux Systems Administrator --- Freelance (Remote)}{Nov 2025 -- Present}{}{}
+    \resumeItemListStart
+      \resumeItem{Architected, built, and deployed 4 full-stack client web applications (JavaScript, React.js, Node.js, PostgreSQL) from requirement analysis to live production.}
+      \resumeItem{Administered and hardened Linux servers: VPS hosting, Docker containerization, Nginx configuration, SSL certificates, uptime supervision, and incident resolution.}
+      \resumeItem{Managed relational PostgreSQL databases (schema design, SQL query optimization) supporting deployed client systems.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Full-Stack Developer --- Final Year Project (PFE)}{Feb 2025 -- Jun 2025}{Laghazala du Désert}{Gabes, Tunisia}
+    \resumeItemListStart
+      \resumeItem{Developed full-stack tourism web platform (React.js, Node.js, Express.js, MongoDB) consuming third-party APIs, JWT authentication, and SSL encryption, delivered via Agile sprints.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Web Developer --- Intern}{Jul 2024 -- Aug 2024}{Groupe Chimique Tunisien (GCT)}{Gabes, Tunisia}
+    \resumeItemListStart
+      \resumeItem{Engineered internal data automation tool (PHP, SQL), slashing manual data entry turnaround time by \textbf{70\%} for an operational team of 5 staff.}
+      \resumeItem{Gathered business specifications and authored comprehensive technical documentation and user guides for operational teams.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd\vspace{-2pt}
+
+% ---------- TECHNICAL SKILLS ----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
+\footnotesize{
+  \item \textbf{Hardware \& Maintenance:} PC assembly and deployment, hardware troubleshooting, preventative/corrective maintenance, peripheral installation.
+  \item \textbf{Operating Systems:} Windows (installation, setup, troubleshooting), Linux (CLI, server administration).
+  \item \textbf{Networking \& Security:} Ethernet cabling, IP addressing/subnetting, router configuration, secure remote access, SSL certificates.
+  \item \textbf{Surveillance:} IP security camera installation, cabling, and remote streaming setup.
+  \item \textbf{Infrastructure:} Docker, Nginx, Linux VPS hosting.
+  \item \textbf{Databases:} PostgreSQL, MongoDB, SQL.
+  \item \textbf{Tools:} Git, GitHub, Postman.
+}
+\end{itemize}\vspace{-3pt}
+
+% ---------- PROJECTS ----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading{\textbf{Eventify --- Event Ticketing \& Booking Platform} $\quad$ --- $\quad$ \emph{\color{greytext}Node.js \textperiodcentered{} PostgreSQL \textperiodcentered{} React.js \textperiodcentered{} Flutter \textperiodcentered{} Stripe}}{}
+    \resumeProjectListStart
+      \resumeItem{Full-stack web \& mobile booking platform with secure Stripe payment flow, Twilio SMS OTP verification, and JWT role-based authentication.}
+    \resumeProjectListEnd
+
+  \resumeProjectHeading{\textbf{Rental Management System --- Windows Desktop ERP} $\quad$ --- $\quad$ \emph{\color{greytext}Python \textperiodcentered{} PyQt5 \textperiodcentered{} SQLite \textperiodcentered{} PyInstaller}}{}
+    \resumeProjectListStart
+      \resumeItem{Offline-first Windows desktop ERP managing equipment rental agreements, automated contract billing cycles, real-time analytics, and SQLite backups.}
+    \resumeProjectListEnd
+
+\resumeSubHeadingListEnd\vspace{-3pt}
+
+% ---------- EDUCATION ----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading{Bachelor in Information Systems --- Highest Honors (Mention Très Bien)}{2022 -- 2025}{ESSAT Gabès}{Gabes, Tunisia}
+\resumeSubHeadingListEnd\vspace{-1pt}
+
+% ---------- LANGUAGES ----------
+\section{Languages}
+\begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
+\footnotesize{
+  \item French (Professional Working) \textperiodcentered{} English (Professional Working) \textperiodcentered{} Arabic (Native)
+}
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,180 @@
+\documentclass[letterpaper,9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+% Blue accent matching the Word version (#2563EB)
+\definecolor{accent}{HTML}{2563EB}
+\definecolor{navy}{HTML}{1F2937}
+\definecolor{greytext}{HTML}{555555}
+
+\hypersetup{
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent,
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+\raggedright
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+
+% Section titles — blue, matching Word headers
+\titleformat{\section}{
+  \vspace{-1pt}\color{accent}\scshape\raggedright\large
+}{}{0em}{}[\color{accent}\titlerule \vspace{-1pt}]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{\color{greytext}#2} \\
+    \textit{\small\color{greytext} #3} & \textit{\small\color{greytext} #4}
+  \end{tabular*}\vspace{-2pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & #2
+  \end{tabular*}\vspace{-1pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=2.5pt, parsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.24in, label={}, itemsep=0.9pt, topsep=1.2pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeProjectListStart}{\begin{itemize}[leftmargin=0.24in, label={}, itemsep=0.9pt, topsep=1.2pt, parsep=0pt]}
+\newcommand{\resumeProjectListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeLangHeading}[2]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2
+  \end{tabular*}\vspace{-1pt}
+}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+    \textbf{\Huge \scshape \color{navy} Mohamed Amine Nasfi} \\[3pt]
+    \small \textbf{\color{accent} Développeur Full-Stack | React/Next.js | Node.js | DevOps (Docker, CI/CD, Linux)} \\[3pt]
+    \footnotesize \color{greytext}
+    +216 27 711 810 $\quad|\quad$
+    \href{mailto:medaminenasfy@gmail.com}{\underline{medaminenasfy@gmail.com}} $\quad|\quad$
+    Gabès, Tunisie \\[2pt]
+    \href{https://www.linkedin.com/in/mohamed-amine-nasfi/}{\underline{LinkedIn}} $\quad|\quad$ \href{https://github.com/medaminenasfi}{\underline{GitHub}} $\quad|\quad$ \href{https://mohamedamine-portfolio.onrender.com}{\underline{Portfolio}}
+\end{center}
+\vspace{-5pt}
+
+% ---------- SUMMARY ----------
+\section{Résumé}
+\begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=1.5pt, parsep=0pt]
+\item \footnotesize{Développeur full-stack maîtrisant React.js/Next.js, Node.js/Express.js et PHP, avec une expérience concrète de conception et d'intégration d'API REST de bout en bout, sur des bases de données relationnelles et NoSQL (PostgreSQL, MongoDB). Compétences DevOps solides : déploiement et administration d'infrastructures sous Linux (Docker, Nginx, VPS), pipelines CI/CD (GitHub Actions), gestion de versions Git. A livré 4 projets clients de bout en bout — de l'analyse des besoins à la mise en production et au support — ainsi qu'une plateforme full-stack en équipe (PFE). Diplômé en Systèmes d'Information, autonome, rigoureux, à l'aise en français et en anglais.}
+\end{itemize}\vspace{-3pt}
+
+% ---------- EXPERIENCE ----------
+\section{Expérience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading{Développeur Full-Stack --- Freelance (Remote)}{Nov 2025 -- Présent}{}{}
+    \resumeItemListStart
+      \resumeItem{Conception et développement de 4 applications clients de bout en bout (React.js, Next.js, Node.js, Express.js, PostgreSQL), de l'analyse des besoins à la mise en production.}
+      \resumeItem{Déploiement et administration de l'infrastructure serveur sous Linux (Docker, Nginx, VPS), avec supervision et résolution d'incidents en production.}
+      \resumeItem{Conception et intégration d'API REST, y compris des API tierces sensibles : tunnel de paiement sécurisé (Stripe) et vérification par API externe (Twilio OTP).}
+      \resumeItem{Mise en place de pipelines CI/CD (GitHub Actions) incluant tests automatisés avant chaque déploiement.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Développeur Full-Stack --- Projet de Fin d'Études (PFE)}{Fév 2025 -- Juin 2025}{Laghazala du Désert}{Gabès, Tunisie}
+    \resumeItemListStart
+      \resumeItem{Développement d'une plateforme full-stack (React.js, Node.js, Express.js, MongoDB) intégrant des API externes ; authentification JWT et SSL, livré en sprints Agile.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Développeur Web --- Stagiaire}{Juil 2024 -- Août 2024}{Groupe Chimique Tunisien (GCT)}{Gabès, Tunisie}
+    \resumeItemListStart
+      \resumeItem{Développement d'un outil d'automatisation de données (PHP, SQL) réduisant le temps de saisie de \textbf{70\%} pour une équipe de 5 personnes.}
+      \resumeItem{Documentation des procédures techniques et recueil des besoins directement avec l'équipe métier.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd\vspace{-2pt}
+
+% ---------- TECHNICAL SKILLS ----------
+\section{Compétences Techniques}
+\begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
+\footnotesize{
+  \item \textbf{Langages:} JavaScript, TypeScript, Python, PHP, HTML, CSS.
+  \item \textbf{Front-End:} React.js, Next.js.
+  \item \textbf{Back-End:} Node.js, Express.js, NestJS.
+  \item \textbf{API \& Intégrations:} Conception \& consommation d'API REST, intégration d'API tierces et de paiement (Stripe, Twilio), JWT, SSL.
+  \item \textbf{Bases de Données:} PostgreSQL, MongoDB, SQL.
+  \item \textbf{Tests \& Qualité:} Tests avant déploiement (CI/CD), correction de bugs, documentation technique.
+  \item \textbf{Outils \& DevOps:} Git, GitHub, GitHub Actions (CI/CD), Docker, Linux, Postman.
+}
+\end{itemize}\vspace{-3pt}
+
+% ---------- PROJECTS ----------
+\section{Projets}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading{\textbf{Eventify --- Plateforme de Réservation d'Événements} $\quad$ --- $\quad$ \emph{\color{greytext}Node.js \textperiodcentered{} PostgreSQL \textperiodcentered{} React.js \textperiodcentered{} Flutter \textperiodcentered{} Stripe}}{}
+    \resumeProjectListStart
+      \resumeItem{Plateforme complète (web + mobile) avec tunnel de paiement sécurisé Stripe, vérification OTP via Twilio et authentification JWT.}
+    \resumeProjectListEnd
+
+  \resumeProjectHeading{\textbf{ApplyFlow --- Job Application Tracker \& Extension Chrome} $\quad$ --- $\quad$ \emph{\color{greytext}Next.js \textperiodcentered{} NestJS \textperiodcentered{} TypeScript \textperiodcentered{} MongoDB \textperiodcentered{} Stripe}}{}
+    \resumeProjectListStart
+      \resumeItem{Assistant de candidature avec suivi Kanban, gestion multi-CV et extension Chrome (MV3) de remplissage automatique des formulaires d'emploi.}
+    \resumeProjectListEnd
+
+  \resumeProjectHeading{\textbf{Universal Web Scraper} $\quad$ --- $\quad$ \emph{\color{greytext}Python \textperiodcentered{} BeautifulSoup \textperiodcentered{} Scrapy \textperiodcentered{} Selenium \textperiodcentered{} Pandas}}{}
+    \resumeProjectListStart
+      \resumeItem{Outil de collecte de données en Python détectant automatiquement les sites statiques et dynamiques, avec extraction et nettoyage automatisés.}
+    \resumeProjectListEnd
+
+\resumeSubHeadingListEnd\vspace{-3pt}
+
+% ---------- EDUCATION ----------
+\section{Formation}
+\resumeSubHeadingListStart
+  \resumeSubheading{Licence en Systèmes d'Information --- Mention Très Bien}{2022 -- 2025}{ESSAT Gabès}{Gabès, Tunisie}
+\resumeSubHeadingListEnd\vspace{-1pt}
+
+% ---------- LANGUAGES ----------
+\section{Langues}
+\begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
+\footnotesize{
+  \item Français (Professionnel) \textperiodcentered{} Anglais (Professionnel) \textperiodcentered{} Arabe (Langue maternelle)
+}
+\end{itemize}
+
+\end{document}
