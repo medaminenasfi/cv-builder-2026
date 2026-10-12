@@ -402,7 +402,7 @@ def main():
     parser = argparse.ArgumentParser(description="Generate LaTeX and PDF CV from JSON data.")
     parser.add_argument("--input", "-i", default="data/cv_master.json", help="Path to input JSON file")
     parser.add_argument("--output", "-o", default=None, help="Name of output .tex file (saved into output/)")
-    parser.add_argument("--track", "-t", default="it_support", choices=["it_support", "fullstack"], help="Profile track to render")
+    parser.add_argument("--track", "-t", default="it_support", choices=["it_support", "fullstack", "tailored"], help="Profile track to render")
     parser.add_argument("--lang", "-l", default="fr", choices=["fr", "en"], help="Language: 'fr' or 'en'")
     parser.add_argument("--compile", "-c", action="store_true", default=True, help="Automatically compile to PDF")
     parser.add_argument("--outdir", default="output", help="Directory where results are stored")

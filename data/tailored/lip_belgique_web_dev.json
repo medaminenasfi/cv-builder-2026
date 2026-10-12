@@ -1,0 +1,119 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie (Mobile / Télétravail)",
+      "en": "Gabes, Tunisia (Remote / Relocation)"
+    },
+    "links": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/" },
+      { "name": "GitHub", "url": "https://github.com/medaminenasfi" },
+      { "name": "Portfolio", "url": "https://mohamedamine-portfolio.onrender.com" }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Développeur Web Full-Stack | React/Next.js | Node.js | Plateformes Web & Réservation",
+        "summary": "Développeur web diplômé d'une Licence en Systèmes d'Information (Bac +3, Mention Très Bien) avec une solide expérience de conception d'applications de réservation, tableaux de bord d'administration et tunnels de vente en ligne. Maîtrise avancée du front-end moderne (React.js, Next.js) et du back-end (Node.js, Express, PostgreSQL), complétée par l'intégration de paiements sécurisés (Stripe) et la gestion de versions Git. A développé 4 projets clients de bout en bout et conçu la plateforme de réservation Eventify (web et mobile). Rigoureux, force de proposition et parfaitement bilingue français/anglais.",
+        "skills": [
+          { "category": "Front-End & UI", "items": "React.js, Next.js, JavaScript (ES6+), TypeScript, Tailwind CSS, HTML5, CSS3." },
+          { "category": "Back-End & API", "items": "Node.js, Express.js, NestJS, architecture RESTful, intégration de webhooks." },
+          { "category": "Vente & Réservation", "items": "Tunnels de commande, passerelle de paiement sécurisée (Stripe), notifications automatisées, vérification OTP." },
+          { "category": "Outils & Versioning", "items": "Git, GitHub, GitHub Actions (CI/CD), Postman, Docker, Linux (VPS)." },
+          { "category": "Bases de Données", "items": "PostgreSQL, MongoDB, SQL (modélisation relationnelle et requêtes complexes)." }
+        ]
+      },
+      "experience_ids": ["exp_freelance_fullstack", "exp_pfe", "exp_gct"],
+      "project_ids": ["proj_eventify", "proj_realestate", "proj_applyflow"]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_freelance_fullstack",
+      "company": "Projets Clients Internationaux",
+      "fr": {
+        "title": "Développeur Web Full-Stack --- Indépendant",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Conception et développement de 4 applications web de bout en bout (React.js, Next.js, Node.js, Express.js, PostgreSQL), de l'analyse du besoin à la mise en ligne.",
+          "Développement d'interfaces d'administration et dashboards statistiques temps réel pour le suivi d'activité et la gestion de leads.",
+          "Intégration de tunnels de vente et paiements en ligne sécurisés (Stripe) et mise en place d'alertes automatisées.",
+          "Collaboration sous Git avec revues de code, tests automatisés et pipelines CI/CD avant chaque déploiement."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack --- Projet de Fin d'Études",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 -- Juin 2025",
+        "highlights": [
+          "Développement d'une plateforme web complète intégrant un module de réservation interactif, cartographie dynamique et authentification sécurisée JWT/SSL.",
+          "Travail en méthodologie Agile Scrum avec livraisons continues et présentations des fonctionnalités aux utilisateurs finaux."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Développeur Web --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Création d'un outil web d'automatisation des flux de données (PHP, SQL) réduisant le temps de traitement de **70%** pour une équipe opérationnelle.",
+          "Recueil des spécifications fonctionnelles auprès des utilisateurs et rédaction de la documentation technique associée."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_eventify",
+      "tech": "React.js · Node.js · PostgreSQL · Flutter · Stripe",
+      "fr": {
+        "title": "Eventify --- Plateforme Complète de Réservation en Ligne",
+        "description": "Système de billetterie et réservation avec catalogue d'événements, tunnel d'achat sécurisé Stripe, confirmation OTP Twilio et tableau de bord administrateur de gestion des ventes."
+      }
+    },
+    {
+      "id": "proj_realestate",
+      "tech": "Next.js · Node.js · PostgreSQL",
+      "fr": {
+        "title": "Plateforme d'Investissement & Tableau de Bord Admin",
+        "description": "Application web avec formulaires dynamiques d'onboarding, dashboard administratif de gestion de leads et reporting analytique."
+      }
+    },
+    {
+      "id": "proj_applyflow",
+      "tech": "Next.js · NestJS · TypeScript · MongoDB · Stripe",
+      "fr": {
+        "title": "ApplyFlow --- Assistant Web & Outil d'Automatisation",
+        "description": "Plateforme web de productivité avec tableau de bord Kanban, gestion de formulaires et modèle d'abonnement en ligne via Stripe."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information (Bac +3) --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      { "name": "Français", "level": "Courant / Professionnel" },
+      { "name": "Anglais", "level": "Professionnel" },
+      { "name": "Arabe", "level": "Langue maternelle" }
+    ]
+  }
+}
