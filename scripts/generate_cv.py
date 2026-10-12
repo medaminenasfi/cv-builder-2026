@@ -432,8 +432,8 @@ def main():
         track_suffix = "IT_Support" if args.track == "it_support" else "FullStack"
         tex_filename = f"Mohamed_Amine_Nasfi_CV_{track_suffix}_{lang_suffix}.tex"
 
-    # Each CV gets its own subfolder inside outdir (folder name = CV name)
-    cv_dir = outdir / Path(tex_filename).stem
+    # Type-first layout: output/cv/<CV-name>/ for CVs, output/cover_letter/<name>/ for letters
+    cv_dir = outdir / "cv" / Path(tex_filename).stem
     cv_dir.mkdir(parents=True, exist_ok=True)
     tex_path = cv_dir / tex_filename
 

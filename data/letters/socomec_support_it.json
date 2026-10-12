@@ -1,0 +1,29 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie",
+      "en": "Gabes, Tunisia"
+    }
+  },
+  "letters": {
+    "fr": {
+      "subtitle": "Technicien Support IT | Développeur Full-Stack | Licence en Systèmes d'Information",
+      "company": "Socomec Group",
+      "company_address": "ZI Chebedda, 1135 Ben Arous, Tunisie",
+      "place": "Gabès",
+      "objet": "Candidature au poste de Technicien support IT – Site de Ben Arous (offre n° 117)",
+      "salutation": "Madame, Monsieur,",
+      "paragraphs": [
+        "Votre offre parue sur LinkedIn décrit précisément le croisement qui fait mon profil : le support utilisateurs de niveau 1 et 2, que j'exerce actuellement en conditions réelles de proximité, et le développement d'applications avec bases de données, que j'ai pratiqué au sein d'un groupe industriel tunisien. Titulaire d'une Licence en Systèmes d'Information (mention Très Bien), je souhaite mettre cette double compétence au service de votre équipe IT de Ben Arous.",
+        "Le diagnostic de pannes matérielles et logicielles, le montage et la mise en service de postes de travail et l'installation de périphériques pour des utilisateurs non techniques font partie de mon quotidien de technicien support. J'ai également déployé de bout en bout un système de vidéosurveillance — câblage, adressage IP, configuration routeur et accès distant sécurisé — une expérience directement transposable à la gestion du parc et à la disponibilité des équipements qu'exige votre site. L'administration de serveurs Linux (VPS, Docker, Nginx) complète cette base opérationnelle ; les bonnes pratiques ITIL viendront formaliser un réflexe déjà acquis : tracer, documenter et clôturer chaque intervention dans les délais annoncés.",
+        "Par ailleurs, votre mission consistant à « développer et maintenir les applications et bases de données nécessaires aux projets IT du site » correspond à ma première expérience professionnelle : au Groupe Chimique Tunisien, j'ai conçu un outil web d'automatisation des flux (PHP, SQL) réduisant de 70 % le temps de traitement d'une équipe opérationnelle. Quatre applications clientes complètes (React/Next.js, Node.js, PostgreSQL) ont suivi. Cette casquette développement, rare sur un poste de support, devient précieuse dès qu'un projet local réclame un outil sur mesure.",
+        "Socomec, enfin, correspond à ce que je cherche : un groupe familial indépendant depuis 1922, dont les solutions équipent des infrastructures critiques — data centers, hôpitaux, industrie — où la disponibilité n'est pas négociable. Cette culture de la fiabilité est exactement celle que j'applique au support : la qualité de service se construit par la rigueur, la conformité et l'écoute des utilisateurs. L'implantation industrielle du groupe en Tunisie et son engagement pour la transition énergétique achèvent de convaincre.",
+        "Disponible pour un entretien à votre convenance sur le site de Ben Arous, je vous remercie de l'attention portée à ma candidature."
+      ],
+      "closing": "Dans l'attente de votre retour, je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées."
+    }
+  }
+}

@@ -34,19 +34,25 @@ The system maintains a single source of truth (SSOT) across dual career tracks, 
 ```text
 cv-builder/
 ├── data/
-│   └── cv_master.json                    # Bilingual master profile data (JSON SSOT)
+│   ├── cv_master.json                    # Bilingual master profile data (JSON SSOT)
+│   ├── tailored/                         # Per-posting tailored CV profiles
+│   └── letters/                          # Per-posting cover-letter content (JSON)
 ├── scripts/
-│   └── generate_cv.py                    # Python script that renders LaTeX and compiles PDF
+│   ├── generate_cv.py                    # Renders LaTeX CV and compiles PDF
+│   └── generate_cover_letter.py          # Renders LaTeX cover letter and compiles PDF
 ├── bin/
 │   └── tectonic.exe                      # Standalone, portable LaTeX-to-PDF compiler
-├── output/                               # Generated results — one folder per CV
-│   ├── Mohamed_Amine_Nasfi_CV_IT_Support_FR/
-│   │   ├── Mohamed_Amine_Nasfi_CV_IT_Support_FR.pdf
-│   │   └── Mohamed_Amine_Nasfi_CV_IT_Support_FR.tex
-│   ├── Mohamed_Amine_Nasfi_CV_FullStack_EN/
-│   │   ├── Mohamed_Amine_Nasfi_CV_FullStack_EN.pdf
-│   │   └── Mohamed_Amine_Nasfi_CV_FullStack_EN.tex
-│   └── ...                               # every build creates its own named folder
+├── output/                               # Type-first: cv/ and cover_letter/, one subfolder per job
+│   ├── cv/
+│   │   ├── Mohamed_Amine_Nasfi_CV_LIP_WebDev_FR/
+│   │   │   ├── Mohamed_Amine_Nasfi_CV_LIP_WebDev_FR.pdf
+│   │   │   └── Mohamed_Amine_Nasfi_CV_LIP_WebDev_FR.tex
+│   │   └── ...                           # every CV build creates its own named subfolder
+│   └── cover_letter/
+│       └── Socomec_Support_IT_FR/
+│           ├── cover_letter_fr.pdf
+│           ├── cover_letter_fr.tex
+│           └── lettre_motivation_fr.md   # plain-text paste-ready version
 ├── MASTER_PROFILE.md                     # Comprehensive human-readable master profile
 ├── .agents/skills/
 │   ├── cv-builder/                       # Harvard / Prospects / NCS career standards & templates
@@ -85,8 +91,19 @@ python scripts/generate_cv.py --track fullstack --lang en
 | `--track` | `-t` | `it_support` | Profile track (`it_support` or `fullstack`). |
 | `--lang` | `-l` | `fr` | Target language (`fr` for French, `en` for English). |
 | `--output` | `-o` | Auto-named | Custom filename (e.g. `My_Custom_CV.tex`). |
-| `--outdir` | | `output` | Target folder — each build creates its own subfolder named after the CV. |
+| `--outdir` | | `output` | Base folder — CVs land in `output/cv/<CV-name>/`, letters in `output/cover_letter/<name>/`. |
 | `--compile`| `-c` | `True` | Automatically runs Tectonic to build `.pdf`. |
+
+### 3. Generating a Cover Letter PDF (CLI)
+
+Cover-letter content lives in `data/letters/<name>.json` (objet, salutation, paragraphs, closing — see
+`data/letters/socomec_support_it.json` as the reference example):
+
+```powershell
+python scripts/generate_cover_letter.py --input data/letters/socomec_support_it.json --lang fr --name Socomec_Support_IT_FR
+```
+
+Outputs `output/cover_letter/<name>/cover_letter_<lang>.pdf` (+ `.tex`), letterhead matching the CV identity.
 
 ---
 
