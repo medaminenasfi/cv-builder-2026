@@ -18,9 +18,10 @@
 | **Portfolio** | [mohamedamine-portfolio.onrender.com](https://mohamedamine-portfolio.onrender.com) |
 | **Education** | **Licence en Systèmes d'Information (Bachelor in Information Systems)**<br>ESSAT Gabès (2022 – 2025) — **Mention Très Bien (Highest Honors)** |
 | **Languages** | • **Français** : Courant / Professionnel<br>• **English** : Professional Working Proficiency<br>• **العربية (Arabic)** : Native / Langue maternelle |
+| **Driving License** | **Permis B** — valid, regular driver (confirmed by candidate 2026-10-20) |
 
 ### Dual Target Career Tracks
-Mohamed Amine possesses a verified hybrid profile with two powerful specializations:
+Mohamed Amine possesses a verified hybrid profile with two powerful specializations (sales/customer-facing track opened 2026-10-20 as Track C — leverages client delivery, trilingual service and rental-domain projects):
 
 1. **Track A — Software Engineering / Full-Stack & DevOps**:
    - MERN stack (React, Node.js, Express, MongoDB) + Next.js, NestJS, TypeScript, PostgreSQL.

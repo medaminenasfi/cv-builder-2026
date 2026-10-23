@@ -1,0 +1,179 @@
+\documentclass[letterpaper,9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+  \usepackage{microtype}
+  \DisableLigatures[f]{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \defaultfontfeatures{Ligatures=NoCommon}
+\fi
+
+% Blue accent matching the Word version (#2563EB)
+\definecolor{accent}{HTML}{2563EB}
+\definecolor{navy}{HTML}{1F2937}
+\definecolor{greytext}{HTML}{555555}
+
+\hypersetup{
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent,
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+\raggedright
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+
+% Section titles — blue, matching Word headers
+\titleformat{\section}{
+  \vspace{-1pt}\color{accent}\scshape\raggedright\large
+}{}{0em}{}[\color{accent}\titlerule \vspace{-1pt}]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{\color{greytext}#2} \\
+    \textit{\small\color{greytext} #3} & \textit{\small\color{greytext} #4}
+  \end{tabular*}\vspace{-2pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & #2
+  \end{tabular*}\vspace{-1pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=2.5pt, parsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.24in, label={}, itemsep=0.9pt, topsep=1.2pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeProjectListStart}{\begin{itemize}[leftmargin=0.24in, label={}, itemsep=0.9pt, topsep=1.2pt, parsep=0pt]}
+\newcommand{\resumeProjectListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeLangHeading}[2]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2
+  \end{tabular*}\vspace{-1pt}
+}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+    \textbf{\Huge \scshape \color{navy} Mohamed Amine Nasfi} \\[3pt]
+    \small \textbf{\color{accent} Rental Sales Agent | Relation Client \& Vente | Trilingue FR / EN / AR | Permis B} \\[3pt]
+    \footnotesize \color{greytext}
+    +216 27 711 810 $\quad|\quad$
+    \href{mailto:medaminenasfy@gmail.com}{\underline{medaminenasfy@gmail.com}} $\quad|\quad$
+    Gabès, Tunisie — Mobile Grand Tunis \\[2pt]
+    \href{https://www.linkedin.com/in/mohamed-amine-nasfi/}{\underline{LinkedIn}} $\quad|\quad$ \href{https://github.com/medaminenasfi}{\underline{GitHub}} $\quad|\quad$ \href{https://mohamedamine-portfolio.onrender.com}{\underline{Portfolio}}
+\end{center}
+\vspace{-5pt}
+
+% ---------- SUMMARY ----------
+\section{Résumé}
+\begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=1.5pt, parsep=0pt]
+\item \footnotesize{Profil relation client trilingue (français, anglais, arabe) avec une expérience concrète d'accompagnement d'utilisateurs au quotidien et de gestion de la relation client internationale en freelance : accueil, identification des besoins, proposition de solutions, suivi et fidélisation de 4 clients étrangers de la première prise de contact au support après livraison. Connaît le métier de la location de l'intérieur pour avoir conçu deux systèmes dédiés : un ERP de gestion de locations (contrats, facturation, statistiques) et une plateforme de réservation en ligne avec paiements sécurisés (Stripe). Titulaire du Permis B avec une conduite régulière, disponible rapidement sur Tunis, y compris en planning rotatif avec week-ends.}
+\end{itemize}\vspace{-3pt}
+
+% ---------- EXPERIENCE ----------
+\section{Expérience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading{Technicien Support \& Relation Client --- Freelance}{Mai 2026 -- Présent}{Cabinet d'Orthodontie Dr Meriem Nasfi}{Gabès, Tunisie}
+    \resumeItemListStart
+      \resumeItem{Accueil et accompagnement quotidien d'utilisateurs non techniques : diagnostic des besoins, explications vulgarisées, mise en service de postes et de périphériques.}
+      \resumeItem{Traitement des demandes et incidents avec suivi documenté et disponibilité de proximité, garantissant la continuité d'activité du cabinet.}
+      \resumeItem{Installation complète d'un système de vidéosurveillance (câblage, adressage IP, routeur, accès distant sécurisé) de bout en bout.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Gestion de la Relation Client Internationale --- Freelance (Remote)}{Nov 2025 -- Présent}{Clients Internationaux}{Remote}
+    \resumeItemListStart
+      \resumeItem{Gestion de la relation client de bout en bout avec 4 clients internationaux : prise de besoins, proposition, livraison, support et fidélisation après vente.}
+      \resumeItem{Communication quotidienne en français et en anglais avec des interlocuteurs non techniques, par écrit et en visioconférence.}
+      \resumeItem{Facturation et encaissement de l'ensemble des prestations via des paiements en ligne sécurisés (Stripe), avec suivi administratif rigoureux.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Assistant Gestion de Données --- Stagiaire}{Juil 2024 -- Août 2024}{Groupe Chimique Tunisien (GCT)}{Gabès, Tunisie}
+    \resumeItemListStart
+      \resumeItem{Recueil des besoins auprès d'une équipe opérationnelle de 5 personnes et rédaction de la documentation d'utilisation.}
+      \resumeItem{Mise en place d'un outil réduisant de 70 \% le temps de saisie de l'équipe, accompagnement des utilisateurs lors de l'adoption.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd\vspace{-2pt}
+
+% ---------- TECHNICAL SKILLS ----------
+\section{Compétences Techniques}
+\begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
+\footnotesize{
+  \item \textbf{Relation Client \& Vente:} Accueil et accompagnement des clients, identification des besoins, proposition de services adaptés, traitement des demandes et réclamations, fidélisation.
+  \item \textbf{Langues:} Français (courant, professionnel), Anglais (professionnel), Arabe (langue maternelle) — accueil de clientèle nationale et internationale.
+  \item \textbf{Location \& Réservation:} Conception d'un ERP de gestion de locations (contrats, facturation, statistiques) et d'une plateforme de réservation en ligne (disponibilités, tunnel de paiement Stripe, confirmations OTP).
+  \item \textbf{Facturation \& Outils:} Paiements en ligne (Stripe), facturation automatisée, suivi de dossiers (Trello, GitHub Projects), installation de suites bureautiques, Postman, Git.
+  \item \textbf{Mobilité:} Permis B (conduite régulière), disponible sur Tunis et horaires décalés (planning rotatif, week-ends et jours fériés).
+}
+\end{itemize}\vspace{-3pt}
+
+% ---------- PROJECTS ----------
+\section{Projets}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading{\textbf{Rental Management System --- ERP de Location (Desktop)} $\quad$ --- $\quad$ \emph{\color{greytext}Python \textperiodcentered{} PyQt5 \textperiodcentered{} SQLite}}{}
+    \resumeProjectListStart
+      \resumeItem{Application de gestion des locations conçue de bout en bout : contrats de location, cycle de facturation automatisé, statistiques d'activité et sauvegardes — une connaissance opérationnelle du métier de la location.}
+    \resumeProjectListEnd
+
+  \resumeProjectHeading{\textbf{Eventify --- Plateforme de Réservation en Ligne} $\quad$ --- $\quad$ \emph{\color{greytext}React.js \textperiodcentered{} Node.js \textperiodcentered{} PostgreSQL \textperiodcentered{} Stripe \textperiodcentered{} Twilio}}{}
+    \resumeProjectListStart
+      \resumeItem{Système de réservation web et mobile : catalogue, disponibilités en temps réel, tunnel d'achat sécurisé (Stripe) et confirmations automatiques — la logique complète d'une activité de réservation.}
+    \resumeProjectListEnd
+
+\resumeSubHeadingListEnd\vspace{-3pt}
+
+% ---------- EDUCATION ----------
+\section{Formation}
+\resumeSubHeadingListStart
+  \resumeSubheading{Licence en Systèmes d'Information --- Mention Très Bien}{2022 -- 2025}{ESSAT Gabès}{Gabès, Tunisie}
+\resumeSubHeadingListEnd\vspace{-1pt}
+
+% ---------- LANGUAGES ----------
+\section{Langues}
+\begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
+\footnotesize{
+  \item Français (Courant / Professionnel) \textperiodcentered{} Anglais (Professionnel) \textperiodcentered{} Arabe (Langue maternelle)
+}
+\end{itemize}
+
+\end{document}
