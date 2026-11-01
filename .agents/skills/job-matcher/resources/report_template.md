@@ -5,10 +5,19 @@ Use this template structure when rendering assessment results:
 ```markdown
 # 🎯 Job Fit & Gap Assessment: [Target Job Title] at [Company]
 
+> Source: [Job URL / pasted description]
+> Assessment state: `[NEED_DETAILS | STOP_REACH | STOP_HARD_GAP | GO]`
+
+## 0. Instant Verdict
+
+🎯 **MATCH: [Score]% — [🟢 STRONG / 🟡 COMPETITIVE / 🔴 REACH]**
+🚦 **DECISION: [✅ GENERATE CV / ⛔ STOP — NO CV / ⛔ STOP — NEED MORE JOB DETAILS]**
+
 ## 1. Executive Summary & Verdict
 - **Overall Match Score**: **[Score]%** ([Tier: Strong Match (80%+) / Competitive Match (60-79%) / Reach (<60%)])
 - **Recommended Profile Track**: [Track A: Full-Stack / Track B: IT Support / Track C: Hybrid]
 - **Target Language**: [Français / English]
+- **Role / Company / Location**: [Detected values]
 - **Verdict**: [Clear 1–2 sentence strategic recommendation on whether and how to apply]
 
 ---
@@ -40,7 +49,15 @@ Use this template structure when rendering assessment results:
 
 ---
 
-## 5. LaTeX CV Adaptation Blueprint
+## 5. Gate Result
+
+- **State**: `[NEED_DETAILS | STOP_REACH | STOP_HARD_GAP | GO]`
+- **Generation rule**: Generate a CV only for `GO`.
+- **If stopped**: explain the blocker and do not create or modify any CV,
+  letter, tailored JSON, or application output.
+- **If approved**: display this report completely before starting generation.
+
+## 6. LaTeX CV Adaptation Blueprint
 - **Suggested Subtitle**: `[Role Title] | [Key Competency 1] | [Key Competency 2] | [Key Competency 3]`
 - **Summary Focus**: [Core focus of the 3–4 sentence Résumé / Profile block]
 - **Featured Projects**:
@@ -48,7 +65,6 @@ Use this template structure when rendering assessment results:
   2. **[Project Name 2]**: [Supporting evidence]
 - **Technical Skills Ordering**: [Top priority skills group to place first]
 
----
-
-*Ready to generate your tailored LaTeX CV? Just let me know to proceed!*
+The CV is generated only after the complete report is shown and only when the
+gate state is `GO`.
 ```

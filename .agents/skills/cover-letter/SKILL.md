@@ -3,8 +3,8 @@ name: cover-letter
 description: >-
   Generate a tailored cover letter (EN) or lettre de motivation (FR) for Mohamed Amine Nasfi from a job
   description, reusing the Master Profile and the tailored JSON already built for the CV. STRICT TRIGGER:
-  use this skill ONLY when the user explicitly asks for a cover letter / lettre de motivation / letter.
-  It is NEVER part of the default "build" pipeline — a job URL plus "build" produces the CV only.
+  use this skill when the user explicitly asks for a cover letter / lettre de motivation / letter, or
+  asks to apply to a TanitJobs offer. TanitJobs applications automatically include a short cover letter.
 ---
 
 # Cover Letter Generator Skill
@@ -13,11 +13,40 @@ Produces a one-page, JD-targeted cover letter in the same language as the job po
 the candidate's verified profile ([MASTER_PROFILE.md](file:///c:/Users/Medam/Desktop/cv%20builder/MASTER_PROFILE.md))
 and the honest-gap rules of the `job-matcher` skill.
 
+## Priority 0 — Match first, CV second
+
+The job-match assessment must always be shown before any application output.
+This rule applies even when this skill is triggered directly by a TanitJobs
+request:
+
+1. Read and analyze the complete job offer.
+2. Display the Job Match assessment, including the score and hard gaps.
+3. Apply the generation gate.
+4. Only when the score is at least 60% and no hard disqualifier exists, write
+   the tailored CV.
+5. Only after the CV is successfully generated, provide the TanitJobs letter
+   as paste-ready plain text.
+
+If the score is below 60% or a hard disqualifier exists, stop after the match
+assessment. Do not write a CV, cover letter, tailored JSON, or application
+file. Never use this skill to bypass a failed match by selecting a generic or
+adjacent profile.
+
 ## 0. Trigger Rule (critical)
 
-- **Auto-trigger: NO.** The `cv-orchestrator` pipeline (job URL → score → CV PDF) runs **without** this skill.
-- **Trigger only on explicit request**: "cover letter", "lettre de motivation", "write a letter", "motivation letter".
-- If the user sends a job URL with no mention of a letter, do not offer one unprompted more than once.
+- **TanitJobs application: YES.** When the user asks to apply to a TanitJobs
+  offer, run this skill after the match assessment and CV build, even if the
+  user does not separately say "cover letter".
+- **Other sources: explicit request only.** Trigger on "cover letter",
+  "lettre de motivation", "write a letter", or "motivation letter".
+- A normal job URL with a request to build a CV does not trigger a letter
+  unless it is from TanitJobs or the user explicitly requests one.
+- For TanitJobs applications, use a short format of approximately 100–180
+  words in 3 concise paragraphs. Return only the finished letter body as
+  plain text, ready to paste directly into the TanitJobs application form.
+  Do not add a preface, explanation, notes, Markdown code fences, or
+  placeholders. Do not generate a PDF, LaTeX, Markdown file, or letter JSON
+  for this automatic TanitJobs letter.
 
 ## 1. Method — distilled from the 5 source guides
 
@@ -35,7 +64,7 @@ Sources and what each contributed (see [source_guides.md](references/source_guid
 
 ```
 ┌────────────────────────────────────────────┐
-│ 1. Explicit trigger confirmed?             │  (No letter unless the user asked)
+│ 1. Trigger confirmed?                      │  (Explicit request or TanitJobs application)
 └───────────────┬────────────────────────────┘
                 ▼
 ┌────────────────────────────────────────────┐
@@ -57,7 +86,7 @@ Sources and what each contributed (see [source_guides.md](references/source_guid
 └───────────────┬────────────────────────────┘
                 ▼
 ┌────────────────────────────────────────────┐
-│ 6. QA checklist (§5) → deliver PDF + .md   │  output/cover_letter/<App-name>/
+│ 6. QA checklist (§5) → deliver text        │  only the paste-ready letter
 └────────────────────────────────────────────┘
 ```
 
@@ -75,21 +104,21 @@ Sources and what each contributed (see [source_guides.md](references/source_guid
 4. **Why this company + close** — one values-driven reason + one industry/topical reason, then a direct CTA
    (availability, interview request). Thank the reader.
 
-### French — lettre de motivation (250–350 words)
+### French — TanitJobs short lettre de motivation (100–180 words)
 
-1. **En-tête + Objet** — `Objet : Candidature au poste de [titre] – [référence si indiquée]`
+1. **Objet** — `Objet : Candidature au poste de [titre] – [référence si indiquée]`
 2. **`Madame, Monsieur,`** (default; use a name only if verified)
-3. **Accroche** — poste visé, où l'offre a été trouvée, une phrase d'accroche avec un chiffre.
-4. **Corps 1 — adéquation poste/profil** — les 2 exigences clés du JD prouvées par des réalisations chiffrées,
+3. **Accroche** — poste visé et une phrase d'accroche avec un chiffre.
+4. **Corps** — les 2 exigences clés du JD prouvées par des réalisations chiffrées,
    vocabulaire de l'annonce. Varier les débuts de phrases (pas de « Je … » systématique).
-5. **Corps 2 — pour cette entreprise** — 1 valeur + 1 fait récent/sectoriel ; montrer que la candidature est ciblée.
-6. **Conclusion + formule de politesse** — demande d'entretien + disponibilité, puis :
+5. **Conclusion** — intérêt ciblé, demande d'entretien et disponibilité, puis :
    `Dans l'attente de votre retour, je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.`
-7. Signature : prénom + nom.
+6. Signature : prénom + nom.
 
 ## 4. Hard Rules (from all sources)
 
-- **One page, ~250–400 words.** Every sentence earns its place: "half the words, twice the examples."
+- **Length:** standard letters are one page and ~250–400 words; TanitJobs
+  letters are intentionally shorter at ~100–180 words.
 - **Never reuse a letter.** Fresh draft per posting; 5 tailored letters beat 50 generic ones.
 - **Speak the employer's language**: reuse the JD's exact terms (also helps ATS keyword match).
 - **Don't restate the CV** — add the *why* behind the facts, context the CV can't carry.
@@ -104,25 +133,36 @@ Sources and what each contributed (see [source_guides.md](references/source_guid
 
 ## 5. QA Checklist (all must pass before delivery)
 
-- [ ] ≤ 1 page / ≤ ~400 words
+- [ ] ≤ 1 page / ≤ ~400 words; TanitJobs target is 100–180 words
 - [ ] Role title + company named correctly (copy-paste check against the JD)
 - [ ] Top 2 JD requirements each matched with a verified, numbered proof
 - [ ] At least one company-specific sentence (values/product/news) — no generic praise
 - [ ] Zero clichés; sentence openings varied; active voice
 - [ ] No invented skills, dates, or metrics; consistent with the tailored JSON used for the CV
 - [ ] Language matches the posting; FR formule de politesse present if French
-- [ ] Deliverables in `output/cover_letter/<App-name>/`: `cover_letter_<lang>.pdf` (LaTeX, letterhead matches
-      the CV identity), the `.tex`, and a paste-ready `.md` for portal text boxes
-- [ ] Letter content JSON saved in `data/letters/<app-name>.json` (SSOT for regeneration)
+- [ ] For a TanitJobs application: deliver only the short letter as direct
+      paste-ready text; do not add commentary or code fences, and do not
+      create PDF, LaTeX, Markdown, or letter JSON files
+- [ ] For an explicit non-TanitJobs letter request: deliver
+      `cover_letter_<lang>.pdf`, the `.tex`, and a paste-ready `.md` in
+      `output/cover_letter/<App-name>/`
+- [ ] For an explicit non-TanitJobs request, letter content JSON is saved in
+      `data/letters/<app-name>.json` (SSOT for regeneration)
 
 ## 6. Deliverable
 
-1. **PDF letter** (default, like the CV): write the content JSON to `data/letters/<app-name>.json`, then run
+1. **Explicit non-TanitJobs request — PDF letter** (default, like the CV):
+   write the content JSON to `data/letters/<app-name>.json`, then run
    `python scripts/generate_cover_letter.py --input data/letters/<app-name>.json --lang <lang> --name <App-name>`
    → `output/cover_letter/<App-name>/cover_letter_<lang>.pdf`. The LaTeX letterhead reuses the CV identity
    (navy name, #2563EB accent, grey contact line) so CV + letter form one visual package.
-2. **Paste-ready `.md`** of the same text in the same `cover_letter/<App-name>/` folder (portals with text boxes).
+2. **TanitJobs application — text only**: return the short letter directly in
+   the response for copy/paste into the application form. Do not write a PDF,
+   LaTeX file, Markdown file, or content JSON.
 3. A 2–3 bullet note on the positioning choices made (top matches used, objection addressed) — nothing longer.
 
-Type-first output layout: `output/cv/<App-name>/` (CV .tex+.pdf) + `output/cover_letter/<App-name>/`
-(letter .tex+.pdf+.md). `generate_cv.py` writes into `cv/`, `generate_cover_letter.py` into `cover_letter/`.
+Type-first output layout for explicit non-TanitJobs letters:
+`output/cv/<App-name>/` (CV .tex+.pdf) +
+`output/cover_letter/<App-name>/` (letter .tex+.pdf+.md).
+`generate_cv.py` writes into `cv/`, and `generate_cover_letter.py` writes
+into `cover_letter/`.

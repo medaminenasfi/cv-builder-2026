@@ -14,7 +14,7 @@ venv/
 *.synctex.gz
 
 # Generated application packs (rebuild with scripts/generate_cv.py)
-output/
+#output/
 
 # Machine-local TeX binaries / symlinks (use PATH or --tex-engine)
 bin/tectonic

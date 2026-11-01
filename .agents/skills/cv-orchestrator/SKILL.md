@@ -11,6 +11,21 @@ This skill orchestrates the end-to-end automation pipeline that converts structu
 
 ---
 
+## Priority 0 — Match gate before generation
+
+The match assessment is the N1 rule. It must run and be shown before any CV
+or cover-letter work. Do not select a fallback profile, create tailored data,
+call `generate_cv.py`, or create application files until the gate decision is
+complete.
+
+- **Below 60% or hard disqualifier:** stop after the match report. Generate no
+  CV, no cover letter, and no application output.
+- **60% or higher with no hard disqualifier:** continue with tailored CV
+  generation; for TanitJobs applications, provide the short text letter.
+
+The score is a stop/go decision, not just explanatory context. Never use a
+generic or adjacent profile to bypass a failed gate.
+
 ## 1. System Architecture
 
 ```
@@ -71,6 +86,40 @@ When the user asks to generate or adapt a CV:
      * `fullstack`: Software Engineering / Full-Stack Web / DevOps
      * `custom`: Tailored hybrid configuration.
 
+### Mandatory User-Facing Order
+The job-match assessment must always be shown to the user **before** any CV generation starts.
+
+For every job URL, pasted job description, or job offer:
+1. Ingest the URL or pasted text. If a URL cannot be read or the description is incomplete, stop with `NEED_DETAILS` and ask the user to paste the job description.
+2. Display the match report with the score icon, recommended track, direct matches, transferable matches, hard gaps, and logistical risks.
+3. Apply the generation gate: generate a CV only for a score of **60% or
+   higher** and no hard disqualifier. For a Tier 3 / score below 60% or a
+   hard disqualifier, stop after the match report and do not generate a CV or
+   cover letter.
+4. If the gate passes, show the complete report first, then tailor the profile and generate the CV.
+5. In the final response, include the match summary, decision icon, generated CV path, language, and verified page count.
+
+Do not silently perform the match analysis in the background or report only the finished PDF. If the job description is incomplete or inaccessible, state that limitation and ask for the missing job details before tailoring. If the match is Tier 3 or contains a hard disqualifier, show the assessment and stop rather than hiding the risk, generating a generic CV, or claiming a strong match.
+
+### Required match verdict format
+
+Start every completed match response with:
+
+```text
+🎯 MATCH: [score]% — [🟢 STRONG / 🟡 COMPETITIVE / 🔴 REACH]
+🚦 DECISION: [✅ GENERATE CV / ⛔ STOP — NO CV]
+```
+
+For an inaccessible or incomplete offer, use:
+
+```text
+🎯 MATCH: N/A — ⚪ NEED DETAILS
+🚦 DECISION: ⛔ STOP — PASTE THE JOB DESCRIPTION
+```
+
+Do not call `generate_cv.py`, create a tailored JSON file, or create a cover
+letter before the decision is `✅ GENERATE CV`.
+
 ### Step 2: Tailor Experience to the JD (honest match only)
 **Never invent employers, tools, dates, metrics, or certifications.** Source of truth: `MASTER_PROFILE.md` + `data/cv_master.json`.
 
@@ -111,4 +160,11 @@ Compilation **fails** if the PDF is not exactly **1 page** (use `--allow-multipa
 1. Report the PDF path under `output/cv/<name>/` and confirm 1-page + language.
 2. Briefly list which experiences were selected and why they match the JD (honest mapping).
 3. Mention hard gaps for interview prep — do not paper over them on the CV.
-4. Cover letter only if the user explicitly asks.
+4. If the generation gate passes and the user asks to apply to a TanitJobs
+   offer, also generate a short,
+   targeted cover letter automatically as plain text for direct pasting into
+   the TanitJobs application form. Keep it concise (normally 3 short
+   paragraphs / approximately 150–250 words), use the job's language, and do
+   not generate a cover-letter PDF or LaTeX file.
+5. For a normal CV build from another source, generate a cover letter only
+   when explicitly requested.

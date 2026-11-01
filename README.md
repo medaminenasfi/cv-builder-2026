@@ -31,7 +31,7 @@ The system maintains a single source of truth (SSOT) across dual career tracks, 
   * `cv-builder`: Industry standards from **Prospects UK**, **National Careers Service**, and **Harvard FAS**.
   * `job-matcher`: 4-dimension weighted compatibility scoring (0–100%), gap matrix, honest-gap rules.
   * `cv-orchestrator`: End-to-end pipeline automation (URL → score → CV PDF).
-  * `cover-letter`: JD-targeted letter generation (EN + FR lettre de motivation) — **explicit request only**.
+  * `cover-letter`: JD-targeted letter generation (EN + FR lettre de motivation); automatically included for TanitJobs applications, otherwise explicit request only.
 
 ---
 
@@ -210,13 +210,43 @@ Whenever you provide a **job posting URL**:
 └────────────────────────────────────────────────────────┘
 ```
 
-**Cover letters are a separate, explicit step** — they are never auto-generated with a CV build. Ask for
-"cover letter" / "lettre de motivation" and the `cover-letter` skill runs:
+For every job URL or pasted job description, the **Job Fit & Gap Assessment is
+shown first**. The response starts with a visible verdict:
+
+```text
+🎯 MATCH: 78% — 🟡 COMPETITIVE
+🚦 DECISION: ✅ GENERATE CV
+```
+
+The assessment includes the source, detected role/language/location, weighted
+score, 🟢 direct matches, 🟡 transferable matches, 🔴 hard gaps, and 🟠
+logistical risks. Scores below 60%, hard disqualifiers, inaccessible URLs, or
+incomplete descriptions stop the pipeline. In those cases, no CV, letter,
+tailored JSON, or application output is created. For an inaccessible URL, paste
+the full job description to continue.
+
+Only a `✅ GENERATE CV` decision permits profile tailoring and PDF generation.
+The final response repeats the score and decision, selected track and
+experiences, hard gaps, PDF path, language, and verified one-page result.
+
+This match gate is the **N1 workflow rule**: no fallback profile, generic CV,
+or transferable-skills CV may bypass it.
+
+**Cover letters are normally a separate, explicit step.** The exception is a
+TanitJobs application: when the user asks to apply to a TanitJobs offer, the
+workflow automatically creates a short, targeted letter after the match
+assessment and CV build. For other sources, ask for "cover letter" /
+"lettre de motivation" and the `cover-letter` skill runs:
 
 ```
 JD + tailored profile → match table (top 2-3) → company research (1 value + 1 topical)
 → data/letters/<job>.json → generate_cover_letter.py → output/cover_letter/<name>/
 ```
+
+TanitJobs letters use the same flow but are intentionally concise (about
+150–250 words / three short paragraphs). They are returned directly as
+paste-ready text only; no cover-letter PDF or LaTeX file is generated for
+this automatic TanitJobs letter.
 
 ---
 

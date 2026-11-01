@@ -14,6 +14,62 @@ It calculates quantitative fit metrics, categorizes skill overlaps, flags potent
 
 ---
 
+## Priority 0 — Mandatory stop/go gate
+
+This is the highest-priority rule in the CV workflow. Fetch and analyze the
+offer, show the complete match assessment, calculate the score, and identify
+hard disqualifiers before selecting a profile, writing tailored data, calling
+`generate_cv.py`, or preparing a cover letter.
+
+- **Below 60% or hard disqualifier:** stop after the match report. Generate no
+  CV, no cover letter, and no application files.
+- **60% or higher with no hard disqualifier:** continue with tailored CV
+  generation and, for TanitJobs, the short text letter.
+
+Never use a generic, frontend, support, or transferable-skills CV to bypass a
+failed gate. Adjacent skills must not be presented as direct qualifications.
+
+## Priority 0.1 — Input and response contract
+
+The workflow accepts either:
+
+1. a job URL; or
+2. pasted job-description text.
+
+For a URL, inspect the accessible page and use the page content as the JD
+source. If the page is blocked, incomplete, expired, or does not contain
+enough information to identify the role and its requirements, do **not**
+estimate a score and do **not** generate a CV. State the limitation and ask
+the user to paste the full job description or provide another accessible URL.
+
+Every successful assessment must begin with this compact verdict line:
+
+```text
+🎯 MATCH: [score]% — [🟢 STRONG / 🟡 COMPETITIVE / 🔴 REACH]
+🚦 DECISION: [✅ GENERATE CV / ⛔ STOP — NO CV]
+```
+
+Use these score indicators consistently:
+
+- **🟢 Strong Match**: 80–100%
+- **🟡 Competitive Match**: 60–79%
+- **🔴 Reach / High-Gap**: 0–59%
+- **⛔ Hard disqualifier**: stop regardless of score
+
+The detailed report must then contain, in this order:
+
+1. detected role, company, language, location, and source;
+2. weighted score breakdown;
+3. 🟢 direct matches;
+4. 🟡 transferable matches;
+5. 🔴 hard gaps;
+6. 🟠 logistical risks or unknowns;
+7. the gate decision and, only when approved, the CV generation plan.
+
+Never report a score without evidence from the JD and the verified profile.
+Never silently continue after a failed gate. If the score is unavailable, the
+decision is **⛔ STOP — NEED MORE JOB DETAILS**, not a guessed score.
+
 ## 1. Assessment Philosophy & Objectives
 
 1. **Objectivity First**: Never give false confidence or inflate match percentages. If a required qualification is absent, flag it clearly.
@@ -42,7 +98,30 @@ $$\text{Match Score} = (H \times 0.40) + (E \times 0.25) + (T \times 0.20) + (L 
 ### Match Tier Classifications:
 - **$\ge 80\%$ — Strong Match (Tier 1)**: High probability of securing an interview. Direct alignment with core requirements. Focus on precision keyword targeting.
 - **$60\% - 79\%$ — Competitive Match (Tier 2)**: Viable candidate with 1–2 minor gaps. Strategy focuses on spotlighting transferable achievements and adjacent tooling.
-- **$< 60\%$ — Reach / High-Gap (Tier 3)**: Major divergence from core criteria (e.g., requires senior 7+ years or unrelated technologies like Java Spring or Embedded C). Advise candidate clearly.
+- **$< 60\%$ — Reach / High-Gap (Tier 3)**: Major divergence from core criteria (e.g., requires senior 7+ years or unrelated technologies like Java Spring or Embedded C). Show the assessment, advise the candidate, and **do not generate a CV or cover letter**.
+
+### Mandatory generation gate
+
+After calculating the score, stop the application pipeline when the score is
+below 60% or when a hard disqualifier is present. The result is the match
+assessment only. Generate a tailored CV, and for TanitJobs a short text
+cover letter, only when the score is at least 60% and no hard disqualifier is
+identified.
+
+### Mandatory output states
+
+Use exactly one of these states after the assessment:
+
+| State | Condition | Allowed next action |
+| :--- | :--- | :--- |
+| `NEED_DETAILS` | URL inaccessible or JD incomplete | Ask for pasted JD; generate nothing |
+| `STOP_REACH` | Score below 60% | Give match report and preparation advice; generate nothing |
+| `STOP_HARD_GAP` | Hard disqualifier present | Give match report and explain the blocker; generate nothing |
+| `GO` | Score at least 60% and no hard disqualifier | Tailor and generate the CV |
+
+When state is `GO`, show the complete match report **before** invoking the CV
+generator. The final response must repeat the score, selected track, selected
+experiences, hard gaps, PDF path, language, and one-page verification result.
 
 ---
 
@@ -155,7 +234,8 @@ When presenting the evaluation to the user, strictly follow this layout:
 
 ## 5. Seamless Transition to LaTeX CV Generation
 
-Immediately after outputting the assessment report, prompt the user:
-> *"Would you like me to generate your tailored single-page LaTeX CV for this position based on this blueprint?"*
-
-If the user approves, proceed directly to tailoring [latex_cv_template.tex](file:///c:/Users/Medam/Desktop/cv%20builder/.agents/skills/cv-builder/resources/templates/latex_cv_template.tex) and outputting the compile-ready code.
+When the gate state is `GO`, proceed directly after displaying the complete
+assessment report to tailor [latex_cv_template.tex](file:///c:/Users/Medam/Desktop/cv%20builder/.agents/skills/cv-builder/resources/templates/latex_cv_template.tex)
+and generate the verified single-page CV. Do not ask for a second approval.
+When the state is `NEED_DETAILS`, `STOP_REACH`, or `STOP_HARD_GAP`, stop and
+generate nothing.
