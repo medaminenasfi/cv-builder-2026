@@ -10,7 +10,8 @@
 | Field | Details |
 | :--- | :--- |
 | **Full Name** | Mohamed Amine Nasfi |
-| **Location** | Gabès, Tunisia |
+| **Location** | Gabès, Tunisia — **mobilité nationale confirmée** (2026-10-16): accepte un poste sur site partout en Tunisie. CV header wording: **"Gabès, Tunisie — mobilité nationale"** (2026-10-19: **do not write "prêt à s'installer à Tunis"** or name any target city — he stays flexible and the city changes per offer). Add "(Permis B)" only when the JD requires client-site travel. |
+| **Driving licence** | **Permis B confirmed (2026-10-19)** — holds the licence but **owns no vehicle**, so "permis B" is writable and "véhiculé" is not. Use only where a JD asks for client-site travel. |
 | **Phone** | +216 27 711 810 |
 | **Email** | medaminenasfy@gmail.com |
 | **LinkedIn** | [linkedin.com/in/mohamed-amine-nasfi](https://www.linkedin.com/in/mohamed-amine-nasfi/) |
@@ -39,12 +40,12 @@ Mohamed Amine possesses a verified hybrid profile with two powerful specializati
 ### Experience 1: Freelance IT Support Technician
 - **Organization**: Cabinet d'Orthodontie Dr Meriem Nasfi
 - **Location**: Gabès, Tunisie
-- **Dates**: Mai 2026 – Présent (Freelance / On-site)
+- **Dates**: Mai 2026 – **Septembre 2026** (Freelance / On-site — **mission terminée**, corrected 2026-10-19; every earlier CV wrongly said "Présent")
 - **Role Focus**: Proximity Support, Hardware Diagnostics, CCTV & Network Deployment
 
 **Bullet Points (STAR / Harvard Impact)**:
 - **French**:
-  * *Maintenance postes & diagnostic* : Assuré la maintenance préventive et corrective de 10+ postes de travail Windows ; diagnostiqué et résolu les pannes matérielles/logicielles sous des délais stricts (< 2h).
+  * *Maintenance postes & diagnostic* : Assuré la maintenance préventive et corrective de postes de travail Windows ; diagnostiqué et résolu les pannes matérielles/logicielles sous des délais stricts (< 2h).
   * *Mise en service & support utilisateurs* : Réalisé le montage, le masterisage et la mise en service de nouveaux équipements informatiques, assurant l'assistance et la formation de personnel médical non-technique.
   * *Vidéosurveillance & Réseau IP* : Conçu et déployé de bout en bout une infrastructure de vidéosurveillance (caméras IP) : tirage et raccordement de câblage Ethernet, plan d'adressage IP local, configuration du routeur/pare-feu et sécurisation de l'accès distant via VPN/SSL.
 - **English**:
@@ -158,10 +159,12 @@ Mohamed Amine possesses a verified hybrid profile with two powerful specializati
 - **Mobile & Desktop**: Flutter (Android/iOS), PyQt5 (Python Windows desktop).
 
 ### IT Support, Systems & Networking
-- **Hardware & Workstation**: Assembly/Montage PC, hardware diagnostic, component replacement (RAM, SSD, PSU, GPU), peripherals (printers, scanners).
+- **Hardware & Workstation**: Assembly/Montage PC, hardware diagnostic, component replacement (RAM, SSD, PSU, GPU), peripherals (printers, scanners). **POS / cash-register peripherals never handled** (no caisse enregistreuse, tirelire, douchette code-barres, ticket printer or payment-terminal setup, confirmed 2026-10-19) — those words stay off CVs.
 - **Operating Systems**: Windows 10/11 (installation, active troubleshooting, registry, drivers), Linux (Ubuntu, Debian, command line, bash).
-- **Networking**: IP subnetting (IPv4), DHCP/DNS configuration, router/switch port forwarding, Wi-Fi security, structured Ethernet cabling (RJ45 crimping/testing).
-- **Physical Security / CCTV**: IP Cameras, NVR/DVR setup, remote stream configuration, surveillance power & cable routing.
+- **Networking**: IP subnetting (IPv4), DHCP/DNS configuration, router & managed switch configuration (VLAN), router/switch port forwarding, Wi-Fi security, structured Ethernet cabling (RJ45 crimping/testing). **Vendor brands NOT confirmed** (2026-10-16: candidate cannot name any Cisco / HP-Aruba / Ubiquiti / Fortinet device he has configured) — write "routeurs et switchs managés" generically, never a brand or CLI claim.
+- **Directory services**: **Active Directory has never been used** (no professional, internship, coursework or home-lab exposure, confirmed 2026-10-16). Do not list AD, GPO, OU, or "gestion de comptes et droits dans un annuaire" on any CV. Local Windows accounts only.
+- **Monitoring**: **No network supervision tool ever used** (no Nagios, Zabbix, PRTG, or UniFi controller; confirmed 2026-10-16). Admissible wording only: "suivi actif des logs et de la disponibilité des services" on his Linux VPS.
+- **Physical Security / CCTV**: IP Cameras, remote stream configuration, surveillance power & cable routing. **DVR/NVR recorder hands-on configuration is NOT confirmed** (candidate does not recall touching the recorder itself, 2026-10-16) — do not claim DVR or NVR on a CV until he verifies it.
 - **User Support**: Level 1 & 2 Helpdesk, ticketing workflows, incident resolution under SLA, end-user remote assistance (AnyDesk, TeamViewer), technical documentation.
 
 ### DevOps & Cloud Infrastructure
@@ -169,6 +172,32 @@ Mohamed Amine possesses a verified hybrid profile with two powerful specializati
 - **Web Servers**: Nginx (Reverse Proxy, Load Balancing, SSL/TLS Let's Encrypt).
 - **Hosting & Cloud**: Linux VPS (OVH, Contabo, DigitalOcean), Render, Vercel.
 - **CI/CD & Tools**: GitHub Actions, Git, GitHub, Postman, Linux Bash.
+- **Office & Collaboration (end-user only)**: Microsoft 365 — Outlook mail, Teams meetings/chat, OneDrive/SharePoint file sharing. Confirmed by the candidate on 2026-10-15 as *personal/professional use as an end user* (contact with the PFE supervisor, remote client communication). **Never claim administration** of these services (no Entra ID, Intune, Exchange Online, MFA policy, or account/permission management evidence exists).
+
+### AI-Assisted Development (confirmed 2026-10-16)
+- **Tools actually used for coding work: Claude, Cursor, GitHub Copilot.** Admissible wording: "outils d'IA générative pour le code (Claude, Cursor, GitHub Copilot) — génération, refactoring, débogage et revue".
+- **Not confirmed, do not claim**: the **Claude Code** CLI and **OpenAI Codex** agents specifically (he names "Claude", the assistant/chat product, not the terminal agent). Also no fine-tuning, no LLM deployment, no RAG/MLOps engineering evidence — the "Machine Learning with Python" freeCodeCamp certificate stays a training line, never an ML engineer claim.
+
+### Certifications, Training & Language Tests
+
+Verified from his live portfolio (https://mohamedamine-portfolio.onrender.com, read 2026-10-15) plus the candidate's own list the same day:
+
+- **French language test: TCF TP — B2 level.** Material for France applications and for any role requiring proof of French; it was absent from this profile until 2026-10-15.
+- **Web Development (HTML, CSS, JavaScript)** — Coursera.
+- **React Basics** — Coursera.
+- **UI/UX Design** — Coursera.
+- **Introduction to Java** — Coursera. *Training only: no Java project exists, so this never becomes a "Java developer" claim.*
+- **Machine Learning with Python** — freeCodeCamp (candidate-reported; not shown on the portfolio).
+- **Soft Skills** — We Youth Organization.
+- **Google Developer Groups — DevFest** training/event.
+
+### External Professional Evidence (2026-10-15)
+
+- **Portfolio**: https://mohamedamine-portfolio.onrender.com — live, English-first, self-labelled "Flutter Developer / MERN full-stack". Shows **16 featured projects** (11 web, 4 mobile, 1 desktop), which is far more than the 8 recorded in section 3 and the 5 present in `data/cv_master.json`.
+- **Named freelance clients with dates** (from the portfolio's experience timeline): **Syndik** property-management landing page (02/2026, remote), **Club Rendement+** real-estate investment platform (11/2025 → present, remote), **AIS / Advanced Implant Services**, exclusive OSSTEM implant representative in Tunisia (12/2025, remote).
+- **Upwork profile**: https://www.upwork.com/freelancers/~017cad0a2a355873b2 — platform freelance status, which is what makes remote B2B work plausible without a Tunisian *patente*. A **Tunisian business registration remains unconfirmed**.
+- **GitHub**: https://github.com/medaminenasfi — **37 public repositories**, verified 2026-10-15. Client and personal work is therefore *publicly reviewable*, not private. Mobile/Flutter evidence in particular: `budget` (Dart), `Smart-buudgeet-manager` (Dart), `portefeuille-numerique` (Flutter digital wallet + monthly budget simulator), `BMI-Calculator` (Flutter). Other identifiable repos: `job-tracker` + `Apply-Tracker-Autofill` (ApplyFlow), `event-book` (Eventify), `desktop-rental-management-system` + `widget-desktop` (Python desktop), `web-scrap` + `bigdatis-scrapper-` (scraper), `Ecotourisme-frontend` (PFE), `E-commerce` / `Ecomerce-arabe`, `CarWash`, `Bricooo`, `marabouts`, `Traducode-app`, `ai-resume-builder`, `cv-builder` / `cv-builder-ai` / `cv-builder-2026`, three portfolio repos.
+- Portfolio issues found on 2026-10-15 (his site, not this repo): the counters render **"0+ CLIENTS / 0+ WEBSITES / 0% CLIENT SATISFACTION"**, the degree is labelled "Business **Intelligence**" instead of Business Information Systems, and the hosted "Download CV" PDF predates the CVs built here.
 
 ---
 

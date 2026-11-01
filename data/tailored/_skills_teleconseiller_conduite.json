@@ -1,0 +1,30 @@
+[
+  {
+    "category": "Traitement des demandes",
+    "items": "Réception et qualification des demandes des utilisateurs, diagnostic et résolution de pannes matérielles et logicielles sur site et à distance, compte rendu des interventions."
+  },
+  {
+    "category": "Saisie & Contrôle de données",
+    "items": "Saisie rigoureuse dans les applications métier, contrôle de cohérence des données ; a automatisé un flux de saisie (PHP, SQL) réduisant de 70 % le temps de traitement pour une équipe de 5 agents."
+  },
+  {
+    "category": "Procédures & Qualité",
+    "items": "Rédaction de modes opératoires, guides d'utilisation et documentations destinés à des utilisateurs non-techniciens."
+  },
+  {
+    "category": "Outils bureautiques",
+    "items": "Traitement de texte, tableur, messagerie électronique, gestion de fichiers et d'onglets de suivi sous Windows."
+  },
+  {
+    "category": "Télécoms & Réseaux (bases)",
+    "items": "Câblage réseau, adressage IP, configuration de routeur, mise en service d'équipements IP (vidéosurveillance)."
+  },
+  {
+    "category": "Communication",
+    "items": "Français professionnel écrit et oral, anglais professionnel, arabe natif ; accompagnement et formation des utilisateurs."
+  },
+  {
+    "category": "Suivi d'activité",
+    "items": "Statistiques et rapports d'activité, priorisation des interventions, respect des délais."
+  }
+]

@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Generated application packs (rebuild with scripts/generate_cv.py)
+output/
+
+# Machine-local TeX binaries / symlinks (use PATH or --tex-engine)
+bin/tectonic
+bin/tectonic.exe

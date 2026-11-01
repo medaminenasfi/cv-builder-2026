@@ -1,0 +1,230 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie",
+      "en": "Gabes, Tunisia"
+    },
+    "links": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/medaminenasfi"
+      },
+      {
+        "name": "Portfolio",
+        "url": "https://mohamedamine-portfolio.onrender.com"
+      }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Stage en Informatique | Développement Web · Systèmes & Réseaux · Support Utilisateurs",
+        "summary": "Diplômé en Systèmes d'Information (Licence, Mention Très Bien) en recherche de stage pour contribuer à des projets informatiques concrets. A livré 4 applications web de bout en bout en freelance (React.js, Node.js, PostgreSQL), mené un stage de développement et d'automatisation de données au Groupe Chimique Tunisien (temps de saisie réduit de **70%**), et assuré le support technique de proximité d'un cabinet : postes Windows, diagnostic de pannes, réseau et vidéosurveillance, avec accompagnement d'utilisateurs non-techniques. Habitué à documenter son travail (guides d'utilisation, procédures techniques) et à le transmettre. Intéressé par les nouvelles technologies (développement web, réseaux, intelligence artificielle) et par le domaine de la formation.",
+        "skills": [
+          {
+            "category": "Développement Web",
+            "items": "React.js, Next.js, Node.js, Express.js, JavaScript (ES6+), TypeScript, PHP, HTML5/CSS3, API REST."
+          },
+          {
+            "category": "Bases de Données",
+            "items": "PostgreSQL, MongoDB, MySQL, SQLite : modélisation, requêtes SQL, automatisation de flux de données."
+          },
+          {
+            "category": "Systèmes & Réseaux",
+            "items": "Windows 10/11 (installation, configuration, dépannage), Linux Ubuntu/Debian (ligne de commande), adressage IP, configuration routeur, Wi-Fi, accès distant sécurisé."
+          },
+          {
+            "category": "Support & Matériel",
+            "items": "Diagnostic de pannes matérielles/logicielles, montage et mise en service de postes, installation de logiciels et périphériques, assistance aux utilisateurs."
+          },
+          {
+            "category": "Infrastructure & Outils",
+            "items": "Docker, Nginx, serveurs VPS, Git/GitHub, CI/CD (GitHub Actions), Postman."
+          },
+          {
+            "category": "Documentation & Transmission",
+            "items": "Guides d'utilisation, procédures techniques, démonstrations et accompagnement d'utilisateurs non-techniques."
+          }
+        ]
+      },
+      "experience_ids": [
+        "exp_ortho",
+        "exp_freelance_web",
+        "exp_pfe",
+        "exp_gct"
+      ],
+      "project_ids": [
+        "proj_eventify",
+        "proj_scraper"
+      ]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_ortho",
+      "company": "Cabinet d'Orthodontie Dr Meriem Nasfi",
+      "fr": {
+        "title": "Technicien Support IT --- Freelance",
+        "location": "Gabès, Tunisie",
+        "dates": "Mai 2026 -- Septembre 2026",
+        "highlights": [
+          "Maintenance préventive et corrective de postes de travail sous Windows : diagnostic de pannes matérielles/logicielles, montage et mise en service, installation de logiciels et périphériques.",
+          "Installation et configuration complète d'un système de vidéosurveillance (caméras) : câblage des caméras, adressage IP et configuration du routeur pour un accès à distance sécurisé."
+        ]
+      },
+      "en": {
+        "title": "IT Support Technician --- Freelance",
+        "location": "Gabes, Tunisia",
+        "dates": "May 2026 -- September 2026",
+        "highlights": [
+          "Delivered proactive and corrective maintenance for Windows workstations: diagnosed hardware/software faults, assembled systems, and deployed peripherals for non-technical staff.",
+          "Engineered and deployed complete IP video surveillance infrastructure: ran Ethernet cabling, established static IP schemes, and configured router firewall for encrypted remote access."
+        ]
+      }
+    },
+    {
+      "id": "exp_freelance_web",
+      "company": "Indépendant (Freelance / Remote)",
+      "fr": {
+        "title": "Développeur Web & Administrateur Système --- Freelance (Remote)",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Développement et déploiement de 4 applications web clients de bout en bout (JavaScript, React.js, Node.js, PostgreSQL), de l'analyse des besoins à la mise en production.",
+          "Administration des serveurs sous Linux : hébergement VPS, conteneurisation Docker, configuration Nginx, certificats SSL, supervision et résolution d'incidents en production.",
+          "Gestion de bases de données relationnelles PostgreSQL (schéma, requêtes SQL) au support des applications déployées."
+        ]
+      },
+      "en": {
+        "title": "Web Developer & Linux Systems Administrator --- Freelance (Remote)",
+        "location": "",
+        "dates": "Nov 2025 -- Present",
+        "highlights": [
+          "Architected, built, and deployed 4 full-stack client web applications (JavaScript, React.js, Node.js, PostgreSQL) from requirement analysis to live production.",
+          "Administered and hardened Linux servers: VPS hosting, Docker containerization, Nginx configuration, SSL certificates, uptime supervision, and incident resolution.",
+          "Managed relational PostgreSQL databases (schema design, SQL query optimization) supporting deployed client systems."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack --- Projet de Fin d'Études (PFE)",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 -- Juin 2025",
+        "highlights": [
+          "Développement d'une plateforme full-stack (React.js, Node.js, Express.js, MongoDB) intégrant des API externes ; authentification JWT et SSL, livré en sprints Agile."
+        ]
+      },
+      "en": {
+        "title": "Full-Stack Developer --- Final Year Project (PFE)",
+        "location": "Gabes, Tunisia",
+        "dates": "Feb 2025 -- Jun 2025",
+        "highlights": [
+          "Developed full-stack tourism web platform (React.js, Node.js, Express.js, MongoDB) consuming third-party APIs, JWT authentication, and SSL encryption, delivered via Agile sprints."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Développeur Web --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Développement d'un outil d'automatisation de données (PHP, SQL) réduisant le temps de saisie de **70%** pour une équipe de 5 personnes.",
+          "Documentation des procédures techniques et recueil des besoins directement avec l'équipe métier."
+        ]
+      },
+      "en": {
+        "title": "Web Developer --- Intern",
+        "location": "Gabes, Tunisia",
+        "dates": "Jul 2024 -- Aug 2024",
+        "highlights": [
+          "Engineered internal data automation tool (PHP, SQL), slashing manual data entry turnaround time by **70%** for an operational team of 5 staff.",
+          "Gathered business specifications and authored comprehensive technical documentation and user guides for operational teams."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_eventify",
+      "tech": "Node.js · PostgreSQL · React.js · Flutter · Stripe",
+      "fr": {
+        "title": "Eventify --- Plateforme de Réservation d'Événements",
+        "description": "Plateforme complète (web + mobile) avec tunnel de paiement sécurisé Stripe, vérification OTP via Twilio et authentification JWT."
+      },
+      "en": {
+        "title": "Eventify --- Event Ticketing & Booking Platform",
+        "description": "Full-stack web & mobile booking platform with secure Stripe payment flow, Twilio SMS OTP verification, and JWT role-based authentication."
+      }
+    },
+    {
+      "id": "proj_scraper",
+      "tech": "Python · BeautifulSoup · Scrapy · Selenium · Pandas",
+      "fr": {
+        "title": "Universal Web Scraper",
+        "description": "Outil de collecte de données en Python détectant automatiquement les sites statiques et dynamiques, avec extraction et nettoyage automatisés."
+      },
+      "en": {
+        "title": "Universal Web Scraper --- Automated Data Harvester",
+        "description": "Python data harvesting engine automatically handling static and dynamic DOM rendering, extracting and cleaning structured datasets into JSON/CSV."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      },
+      "en": {
+        "degree": "Bachelor in Information Systems --- Highest Honors (Mention Très Bien)",
+        "dates": "2022 -- 2025",
+        "location": "Gabes, Tunisia"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      {
+        "name": "Français",
+        "level": "Professionnel"
+      },
+      {
+        "name": "Anglais",
+        "level": "Professionnel"
+      },
+      {
+        "name": "Arabe",
+        "level": "Langue maternelle"
+      }
+    ],
+    "en": [
+      {
+        "name": "French",
+        "level": "Professional Working"
+      },
+      {
+        "name": "English",
+        "level": "Professional Working"
+      },
+      {
+        "name": "Arabic",
+        "level": "Native"
+      }
+    ]
+  }
+}

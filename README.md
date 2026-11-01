@@ -18,13 +18,15 @@ The system maintains a single source of truth (SSOT) across dual career tracks, 
   * The cover-letter letterhead (name, accent line, contacts) reuses the CV header style — CV and letter read as one package.
   * Letter content is structured JSON (`objet`, `salutation`, `paragraphs`, `closing`) rendered to LaTeX and compiled like the CV.
 * **Automatic Local PDF Compilation**:
-  * Built-in portable **Tectonic** compiler in `bin/` compiles `.tex` to PDF on the fly.
-  * No manual LaTeX installation or cloud upload required.
+  * The scripts auto-detect a LaTeX engine: `--tex-engine` flag → `TEX_ENGINE` env var → `bin/` → system `PATH` (`tectonic`, then `xelatex`, then `pdflatex`).
+  * No cloud upload — nothing is sent anywhere. Tectonic itself still downloads LaTeX packages on first use, so the *first* run needs network unless a TeX distribution is already installed.
+  * A missing engine or a failed compile prints the compiler output and exits with a non-zero status.
+  * **Hard rule: CV PDFs must be exactly 1 page** — the generator fails the build if page count ≠ 1 (override with `--allow-multipage` only while trimming).
 * **Type-First Results Layout (`output/`)**:
   * `output/cv/<name>/` for CVs, `output/cover_letter/<name>/` for letters — one subfolder per job application.
 * **ATS-Optimized Templates**:
   * Custom `#2563EB` blue accent headers, compact single-page CV layout (9pt).
-  * Safe Unicode mapping (`glyphtounicode`) + XeTeX `Ligatures=NoCommon` — no `ﬁ` ligatures, 100% readable text for Applicant Tracking Systems.
+  * Safe Unicode mapping (`glyphtounicode`) + XeTeX `Ligatures=NoCommon` — no `ﬁ` ligatures, so extracted text stays searchable. Parser behaviour still varies per ATS vendor; verify each export with a text-extraction check.
 * **Skills Ecosystem (`.agents/skills/`)**:
   * `cv-builder`: Industry standards from **Prospects UK**, **National Careers Service**, and **Harvard FAS**.
   * `job-matcher`: 4-dimension weighted compatibility scoring (0–100%), gap matrix, honest-gap rules.
@@ -45,7 +47,7 @@ cv-builder/
 │   ├── generate_cv.py                    # Renders LaTeX CV → compiles PDF (output/cv/<name>/)
 │   └── generate_cover_letter.py          # Renders LaTeX cover letter → compiles PDF (output/cover_letter/<name>/)
 ├── bin/
-│   └── tectonic.exe                      # Standalone, portable LaTeX-to-PDF compiler
+│   └── tectonic.exe                      # Windows build of the portable compiler (Linux/macOS: install Tectonic system-wide)
 ├── output/                               # Type-first: one subfolder per job application
 │   ├── cv/
 │   │   ├── Mohamed_Amine_Nasfi_CV_LIP_WebDev_FR/
@@ -58,6 +60,8 @@ cv-builder/
 │           ├── cover_letter_fr.tex
 │           └── lettre_motivation_fr.md   # plain-text paste-ready version
 ├── MASTER_PROFILE.md                     # Comprehensive human-readable master profile
+├── tests/
+│   └── test_generation.py                # Stdlib unittest: LaTeX escaping, language fallback, engine detection
 ├── .agents/skills/
 │   ├── cv-builder/                       # Harvard / Prospects / NCS career standards & templates
 │   ├── job-matcher/                      # 4-tier match matrix & scoring rubric
@@ -69,6 +73,16 @@ cv-builder/
 ---
 
 ## 🛠️ How to Use
+
+### 0. Prerequisites
+
+| Requirement | Notes |
+| :--- | :--- |
+| Python 3.9+ | Standard library only — no `pip install` step. Use `python` on Windows, `python3` on Linux/macOS. |
+| A LaTeX engine | **Windows**: `bin/tectonic.exe` is already bundled. **Linux/macOS**: install [Tectonic](https://tectonic-typesetting.github.io), or use an existing TeX distribution (`xelatex` / `pdflatex`) — the scripts search `PATH` automatically. |
+
+Override detection with `--tex-engine /path/to/tectonic` or `TEX_ENGINE=/path/to/tectonic`.
+Generation without a compiler is fine: pass `--no-compile` and only the `.tex` is written.
 
 ### 1. Generating CVs (CLI)
 
@@ -83,6 +97,18 @@ python scripts/generate_cv.py --track fullstack --lang en
 
 # 🎯 Tailored CV from a per-posting profile (data/tailored/*.json)
 python scripts/generate_cv.py --input data/tailored/lip_belgique_web_dev.json --track tailored --lang fr --output Mohamed_Amine_Nasfi_CV_LIP_WebDev_FR
+
+# One-command tailoring: reuse a master track and override only what changes for the job.
+# No per-offer JSON file is written; overrides apply in memory.
+python scripts/generate_cv.py --track it_support --lang fr \
+  --output Mohamed_Amine_Nasfi_CV_<Company>_<Role>_FR \
+  --subtitle "Technicien Systèmes & Réseaux N1/N2 | Parc informatique · Support utilisateurs" \
+  --summary "Résumé orienté sur l'offre..." \
+  --exp exp_ortho exp_freelance_web exp_pfe exp_gct \
+  --projects proj_rental
+
+# Optional: reorder/rewrite the skill block from a JSON array of {"category", "items"}
+python scripts/generate_cv.py --track it_support --lang fr --skills-file data/tailored/skills_<role>.json
 ```
 
 **CV flags**
@@ -94,7 +120,9 @@ python scripts/generate_cv.py --input data/tailored/lip_belgique_web_dev.json --
 | `--lang` | `-l` | `fr` | `fr` or `en`. |
 | `--output` | `-o` | Auto-named | Custom filename (without folder → lands in `output/cv/<name>/`). |
 | `--outdir` | | `output` | Base output folder (subfolders `cv/` auto-created). |
-| `--compile` | `-c` | `True` | Automatically runs Tectonic to build the PDF. |
+| `--no-compile` | | off | Write the `.tex` only, skip the PDF. |
+| `--tex-engine` | | auto-detect | Path to `tectonic`, `xelatex` or `pdflatex`. |
+| `--allow-multipage` | | off | Debug only. By default a CV PDF that is not **exactly 1 page** fails the build. |
 
 ### 2. Generating Cover Letters (CLI)
 
@@ -132,13 +160,23 @@ python scripts/generate_cover_letter.py --input data/letters/socomec_support_it.
 | `--lang` | `-l` | `fr` | `fr` or `en` (falls back to `fr` content if the key is missing). |
 | `--name` | `-n` | Input file stem | Subfolder name under `output/cover_letter/`. |
 | `--outdir` | | `output` | Base output folder. |
-| `--compile` | `-c` | `True` | Automatically runs Tectonic to build the PDF. |
+| `--no-compile` | | off | Write the `.tex` only, skip the PDF. |
+| `--tex-engine` | | auto-detect | Path to `tectonic`, `xelatex` or `pdflatex`. |
 
 ### 3. Paste-Ready Markdown
 
 Every letter also ships as a `.md` next to its PDF (portals with plain-text boxes). Letters follow the
 `cover-letter` skill: 3–4 paragraphs, ≤ 400 words, the JD's own vocabulary, top-2 requirements matched with
 numbered proofs, one honest gap bridge, formule de politesse for French.
+
+### 4. Running the tests
+
+```bash
+python3 -m unittest discover -s tests
+```
+
+Covers LaTeX escaping, the French fallback warning, section rendering, repo-relative paths and engine detection.
+No PDF compilation is exercised — that needs a LaTeX engine on the machine.
 
 ---
 

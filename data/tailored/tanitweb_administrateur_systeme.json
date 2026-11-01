@@ -1,0 +1,141 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie — mobilité nationale"
+    },
+    "links": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/medaminenasfi"
+      },
+      {
+        "name": "Portfolio",
+        "url": "https://mohamedamine-portfolio.onrender.com"
+      }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Technicien Support & Administration Systèmes Linux | Helpdesk N1/N2 par écrit · Suivi des logs et de la disponibilité des services · MySQL, DNS, TCP/IP, SSL · Procédures et documentation technique",
+        "summary": "Licence en Systèmes d'Information (Bac+3, Mention Très Bien, 2025) et un an d'activité cumulée en support technique et administration de serveurs : maintenance et dépannage de postes Windows 10/11 chez un client professionnel, et administration en production de serveurs Linux (VPS Debian/Ubuntu, ligne de commandes, Docker, Nginx, renouvellement automatisé des certificats SSL, sauvegardes, suivi actif des logs et de la disponibilité des services). Réponse aux demandes techniques et fonctionnelles de clients internationaux par messagerie électronique professionnelle, en français et en anglais, du recueil du besoin à la recette et à la maintenance évolutive. Rigoureux sur l'écrit : procédures internes, modes opératoires et documentations de livrables rédigés pour des équipes non-techniques. Autonome, réactif, orienté solution.",
+        "skills": [
+          {
+            "category": "Support technique N1/N2",
+            "items": "Diagnostic et résolution d'incidents sur postes Windows 10/11 et serveurs Linux, en présentiel et à distance ; traçabilité écrite des interventions et des procédures ; formation du personnel non-technique ; gestion des demandes clients par messagerie électronique professionnelle (Outlook), en français et en anglais."
+          },
+          {
+            "category": "Serveurs Linux & hébergement",
+            "items": "Administration de VPS Debian/Ubuntu en production : ligne de commandes bash, conteneurisation Docker et Docker Compose, reverse-proxy Nginx, certificats SSL, durcissement et sauvegardes, suivi des logs, redémarrage et reprise de service après incident."
+          },
+          {
+            "category": "Bases de données & réseaux",
+            "items": "MySQL, PostgreSQL, MongoDB : conception de schéma, requêtes SQL, sauvegarde et restauration de bases ; adressage IPv4, DHCP, DNS, TCP/IP, sécurité Wi-Fi, configuration de routeurs et switchs managés, câblage Ethernet."
+          },
+          {
+            "category": "Documentation & qualité rédactionnelle",
+            "items": "Rédaction en français de procédures internes, modes opératoires, README et documentations de livrables ; spécifications validées avec le client, tests et recette avant mise en service, comptes rendus d'anomalies."
+          },
+          {
+            "category": "Outils & méthodes",
+            "items": "Git / GitHub et workflow de branches, GitHub Actions (déploiement avec tests automatisés), Postman, Agile Scrum ; scripts Bash et Python pour l'automatisation des tâches répétitives."
+          }
+        ]
+      },
+      "experience_ids": [
+        "exp_ortho",
+        "exp_freelance_web",
+        "exp_pfe",
+        "exp_gct"
+      ],
+      "project_ids": []
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_ortho",
+      "company": "Cabinet d'Orthodontie Dr Meriem Nasfi",
+      "fr": {
+        "title": "Technicien Informatique & Support Utilisateurs --- Freelance",
+        "location": "Gabès, Tunisie",
+        "dates": "Mai 2026 -- Septembre 2026",
+        "highlights": [
+          "Support de niveau 1 et 2 sur un site professionnel : installation, configuration et maintenance de postes Windows 10/11 et des logiciels métier, diagnostic et résolution d'incidents, formation des utilisateurs non-techniques et documentation des procédures.",
+          "Déploiement et exploitation du réseau du site : adressage IPv4, DHCP/DNS, routeur et switchs managés, pare-feu, accès distant, câblage Ethernet, et mise en service complète d'un système de vidéosurveillance IP.",
+          "Réponse aux demandes entrantes par messagerie électronique et téléphone, avec comptes rendus écrits des interventions et des anomalies."
+        ]
+      }
+    },
+    {
+      "id": "exp_freelance_web",
+      "company": "Freelance",
+      "fr": {
+        "title": "Développeur Web & Administrateur Système",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Administration en production de serveurs Linux (VPS Debian/Ubuntu) pour les applications de 4 clients à l'international : conteneurisation Docker multi-services, reverse-proxy Nginx, certificats SSL renouvelés automatiquement, sauvegardes, suivi des logs et reprise de service après incident.",
+          "Gestion des demandes clients par écrit, en français et en anglais : recueil du besoin, diagnostic des anomalies signalées en production, correctifs et maintenance évolutive jusqu'à la recette.",
+          "Bases de données MySQL et PostgreSQL en production : conception du schéma, requêtes, sauvegarde et restauration ; déploiements automatisés via GitHub Actions avec tests avant mise en ligne."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack --- Projet de Fin d'Études (PFE)",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 -- Juin 2025",
+        "highlights": [
+          "Plateforme full-stack (Node.js, Express.js, MongoDB, React.js) consommant des API externes ; spécifications validées avec le client et recette avant livraison, en sprints Agile Scrum avec documentation technique."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Développeur Web --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Outil d'automatisation de données (PHP, SQL) reprenant les saisies manuelles d'une équipe de 5 personnes : temps de saisie réduit de **70%** ; besoins recueillis auprès des utilisateurs terrain, tests réalisés avec eux avant mise en service et procédures internes rédigées."
+        ]
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information (Bac+3) --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      {
+        "name": "Arabe",
+        "level": "Langue maternelle"
+      },
+      {
+        "name": "Français",
+        "level": "Courant --- B2 (TCF TP)"
+      },
+      {
+        "name": "Anglais",
+        "level": "Technique / professionnel"
+      }
+    ]
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie — mobilité nationale",
+      "en": "Gabes, Tunisia — nationwide mobility"
+    },
+    "links": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/medaminenasfi"
+      },
+      {
+        "name": "Portfolio",
+        "url": "https://mohamedamine-portfolio.onrender.com"
+      }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Technicien Support Systèmes & Réseaux | Postes de travail · Parc et inventaire · Support N1 · Réseaux locaux",
+        "summary": "Technicien informatique en support de premier et deuxième niveau auprès d'utilisateurs non-techniques : installation, configuration et maintenance des postes de travail Windows 10/11 et des périphériques, diagnostic et résolution des incidents matériels, logiciels et réseau sous délai contraint. Assure le suivi du parc, la mise à jour de l'inventaire, l'enregistrement des demandes et le compte rendu des interventions. Intervient aussi sur l'infrastructure réseau locale : adressage IPv4, DHCP/DNS, configuration routeur et switchs managés (VLAN), pare-feu, sécurisation Wi-Fi et accès distant VPN/SSL, câblage Ethernet. Administre des serveurs Linux en production (VPS, Docker, Nginx, suivi des logs). Licence en Systèmes d'Information — Mention Très Bien, français courant (TCF B2) et anglais professionnel.",
+        "skills": [
+          {
+            "category": "Support utilisateurs N1/N2",
+            "items": "Réception et qualification des demandes, résolution des incidents matériel et logiciel, assistance sur site et à distance (AnyDesk, TeamViewer), suivi des demandes jusqu'à résolution, comptes rendus écrits, formation des utilisateurs non-techniques."
+          },
+          {
+            "category": "Postes de travail & Matériel",
+            "items": "Windows 10/11 : installation, formatage, masterisation, pilotes, registre et dépannage ; montage et mise en service de postes ; remplacement de composants (RAM, SSD, alimentation) ; imprimantes et périphériques ; maintenance préventive et corrective."
+          },
+          {
+            "category": "Parc informatique & Inventaire",
+            "items": "Inventaire du parc tenu à jour (tableur), suivi des entrées et sorties de matériel, vérification du bon fonctionnement des équipements, standardisation des configurations et checklists d'installation, documentation des procédures d'intervention."
+          },
+          {
+            "category": "Réseaux",
+            "items": "TCP/IP, adressage IPv4 et sous-réseaux, DHCP/DNS, routeurs et switchs managés (VLAN), pare-feu et segmentation, redirection de ports, sécurisation Wi-Fi, accès distant VPN/SSL, diagnostic des pannes réseau local, câblage Ethernet RJ45 (sertissage, test)."
+          },
+          {
+            "category": "Systèmes & Serveurs",
+            "items": "Linux Ubuntu/Debian en production : ligne de commande et bash, hébergement VPS, Docker, Nginx, certificats SSL, suivi des logs et de la disponibilité des services, sauvegardes ; exploitation des postes et services Windows en environnement professionnel."
+          },
+          {
+            "category": "Bureautique & Outils",
+            "items": "Pack Office / Microsoft 365 en usage utilisateur (traitement de texte, tableur, messagerie, réunion à distance) ; Git/GitHub, Postman ; automatisation de tâches en Python et Bash ; bases de données PostgreSQL, MySQL, SQLite."
+          }
+        ]
+      },
+      "experience_ids": [
+        "exp_ortho",
+        "exp_freelance_web",
+        "exp_pfe",
+        "exp_gct"
+      ],
+      "project_ids": [
+        "proj_rental"
+      ]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_ortho",
+      "company": "Cabinet d'Orthodontie Dr Meriem Nasfi",
+      "fr": {
+        "title": "Technicien Support Informatique, Réseaux & Parc --- Freelance",
+        "location": "Gabès, Tunisie",
+        "dates": "Mai 2026 -- Septembre 2026",
+        "highlights": [
+          "Support technique de premier et deuxième niveau auprès d'utilisateurs non-techniques : qualification et résolution des incidents matériels et logiciels sous 2 heures, assistance à distance, suivi des demandes jusqu'à résolution et compte rendu écrit des interventions.",
+          "Installation, configuration et maintenance des postes de travail Windows 10/11 et des périphériques : formatage et masterisation, mise en service d'imprimantes, remplacement de composants, maintenance préventive du parc et inventaire tenu à jour.",
+          "Déploiement de l'infrastructure réseau locale : plan d'adressage IPv4, configuration routeur et switchs, pare-feu, sécurisation Wi-Fi et accès distant VPN/SSL, tirage et raccordement du câblage Ethernet, vérification de la connectivité et du bon fonctionnement des équipements."
+        ]
+      },
+      "en": {
+        "title": "IT Support, Network & Fleet Technician --- Freelance",
+        "location": "Gabes, Tunisia",
+        "dates": "May 2026 -- September 2026",
+        "highlights": [
+          "Delivered first and second level support to non-technical users: triage and resolution of hardware and software incidents within 2 hours, remote assistance, request tracking through to resolution and written intervention reports.",
+          "Installed, configured and maintained Windows 10/11 workstations and peripherals: imaging and setup, printer deployment, component replacement, preventive fleet maintenance and up-to-date inventory.",
+          "Deployed the local network infrastructure: IPv4 addressing plan, router and switch configuration, firewall, Wi-Fi hardening and remote VPN/SSL access, Ethernet cabling runs, and connectivity verification of the installed equipment."
+        ]
+      }
+    },
+    {
+      "id": "exp_freelance_web",
+      "company": "Indépendant (Freelance / Remote)",
+      "fr": {
+        "title": "Administrateur Systèmes Linux & Développeur d'Outils --- Freelance",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Administration et sécurisation de serveurs Linux en production : hébergement VPS, conteneurisation Docker multi-services, reverse-proxy Nginx, renouvellement automatisé des certificats SSL, surveillance de la disponibilité et analyse des logs.",
+          "Diagnostic et résolution d'incidents d'exploitation, reprise de service après incident, déploiements automatisés via pipelines CI/CD GitHub Actions et outils internes sur bases PostgreSQL."
+        ]
+      },
+      "en": {
+        "title": "Linux Systems Administrator & Tools Developer --- Freelance",
+        "location": "",
+        "dates": "Nov 2025 -- Present",
+        "highlights": [
+          "Administered and hardened production Linux servers: VPS hosting, multi-service Docker containerization, Nginx reverse proxy, automated SSL certificate renewal, availability monitoring and log analysis.",
+          "Diagnosed and resolved operational incidents, restored services after outages, and automated releases with GitHub Actions CI/CD pipelines and internal PostgreSQL tooling."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack --- Projet de Fin d'Études (PFE)",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 -- Juin 2025",
+        "highlights": [
+          "Développement d'une plateforme full-stack (React.js, Node.js, Express.js, MongoDB) avec authentification JWT et chiffrement SSL ; recueil des besoins, documentation technique et coordination à distance avec l'encadrant."
+        ]
+      },
+      "en": {
+        "title": "Full-Stack Developer --- Final Year Project (PFE)",
+        "location": "Gabes, Tunisia",
+        "dates": "Feb 2025 -- Jun 2025",
+        "highlights": [
+          "Built a full-stack platform (React.js, Node.js, Express.js, MongoDB) with JWT authentication and SSL encryption; requirements gathering, technical documentation and remote coordination with the project supervisor."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Stagiaire --- Outils internes & Documentation",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Développement d'un outil d'automatisation de données (PHP, SQL) réduisant le temps de saisie de **70%** pour une équipe opérationnelle de 5 personnes.",
+          "Recueil des besoins auprès des utilisateurs métiers, rédaction des procédures techniques et du guide d'utilisation."
+        ]
+      },
+      "en": {
+        "title": "Intern --- Internal Tools & Documentation",
+        "location": "Gabes, Tunisia",
+        "dates": "Jul 2024 -- Aug 2024",
+        "highlights": [
+          "Engineered an internal data automation tool (PHP, SQL) cutting manual data entry time by **70%** for a 5-person operational team.",
+          "Gathered requirements from business users and wrote technical procedures and the user guide."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_rental",
+      "tech": "Python · PyQt5 · SQLite · PyInstaller",
+      "fr": {
+        "title": "Application de gestion et facturation --- Bureau Windows",
+        "description": "Application de bureau déployée sur postes Windows pour une activité de location : contrats, facturation, tableau de bord et sauvegardes automatisées horodatées de la base SQLite."
+      },
+      "en": {
+        "title": "Rental Management & Billing Desktop App --- Windows",
+        "description": "Windows desktop application deployed for a rental business: contracts, billing, dashboard and timestamped automated SQLite backups."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      },
+      "en": {
+        "degree": "Bachelor in Information Systems --- Highest Honors (Mention Très Bien)",
+        "dates": "2022 -- 2025",
+        "location": "Gabes, Tunisia"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      {
+        "name": "Français",
+        "level": "Courant --- B2 (TCF TP)"
+      },
+      {
+        "name": "Anglais",
+        "level": "Professionnel"
+      },
+      {
+        "name": "Arabe",
+        "level": "Langue maternelle"
+      }
+    ],
+    "en": [
+      {
+        "name": "French",
+        "level": "Fluent (TCF B2)"
+      },
+      {
+        "name": "English",
+        "level": "Professional Working"
+      },
+      {
+        "name": "Arabic",
+        "level": "Native"
+      }
+    ]
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie",
+      "en": "Gabes, Tunisia"
+    },
+    "links": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/medaminenasfi"
+      },
+      {
+        "name": "Portfolio",
+        "url": "https://mohamedamine-portfolio.onrender.com"
+      }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "User Support Specialist — Support L1 · Diagnostic & escalade · Documentation produit · IT interne",
+        "summary": "Technicien informatique spécialisé dans le support de premier niveau et l'accompagnement des utilisateurs non-techniques. Accueille les demandes, diagnostique et reproduit les incidents, priorise selon l'impact, résout ce qui relève de l'usage et escalade les bugs à l'équipe technique avec les éléments de reproduction — pannes critiques résolues en moins de 2 heures. Produit une documentation claire et pédagogique : guides pas-à-pas, procédures et guides d'utilisation rédigés à partir des retours directs des utilisateurs métier. Double culture SaaS et IT interne : développement et exploitation d'applications web (React.js, Node.js, PostgreSQL, authentification et gestion des rôles), administration de postes Windows/Linux et de serveurs en production. Français courant et anglais professionnel, communication écrite soignée.",
+        "skills": [
+          {
+            "category": "Support utilisateurs L1/L2",
+            "items": "Accueil et traitement des demandes, diagnostic, qualification et reproduction des incidents, priorisation par impact et urgence, résolution ou escalade vers l'équipe technique, suivi jusqu'à la clôture."
+          },
+          {
+            "category": "Relation utilisateur",
+            "items": "Explications claires et guides pas-à-pas, orientation vers la bonne ressource, accompagnement d'utilisateurs non-techniques, démonstrations et bonnes pratiques d'usage."
+          },
+          {
+            "category": "Documentation produit & procédures",
+            "items": "Guides d'utilisation, procédures techniques et base de connaissances rédigés à partir des demandes réelles des utilisateurs, maintenus et améliorés en continu (relecture et validation avant publication)."
+          },
+          {
+            "category": "Outils de support & investigation",
+            "items": "Workflow de tickets N1/N2, assistance à distance (AnyDesk, TeamViewer), analyse de logs d'applications, tests d'API avec Postman, inspection des flux côté navigateur."
+          },
+          {
+            "category": "IT interne & matériel",
+            "items": "Gestion des accès et des outils collaboratifs, postes Windows 10/11 et Ubuntu, montage et mise en service, périphériques (imprimantes, scanners, écrans), casques et équipements."
+          },
+          {
+            "category": "Environnement SaaS",
+            "items": "Applications web complètes livrées en production (React.js, Next.js, Node.js, PostgreSQL), authentification JWT/OAuth, gestion des rôles utilisateurs, tunnels de paiement Stripe."
+          },
+          {
+            "category": "Automatisation des process",
+            "items": "Outils d'automatisation et de validation de données (PHP, SQL : temps de saisie réduit de **70%**), scripts Python de collecte et de nettoyage, pipelines CI/CD (GitHub Actions) executant tests unitaires et controle qualite avant mise en production."
+          }
+        ]
+      },
+      "experience_ids": [
+        "exp_ortho",
+        "exp_freelance_web",
+        "exp_pfe",
+        "exp_gct"
+      ],
+      "project_ids": [
+        "proj_rental"
+      ]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_ortho",
+      "company": "Cabinet d'Orthodontie Dr Meriem Nasfi",
+      "fr": {
+        "title": "Technicien Support IT --- Freelance",
+        "location": "Gabès, Tunisie",
+        "dates": "Mai 2026 -- Septembre 2026",
+        "highlights": [
+          "Support de premier niveau d'un parc de postes sous Windows : diagnostic, qualification et reproduction des incidents, résolution des pannes matérielles et logicielles en moins de 2 heures, mise en service des nouveaux équipements.",
+          "Accompagnement d'utilisateurs non-techniques : explications pas-à-pas, assistance écrite et à distance, escalade des incidents complexes à l'équipe technique et suivi jusqu'à la résolution."
+        ]
+      },
+      "en": {
+        "title": "IT Support Technician --- Freelance",
+        "location": "Gabes, Tunisia",
+        "dates": "May 2026 -- September 2026",
+        "highlights": [
+          "Delivered proactive and corrective maintenance for Windows workstations: diagnosed hardware/software faults, assembled systems, and deployed peripherals for non-technical staff.",
+          "Engineered and deployed complete IP video surveillance infrastructure: ran Ethernet cabling, established static IP schemes, and configured router firewall for encrypted remote access."
+        ]
+      }
+    },
+    {
+      "id": "exp_freelance_web",
+      "company": "Indépendant (Freelance / Remote)",
+      "fr": {
+        "title": "Développeur Web & Administrateur Système --- Freelance (Remote)",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Développement et déploiement de 4 applications web clients de bout en bout (JavaScript, React.js, Node.js, PostgreSQL), de l'analyse des besoins à la mise en production.",
+          "Administration des serveurs sous Linux : hébergement VPS, conteneurisation Docker, configuration Nginx, certificats SSL, supervision et résolution d'incidents en production.",
+          "Gestion de bases de données relationnelles PostgreSQL (schéma, requêtes SQL) au support des applications déployées."
+        ]
+      },
+      "en": {
+        "title": "Web Developer & Linux Systems Administrator --- Freelance (Remote)",
+        "location": "",
+        "dates": "Nov 2025 -- Present",
+        "highlights": [
+          "Architected, built, and deployed 4 full-stack client web applications (JavaScript, React.js, Node.js, PostgreSQL) from requirement analysis to live production.",
+          "Administered and hardened Linux servers: VPS hosting, Docker containerization, Nginx configuration, SSL certificates, uptime supervision, and incident resolution.",
+          "Managed relational PostgreSQL databases (schema design, SQL query optimization) supporting deployed client systems."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack --- Projet de Fin d'Études (PFE)",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 -- Juin 2025",
+        "highlights": [
+          "Développement d'une plateforme full-stack (React.js, Node.js, Express.js, MongoDB) intégrant des API externes ; authentification JWT et SSL, livré en sprints Agile."
+        ]
+      },
+      "en": {
+        "title": "Full-Stack Developer --- Final Year Project (PFE)",
+        "location": "Gabes, Tunisia",
+        "dates": "Feb 2025 -- Jun 2025",
+        "highlights": [
+          "Developed full-stack tourism web platform (React.js, Node.js, Express.js, MongoDB) consuming third-party APIs, JWT authentication, and SSL encryption, delivered via Agile sprints."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Développeur Web --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Développement d'un outil d'automatisation de données (PHP, SQL) réduisant le temps de saisie de **70%** pour une équipe de 5 personnes.",
+          "Documentation des procédures techniques et recueil des besoins directement avec l'équipe métier."
+        ]
+      },
+      "en": {
+        "title": "Web Developer --- Intern",
+        "location": "Gabes, Tunisia",
+        "dates": "Jul 2024 -- Aug 2024",
+        "highlights": [
+          "Engineered internal data automation tool (PHP, SQL), slashing manual data entry turnaround time by **70%** for an operational team of 5 staff.",
+          "Gathered business specifications and authored comprehensive technical documentation and user guides for operational teams."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_rental",
+      "tech": "Python · PyQt5 · SQLite · PyInstaller",
+      "fr": {
+        "title": "Rental Management System --- ERP Desktop",
+        "description": "Application desktop Windows offline-first pour la gestion des locations : contrats, facturation, statistiques et sauvegardes de données automatisées."
+      },
+      "en": {
+        "title": "Rental Management System --- Windows Desktop ERP",
+        "description": "Offline-first Windows desktop ERP managing equipment rental agreements, automated contract billing cycles, real-time analytics, and SQLite backups."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      },
+      "en": {
+        "degree": "Bachelor in Information Systems --- Highest Honors (Mention Très Bien)",
+        "dates": "2022 -- 2025",
+        "location": "Gabes, Tunisia"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      {
+        "name": "Français",
+        "level": "Professionnel"
+      },
+      {
+        "name": "Anglais",
+        "level": "Professionnel"
+      },
+      {
+        "name": "Arabe",
+        "level": "Langue maternelle"
+      }
+    ],
+    "en": [
+      {
+        "name": "French",
+        "level": "Professional Working"
+      },
+      {
+        "name": "English",
+        "level": "Professional Working"
+      },
+      {
+        "name": "Arabic",
+        "level": "Native"
+      }
+    ]
+  }
+}

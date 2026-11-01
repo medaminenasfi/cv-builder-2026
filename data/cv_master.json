@@ -25,6 +25,7 @@
           { "category": "Vidéosurveillance", "items": "Installation et configuration de systèmes de caméras de sécurité." },
           { "category": "Infrastructure", "items": "Docker, Nginx, hébergement VPS." },
           { "category": "Bases de Données", "items": "PostgreSQL, MongoDB, SQL." },
+          { "category": "Bureautique & Collaboration", "items": "Microsoft 365 en usage utilisateur courant : messagerie Outlook, réunions et échanges Teams, stockage et partage de fichiers OneDrive/SharePoint (non administrateur de ces services)." },
           { "category": "Outils", "items": "Git, GitHub, Postman." }
         ]
       },
@@ -38,6 +39,7 @@
           { "category": "Surveillance", "items": "IP security camera installation, cabling, and remote streaming setup." },
           { "category": "Infrastructure", "items": "Docker, Nginx, Linux VPS hosting." },
           { "category": "Databases", "items": "PostgreSQL, MongoDB, SQL." },
+          { "category": "Office & Collaboration", "items": "Microsoft 365 end-user proficiency: Outlook mail, Teams meetings and chat, OneDrive/SharePoint file sharing (not an administrator of these services)." },
           { "category": "Tools", "items": "Git, GitHub, Postman." }
         ]
       },
@@ -82,7 +84,7 @@
       "fr": {
         "title": "Technicien Support IT --- Freelance",
         "location": "Gabès, Tunisie",
-        "dates": "Mai 2026 -- Présent",
+        "dates": "Mai 2026 -- Septembre 2026",
         "highlights": [
           "Maintenance préventive et corrective de postes de travail sous Windows : diagnostic de pannes matérielles/logicielles, montage et mise en service, installation de logiciels et périphériques.",
           "Installation et configuration complète d'un système de vidéosurveillance (caméras) : câblage des caméras, adressage IP et configuration du routeur pour un accès à distance sécurisé."
@@ -91,7 +93,7 @@
       "en": {
         "title": "IT Support Technician --- Freelance",
         "location": "Gabes, Tunisia",
-        "dates": "May 2026 -- Present",
+        "dates": "May 2026 -- September 2026",
         "highlights": [
           "Delivered proactive and corrective maintenance for Windows workstations: diagnosed hardware/software faults, assembled systems, and deployed peripherals for non-technical staff.",
           "Engineered and deployed complete IP video surveillance infrastructure: ran Ethernet cabling, established static IP schemes, and configured router firewall for encrypted remote access."
@@ -100,10 +102,10 @@
     },
     {
       "id": "exp_freelance_web",
-      "company": "",
+      "company": "Freelance",
       "fr": {
-        "title": "Développeur Web & Administrateur Système --- Freelance (Remote)",
-        "location": "",
+        "title": "Développeur Web & Administrateur Système",
+        "location": "Remote",
         "dates": "Nov 2025 -- Présent",
         "highlights": [
           "Développement et déploiement de 4 applications web clients de bout en bout (JavaScript, React.js, Node.js, PostgreSQL), de l'analyse des besoins à la mise en production.",
@@ -112,8 +114,8 @@
         ]
       },
       "en": {
-        "title": "Web Developer & Linux Systems Administrator --- Freelance (Remote)",
-        "location": "",
+        "title": "Web Developer & Linux Systems Administrator",
+        "location": "Remote",
         "dates": "Nov 2025 -- Present",
         "highlights": [
           "Architected, built, and deployed 4 full-stack client web applications (JavaScript, React.js, Node.js, PostgreSQL) from requirement analysis to live production.",
@@ -124,10 +126,10 @@
     },
     {
       "id": "exp_freelance_fullstack",
-      "company": "",
+      "company": "Freelance",
       "fr": {
-        "title": "Développeur Full-Stack --- Freelance (Remote)",
-        "location": "",
+        "title": "Développeur Full-Stack",
+        "location": "Remote",
         "dates": "Nov 2025 -- Présent",
         "highlights": [
           "Conception et développement de 4 applications clients de bout en bout (React.js, Next.js, Node.js, Express.js, PostgreSQL), de l'analyse des besoins à la mise en production.",
@@ -137,8 +139,8 @@
         ]
       },
       "en": {
-        "title": "Full-Stack Software Engineer --- Freelance (Remote)",
-        "location": "",
+        "title": "Full-Stack Software Engineer",
+        "location": "Remote",
         "dates": "Nov 2025 -- Present",
         "highlights": [
           "Designed and shipped 4 production client web applications end-to-end (React.js, Next.js, Node.js, Express.js, PostgreSQL) from specification to live release.",

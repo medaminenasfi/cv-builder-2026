@@ -1,0 +1,176 @@
+\documentclass[letterpaper,9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+  \usepackage{microtype}
+  \DisableLigatures[f]{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \defaultfontfeatures{Ligatures=NoCommon}
+\fi
+
+% Blue accent matching the Word version (#2563EB)
+\definecolor{accent}{HTML}{2563EB}
+\definecolor{navy}{HTML}{1F2937}
+\definecolor{greytext}{HTML}{555555}
+
+\hypersetup{
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent,
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+\raggedright
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+
+% Section titles — blue, matching Word headers
+\titleformat{\section}{
+  \vspace{-1pt}\color{accent}\scshape\raggedright\large
+}{}{0em}{}[\color{accent}\titlerule \vspace{-1pt}]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{\color{greytext}#2} \\
+    \textit{\small\color{greytext} #3} & \textit{\small\color{greytext} #4}
+  \end{tabular*}\vspace{-2pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & #2
+  \end{tabular*}\vspace{-1pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=2.5pt, parsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.24in, label={}, itemsep=0.9pt, topsep=1.2pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeProjectListStart}{\begin{itemize}[leftmargin=0.24in, label={}, itemsep=0.9pt, topsep=1.2pt, parsep=0pt]}
+\newcommand{\resumeProjectListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeLangHeading}[2]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2
+  \end{tabular*}\vspace{-1pt}
+}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+    \textbf{\Huge \scshape \color{navy} Mohamed Amine Nasfi} \\[3pt]
+    \small \textbf{\color{accent} Développeur Web Node.js | Express.js \textperiodcentered{} NestJS \textperiodcentered{} TypeScript | API REST, JWT, webhooks Stripe | Git, CI/CD, Docker} \\[3pt]
+    \footnotesize \color{greytext}
+    +216 27 711 810 $\quad|\quad$
+    \href{mailto:medaminenasfy@gmail.com}{\underline{medaminenasfy@gmail.com}} $\quad|\quad$
+    Gabès, Tunisie — mobilité nationale \\[2pt]
+    \href{https://www.linkedin.com/in/mohamed-amine-nasfi/}{\underline{LinkedIn}} $\quad|\quad$ \href{https://github.com/medaminenasfi}{\underline{GitHub}} $\quad|\quad$ \href{https://mohamedamine-portfolio.onrender.com}{\underline{Portfolio}}
+\end{center}
+\vspace{-5pt}
+
+% ---------- SUMMARY ----------
+\section{Résumé}
+\begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=1.5pt, parsep=0pt]
+\item \footnotesize{Développeur back-end Node.js, titulaire d'une Licence en Systèmes d'Information (Mention Très Bien, 2025), avec plus d'un an d'expérience cumulée en développement web (freelance, PFE, stage). Conçoit et livre des API REST en Node.js/Express et NestJS sur PostgreSQL et MongoDB : modèle de données, authentification JWT et contrôle d'accès par rôles, webhooks de paiement Stripe, OTP Twilio. Code testé avant mise en production et déployé sur des serveurs Linux conteneurisés (Docker, Nginx, GitHub Actions), avec documentation technique systématique des livrables. Autonome et organisé : 4 applications clients menées de bout en bout, du recueil du besoin à la recette, en interaction directe avec le client. Pratique quotidienne de Git et des pipelines CI/CD ; 37 dépôts publics sur GitHub.}
+\end{itemize}\vspace{-3pt}
+
+% ---------- EXPERIENCE ----------
+\section{Expérience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading{Développeur Full-Stack \& Administrateur Système}{Nov 2025 -- Présent}{Freelance}{Remote}
+    \resumeItemListStart
+      \resumeItem{Développement et mise en production de 4 applications web complètes pour des clients à l'international (Node.js/Express, TypeScript, React.js/Next.js, PostgreSQL/MySQL), du recueil du besoin à la recette et à la maintenance évolutive.}
+      \resumeItem{Conception d'API REST et d'authentification JWT avec contrôle d'accès par rôles, intégration de services externes sensibles : tunnel de paiement et webhooks Stripe, vérification SMS par OTP via Twilio.}
+      \resumeItem{Administration de l'infrastructure en production : serveurs Linux VPS, conteneurisation Docker multi-services, reverse-proxy Nginx, certificats SSL, GitHub Actions avec tests automatisés avant chaque déploiement, suivi des logs et sauvegardes.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Développeur Full-Stack --- Projet de Fin d'Études (PFE)}{Fév 2025 -- Juin 2025}{Laghazala du Désert}{Gabès, Tunisie}
+    \resumeItemListStart
+      \resumeItem{Plateforme full-stack (Node.js, Express.js, MongoDB, React.js) consommant des API externes et des données géolocalisées ; spécifications validées avec le client, recette avant livraison, livraison en sprints Agile Scrum avec documentation technique.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Développeur Web --- Stagiaire}{Juil 2024 -- Août 2024}{Groupe Chimique Tunisien (GCT)}{Gabès, Tunisie}
+    \resumeItemListStart
+      \resumeItem{Outil d'automatisation de données (PHP, SQL) reprenant les saisies manuelles d'une équipe de 5 personnes : temps de saisie réduit de \textbf{70\%} ; besoins recueillis auprès des utilisateurs terrain, tests réalisés avec eux avant mise en service et procédures internes rédigées.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd\vspace{-2pt}
+
+% ---------- TECHNICAL SKILLS ----------
+\section{Compétences Techniques}
+\begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
+\footnotesize{
+  \item \textbf{Back-End Node.js:} Node.js, Express.js, NestJS, TypeScript, JavaScript ; conception et développement d'API REST, authentification JWT et contrôle d'accès par rôles, webhooks Stripe, notifications SMS OTP (Twilio), appels à des API tierces, tests d'endpoints sous Postman.
+  \item \textbf{Front-End:} React.js, Next.js, HTML5, CSS3, Tailwind CSS ; interfaces responsives, formulaires dynamiques et tableaux de bord d'administration.
+  \item \textbf{Bases de données:} PostgreSQL, MySQL, SQLite (conception de schéma, requêtes SQL, sauvegardes) ; MongoDB pour les données NoSQL.
+  \item \textbf{Qualité \& documentation:} Tests et recette avant chaque déploiement, relecture critique du code, correction de bugs ; documentation technique des livrables : spécifications, README, procédures et modes d'emploi client ; suivi du besoin et validation avec l'utilisateur final.
+  \item \textbf{Outils \& DevOps:} Git / GitHub et workflow de branches, GitHub Actions (CI/CD avec tests automatisés), Docker et Docker Compose, Linux Debian/Ubuntu, Nginx, hébergement VPS, certificats SSL, suivi des logs et sauvegardes ; Agile Scrum.
+}
+\end{itemize}\vspace{-3pt}
+
+% ---------- PROJECTS ----------
+\section{Projets}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading{\textbf{Backend e-commerce --- API REST et webhooks} $\quad$ --- $\quad$ \emph{\color{greytext}TypeScript \textperiodcentered{} Node.js \textperiodcentered{} Express \textperiodcentered{} MongoDB \textperiodcentered{} Stripe}}{}
+    \resumeProjectListStart
+      \resumeItem{Microservice de vente en ligne : catalogue, panier et sessions, contrôle d'accès par rôles (Admin/Acheteur) et encaissement par webhooks Stripe.}
+    \resumeProjectListEnd
+
+  \resumeProjectHeading{\textbf{Eventify --- Plateforme de réservation d'événements} $\quad$ --- $\quad$ \emph{\color{greytext}Node.js \textperiodcentered{} PostgreSQL \textperiodcentered{} React.js \textperiodcentered{} Stripe \textperiodcentered{} Twilio}}{}
+    \resumeProjectListStart
+      \resumeItem{Application web complète avec tunnel de paiement sécurisé Stripe, vérification OTP par SMS, authentification JWT et tableau de bord analytique pour les organisateurs.}
+    \resumeProjectListEnd
+
+\resumeSubHeadingListEnd\vspace{-3pt}
+
+% ---------- EDUCATION ----------
+\section{Formation}
+\resumeSubHeadingListStart
+  \resumeSubheading{Licence en Systèmes d'Information --- Mention Très Bien}{2022 -- 2025}{ESSAT Gabès}{Gabès, Tunisie}
+\resumeSubHeadingListEnd\vspace{-1pt}
+
+% ---------- LANGUAGES ----------
+\section{Langues}
+\begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
+\footnotesize{
+  \item Arabe (Langue maternelle) \textperiodcentered{} Français (Courant --- B2 (TCF TP)) \textperiodcentered{} Anglais (Technique / professionnel)
+}
+\end{itemize}
+
+\end{document}

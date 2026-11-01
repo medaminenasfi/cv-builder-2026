@@ -1,0 +1,147 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie — mobilité nationale"
+    },
+    "links": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/medaminenasfi"
+      },
+      {
+        "name": "Portfolio",
+        "url": "https://mohamedamine-portfolio.onrender.com"
+      }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Développeur Web Node.js | Express.js · NestJS · TypeScript | API REST, JWT, webhooks Stripe | Git, CI/CD, Docker",
+        "summary": "Développeur back-end Node.js, titulaire d'une Licence en Systèmes d'Information (Mention Très Bien, 2025), avec plus d'un an d'expérience cumulée en développement web (freelance, PFE, stage). Conçoit et livre des API REST en Node.js/Express et NestJS sur PostgreSQL et MongoDB : modèle de données, authentification JWT et contrôle d'accès par rôles, webhooks de paiement Stripe, OTP Twilio. Code testé avant mise en production et déployé sur des serveurs Linux conteneurisés (Docker, Nginx, GitHub Actions), avec documentation technique systématique des livrables. Autonome et organisé : 4 applications clients menées de bout en bout, du recueil du besoin à la recette, en interaction directe avec le client. Pratique quotidienne de Git et des pipelines CI/CD ; 37 dépôts publics sur GitHub.",
+        "skills": [
+          {
+            "category": "Back-End Node.js",
+            "items": "Node.js, Express.js, NestJS, TypeScript, JavaScript ; conception et développement d'API REST, authentification JWT et contrôle d'accès par rôles, webhooks Stripe, notifications SMS OTP (Twilio), appels à des API tierces, tests d'endpoints sous Postman."
+          },
+          {
+            "category": "Front-End",
+            "items": "React.js, Next.js, HTML5, CSS3, Tailwind CSS ; interfaces responsives, formulaires dynamiques et tableaux de bord d'administration."
+          },
+          {
+            "category": "Bases de données",
+            "items": "PostgreSQL, MySQL, SQLite (conception de schéma, requêtes SQL, sauvegardes) ; MongoDB pour les données NoSQL."
+          },
+          {
+            "category": "Qualité & documentation",
+            "items": "Tests et recette avant chaque déploiement, relecture critique du code, correction de bugs ; documentation technique des livrables : spécifications, README, procédures et modes d'emploi client ; suivi du besoin et validation avec l'utilisateur final."
+          },
+          {
+            "category": "Outils & DevOps",
+            "items": "Git / GitHub et workflow de branches, GitHub Actions (CI/CD avec tests automatisés), Docker et Docker Compose, Linux Debian/Ubuntu, Nginx, hébergement VPS, certificats SSL, suivi des logs et sauvegardes ; Agile Scrum."
+          }
+        ]
+      },
+      "experience_ids": [
+        "exp_freelance_web",
+        "exp_pfe",
+        "exp_gct"
+      ],
+      "project_ids": [
+        "proj_ecom",
+        "proj_eventify"
+      ]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_freelance_web",
+      "company": "Freelance",
+      "fr": {
+        "title": "Développeur Full-Stack & Administrateur Système",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Développement et mise en production de 4 applications web complètes pour des clients à l'international (Node.js/Express, TypeScript, React.js/Next.js, PostgreSQL/MySQL), du recueil du besoin à la recette et à la maintenance évolutive.",
+          "Conception d'API REST et d'authentification JWT avec contrôle d'accès par rôles, intégration de services externes sensibles : tunnel de paiement et webhooks Stripe, vérification SMS par OTP via Twilio.",
+          "Administration de l'infrastructure en production : serveurs Linux VPS, conteneurisation Docker multi-services, reverse-proxy Nginx, certificats SSL, GitHub Actions avec tests automatisés avant chaque déploiement, suivi des logs et sauvegardes."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack --- Projet de Fin d'Études (PFE)",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 -- Juin 2025",
+        "highlights": [
+          "Plateforme full-stack (Node.js, Express.js, MongoDB, React.js) consommant des API externes et des données géolocalisées ; spécifications validées avec le client, recette avant livraison, livraison en sprints Agile Scrum avec documentation technique."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Développeur Web --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Outil d'automatisation de données (PHP, SQL) reprenant les saisies manuelles d'une équipe de 5 personnes : temps de saisie réduit de **70%** ; besoins recueillis auprès des utilisateurs terrain, tests réalisés avec eux avant mise en service et procédures internes rédigées."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_ecom",
+      "tech": "TypeScript · Node.js · Express · MongoDB · Stripe",
+      "fr": {
+        "title": "Backend e-commerce --- API REST et webhooks",
+        "description": "Microservice de vente en ligne : catalogue, panier et sessions, contrôle d'accès par rôles (Admin/Acheteur) et encaissement par webhooks Stripe."
+      }
+    },
+    {
+      "id": "proj_eventify",
+      "tech": "Node.js · PostgreSQL · React.js · Stripe · Twilio",
+      "fr": {
+        "title": "Eventify --- Plateforme de réservation d'événements",
+        "description": "Application web complète avec tunnel de paiement sécurisé Stripe, vérification OTP par SMS, authentification JWT et tableau de bord analytique pour les organisateurs."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      {
+        "name": "Arabe",
+        "level": "Langue maternelle"
+      },
+      {
+        "name": "Français",
+        "level": "Courant --- B2 (TCF TP)"
+      },
+      {
+        "name": "Anglais",
+        "level": "Technique / professionnel"
+      }
+    ]
+  }
+}

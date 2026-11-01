@@ -1,0 +1,168 @@
+\documentclass[letterpaper,9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+  \usepackage{microtype}
+  \DisableLigatures[f]{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \defaultfontfeatures{Ligatures=NoCommon}
+\fi
+
+% Blue accent matching the Word version (#2563EB)
+\definecolor{accent}{HTML}{2563EB}
+\definecolor{navy}{HTML}{1F2937}
+\definecolor{greytext}{HTML}{555555}
+
+\hypersetup{
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent,
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+\raggedright
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+
+% Section titles — blue, matching Word headers
+\titleformat{\section}{
+  \vspace{-1pt}\color{accent}\scshape\raggedright\large
+}{}{0em}{}[\color{accent}\titlerule \vspace{-1pt}]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{\color{greytext}#2} \\
+    \textit{\small\color{greytext} #3} & \textit{\small\color{greytext} #4}
+  \end{tabular*}\vspace{-2pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & #2
+  \end{tabular*}\vspace{-1pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=2.5pt, parsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.24in, label={}, itemsep=0.9pt, topsep=1.2pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeProjectListStart}{\begin{itemize}[leftmargin=0.24in, label={}, itemsep=0.9pt, topsep=1.2pt, parsep=0pt]}
+\newcommand{\resumeProjectListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeLangHeading}[2]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2
+  \end{tabular*}\vspace{-1pt}
+}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+    \textbf{\Huge \scshape \color{navy} Mohamed Amine Nasfi} \\[3pt]
+    \small \textbf{\color{accent} Technicien Support \& Administration Systèmes Linux | Helpdesk N1/N2 par écrit \textperiodcentered{} Suivi des logs et de la disponibilité des services \textperiodcentered{} MySQL, DNS, TCP/IP, SSL \textperiodcentered{} Procédures et documentation technique} \\[3pt]
+    \footnotesize \color{greytext}
+    +216 27 711 810 $\quad|\quad$
+    \href{mailto:medaminenasfy@gmail.com}{\underline{medaminenasfy@gmail.com}} $\quad|\quad$
+    Gabès, Tunisie — mobilité nationale \\[2pt]
+    \href{https://www.linkedin.com/in/mohamed-amine-nasfi/}{\underline{LinkedIn}} $\quad|\quad$ \href{https://github.com/medaminenasfi}{\underline{GitHub}} $\quad|\quad$ \href{https://mohamedamine-portfolio.onrender.com}{\underline{Portfolio}}
+\end{center}
+\vspace{-5pt}
+
+% ---------- SUMMARY ----------
+\section{Résumé}
+\begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=1.5pt, parsep=0pt]
+\item \footnotesize{Licence en Systèmes d'Information (Bac+3, Mention Très Bien, 2025) et un an d'activité cumulée en support technique et administration de serveurs : maintenance et dépannage de postes Windows 10/11 chez un client professionnel, et administration en production de serveurs Linux (VPS Debian/Ubuntu, ligne de commandes, Docker, Nginx, renouvellement automatisé des certificats SSL, sauvegardes, suivi actif des logs et de la disponibilité des services). Réponse aux demandes techniques et fonctionnelles de clients internationaux par messagerie électronique professionnelle, en français et en anglais, du recueil du besoin à la recette et à la maintenance évolutive. Rigoureux sur l'écrit : procédures internes, modes opératoires et documentations de livrables rédigés pour des équipes non-techniques. Autonome, réactif, orienté solution.}
+\end{itemize}\vspace{-3pt}
+
+% ---------- EXPERIENCE ----------
+\section{Expérience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading{Technicien Informatique \& Support Utilisateurs --- Freelance}{Mai 2026 -- Septembre 2026}{Cabinet d'Orthodontie Dr Meriem Nasfi}{Gabès, Tunisie}
+    \resumeItemListStart
+      \resumeItem{Support de niveau 1 et 2 sur un site professionnel : installation, configuration et maintenance de postes Windows 10/11 et des logiciels métier, diagnostic et résolution d'incidents, formation des utilisateurs non-techniques et documentation des procédures.}
+      \resumeItem{Déploiement et exploitation du réseau du site : adressage IPv4, DHCP/DNS, routeur et switchs managés, pare-feu, accès distant, câblage Ethernet, et mise en service complète d'un système de vidéosurveillance IP.}
+      \resumeItem{Réponse aux demandes entrantes par messagerie électronique et téléphone, avec comptes rendus écrits des interventions et des anomalies.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Développeur Web \& Administrateur Système}{Nov 2025 -- Présent}{Freelance}{Remote}
+    \resumeItemListStart
+      \resumeItem{Administration en production de serveurs Linux (VPS Debian/Ubuntu) pour les applications de 4 clients à l'international : conteneurisation Docker multi-services, reverse-proxy Nginx, certificats SSL renouvelés automatiquement, sauvegardes, suivi des logs et reprise de service après incident.}
+      \resumeItem{Gestion des demandes clients par écrit, en français et en anglais : recueil du besoin, diagnostic des anomalies signalées en production, correctifs et maintenance évolutive jusqu'à la recette.}
+      \resumeItem{Bases de données MySQL et PostgreSQL en production : conception du schéma, requêtes, sauvegarde et restauration ; déploiements automatisés via GitHub Actions avec tests avant mise en ligne.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Développeur Full-Stack --- Projet de Fin d'Études (PFE)}{Fév 2025 -- Juin 2025}{Laghazala du Désert}{Gabès, Tunisie}
+    \resumeItemListStart
+      \resumeItem{Plateforme full-stack (Node.js, Express.js, MongoDB, React.js) consommant des API externes ; spécifications validées avec le client et recette avant livraison, en sprints Agile Scrum avec documentation technique.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Développeur Web --- Stagiaire}{Juil 2024 -- Août 2024}{Groupe Chimique Tunisien (GCT)}{Gabès, Tunisie}
+    \resumeItemListStart
+      \resumeItem{Outil d'automatisation de données (PHP, SQL) reprenant les saisies manuelles d'une équipe de 5 personnes : temps de saisie réduit de \textbf{70\%} ; besoins recueillis auprès des utilisateurs terrain, tests réalisés avec eux avant mise en service et procédures internes rédigées.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd\vspace{-2pt}
+
+% ---------- TECHNICAL SKILLS ----------
+\section{Compétences Techniques}
+\begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
+\footnotesize{
+  \item \textbf{Support technique N1/N2:} Diagnostic et résolution d'incidents sur postes Windows 10/11 et serveurs Linux, en présentiel et à distance ; traçabilité écrite des interventions et des procédures ; formation du personnel non-technique ; gestion des demandes clients par messagerie électronique professionnelle (Outlook), en français et en anglais.
+  \item \textbf{Serveurs Linux \& hébergement:} Administration de VPS Debian/Ubuntu en production : ligne de commandes bash, conteneurisation Docker et Docker Compose, reverse-proxy Nginx, certificats SSL, durcissement et sauvegardes, suivi des logs, redémarrage et reprise de service après incident.
+  \item \textbf{Bases de données \& réseaux:} MySQL, PostgreSQL, MongoDB : conception de schéma, requêtes SQL, sauvegarde et restauration de bases ; adressage IPv4, DHCP, DNS, TCP/IP, sécurité Wi-Fi, configuration de routeurs et switchs managés, câblage Ethernet.
+  \item \textbf{Documentation \& qualité rédactionnelle:} Rédaction en français de procédures internes, modes opératoires, README et documentations de livrables ; spécifications validées avec le client, tests et recette avant mise en service, comptes rendus d'anomalies.
+  \item \textbf{Outils \& méthodes:} Git / GitHub et workflow de branches, GitHub Actions (déploiement avec tests automatisés), Postman, Agile Scrum ; scripts Bash et Python pour l'automatisation des tâches répétitives.
+}
+\end{itemize}\vspace{-3pt}
+
+
+% ---------- EDUCATION ----------
+\section{Formation}
+\resumeSubHeadingListStart
+  \resumeSubheading{Licence en Systèmes d'Information (Bac+3) --- Mention Très Bien}{2022 -- 2025}{ESSAT Gabès}{Gabès, Tunisie}
+\resumeSubHeadingListEnd\vspace{-1pt}
+
+% ---------- LANGUAGES ----------
+\section{Langues}
+\begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
+\footnotesize{
+  \item Arabe (Langue maternelle) \textperiodcentered{} Français (Courant --- B2 (TCF TP)) \textperiodcentered{} Anglais (Technique / professionnel)
+}
+\end{itemize}
+
+\end{document}

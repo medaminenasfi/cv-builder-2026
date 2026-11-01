@@ -1,0 +1,215 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie — mobilité nationale",
+      "en": "Gabes, Tunisia — nationwide mobility"
+    },
+    "links": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/medaminenasfi"
+      },
+      {
+        "name": "Portfolio",
+        "url": "https://mohamedamine-portfolio.onrender.com"
+      }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Développeur Python Junior | Automatisation & Extraction de données · API REST · PostgreSQL/MongoDB",
+        "summary": "Développeur titulaire d'une Licence en Systèmes d'Information (Mention Très Bien), avec une pratique personnelle consolidée de Python à travers deux productions complètes et publiques : un outil d'extraction et de collecte automatisée de données web (BeautifulSoup, Requests, Selenium, Pandas) et une application de bureau avec interface graphique PyQt5 et base SQLite en architecture MVC. S'appuie sur une expérience freelance de développement full-stack en cycle complet (cadrage, développement, tests, déploiement, maintenance) avec API REST, authentification JWT/OAuth et intégrations de services tiers. À l'aise sur les bases de données relationnelles et NoSQL (PostgreSQL, MySQL, SQLite, MongoDB), l'environnement Linux (ligne de commande, bash) et les outils de versioning et de déploiement automatisé (Git/GitHub, GitHub Actions, Docker, Nginx). Rigoureux, autonome, curieux des pratiques de code assistées par IA (Claude, Cursor, GitHub Copilot) avec relecture critique systématique.",
+        "skills": [
+          {
+            "category": "Python",
+            "items": "Automatisation et extraction de données web (BeautifulSoup, Requests, Selenium, Pandas), traitement et nettoyage de jeux de données, scripts d'exploitation, applications desktop PyQt5 en architecture MVC."
+          },
+          {
+            "category": "Langages",
+            "items": "Python, JavaScript (ES6+), TypeScript, PHP, SQL, HTML5/CSS3."
+          },
+          {
+            "category": "Back-End & API",
+            "items": "Node.js, Express.js, NestJS, conception et consommation d'API REST, webhooks, authentification JWT/OAuth, intégrations tierces (Stripe, Twilio)."
+          },
+          {
+            "category": "Front-End",
+            "items": "React.js, Next.js, Tailwind CSS, intégration de données et tableaux de bord."
+          },
+          {
+            "category": "Bases de données",
+            "items": "Modélisation et requêtes SQL (PostgreSQL, MySQL, SQLite), bases NoSQL (MongoDB), sauvegardes et migrations."
+          },
+          {
+            "category": "DevOps, Tests & Systèmes",
+            "items": "Git/GitHub, GitHub Actions (CI/CD), tests automatisés et linting avant livraison, Docker, Nginx, Linux (Ubuntu/Debian, bash), VPS et certificats SSL."
+          },
+          {
+            "category": "Méthodes & Qualité",
+            "items": "Agile Scrum en sprints, cadrage technique, recueil du besoin métier, documentation technique et guides d'utilisation, reporting d'avancement."
+          }
+        ]
+      },
+      "experience_ids": [
+        "exp_freelance_fullstack",
+        "exp_pfe",
+        "exp_gct"
+      ],
+      "project_ids": [
+        "proj_scraper",
+        "proj_rental"
+      ]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_freelance_fullstack",
+      "company": "Indépendant (Freelance / Remote)",
+      "fr": {
+        "title": "Développeur Full-Stack --- Freelance",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Conception et développement de 4 applications web de bout en bout (React.js, Next.js, Node.js, Express.js, PostgreSQL), du recueil du besoin jusqu'à la mise en production et à la maintenance évolutive.",
+          "Développement de scripts et d'outils de traitement de données, et gestion des bases de données associées : modélisation, requêtes SQL, sauvegardes.",
+          "Intégration d'API REST tierces et de flux sensibles : tunnel de paiement Stripe (webhooks, gestion des échecs), vérification SMS OTP Twilio, authentification JWT/OAuth.",
+          "Automatisation des livraisons : pipelines CI/CD GitHub Actions avec tests et linting avant chaque déploiement, infrastructure Linux (Docker, Nginx, VPS, SSL)."
+        ]
+      },
+      "en": {
+        "title": "Full-Stack Developer --- Freelance",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Present",
+        "highlights": [
+          "Designed and delivered 4 web applications end to end (React.js, Next.js, Node.js, Express.js, PostgreSQL), from requirement gathering to production release and evolutive maintenance.",
+          "Built data processing scripts and tooling and managed the supporting databases: modelling, SQL queries, backups.",
+          "Integrated third-party REST APIs and sensitive flows: Stripe payment webhooks with failure handling, Twilio SMS OTP verification, JWT/OAuth authentication.",
+          "Automated delivery: GitHub Actions CI/CD pipelines running tests and linting before each release, on Linux infrastructure (Docker, Nginx, VPS, SSL)."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack --- Projet de Fin d'Études (PFE)",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 -- Juin 2025",
+        "highlights": [
+          "Développement d'une plateforme full-stack (React.js, Node.js, Express.js, MongoDB) avec cartographie interactive et messagerie temps réel (Socket.io), consommation d'API externes de géolocalisation et météo.",
+          "Livraison en sprints Agile Scrum bimensuels, authentification JWT et chiffrement SSL/TLS."
+        ]
+      },
+      "en": {
+        "title": "Full-Stack Developer --- Final Year Project (PFE)",
+        "location": "Gabes, Tunisia",
+        "dates": "Feb 2025 -- Jun 2025",
+        "highlights": [
+          "Built a full-stack platform (React.js, Node.js, Express.js, MongoDB) with interactive mapping and real-time chat (Socket.io), consuming external geolocation and weather APIs.",
+          "Delivered in two-week Agile Scrum sprints with JWT authentication and SSL/TLS encryption."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Développeur Web --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Développement d'un outil interne d'automatisation et de validation de données (PHP, SQL) réduisant le temps de saisie manuelle de **70%** pour une équipe de 5 personnes.",
+          "Recueil des besoins avec les utilisateurs métier et rédaction de la documentation technique et des guides d'utilisation."
+        ]
+      },
+      "en": {
+        "title": "Web Developer --- Intern",
+        "location": "Gabes, Tunisia",
+        "dates": "Jul 2024 -- Aug 2024",
+        "highlights": [
+          "Built an internal data automation and validation tool (PHP, SQL) cutting manual entry time by **70%** for a 5-person team.",
+          "Gathered business requirements and authored technical documentation and user guides."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_scraper",
+      "tech": "Python · BeautifulSoup · Requests · Selenium · Pandas",
+      "fr": {
+        "title": "Universal Web Scraper --- Système d'extraction automatisée de données",
+        "description": "Outil Python d'extraction de contenus, tableaux, fichiers et métadonnées depuis des pages statiques et dynamiques (rendu JavaScript), avec nettoyage et export structuré des jeux de données. Code public sur GitHub."
+      },
+      "en": {
+        "title": "Universal Web Scraper --- Automated Data Extraction System",
+        "description": "Python extraction tool pulling content, tables, assets and nested metadata from both static and JavaScript-rendered pages, with automated cleaning and structured export. Public code on GitHub."
+      }
+    },
+    {
+      "id": "proj_rental",
+      "tech": "Python · PyQt5 · SQLite · MVC · PyInstaller",
+      "fr": {
+        "title": "Rental Management System --- Application desktop",
+        "description": "Application de bureau hors-ligne (interface PyQt5, base SQLite, architecture MVC) : gestion des contrats et de la facturation périodique, tableau de bord statistique, sauvegardes automatisées et exécution empaquetée sous Windows."
+      },
+      "en": {
+        "title": "Rental Management System --- Python Desktop Application",
+        "description": "Offline-first desktop application (PyQt5 interface, SQLite database, MVC architecture) handling contracts, periodic billing, an analytics dashboard, automated backups and packaged Windows execution."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      },
+      "en": {
+        "degree": "Bachelor in Information Systems --- Highest Honors (Mention Très Bien)",
+        "dates": "2022 -- 2025",
+        "location": "Gabes, Tunisia"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      {
+        "name": "Français",
+        "level": "B2 — TCF TP"
+      },
+      {
+        "name": "Anglais",
+        "level": "Professionnel"
+      },
+      {
+        "name": "Arabe",
+        "level": "Langue maternelle"
+      }
+    ],
+    "en": [
+      {
+        "name": "French",
+        "level": "Professional (TCF B2)"
+      },
+      {
+        "name": "English",
+        "level": "Professional Working"
+      },
+      {
+        "name": "Arabic",
+        "level": "Native"
+      }
+    ]
+  }
+}

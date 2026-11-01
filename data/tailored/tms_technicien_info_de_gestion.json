@@ -1,0 +1,166 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès — mobilité nationale (Permis B)",
+      "en": "Gabes — nationwide mobility (driving licence B)"
+    },
+    "links": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/medaminenasfi"
+      },
+      {
+        "name": "Portfolio",
+        "url": "https://mohamedamine-portfolio.onrender.com"
+      }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Technicien Informatique de Gestion | Installation et mise en service de logiciels · Support fonctionnel aux utilisateurs · Gestion commerciale et facturation",
+        "summary": "Technicien informatique intervenant sur le poste, le logiciel et l'utilisateur : installation, configuration et mise en service de solutions sur Windows 10/11, diagnostic et résolution d'incidents techniques et fonctionnels, formation d'utilisateurs non-techniques, comptes rendus d'intervention. Double compétence terrain et développement d'outils de gestion : a conçu une application de gestion et de facturation (contrats, remises, arrhes, tableau de bord) et une API e-commerce avec catalogue, panier et paiement Stripe, et réduit le temps de saisie de 70% pour une équipe de 5 personnes au GCT.",
+        "skills": [
+          {
+            "category": "Installation & mise en service",
+            "items": "Windows 10/11 : installation, formatage, masterisation, pilotes, configuration des logiciels métiers et des bases locales (MySQL, PostgreSQL, SQLite), vérification du fonctionnement avant livraison."
+          },
+          {
+            "category": "Support technique et fonctionnel",
+            "items": "Incidents matériels, logiciels et fonctionnels (saisie, calcul, édition de documents) ; distingue erreur d'utilisation, paramétrage et anomalie logicielle ; relais documenté vers le développement ; dépannage résolu en moins de 2 heures."
+          },
+          {
+            "category": "Utilisateurs & documentation",
+            "items": "Assistance et formation d'utilisateurs non-techniques (personnels médicaux, 5 agents au GCT) ; ateliers de recueil des besoins ; procédures internes et guides d'utilisation ; comptes rendus d'intervention et suivi des dossiers."
+          },
+          {
+            "category": "Outils de gestion & bases de données",
+            "items": "Application métier complète de bout en bout avec PyQt5/SQLite (contrats, remises, arrhes, facturation, tableau de bord, sauvegardes horodatées) ; SQL : conception de schémas et requêtes sur MySQL, PostgreSQL, SQLite."
+          },
+          {
+            "category": "Développement & automatisation",
+            "items": "Node.js/Express, PHP, Python ; API REST et webhooks, authentification JWT, encaissement Stripe ; scripts d'automatisation, Git/GitHub, Postman."
+          },
+          {
+            "category": "Réseaux locaux, impression & systèmes",
+            "items": "Adressage IPv4 et sous-réseaux, DHCP/DNS, routeurs et switchs managés (VLAN), connectivité et partage entre équipements, câblage Ethernet RJ45 ; impression et scanners de documents ; Linux (bash, Docker, Nginx) ; Pack Office / Microsoft 365 en usage utilisateur."
+          }
+        ]
+      },
+      "experience_ids": [
+        "exp_ortho",
+        "exp_freelance_web",
+        "exp_pfe",
+        "exp_gct"
+      ],
+      "project_ids": [
+        "proj_rental"
+      ]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_ortho",
+      "company": "Cabinet d'Orthodontie Dr Meriem Nasfi",
+      "fr": {
+        "title": "Technicien Informatique & Support Utilisateurs --- Freelance",
+        "location": "Gabès, Tunisie",
+        "dates": "Mai 2026 -- Septembre 2026",
+        "highlights": [
+          "Maintenance des postes de travail Windows 10/11 : installation, formatage et masterisation, pilotes, dépannage logiciel et registre ; remplacement de composants (RAM, SSD) ; mise en service d'imprimantes et de périphériques ; dépannage sous 2 heures.",
+          "Accompagnement et formation d'utilisateurs non-techniques : assistance quotidienne sur les outils, incidents suivis jusqu'à leur clôture.",
+          "Installation complète de l'environnement réseau du cabinet : plan d'adressage IPv4 local, routeur et switchs (VLAN), pare-feu et accès distant sécurisé, câblage Ethernet tiré et testé ; inventaire du parc tenu à jour."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Stagiaire --- Automatisation & Documentation",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Développement d'un outil métier PHP/SQL répondant à un besoin fonctionnel exprimé par une équipe de 5 personnes, avec reprise de leurs saisies manuelles : gain de temps mesuré à **70%** sur la tâche concernée.",
+          "Recueil des besoins auprès des utilisateurs terrain, tests avec eux avant mise en service, rédaction des procédures internes et du guide d'utilisation."
+        ]
+      }
+    },
+    {
+      "id": "exp_freelance_web",
+      "company": "Indépendant (Freelance / Remote)",
+      "fr": {
+        "title": "Développeur Full-Stack & Administration Systèmes --- Freelance",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Développement d'une application de bureau de gestion et de facturation (PyQt5, SQLite) déployée sur postes Windows : contrats, calculs de remises et arrhes, tableau de bord et sauvegardes automatisées.",
+          "Conception et production de 4 applications web complètes pour des clients à l'international (Node.js/Express, React, PostgreSQL, MySQL), dont une API e-commerce avec catalogue produits, panier et paiement Stripe ; déploiements automatisés sur serveurs Linux (Docker, Nginx, GitHub Actions)."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack --- Projet de Fin d'Études (PFE)",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 -- Juin 2025",
+        "highlights": [
+          "Développement d'une application web (React.js, Node.js/Express, MongoDB) pour un client institutionnel, spécifications validées avec lui et recette avant livraison ; interaction avec un jeu de données géolocalisées via API externes."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_rental",
+      "tech": "Python · PyQt5 · SQLite · PyInstaller",
+      "fr": {
+        "title": "Application de gestion et facturation --- Bureau Windows",
+        "description": "Application de bureau hors-ligne pour un parc de matériel de location : articles et contrats, calculs tarifaires et facturation, tableau de bord d'activité, sauvegarde automatisée horodatée de la base SQLite."
+      }
+    },
+    {
+      "id": "proj_ecom",
+      "tech": "Node.js · Express · MySQL · Stripe",
+      "fr": {
+        "title": "API e-commerce --- Catalogue, panier et paiement",
+        "description": "Backend de vente en ligne : catalogue produits, gestion des sessions et du panier, contrôle des accès par rôles et encaissement via webhooks Stripe."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      {
+        "name": "Arabe",
+        "level": "Langue maternelle"
+      },
+      {
+        "name": "Français",
+        "level": "Courant --- B2 (TCF TP)"
+      },
+      {
+        "name": "Anglais",
+        "level": "Professionnel"
+      }
+    ]
+  }
+}

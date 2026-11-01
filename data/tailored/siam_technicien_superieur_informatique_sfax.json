@@ -1,0 +1,157 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie — mobilité nationale"
+    },
+    "links": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/medaminenasfi"
+      },
+      {
+        "name": "Portfolio",
+        "url": "https://mohamedamine-portfolio.onrender.com"
+      }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Technicien Informatique | Maintenance du parc · Installation et configuration Windows · Support utilisateurs N1/N2 · Réseaux locaux",
+        "summary": "Technicien informatique de proximité : maintenance préventive et corrective des postes et périphériques (imprimantes, scanners), montage et mise en service de nouveaux équipements, installation et configuration de Windows 10/11, de pilotes et d'applications métiers, diagnostic et résolution d'incidents matériels et logiciels en moins de 2 heures auprès d'utilisateurs non-techniques. Intervient aussi sur le réseau local du site : adressage IPv4, DHCP/DNS, routeur et switchs managés, pare-feu, câblage Ethernet et dépannage des accès aux ressources. Ajoute à cela le développement d'outils internes (PHP/SQL, Python) qui a réduit le temps de saisie de 70% d'une équipe de 5 personnes au GCT. Licence en Systèmes d'Information — Mention Très Bien, français courant (TCF B2).",
+        "skills": [
+          {
+            "category": "Maintenance matérielle & postes de travail",
+            "items": "Montage et mise en service de postes, diagnostic de pannes, remplacement de composants (RAM, SSD, alimentation), maintenance préventive et corrective, périphériques : imprimantes et scanners."
+          },
+          {
+            "category": "Systèmes & installation logicielle",
+            "items": "Windows 10/11 : installation, formatage, masterisation, pilotes, mises à jour et configuration des logiciels et applications métier, bases locales MySQL/PostgreSQL/SQLite, vérification du fonctionnement avant livraison."
+          },
+          {
+            "category": "Support utilisateurs N1/N2",
+            "items": "Diagnostic et qualification des incidents matériels et logiciels, résolution sous délai contraint (< 2h), assistance à distance (AnyDesk, TeamViewer), formation d'utilisateurs non-techniques, relais documenté vers le développement."
+          },
+          {
+            "category": "Réseaux locaux",
+            "items": "Adressage IPv4 et sous-réseaux, DHCP/DNS, routeurs et switchs managés (VLAN), redirection de ports, pare-feu, sécurisation Wi-Fi, accès distant, câblage Ethernet RJ45 (sertissage et test) ; dépannage des connexions et de l'accès aux ressources partagées."
+          },
+          {
+            "category": "Documentation & suivi",
+            "items": "Procédures internes, guides d'utilisation et documentation technique des interventions ; tests avec les utilisateurs avant mise en service, recueil des besoins auprès des équipes terrain."
+          },
+          {
+            "category": "Outils & automatisation",
+            "items": "Linux Ubuntu/Debian (bash), Docker, Nginx, serveurs VPS, suivi des logs ; Git/GitHub, Postman ; scripts Python/Bash d'automatisation ; Pack Office / Microsoft 365 en usage utilisateur."
+          }
+        ]
+      },
+      "experience_ids": [
+        "exp_ortho",
+        "exp_freelance_web",
+        "exp_pfe",
+        "exp_gct"
+      ],
+      "project_ids": [
+        "proj_rental"
+      ]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_ortho",
+      "company": "Cabinet d'Orthodontie Dr Meriem Nasfi",
+      "fr": {
+        "title": "Technicien Informatique & Support Utilisateurs --- Freelance",
+        "location": "Gabès, Tunisie",
+        "dates": "Mai 2026 -- Septembre 2026",
+        "highlights": [
+          "Maintenance préventive et corrective des postes de travail Windows 10/11 : installation, formatage et masterisation, pilotes, dépannage logiciel et registre ; remplacement de composants (RAM, SSD) ; mise en service d'imprimantes et de scanners ; installation et configuration des logiciels métier avec vérification du fonctionnement avant livraison ; dépannage résolu sous 2 heures.",
+          "Accompagnement d'un personnel médical non-technique : assistance quotidienne, prise en main des outils et documentation des procédures d'exploitation.",
+          "Déploiement du réseau local du site : plan d'adressage IPv4, routeur et switchs (VLAN), pare-feu et accès distant sécurisé, câblage Ethernet tiré, serti et testé."
+        ]
+      }
+    },
+    {
+      "id": "exp_freelance_web",
+      "company": "Indépendant (Freelance / Remote)",
+      "fr": {
+        "title": "Administrateur Système & Développeur d'Outils --- Freelance",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Administration et sécurisation de serveurs Linux en production : hébergement VPS, conteneurisation Docker multi-services, reverse-proxy Nginx, renouvellement automatisé des certificats SSL, suivi des logs et sauvegardes.",
+          "Développement d'une application de bureau de gestion et de facturation (PyQt5, SQLite) déployée et maintenance sur postes Windows ; déploiements automatisés via GitHub Actions."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack --- Projet de Fin d'Études (PFE)",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 -- Juin 2025",
+        "highlights": [
+          "Développement d'une application web (React.js, Node.js/Express, MongoDB) pour un client institutionnel, spécifications validées avec lui et recette avant livraison ; interaction avec un jeu de données géolocalisées via API externes."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Stagiaire --- Automatisation & Documentation",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Développement d'un outil métier PHP/SQL répondant à un besoin fonctionnel exprimé par une équipe de 5 personnes, avec reprise de leurs saisies manuelles : gain de temps mesuré à **70%** sur la tâche concernée.",
+          "Recueil des besoins auprès des utilisateurs terrain, tests avec eux avant mise en service, rédaction des procédures internes et du guide d'utilisation."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_rental",
+      "tech": "Python · PyQt5 · SQLite · PyInstaller",
+      "fr": {
+        "title": "Application de gestion et facturation --- Bureau Windows",
+        "description": "Application de bureau hors-ligne déployée sur postes Windows : suivi des articles et des contrats, calculs tarifaires et facturation, tableau de bord d'activité, sauvegarde automatisée horodatée de la base SQLite."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      {
+        "name": "Arabe",
+        "level": "Langue maternelle"
+      },
+      {
+        "name": "Français",
+        "level": "Courant --- B2 (TCF TP)"
+      },
+      {
+        "name": "Anglais",
+        "level": "Professionnel"
+      }
+    ]
+  }
+}
