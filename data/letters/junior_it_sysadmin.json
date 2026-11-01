@@ -1,0 +1,27 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie",
+      "en": "Gabes, Tunisia"
+    }
+  },
+  "letters": {
+    "en": {
+      "subtitle": "Junior IT System Administrator | IT Support L1/L2 | Windows · Networking · Security & Backups",
+      "company": "",
+      "company_address": "",
+      "place": "Gabes",
+      "objet": "Application — Junior IT System Administrator",
+      "salutation": "Dear Hiring Manager,",
+      "paragraphs": [
+        "I am applying for the Junior IT System Administrator position. I currently provide hands-on IT support for a dental practice — Windows workstations, hardware and software faults, installations, peripherals, and documented follow-up for non-technical users — while administering Linux servers (VPS, Docker, Nginx, SSL) with uptime monitoring and production incident resolution.",
+        "My infrastructure experience covers the foundations your role asks for: Ethernet cabling, IP addressing and subnetting, router and firewall configuration, secure remote access, access control, SSL, and backup discipline — including automated backups in a rental-management ERP I built. I maintain IT documentation and asset records, communicate clearly with non-technical users, and work independently while collaborating with the broader team. I also use Python for task automation, which gives me a practical basis for learning PowerShell.",
+        "I hold a Bachelor in Information Systems (Highest Honors) and work in professional English and French. I am keen to deepen my Active Directory and Entra ID skills within a Microsoft-centric team, and would welcome the opportunity to discuss how I can support your IT operations."
+      ],
+      "closing": "Yours faithfully,"
+    }
+  }
+}

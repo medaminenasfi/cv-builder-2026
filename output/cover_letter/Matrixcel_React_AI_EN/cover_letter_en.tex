@@ -1,0 +1,73 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.4cm,noheadfoot]{geometry}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+  \usepackage{microtype}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont=lmroman10-bold.otf,
+    ItalicFont=lmroman10-italic.otf,
+    BoldItalicFont=lmroman10-bolditalic.otf,
+    SmallCapsFont=lmromancaps10-regular.otf,
+    Ligatures=NoCommon]
+\fi
+
+\definecolor{accent}{HTML}{2563EB}
+\definecolor{navy}{HTML}{1F2937}
+\definecolor{greytext}{HTML}{555555}
+
+\hypersetup{
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent,
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{7pt}
+\urlstyle{same}
+
+\begin{document}
+
+% ---------- LETTERHEAD (matches CV identity) ----------
+\begin{center}
+    \textbf{\Huge \color{navy} Mohamed Amine Nasfi} \\[3pt]
+    \small \textbf{\color{accent} React.js Front-End Developer | TypeScript \textperiodcentered{} Next.js | REST APIs \& AI-Ready Automation} \\[3pt]
+    \footnotesize \color{greytext}
+    +216 27 711 810 $\;|\;$
+    \href{mailto:medaminenasfy@gmail.com}{\underline{medaminenasfy@gmail.com}} $\;|\;$
+    Gabes, Tunisia
+\end{center}
+
+\vspace{8pt}
+\hfill Gabes, October 30, 2026
+
+\vspace{12pt}
+Matrixcel Business \\ Sousse, Tunisia
+
+\vspace{10pt}
+\textbf{Subject:} Application — React.js Front-End \& AI Developer (Sousse)
+
+\vspace{4pt}
+Dear Hiring Manager,
+
+Your posting for a React.js front-end developer who can help bring AI-powered features into internal business platforms is a close match for the work I do every day. I have delivered four client web applications end-to-end with React.js and Next.js — reusable components, routing, state management, and REST API integration — and I enjoy turning operational needs into clean, maintainable interfaces.
+
+Technically, I work with React Hooks, JavaScript ES6+, TypeScript, Next.js, and Tailwind CSS, integrating REST APIs with asynchronous data flows and third-party services such as Stripe payments and Twilio SMS OTP, backed by Git, automated tests, and GitHub Actions CI/CD. On the AI side, generative assistants are already part of my daily development workflow, and the patterns for LLM API integration — secure keys, async calls, error handling — mirror the REST integrations I ship today. I am keen to apply them to intelligent search, document processing, and workflow automation.
+
+I hold a Bachelor in Information Systems (Highest Honors) and work in professional English. Based in Gabes, I am ready to relocate for this 100\% on-site role in Sousse and would welcome the opportunity to discuss how I can contribute to Matrixcel's technology team.
+
+Yours faithfully,
+
+\vspace{14pt}
+\hfill \textbf{Mohamed Amine Nasfi}
+
+\end{document}

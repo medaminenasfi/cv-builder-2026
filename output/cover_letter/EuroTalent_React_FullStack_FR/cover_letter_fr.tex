@@ -1,0 +1,73 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.4cm,noheadfoot]{geometry}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+  \usepackage{microtype}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont=lmroman10-bold.otf,
+    ItalicFont=lmroman10-italic.otf,
+    BoldItalicFont=lmroman10-bolditalic.otf,
+    SmallCapsFont=lmromancaps10-regular.otf,
+    Ligatures=NoCommon]
+\fi
+
+\definecolor{accent}{HTML}{2563EB}
+\definecolor{navy}{HTML}{1F2937}
+\definecolor{greytext}{HTML}{555555}
+
+\hypersetup{
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent,
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{7pt}
+\urlstyle{same}
+
+\begin{document}
+
+% ---------- LETTERHEAD (matches CV identity) ----------
+\begin{center}
+    \textbf{\Huge \color{navy} Mohamed Amine Nasfi} \\[3pt]
+    \small \textbf{\color{accent} Développeur Front-End React | Full-Stack Node.js \textperiodcentered{} Python \textperiodcentered{} PHP | Mobile Flutter} \\[3pt]
+    \footnotesize \color{greytext}
+    +216 27 711 810 $\;|\;$
+    \href{mailto:medaminenasfy@gmail.com}{\underline{medaminenasfy@gmail.com}} $\;|\;$
+    Gabès, Tunisie
+\end{center}
+
+\vspace{8pt}
+\hfill Gabès, le 30 octobre 2026
+
+\vspace{12pt}
+Euro Talent Link \\ Tunis, Tunisie
+
+\vspace{10pt}
+\textbf{Objet :} Candidature — Développeur Front-End React / Full-Stack (Tunis)
+
+\vspace{4pt}
+Madame, Monsieur,
+
+Votre annonce pour des profils IT — développeurs Front-End React, Back-End Node.js/Python/PHP et mobile Flutter — couvre précisément les technologies que je pratique depuis près d'un an en freelance : quatre applications web livrées de bout en bout pour des clients internationaux, en React.js/Next.js avec des API Node.js, complétées par une application mobile Flutter.
+
+Concrètement, j'ai intégré des API de paiement Stripe et d'OTP Twilio, mis en place des pipelines CI/CD GitHub Actions avec tests automatisés, et travaillé en anglais avec des clients à l'étranger — l'esprit d'équipe et les projets internationaux que vous recherchez. Mon expérience PHP et Python (outil d'automatisation au Groupe Chimique Tunisien, −70 \% de temps de saisie) complète le profil back-end.
+
+Diplômé d'une Licence en Systèmes d'Information (mention Très Bien), basé à Gabès et disponible sur le Grand Tunis, je serais ravi d'échanger sur les projets que vous accompagnez et sur la manière dont je peux y contribuer.
+
+Dans l'attente de votre retour, je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.
+
+\vspace{14pt}
+\hfill \textbf{Mohamed Amine Nasfi}
+
+\end{document}

@@ -1,0 +1,186 @@
+\documentclass[letterpaper,9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+  \usepackage{microtype}
+  \DisableLigatures[f]{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont=lmroman10-bold.otf,
+    ItalicFont=lmroman10-italic.otf,
+    BoldItalicFont=lmroman10-bolditalic.otf,
+    SmallCapsFont=lmromancaps10-regular.otf,
+    Ligatures=NoCommon]
+\fi
+
+% Blue accent matching the Word version (#2563EB)
+\definecolor{accent}{HTML}{2563EB}
+\definecolor{navy}{HTML}{1F2937}
+\definecolor{greytext}{HTML}{555555}
+
+\hypersetup{
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent,
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+\raggedright
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+
+% Section titles — blue, matching Word headers
+\titleformat{\section}{
+  \vspace{-1pt}\color{accent}\scshape\raggedright\large
+}{}{0em}{}[\color{accent}\titlerule \vspace{-1pt}]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{\color{greytext}#2} \\
+    \textit{\small\color{greytext} #3} & \textit{\small\color{greytext} #4}
+  \end{tabular*}\vspace{-2pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & #2
+  \end{tabular*}\vspace{-1pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=2.5pt, parsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.24in, label={}, itemsep=0.9pt, topsep=1.2pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeProjectListStart}{\begin{itemize}[leftmargin=0.24in, label={}, itemsep=0.9pt, topsep=1.2pt, parsep=0pt]}
+\newcommand{\resumeProjectListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeLangHeading}[2]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2
+  \end{tabular*}\vspace{-1pt}
+}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+    \textbf{\Huge \color{navy} Mohamed Amine Nasfi} \\[3pt]
+    \small \textbf{\color{accent} Technicien Courants Faibles \& Réseaux | Vidéosurveillance \textperiodcentered{} Câblage \textperiodcentered{} Réseaux IP | Permis B \textperiodcentered{} Mobile Sousse} \\[3pt]
+    \footnotesize \color{greytext}
+    +216 27 711 810 $\quad|\quad$
+    \href{mailto:medaminenasfy@gmail.com}{\underline{medaminenasfy@gmail.com}} $\quad|\quad$
+    Gabès, Tunisie — Mobile Sousse \\[2pt]
+    \href{https://www.linkedin.com/in/mohamed-amine-nasfi/}{\underline{LinkedIn}} $\quad|\quad$ \href{https://github.com/medaminenasfi}{\underline{GitHub}} $\quad|\quad$ \href{https://mohamedamine-portfolio.onrender.com}{\underline{Portfolio}}
+\end{center}
+\vspace{-5pt}
+
+% ---------- SUMMARY ----------
+\section{Résumé}
+\begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=1.5pt, parsep=0pt]
+\item \footnotesize{Technicien de terrain spécialisé dans l'installation et la maintenance de systèmes de vidéosurveillance IP et d'équipements réseau. J'ai déployé de bout en bout un système de vidéosurveillance complet : câblage Ethernet, adressage IP, configuration routeur, accès distant sécurisé et mise en service, puis assuré la maintenance et le dépannage au quotidien. À l'aise sur les interventions chez le client, le diagnostic de pannes matérielles et logicielles, la configuration de réseaux IP et la documentation des installations. Licence en Systèmes d'Information (mention Très Bien), Permis B, disponible à Sousse et pour les déplacements sur sites clients. Sérieux, autonome, polyvalent et à l'aise dans le travail en équipe.}
+\end{itemize}\vspace{-3pt}
+
+% ---------- EXPERIENCE ----------
+\section{Expérience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading{Technicien Courants Faibles \& Support Informatique --- Freelance}{Mai 2026 -- Présent}{Cabinet d'Orthodontie Dr Meriem Nasfi}{Gabès, Tunisie}
+    \resumeItemListStart
+      \resumeItem{Installation et mise en service d'un système de vidéosurveillance IP de bout en bout : pose des caméras, câblage Ethernet, adressage IP, configuration routeur et accès distant sécurisé.}
+      \resumeItem{Maintenance préventive et corrective des installations et du parc informatique : diagnostic de pannes, tests, remplacement de composants et dépannage sur site.}
+      \resumeItem{Câblage et configuration du réseau local du cabinet, avec documentation des interventions et accompagnement des utilisateurs au quotidien.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Administrateur Système \& Maintenance --- Freelance (Remote)}{Nov 2025 -- Présent}{Clients Internationaux}{Remote}
+    \resumeItemListStart
+      \resumeItem{Administration d'environnements serveur Linux (VPS, Docker, Nginx) : déploiement, configuration réseau, certificats SSL et supervision de disponibilité.}
+      \resumeItem{Diagnostic et résolution d'incidents techniques pour 4 clients, avec suivi documenté et comptes rendus d'intervention.}
+      \resumeItem{Installation, paramétrage et mise à jour d'applications sur les environnements clients.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Assistant Gestion de Données --- Stagiaire}{Juil 2024 -- Août 2024}{Groupe Chimique Tunisien (GCT)}{Gabès, Tunisie}
+    \resumeItemListStart
+      \resumeItem{Recueil des besoins auprès d'une équipe opérationnelle et travail selon les procédures internes du site.}
+      \resumeItem{Mise en place d'un outil réduisant de 70 \% le temps de saisie, avec documentation et accompagnement des utilisateurs.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd\vspace{-2pt}
+
+% ---------- TECHNICAL SKILLS ----------
+\section{Compétences Techniques}
+\begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
+\footnotesize{
+  \item \textbf{Courants Faibles \& Sécurité:} Installation complète de systèmes de vidéosurveillance IP (caméras, enregistrement, accès distant sécurisé), maintenance préventive et corrective des installations, dépannage sur site.
+  \item \textbf{Câblage \& Réseaux IP:} Câblage informatique Ethernet, adressage IP et sous-réseaux, TCP/IP, DNS/DHCP, VPN, configuration routeur et pare-feu, Wi-Fi.
+  \item \textbf{Configuration \& Mise en Service:} Configuration d'équipements réseau et de points d'accès, tests de connectivité, certificats SSL, accès distant sécurisé, mise en service et vérification des installations.
+  \item \textbf{Maintenance \& Diagnostic:} Diagnostic de pannes matérielles et logicielles, tests et mesures, remplacement de composants, maintenance du parc informatique et des équipements.
+  \item \textbf{Interventions \& Relation Client:} Interventions chez le client, travail selon procédures, comptes rendus d'intervention et documentation technique, accompagnement d'utilisateurs non techniques.
+  \item \textbf{Systèmes \& Outils:} Windows (installation, configuration, dépannage), Linux (VPS, Docker, Nginx), suite bureautique, Git.
+  \item \textbf{Mobilité:} Permis B ; disponible à Sousse et pour les déplacements sur sites clients.
+}
+\end{itemize}\vspace{-3pt}
+
+% ---------- PROJECTS ----------
+\section{Projets}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading{\textbf{Rental Management System --- Installation \& Maintenance chez un Client} $\quad$ --- $\quad$ \emph{\color{greytext}Python \textperiodcentered{} PyQt5 \textperiodcentered{} SQLite}}{}
+    \resumeProjectListStart
+      \resumeItem{Application installée sur poste client : mise en service, configuration, sauvegardes et support après déploiement.}
+    \resumeProjectListEnd
+
+  \resumeProjectHeading{\textbf{Eventify --- Plateforme de Réservation en Ligne} $\quad$ --- $\quad$ \emph{\color{greytext}React.js \textperiodcentered{} Node.js \textperiodcentered{} PostgreSQL \textperiodcentered{} Stripe}}{}
+    \resumeProjectListStart
+      \resumeItem{Service en production déployé sur serveur Linux : configuration du domaine, certificat SSL, sauvegardes et supervision de disponibilité.}
+    \resumeProjectListEnd
+
+\resumeSubHeadingListEnd\vspace{-3pt}
+
+% ---------- EDUCATION ----------
+\section{Formation}
+\resumeSubHeadingListStart
+  \resumeSubheading{Licence en Systèmes d'Information --- Mention Très Bien}{2022 -- 2025}{ESSAT Gabès}{Gabès, Tunisie}
+\resumeSubHeadingListEnd\vspace{-1pt}
+
+% ---------- LANGUAGES ----------
+\section{Langues}
+\begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
+\footnotesize{
+  \item Français (Courant / Professionnel) \textperiodcentered{} Arabe (Langue maternelle) \textperiodcentered{} Anglais (Professionnel)
+}
+\end{itemize}
+
+\end{document}

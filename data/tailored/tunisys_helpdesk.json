@@ -1,0 +1,154 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie — Mobile Grand Tunis",
+      "en": "Gabes, Tunisia — Mobile for Greater Tunis"
+    },
+    "links": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/" },
+      { "name": "GitHub", "url": "https://github.com/medaminenasfi" },
+      { "name": "Portfolio", "url": "https://mohamedamine-portfolio.onrender.com" }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Opérateur Help Desk | Support Utilisateurs & Suivi des Demandes | Trilingue AR / FR / EN",
+        "summary": "Profil support orienté service client : réception et qualification des demandes, classement par nature et priorité, suivi documenté jusqu'à la résolution et escalade vers les équipes techniques lorsque nécessaire. J'assure actuellement le support quotidien d'utilisateurs non techniques (postes de travail, périphériques, incidents logiciels) et la gestion de la relation client de 4 clients internationaux, avec mise à jour régulière des statuts et reporting. Arabe langue maternelle, français courant et anglais professionnel ; maîtrise des outils bureautiques (Word, Excel) et des outils de suivi de tâches. Rigueur, écoute et sens du service, disponible en horaires décalés (shifts) sur Tunis.",
+        "skills": [
+          { "category": "Help Desk & Support Utilisateurs", "items": "Réception et qualification des demandes et réclamations clients, classement par nature et niveau de priorité selon les procédures, suivi jusqu'à la résolution, escalade vers les équipes techniques, mise à jour des statuts dans les outils de gestion." },
+          { "category": "Maintenance Informatique", "items": "Diagnostic de pannes matérielles et logicielles, installation et mise en service de postes de travail et de périphériques, dépannage sur site et à distance." },
+          { "category": "Communication & Service Client", "items": "Assistance d'utilisateurs non techniques avec écoute et pédagogie, communication professionnelle en arabe (langue maternelle), français et anglais, gestion des demandes avec calme et réactivité." },
+          { "category": "Outils & Bureautique", "items": "Microsoft Word, Excel, e-mail et visioconférence, documentation technique et bases de connaissances, outils de suivi (Trello, GitHub Projects)." },
+          { "category": "Organisation", "items": "Respect des procédures établies, suivi documenté des interventions, comptes rendus d'activité, priorisation des demandes et travail en équipe." },
+          { "category": "Disponibilité", "items": "Horaires décalés (système de shift), mobilité Grand Tunis, Permis B." }
+        ]
+      },
+      "experience_ids": ["exp_ortho", "exp_freelance_client", "exp_gct"],
+      "project_ids": ["proj_rental", "proj_eventify"]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_ortho",
+      "company": "Cabinet d'Orthodontie Dr Meriem Nasfi",
+      "fr": {
+        "title": "Technicien Support Utilisateurs --- Freelance",
+        "location": "Gabès, Tunisie",
+        "dates": "Mai 2026 -- Présent",
+        "highlights": [
+          "Réception et traitement des demandes et incidents du cabinet : qualification, diagnostic, résolution ou escalade, avec mise à jour d'un suivi documenté pour chaque intervention.",
+          "Installation et mise en service de postes de travail et de périphériques, assistance quotidienne d'utilisateurs non techniques avec explications vulgarisées.",
+          "Maintenance du parc et des équipements réseau (câblage, adressage IP, routeur, vidéosurveillance) garantissant la continuité d'activité du cabinet."
+        ]
+      },
+      "en": {
+        "title": "User Support Technician --- Freelance",
+        "location": "Gabes, Tunisia",
+        "dates": "May 2026 -- Present",
+        "highlights": [
+          "Received and handled the practice's requests and incidents: qualification, diagnosis, resolution or escalation, with documented follow-up for each intervention.",
+          "Installed and commissioned workstations and peripherals, giving daily assistance to non-technical users in plain language.",
+          "Maintained the IT estate and network equipment (cabling, IP addressing, router, video surveillance), keeping the practice operational."
+        ]
+      }
+    },
+    {
+      "id": "exp_freelance_client",
+      "company": "Clients Internationaux",
+      "fr": {
+        "title": "Gestion de la Relation Client & Suivi des Demandes --- Freelance (Remote)",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Gestion de bout en bout des demandes de 4 clients internationaux : recueil des besoins, qualification, proposition de solution, suivi jusqu'à la clôture et reporting régulier.",
+          "Communication quotidienne en français et en anglais avec des interlocuteurs non techniques, par écrit et en visioconférence.",
+          "Suivi administratif rigoureux des dossiers (facturation, encaissement) et fidélisation des clients après livraison."
+        ]
+      },
+      "en": {
+        "title": "Client Relations & Request Tracking --- Freelance (Remote)",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Present",
+        "highlights": [
+          "Managed 4 international clients' requests end-to-end: needs capture, qualification, solution proposal, follow-up to closure and regular reporting.",
+          "Daily written and video communication in French and English with non-technical stakeholders.",
+          "Rigorous administrative tracking (invoicing, collection) and client retention after delivery."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Assistant Gestion de Données --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Recueil des besoins auprès d'une équipe opérationnelle de 5 personnes et rédaction de la documentation d'utilisation.",
+          "Mise en place d'un outil réduisant de 70 % le temps de saisie de l'équipe, avec accompagnement des utilisateurs lors de l'adoption."
+        ]
+      },
+      "en": {
+        "title": "Data Management Assistant --- Intern",
+        "location": "Gabes, Tunisia",
+        "dates": "Jul 2024 -- Aug 2024",
+        "highlights": [
+          "Gathered requirements from a 5-person operational team and authored their user documentation.",
+          "Deployed a tool cutting the team's data-entry time by 70% and supported staff adoption."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_rental",
+      "tech": "Python · PyQt5 · SQLite",
+      "fr": {
+        "title": "Rental Management System --- Application de Gestion Livrée à un Client",
+        "description": "Outil de gestion installé chez un client : contrats, facturation automatisée, sauvegardes — avec formation des utilisateurs et support après mise en service."
+      },
+      "en": {
+        "title": "Rental Management System --- Client-Delivered Management App",
+        "description": "Management tool installed at a client site: agreements, automated billing, backups — including user training and post-delivery support."
+      }
+    },
+    {
+      "id": "proj_eventify",
+      "tech": "React.js · Node.js · PostgreSQL · Stripe · Twilio",
+      "fr": {
+        "title": "Eventify --- Plateforme de Réservation en Ligne",
+        "description": "Service utilisé quotidiennement par des clients finaux : disponibilités, paiement sécurisé et confirmations automatiques, avec support et corrections en continu après livraison."
+      },
+      "en": {
+        "title": "Eventify --- Online Booking Platform",
+        "description": "Service used daily by end clients: availability, secure payment and automated confirmations, with continuous support and fixes after delivery."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      },
+      "en": {
+        "degree": "Bachelor in Information Systems --- Highest Honors (Mention Très Bien)",
+        "dates": "2022 -- 2025",
+        "location": "Gabes, Tunisia"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      { "name": "Arabe", "level": "Langue maternelle" },
+      { "name": "Français", "level": "Courant / Professionnel" },
+      { "name": "Anglais", "level": "Professionnel" }
+    ]
+  }
+}

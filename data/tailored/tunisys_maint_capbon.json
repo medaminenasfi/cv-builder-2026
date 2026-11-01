@@ -1,0 +1,201 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie — Mobile Nabeul / Cap-Bon",
+      "en": "Gabes, Tunisia — Mobile for Nabeul / Cap-Bon"
+    },
+    "links": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/medaminenasfi"
+      },
+      {
+        "name": "Portfolio",
+        "url": "https://mohamedamine-portfolio.onrender.com"
+      }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Technicien Support & Maintenance Informatique | Installation & Dépannage Matériel | Permis B · Mobile Nabeul / Cap-Bon",
+        "summary": "Technicien informatique de terrain : diagnostic de pannes matérielles et logicielles, montage et mise en service de postes de travail, installation de périphériques et déploiement d'équipements sur site. J'ai réalisé de bout en bout l'installation d'un système de vidéosurveillance (câblage Ethernet, adressage IP, configuration routeur, accès distant sécurisé) et j'assure au quotidien le support d'utilisateurs non techniques avec suivi documenté des interventions. Licence en Systèmes d'Information (mention Très Bien), au-delà du Bac+2 demandé ; Permis B et disponible pour la région du Cap-Bon (Nabeul) avec déplacements réguliers sur les sites clients. Rigoureux, autonome, sens du service client et du reporting.",
+        "skills": [
+          {
+            "category": "Maintenance & Dépannage",
+            "items": "Diagnostic de pannes matérielles et logicielles, montage et mise en service de postes de travail, remplacement de composants, maintenance préventive et corrective, installation de périphériques."
+          },
+          {
+            "category": "Installation sur Site",
+            "items": "Câblage Ethernet, adressage IP, configuration routeur et pare-feu, installation de caméras IP et enregistreur avec accès distant sécurisé, déploiement de postes clients."
+          },
+          {
+            "category": "Support Technique & Relation Client",
+            "items": "Support technique de proximité et à distance pour des utilisateurs non techniques, suivi documenté des interventions, comptes rendus d'activité, formation à l'usage des outils."
+          },
+          {
+            "category": "Systèmes",
+            "items": "Windows (installation, configuration, dépannage), Linux (ligne de commande, administration serveur : VPS, Docker, Nginx)."
+          },
+          {
+            "category": "Réseau",
+            "items": "TCP/IP, adressage et sous-réseaux, DNS/DHCP, VPN, SSL, diagnostic de connectivité et dépannage réseau."
+          },
+          {
+            "category": "Outils",
+            "items": "Suite bureautique (Word, Excel), documentation technique, Git, Postman, Python (automatisation de tâches)."
+          },
+          {
+            "category": "Mobilité",
+            "items": "Permis B ; disponible pour Nabeul et la région du Cap-Bon, déplacements sur sites clients."
+          }
+        ]
+      },
+      "experience_ids": [
+        "exp_ortho",
+        "exp_freelance_web",
+        "exp_gct"
+      ],
+      "project_ids": [
+        "proj_rental",
+        "proj_eventify"
+      ]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_ortho",
+      "company": "Cabinet d'Orthodontie Dr Meriem Nasfi",
+      "fr": {
+        "title": "Technicien Support & Maintenance Informatique --- Freelance",
+        "location": "Gabès, Tunisie",
+        "dates": "Mai 2026 -- Présent",
+        "highlights": [
+          "Gestion, installation et maintenance du parc informatique du cabinet : postes de travail, périphériques et équipements réseau, avec diagnostic et dépannage des pannes matérielles et logicielles.",
+          "Installation complète d'un système de vidéosurveillance de bout en bout : câblage Ethernet, adressage IP, configuration routeur et accès distant sécurisé.",
+          "Assistance quotidienne d'utilisateurs non techniques et suivi documenté de chaque intervention, garantissant la continuité d'activité du cabinet."
+        ]
+      },
+      "en": {
+        "title": "IT Support & Maintenance Technician --- Freelance",
+        "location": "Gabes, Tunisia",
+        "dates": "May 2026 -- Present",
+        "highlights": [
+          "Managed, installed and maintained the practice's IT estate: workstations, peripherals and network equipment, with hardware and software fault diagnosis and repair.",
+          "Deployed a full video surveillance system end-to-end: Ethernet cabling, IP addressing, router configuration and secure remote access.",
+          "Provided daily assistance to non-technical users with documented follow-up on every intervention, keeping the practice operational."
+        ]
+      }
+    },
+    {
+      "id": "exp_freelance_web",
+      "company": "Clients Internationaux",
+      "fr": {
+        "title": "Support Client & Maintenance d'Applications --- Freelance (Remote)",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Prise en charge des demandes et incidents de 4 clients internationaux : diagnostic, correction et suivi jusqu'à la résolution, avec reporting régulier.",
+          "Installation, paramétrage et mise à jour d'applications et de bases de données sur les environnements clients.",
+          "Communication professionnelle en français et en anglais avec des interlocuteurs non techniques, par écrit et en visioconférence."
+        ]
+      },
+      "en": {
+        "title": "Client Support & Application Maintenance --- Freelance (Remote)",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Present",
+        "highlights": [
+          "Handled requests and incidents for 4 international clients: diagnosis, fix and follow-up through resolution, with regular reporting.",
+          "Installed, configured and updated applications and databases on client environments.",
+          "Professional written and video communication in French and English with non-technical stakeholders."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Assistant Gestion de Données --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Recueil des besoins auprès d'une équipe opérationnelle de 5 personnes et rédaction de la documentation d'utilisation.",
+          "Mise en place d'un outil réduisant de 70 % le temps de saisie de l'équipe, avec accompagnement des utilisateurs lors de l'adoption."
+        ]
+      },
+      "en": {
+        "title": "Data Management Assistant --- Intern",
+        "location": "Gabes, Tunisia",
+        "dates": "Jul 2024 -- Aug 2024",
+        "highlights": [
+          "Gathered requirements from a 5-person operational team and authored their user documentation.",
+          "Deployed a tool cutting the team's data-entry time by 70% and supported staff adoption."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_rental",
+      "tech": "Python · PyQt5 · SQLite · PyInstaller",
+      "fr": {
+        "title": "Rental Management System --- Application Desktop Déployée chez un Client",
+        "description": "Application de gestion de locations installée et maintenue sur poste Windows (packaging PyInstaller) : contrats, facturation automatisée, sauvegardes et restauration des données."
+      },
+      "en": {
+        "title": "Rental Management System --- Desktop App Deployed at a Client Site",
+        "description": "Rental management application installed and maintained on a Windows workstation (PyInstaller packaging): agreements, automated billing, data backup and restore."
+      }
+    },
+    {
+      "id": "proj_eventify",
+      "tech": "React.js · Node.js · PostgreSQL · Stripe · Twilio",
+      "fr": {
+        "title": "Eventify --- Plateforme de Réservation & Paiement en Ligne",
+        "description": "Système de réservation web et mobile avec tunnel de paiement sécurisé (Stripe) et confirmations automatiques — maîtrise des flux de paiement et de la fiabilité d'un service utilisé quotidiennement."
+      },
+      "en": {
+        "title": "Eventify --- Online Booking & Payment Platform",
+        "description": "Web and mobile booking system with a secure payment flow (Stripe) and automated confirmations — practical grounding in payment flows and service reliability."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      },
+      "en": {
+        "degree": "Bachelor in Information Systems --- Highest Honors (Mention Très Bien)",
+        "dates": "2022 -- 2025",
+        "location": "Gabes, Tunisia"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      {
+        "name": "Français",
+        "level": "Courant / Professionnel"
+      },
+      {
+        "name": "Anglais",
+        "level": "Professionnel"
+      },
+      {
+        "name": "Arabe",
+        "level": "Langue maternelle"
+      }
+    ]
+  }
+}

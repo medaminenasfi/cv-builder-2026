@@ -12,7 +12,12 @@
   \usepackage{microtype}
 \else
   \usepackage{fontspec}
-  \defaultfontfeatures{Ligatures=NoCommon}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont=lmroman10-bold.otf,
+    ItalicFont=lmroman10-italic.otf,
+    BoldItalicFont=lmroman10-bolditalic.otf,
+    SmallCapsFont=lmromancaps10-regular.otf,
+    Ligatures=NoCommon]
 \fi
 
 \definecolor{accent}{HTML}{2563EB}
@@ -34,7 +39,7 @@
 
 % ---------- LETTERHEAD (matches CV identity) ----------
 \begin{center}
-    \textbf{\Huge \scshape \color{navy} Mohamed Amine Nasfi} \\[3pt]
+    \textbf{\Huge \color{navy} Mohamed Amine Nasfi} \\[3pt]
     \small \textbf{\color{accent} Technicien Support IT | Développeur Full-Stack | Licence en Systèmes d'Information} \\[3pt]
     \footnotesize \color{greytext}
     +216 27 711 810 $\;|\;$
@@ -43,7 +48,7 @@
 \end{center}
 
 \vspace{8pt}
-\hfill Gabès, le 12 octobre 2026
+\hfill Gabès, le 30 octobre 2026
 
 \vspace{12pt}
 Socomec Group \\ ZI Chebedda, 1135 Ben Arous, Tunisie

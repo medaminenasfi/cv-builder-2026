@@ -19,7 +19,12 @@
   \DisableLigatures[f]{encoding = *, family = *}
 \else
   \usepackage{fontspec}
-  \defaultfontfeatures{Ligatures=NoCommon}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont=lmroman10-bold.otf,
+    ItalicFont=lmroman10-italic.otf,
+    BoldItalicFont=lmroman10-bolditalic.otf,
+    SmallCapsFont=lmromancaps10-regular.otf,
+    Ligatures=NoCommon]
 \fi
 
 % Blue accent matching the Word version (#2563EB)
@@ -92,7 +97,7 @@
 
 % ---------- HEADER ----------
 \begin{center}
-    \textbf{\Huge \scshape \color{navy} Mohamed Amine Nasfi} \\[3pt]
+    \textbf{\Huge \color{navy} Mohamed Amine Nasfi} \\[3pt]
     \small \textbf{\color{accent} Rental Sales Agent | Relation Client \& Vente | Trilingue FR / EN / AR | Permis B} \\[3pt]
     \footnotesize \color{greytext}
     +216 27 711 810 $\quad|\quad$

@@ -1,0 +1,166 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie — Mobile Nabeul / Grand Tunis",
+      "en": "Gabes, Tunisia — Mobile for Nabeul / Greater Tunis"
+    },
+    "links": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/" },
+      { "name": "GitHub", "url": "https://github.com/medaminenasfi" },
+      { "name": "Portfolio", "url": "https://mohamedamine-portfolio.onrender.com" }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Développeur Full Stack | Next.js · TypeScript · Node.js | API REST · CI/CD · Docker",
+        "summary": "Développeur full stack qui intervient sur tout le cycle de vie d'une application web, de la conception à la mise en production : interfaces Next.js/React.js en TypeScript, services back-end Node.js/NestJS, conception et intégration d'API REST, modélisation PostgreSQL et MongoDB. A livré 4 applications clientes complètes en freelance (authentification JWT, paiements Stripe, OTP Twilio) ainsi qu'une plateforme full-stack en équipe livrée en sprints Agile, avec tests avant déploiement et pipelines CI/CD GitHub Actions. Administre également les environnements de production sous Linux (Docker, Nginx, VPS) et le versioning Git au quotidien. Licence en Systèmes d'Information (mention Très Bien) ; autonome, rigoureux, à l'aise en français et en anglais.",
+        "skills": [
+          { "category": "Front-End", "items": "React.js, Next.js (rendu serveur, routage, composants réutilisables), TypeScript, JavaScript ES6+, HTML/CSS, interfaces responsives." },
+          { "category": "Back-End & API", "items": "Node.js, Express.js, NestJS, PHP ; conception et intégration d'API REST, authentification JWT, intégration de services tiers (Stripe, Twilio), gestion des erreurs et validation." },
+          { "category": "Bases de Données", "items": "PostgreSQL (schémas relationnels, requêtes SQL, migrations), MongoDB (NoSQL), SQLite." },
+          { "category": "Cloud & Déploiement", "items": "Docker, Linux (VPS, Nginx, SSL), déploiement et exploitation d'applications en production, sauvegardes et supervision de disponibilité." },
+          { "category": "CI/CD & Qualité", "items": "Git/GitHub (branches, pull requests), GitHub Actions (pipelines CI/CD), tests avant déploiement, revue de code et documentation technique." },
+          { "category": "Méthodes", "items": "Travail en sprints Agile/Scrum, suivi de tâches (GitHub Projects, Trello), communication client en français et en anglais." }
+        ]
+      },
+      "experience_ids": ["exp_freelance_fullstack", "exp_pfe", "exp_gct"],
+      "project_ids": ["proj_realestate", "proj_applyflow", "proj_eventify"]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_freelance_fullstack",
+      "company": "Clients Internationaux",
+      "fr": {
+        "title": "Développeur Full-Stack --- Freelance (Remote)",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Conception, développement et mise en production de 4 applications web complètes pour des clients internationaux : Next.js/React.js, Node.js, PostgreSQL et MongoDB.",
+          "Conception d'API REST et intégration de services tiers (paiements Stripe, OTP Twilio, e-mails transactionnels) avec authentification JWT.",
+          "Mise en place de pipelines CI/CD GitHub Actions et déploiement sur environnements Linux conteneurisés (Docker, Nginx), avec suivi des incidents en production."
+        ]
+      },
+      "en": {
+        "title": "Full-Stack Developer --- Freelance (Remote)",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Present",
+        "highlights": [
+          "Designed, built and shipped 4 complete web applications for international clients: Next.js/React.js, Node.js, PostgreSQL and MongoDB.",
+          "Designed REST APIs and integrated third-party services (Stripe payments, Twilio OTP, transactional email) with JWT authentication.",
+          "Set up GitHub Actions CI/CD pipelines and deployed to containerised Linux environments (Docker, Nginx), with production incident follow-up."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack --- Projet de Fin d'Études (PFE)",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 -- Juin 2025",
+        "highlights": [
+          "Développement d'une plateforme full-stack en équipe (React.js, Node.js, Express.js, MongoDB) livrée en sprints Agile, de l'analyse des besoins à la livraison.",
+          "Intégration d'API externes, authentification JWT et sécurisation SSL ; participation aux choix techniques et à la conception des données.",
+          "Tests avant déploiement, correction de bugs et documentation technique livrée avec le projet."
+        ]
+      },
+      "en": {
+        "title": "Full-Stack Developer --- Final-Year Project (PFE)",
+        "location": "Gabes, Tunisia",
+        "dates": "Feb 2025 -- Jun 2025",
+        "highlights": [
+          "Built a full-stack platform in a team (React.js, Node.js, Express.js, MongoDB) delivered in Agile sprints, from requirements analysis to delivery.",
+          "Integrated external APIs with JWT authentication and SSL; contributed to technical decisions and data design.",
+          "Pre-release testing, bug fixing and technical documentation delivered with the project."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Développeur Web --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Développement d'un outil web interne (PHP, SQL) automatisant les flux de saisie d'une équipe opérationnelle : −70 % de temps de traitement.",
+          "Recueil des besoins, modélisation des données et rédaction de la documentation d'utilisation."
+        ]
+      },
+      "en": {
+        "title": "Web Developer --- Intern",
+        "location": "Gabes, Tunisia",
+        "dates": "Jul 2024 -- Aug 2024",
+        "highlights": [
+          "Built an internal web tool (PHP, SQL) automating a 5-person team's data-entry workflow: 70% less processing time.",
+          "Requirements gathering, data modelling and user documentation."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_realestate",
+      "tech": "Next.js · Node.js · PostgreSQL · TypeScript",
+      "fr": {
+        "title": "Plateforme d'Investissement Immobilier",
+        "description": "Application full-stack Next.js avec API REST Node.js et base PostgreSQL : catalogue, filtres responsives, authentification et tableaux de bord — conception de bout en bout, de la modélisation des données à la mise en production."
+      },
+      "en": {
+        "title": "Real Estate Investment Platform",
+        "description": "Next.js full-stack application with a Node.js REST API and PostgreSQL: catalogue, responsive filters, authentication and dashboards — built end-to-end from data modelling to production."
+      }
+    },
+    {
+      "id": "proj_applyflow",
+      "tech": "Next.js · NestJS · TypeScript · MongoDB · Stripe",
+      "fr": {
+        "title": "ApplyFlow --- Suivi de Candidatures & Extension Chrome",
+        "description": "Application TypeScript de bout en bout : front Next.js, back NestJS, base MongoDB, paiements Stripe et extension Chrome (MV3) — architecture en couches avec API REST typée."
+      },
+      "en": {
+        "title": "ApplyFlow --- Job Application Tracker & Chrome Extension",
+        "description": "End-to-end TypeScript application: Next.js front end, NestJS back end, MongoDB, Stripe payments and a Chrome MV3 extension — layered architecture on a typed REST API."
+      }
+    },
+    {
+      "id": "proj_eventify",
+      "tech": "React.js · Node.js · PostgreSQL · Stripe · Twilio",
+      "fr": {
+        "title": "Eventify --- Plateforme de Réservation en Ligne",
+        "description": "Système de réservation web et mobile : API REST Node.js/PostgreSQL, front React.js, tunnel de paiement Stripe et confirmations SMS — applications réelles en production avec support après livraison."
+      },
+      "en": {
+        "title": "Eventify --- Online Booking Platform",
+        "description": "Web and mobile booking system: Node.js/PostgreSQL REST API, React.js front end, Stripe checkout and SMS confirmations — production applications with post-release support."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      },
+      "en": {
+        "degree": "Bachelor in Information Systems --- Highest Honors (Mention Très Bien)",
+        "dates": "2022 -- 2025",
+        "location": "Gabes, Tunisia"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      { "name": "Français", "level": "Courant / Professionnel" },
+      { "name": "Anglais", "level": "Professionnel" },
+      { "name": "Arabe", "level": "Langue maternelle" }
+    ]
+  }
+}

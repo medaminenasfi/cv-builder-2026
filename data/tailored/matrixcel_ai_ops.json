@@ -1,0 +1,208 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie — Mobile Sousse",
+      "en": "Gabes, Tunisia — Mobile for Sousse"
+    },
+    "links": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/medaminenasfi"
+      },
+      {
+        "name": "Portfolio",
+        "url": "https://mohamedamine-portfolio.onrender.com"
+      }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "en": {
+        "subtitle": "AI Operations & Automation Specialist | Python · JavaScript · REST APIs | Workflow Automation | Professional English",
+        "summary": "Automation-minded engineer who starts from the process, not the tool: I map how a workflow runs, find the repetitive steps and manual error points, then build the smallest automation that removes them. Delivered a web tool that cut a 5-person team's data-entry time by 70% at Groupe Chimique Tunisien, a Python data-harvesting pipeline (scraping, cleaning, structured reporting), and a Chrome extension that fills application forms automatically. I use AI assistants daily for research, structuring information and code review, validating every output against real data. Professional English; on-site ready in Sousse.",
+        "skills": [
+          {
+            "category": "Business Process & Operations",
+            "items": "Process analysis and requirements gathering, documentation of procedures, data management and operational reporting, order/billing workflows, prioritisation of manual and error-prone tasks."
+          },
+          {
+            "category": "Automation & AI",
+            "items": "Python, JavaScript/TypeScript and Node.js scripting; Python automation (Selenium, BeautifulSoup, Scrapy, Pandas); Chrome MV3 extension automation; REST API and JSON/webhook integration; prompt design for structured AI outputs and human validation of results; Git."
+          },
+          {
+            "category": "Data & Excel",
+            "items": "Excel (formulas, lookups, data validation, structured reporting), CSV/JSON extraction and cleaning, SQL/PostgreSQL, MongoDB, data consistency checks."
+          },
+          {
+            "category": "Quality & Documentation",
+            "items": "Workflow testing and error handling, post-deployment monitoring, operating instructions and troubleshooting procedures, measurement of time saved and errors reduced."
+          },
+          {
+            "category": "Languages",
+            "items": "English (professional, daily working language with international clients), French (fluent), Arabic (native)."
+          }
+        ]
+      },
+      "experience_ids": [
+        "exp_freelance_client",
+        "exp_freelance_fullstack",
+        "exp_gct"
+      ],
+      "project_ids": [
+        "proj_scraper",
+        "proj_applyflow",
+        "proj_rental"
+      ]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_freelance_client",
+      "company": "International Clients",
+      "en": {
+        "title": "Client Operations & Workflow Automation --- Freelance (Remote)",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Present",
+        "highlights": [
+          "Run end-to-end client operations for 4 international accounts: requirements capture, quoting, delivery, invoicing and follow-up, with structured records kept for every engagement.",
+          "Identified repetitive administrative steps in each engagement and replaced them with scripts and templates, cutting turnaround time on recurring tasks.",
+          "Use AI assistants daily for research, structuring information and drafting, validating every output against source data before it reaches a client."
+        ]
+      },
+      "fr": {
+        "title": "Client Operations & Workflow Automation --- Freelance (Remote)",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Pilotage des opérations clients de bout en bout pour 4 comptes internationaux : recueil des besoins, devis, livraison, facturation et suivi, avec des enregistrements structurés pour chaque mission.",
+          "Identification des étapes administratives répétitives et remplacement par des scripts et des modèles, réduisant les délais sur les tâches récurrentes.",
+          "Utilisation quotidienne d'assistants IA pour la recherche, la structuration de l'information et la rédaction, avec validation systématique des résultats sur les données sources."
+        ]
+      }
+    },
+    {
+      "id": "exp_freelance_fullstack",
+      "company": "International Clients",
+      "en": {
+        "title": "Full-Stack Developer & Automation Builder --- Freelance (Remote)",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Present",
+        "highlights": [
+          "Built 4 complete web applications end-to-end, including API integrations (Stripe payments, Twilio OTP) that removed manual steps from client workflows.",
+          "Developed and maintained REST APIs and data-processing scripts in Python and Node.js, with error handling and monitoring on the deployed environments.",
+          "Deployed and documented each solution in production (Linux, Docker, CI/CD), including operating instructions for non-technical client staff."
+        ]
+      },
+      "fr": {
+        "title": "Développeur Full-Stack & Automation --- Freelance (Remote)",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Conception de 4 applications web complètes de bout en bout, avec intégrations d'API (Stripe, Twilio) supprimant des étapes manuelles des processus clients.",
+          "Développement et maintenance d'API REST et de scripts de traitement de données en Python et Node.js, avec gestion des erreurs et supervision des environnements déployés.",
+          "Déploiement et documentation de chaque solution en production (Linux, Docker, CI/CD), y compris les consignes d'utilisation pour des utilisateurs non techniques."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "en": {
+        "title": "Business Process Automation --- Intern",
+        "location": "Gabes, Tunisia",
+        "dates": "Jul 2024 -- Aug 2024",
+        "highlights": [
+          "Analysed a 5-person operational team's data-entry workflow, documented each step and identified where time and accuracy were lost.",
+          "Built an internal web tool (PHP, SQL) automating the process: 70% less data-entry time for the team, measured before and after rollout.",
+          "Wrote the user documentation and trained staff on the new process to secure adoption."
+        ]
+      },
+      "fr": {
+        "title": "Automatisation de Processus Métier --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Analyse du processus de saisie d'une équipe opérationnelle de 5 personnes, documentation des étapes et identification des pertes de temps et d'exactitude.",
+          "Développement d'un outil web interne (PHP, SQL) automatisant le processus : 70 % de temps de saisie en moins, mesuré avant et après déploiement.",
+          "Rédaction de la documentation utilisateur et formation des équipes à la nouvelle procédure."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_scraper",
+      "tech": "Python · BeautifulSoup · Scrapy · Selenium · Pandas",
+      "en": {
+        "title": "Universal Web Scraper --- Data Harvesting & Cleaning Pipeline",
+        "description": "Automation that collects data from static and dynamic sites, cleans and structures it into JSON/CSV for analysis and reporting — replacing hours of manual copy-paste with a repeatable, testable pipeline."
+      },
+      "fr": {
+        "title": "Universal Web Scraper --- Collecte & Nettoyage de Données",
+        "description": "Automatisation de collecte sur sites statiques et dynamiques, nettoyage et structuration en JSON/CSV pour l'analyse et le reporting — des heures de copier-coller remplacées par un pipeline répétable et testable."
+      }
+    },
+    {
+      "id": "proj_applyflow",
+      "tech": "Next.js · NestJS · TypeScript · MongoDB · Stripe",
+      "en": {
+        "title": "ApplyFlow --- Workflow Tracker & Browser Automation Extension",
+        "description": "Kanban workflow tracker with a Chrome MV3 extension that fills web forms automatically from stored records — the same pattern as any repetitive data-entry automation."
+      },
+      "fr": {
+        "title": "ApplyFlow --- Suivi de Workflow & Extension d'Automatisation",
+        "description": "Suivi de workflow type Kanban avec extension Chrome (MV3) remplissant automatiquement les formulaires depuis les enregistrements — le même schéma que toute automatisation de saisie répétitive, avec gestion multi-enregistrements et suivi de statut."
+      }
+    },
+    {
+      "id": "proj_rental",
+      "tech": "Python · PyQt5 · SQLite · PyInstaller",
+      "en": {
+        "title": "Rental Management System --- Business Operations ERP (Desktop)",
+        "description": "Business application covering rental agreements, automated billing, activity reporting and backups — end-to-end handling of the data an inventory-and-billing workflow depends on."
+      },
+      "fr": {
+        "title": "Rental Management System --- ERP de Gestion Opérationnelle (Desktop)",
+        "description": "Application métier couvrant contrats de location, facturation automatisée, statistiques d'activité et sauvegardes — prise en charge complète des données opérationnelles d'un flux stock-facturation."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "en": {
+        "degree": "Bachelor in Information Systems --- Highest Honors (Mention Très Bien)",
+        "dates": "2022 -- 2025",
+        "location": "Gabes, Tunisia"
+      },
+      "fr": {
+        "degree": "Licence en Systèmes d'Information --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      }
+    }
+  ],
+  "languages": {
+    "en": [
+      {
+        "name": "English",
+        "level": "Professional"
+      },
+      {
+        "name": "French",
+        "level": "Fluent"
+      },
+      {
+        "name": "Arabic",
+        "level": "Native"
+      }
+    ]
+  }
+}

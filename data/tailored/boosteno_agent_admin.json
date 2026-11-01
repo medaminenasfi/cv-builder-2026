@@ -1,0 +1,153 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie — Mobile Sfax",
+      "en": "Gabes, Tunisia — Mobile for Sfax"
+    },
+    "links": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/" },
+      { "name": "GitHub", "url": "https://github.com/medaminenasfi" },
+      { "name": "Portfolio", "url": "https://mohamedamine-portfolio.onrender.com" }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Agent Administratif Junior | Gestion Documentaire & Saisie de Données | Word · Excel | Mobilité Sfax",
+        "summary": "Agent administratif junior titulaire d'une Licence en Systèmes d'Information (Mention Très Bien), à l'aise dans la gestion et la fiabilisation des données : saisie, vérification, mise à jour de tableaux de suivi et documentation des procédures. A géré de bout en bout la relation et le suivi administratif de 4 clients internationaux en freelance (recueil des besoins, facturation via Stripe, support après livraison) et conçu un outil ayant réduit de 70 % le temps de saisie d'une équipe de 5 personnes. Rigoureux, organisé et relationnel, maîtrise Word/Excel, trilingue français-arabe avec anglais professionnel, mobile sur Sfax (Permis B).",
+        "skills": [
+          { "category": "Gestion Administrative & Documentaire", "items": "Préparation et suivi de dossiers, organisation et classement documentaire, documentation de procédures, relances et coordination entre interlocuteurs." },
+          { "category": "Bureautique & Saisie", "items": "Word, Excel (tableaux de suivi, formules), PowerPoint ; saisie, vérification et mise à jour de données ; outils collaboratifs (Trello, GitHub Projects)." },
+          { "category": "Relation Client & Organisation", "items": "Accueil et accompagnement d'utilisateurs, communication avec des interlocuteurs non techniques, priorisation des demandes, respect des délais." },
+          { "category": "Langues", "items": "Français (courant / professionnel), Arabe (langue maternelle), Anglais (professionnel)." },
+          { "category": "Mobilité", "items": "Permis B (conduite régulière), disponible sur Sfax." }
+        ]
+      },
+      "experience_ids": ["exp_freelance_client", "exp_gct", "exp_ortho"],
+      "project_ids": ["proj_rental", "proj_scraper"]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_freelance_client",
+      "company": "Clients Internationaux",
+      "fr": {
+        "title": "Gestion de la Relation Client & Suivi Administratif --- Freelance (Remote)",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Gestion de bout en bout de 4 clients internationaux : recueil des besoins, préparation des propositions, livraison et support après vente.",
+          "Communication quotidienne en français et en anglais avec des interlocuteurs non techniques, par écrit et en visioconférence.",
+          "Facturation, encaissement et suivi administratif rigoureux des prestations via des paiements en ligne sécurisés (Stripe)."
+        ]
+      },
+      "en": {
+        "title": "Client Relations & Administrative Follow-up --- Freelance (Remote)",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Present",
+        "highlights": [
+          "Managed 4 international clients end-to-end: requirements capture, proposal preparation, delivery, and after-sales support.",
+          "Daily written and video communication in French and English with non-technical stakeholders.",
+          "Invoicing, collection, and rigorous administrative tracking of all engagements through secure online payments (Stripe)."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Assistant Gestion de Données --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Structuration et fiabilisation des données d'une équipe opérationnelle de 5 personnes ; recueil des besoins et rédaction de la documentation d'utilisation.",
+          "Mise en place d'un outil réduisant de 70 % le temps de saisie de l'équipe, avec accompagnement des utilisateurs lors de l'adoption."
+        ]
+      },
+      "en": {
+        "title": "Data Management Assistant --- Intern",
+        "location": "Gabes, Tunisia",
+        "dates": "Jul 2024 -- Aug 2024",
+        "highlights": [
+          "Structured and validated the data of a 5-person operational team; gathered requirements and authored user documentation.",
+          "Deployed a tool cutting the team's data-entry time by 70% and supported staff adoption."
+        ]
+      }
+    },
+    {
+      "id": "exp_ortho",
+      "company": "Cabinet d'Orthodontie Dr Meriem Nasfi",
+      "fr": {
+        "title": "Support Utilisateurs & Gestion des Demandes --- Freelance",
+        "location": "Gabès, Tunisie",
+        "dates": "Mai 2026 -- Présent",
+        "highlights": [
+          "Accueil et accompagnement quotidien d'utilisateurs non techniques : écoute des demandes, explication des procédures et suivi des interventions jusqu'à résolution.",
+          "Gestion du suivi documenté des demandes et incidents, avec priorisation et respect des délais.",
+          "Planification et exécution d'interventions sur site de bout en bout, avec documentation des opérations réalisées."
+        ]
+      },
+      "en": {
+        "title": "User Support & Request Management --- Freelance",
+        "location": "Gabes, Tunisia",
+        "dates": "May 2026 -- Present",
+        "highlights": [
+          "Daily reception and guidance of non-technical users: listening to requests, explaining procedures, and following interventions through to resolution.",
+          "Managed documented follow-up of requests and incidents, with prioritization and deadline compliance.",
+          "Planned and executed on-site interventions end-to-end, documenting each operation performed."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_rental",
+      "tech": "Python · PyQt5 · SQLite",
+      "fr": {
+        "title": "Rental Management System --- Application de Gestion des Locations",
+        "description": "Application de gestion conçue de bout en bout : contrats de location, cycle de facturation automatisé, statistiques d'activité et sauvegardes — rigueur dans le suivi de dossiers et la gestion de données."
+      },
+      "en": {
+        "title": "Rental Management System --- Rental Operations Application",
+        "description": "Application built end-to-end: rental agreements, automated billing cycles, activity analytics, and backups — rigorous file follow-up and data management."
+      }
+    },
+    {
+      "id": "proj_scraper",
+      "tech": "Python · BeautifulSoup · Scrapy · Selenium · Pandas",
+      "fr": {
+        "title": "Universal Web Scraper --- Outil de Collecte & Nettoyage de Données",
+        "description": "Outil de collecte automatisée de données avec extraction et nettoyage structurés (export JSON/CSV) — traitement et fiabilisation de volumes de données."
+      },
+      "en": {
+        "title": "Universal Web Scraper --- Data Collection & Cleaning Tool",
+        "description": "Automated data collection tool with structured extraction and cleaning (JSON/CSV export) — processing and validation of data volumes."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      },
+      "en": {
+        "degree": "Bachelor in Information Systems --- Highest Honors (Mention Très Bien)",
+        "dates": "2022 -- 2025",
+        "location": "Gabes, Tunisia"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      { "name": "Français", "level": "Courant / Professionnel" },
+      { "name": "Arabe", "level": "Langue maternelle" },
+      { "name": "Anglais", "level": "Professionnel" }
+    ]
+  }
+}

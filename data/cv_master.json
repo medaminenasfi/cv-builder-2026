@@ -46,8 +46,8 @@
     },
     "fullstack": {
       "fr": {
-        "subtitle": "Développeur Full-Stack | React/Next.js | Node.js | DevOps (Docker, CI/CD, Linux)",
-        "summary": "Développeur full-stack maîtrisant React.js/Next.js, Node.js/Express.js et PHP, avec une expérience concrète de conception et d'intégration d'API REST de bout en bout, sur des bases de données relationnelles et NoSQL (PostgreSQL, MongoDB). Compétences DevOps solides : déploiement et administration d'infrastructures sous Linux (Docker, Nginx, VPS), pipelines CI/CD (GitHub Actions), gestion de versions Git. A livré 4 projets clients de bout en bout — de l'analyse des besoins à la mise en production et au support — ainsi qu'une plateforme full-stack en équipe (PFE). Diplômé en Systèmes d'Information, autonome, rigoureux, à l'aise en français et en anglais.",
+        "subtitle": "Développeur Full-Stack | React · Next.js · TypeScript · Node.js | DevOps (Docker · CI/CD · Linux)",
+        "summary": "Développeur full-stack qui prend en charge une application de l'analyse des besoins à la mise en production : conception d'API REST, développement d'interfaces React.js/Next.js et modélisation de bases PostgreSQL/MongoDB. A livré 4 applications clientes en freelance (paiement Stripe, OTP Twilio, authentification JWT) ainsi qu'une plateforme full-stack en équipe livrée en sprints Agile. Administre les environnements de production sous Linux (Docker, Nginx, VPS) avec pipelines CI/CD GitHub Actions et tests automatisés. Diplômé en Systèmes d'Information (Mention Très Bien), également à l'aise en TypeScript/NestJS et Flutter ; autonome, rigoureux, bilingue français-anglais.",
         "skills": [
           { "category": "Langages", "items": "JavaScript, TypeScript, Python, PHP, HTML, CSS." },
           { "category": "Front-End", "items": "React.js, Next.js." },
@@ -59,8 +59,8 @@
         ]
       },
       "en": {
-        "subtitle": "Full-Stack Software Engineer | React/Next.js | Node.js | DevOps (Docker, CI/CD, Linux)",
-        "summary": "Full-stack engineer proficient in React.js/Next.js, Node.js/Express.js, and PHP, with proven experience designing and integrating end-to-end RESTful APIs across PostgreSQL and MongoDB databases. Strong DevOps acumen: deploying and hardening Linux infrastructure (Docker, Nginx, VPS), automating CI/CD pipelines (GitHub Actions), and version control. Delivered 4 commercial client web apps end-to-end from requirements gathering to live production release, alongside an Agile full-stack team platform. Bachelor in Information Systems (Highest Honors), self-driven, analytical, and bilingual in French and English.",
+        "subtitle": "Full-Stack Software Engineer | React · Next.js · TypeScript · Node.js | DevOps (Docker · CI/CD · Linux)",
+        "summary": "Full-stack engineer who owns features end-to-end — from requirements analysis to production release: REST API design, React.js/Next.js interfaces, and relational/NoSQL data modeling (PostgreSQL, MongoDB). Delivered 4 freelance client applications (Stripe payments, Twilio OTP, JWT authentication) plus an Agile team platform, and administers the Linux production stack (Docker, Nginx, VPS) with GitHub Actions CI/CD and automated tests. Bachelor in Information Systems (Highest Honors); also works with TypeScript/NestJS and Flutter. Self-driven, methodical, and bilingual in French and English.",
         "skills": [
           { "category": "Languages", "items": "JavaScript, TypeScript, Python, PHP, HTML5, CSS3." },
           { "category": "Front-End", "items": "React.js, Next.js, Tailwind CSS." },

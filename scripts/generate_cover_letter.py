@@ -71,7 +71,12 @@ def build_letter_document(data: dict, lang: str) -> str:
   \\usepackage{{microtype}}
 \\else
   \\usepackage{{fontspec}}
-  \\defaultfontfeatures{{Ligatures=NoCommon}}
+  \\setmainfont{{lmroman10-regular.otf}}[
+    BoldFont=lmroman10-bold.otf,
+    ItalicFont=lmroman10-italic.otf,
+    BoldItalicFont=lmroman10-bolditalic.otf,
+    SmallCapsFont=lmromancaps10-regular.otf,
+    Ligatures=NoCommon]
 \\fi
 
 \\definecolor{{accent}}{{HTML}}{{2563EB}}
@@ -93,7 +98,7 @@ def build_letter_document(data: dict, lang: str) -> str:
 
 % ---------- LETTERHEAD (matches CV identity) ----------
 \\begin{{center}}
-    \\textbf{{\\Huge \\scshape \\color{{navy}} {name}}} \\\\[3pt]
+    \\textbf{{\\Huge \\color{{navy}} {name}}} \\\\[3pt]
     \\small \\textbf{{\\color{{accent}} {subtitle}}} \\\\[3pt]
     \\footnotesize \\color{{greytext}}
     {phone} $\\;|\\;$

@@ -1,0 +1,167 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie — Mobile Grand Tunis",
+      "en": "Gabes, Tunisia — Mobile for Greater Tunis"
+    },
+    "links": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/" },
+      { "name": "GitHub", "url": "https://github.com/medaminenasfi" },
+      { "name": "Portfolio", "url": "https://mohamedamine-portfolio.onrender.com" }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Développeur Full-Stack & Mobile | React · Next.js · Node.js · Flutter | Déploiement & Mise en Production",
+        "summary": "Développeur full-stack habitué à porter une application seul de bout en bout : conception, développement web et mobile, API, bases de données, sécurité, déploiement et maintenance en production. J'ai livré 4 applications clientes complètes (React.js/Next.js, Node.js/NestJS, PostgreSQL/MongoDB, Flutter pour le mobile) avec authentification JWT, paiements Stripe et intégrations tierces, et j'administre moi-même les environnements de production sous Linux (Docker, Nginx, VPS, certificats SSL) avec pipelines CI/CD GitHub Actions, sauvegardes et suivi de disponibilité. Licence en Systèmes d'Information (mention Très Bien) ; autonome, rigoureux, force de proposition, à l'aise en français et en anglais.",
+        "skills": [
+          { "category": "Front-End Web", "items": "React.js, Next.js, TypeScript, JavaScript ES6+, HTML/CSS, interfaces responsives et optimisation de l'expérience utilisateur." },
+          { "category": "Mobile", "items": "Flutter / Dart — applications mobiles iOS et Android consommant les mêmes API REST que le web (application Eventify)." },
+          { "category": "Back-End & API", "items": "Node.js, Express.js, NestJS, PHP ; conception et maintenance d'API REST, authentification et autorisations JWT, intégration de services externes (Stripe, Twilio), correction de bugs et optimisation des performances." },
+          { "category": "Bases de Données", "items": "PostgreSQL, MongoDB, SQL : modélisation, requêtes, migrations, sauvegardes et restauration." },
+          { "category": "Déploiement & Infrastructure", "items": "Docker, Linux (VPS), Nginx, DNS et certificats SSL, CI/CD GitHub Actions, gestion des versions et des releases, monitoring de disponibilité et journaux." },
+          { "category": "Sécurité Applicative", "items": "Authentification et gestion des autorisations, protection des données et des accès, bonnes pratiques de développement sécurisé, mise à jour des dépendances, sécurisation des environnements de production." },
+          { "category": "Méthodes & Outils", "items": "Git/GitHub (branches, pull requests), tests avant déploiement, documentation technique, travail en sprints Agile, communication client FR/EN." }
+        ]
+      },
+      "experience_ids": ["exp_freelance_fullstack", "exp_pfe", "exp_gct"],
+      "project_ids": ["proj_eventify", "proj_realestate", "proj_applyflow"]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_freelance_fullstack",
+      "company": "Clients Internationaux",
+      "fr": {
+        "title": "Développeur Full-Stack & Mobile --- Freelance (Remote)",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Conception, développement, déploiement et maintenance de 4 applications complètes (web et mobile) pour des clients internationaux, du recueil des besoins au support après mise en production.",
+          "Développement d'API REST (Node.js, NestJS) et d'interfaces React.js/Next.js en TypeScript, avec authentification JWT et intégration de services externes (Stripe, Twilio).",
+          "Préparation des environnements et mise en production sous Linux (Docker, Nginx, SSL), pipelines CI/CD GitHub Actions et suivi de la stabilité des applications après release."
+        ]
+      },
+      "en": {
+        "title": "Full-Stack & Mobile Developer --- Freelance (Remote)",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Present",
+        "highlights": [
+          "Designed, built, deployed and maintained 4 complete web and mobile applications for international clients, from requirements to post-release support.",
+          "Built REST APIs (Node.js, NestJS) and React.js/Next.js interfaces in TypeScript, with JWT authentication and third-party integrations (Stripe, Twilio).",
+          "Prepared environments and shipped to production on Linux (Docker, Nginx, SSL), with GitHub Actions CI/CD and post-release stability monitoring."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack --- Projet de Fin d'Études (PFE)",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 -- Juin 2025",
+        "highlights": [
+          "Développement d'une plateforme full-stack en équipe (React.js, Node.js, Express.js, MongoDB) livrée en sprints Agile, de l'analyse des besoins à la mise en ligne.",
+          "Intégration d'API externes, authentification JWT et sécurisation SSL ; participation aux choix d'architecture et à la conception des données.",
+          "Tests avant déploiement, correction de bugs et documentation technique livrée avec le projet."
+        ]
+      },
+      "en": {
+        "title": "Full-Stack Developer --- Final-Year Project (PFE)",
+        "location": "Gabes, Tunisia",
+        "dates": "Feb 2025 -- Jun 2025",
+        "highlights": [
+          "Built a full-stack platform in a team (React.js, Node.js, Express.js, MongoDB) delivered in Agile sprints, from requirements to release.",
+          "Integrated external APIs with JWT authentication and SSL; contributed to architecture decisions and data design.",
+          "Pre-release testing, bug fixing and technical documentation delivered with the project."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Développeur Web --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Développement d'un outil web interne (PHP, SQL) automatisant les flux de saisie d'une équipe opérationnelle : −70 % de temps de traitement.",
+          "Recueil des besoins métier, modélisation des données et rédaction de la documentation d'utilisation."
+        ]
+      },
+      "en": {
+        "title": "Web Developer --- Intern",
+        "location": "Gabes, Tunisia",
+        "dates": "Jul 2024 -- Aug 2024",
+        "highlights": [
+          "Built an internal web tool (PHP, SQL) automating a 5-person team's data-entry workflow: 70% less processing time.",
+          "Business requirements gathering, data modelling and user documentation."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_eventify",
+      "tech": "Flutter · React.js · Node.js · PostgreSQL · Stripe · Twilio",
+      "fr": {
+        "title": "Eventify --- Plateforme de Réservation Web & Mobile",
+        "description": "Application complète mise en production : front web React.js, application mobile Flutter (iOS/Android) consommant la même API REST Node.js/PostgreSQL, tunnel de paiement Stripe et confirmations SMS — cycle complet de la conception au maintien en production."
+      },
+      "en": {
+        "title": "Eventify --- Web & Mobile Booking Platform",
+        "description": "Production application: React.js web front end, Flutter mobile app (iOS/Android) on the same Node.js/PostgreSQL REST API, Stripe checkout and SMS confirmations — full lifecycle from design to production upkeep."
+      }
+    },
+    {
+      "id": "proj_realestate",
+      "tech": "Next.js · Node.js · PostgreSQL · TypeScript",
+      "fr": {
+        "title": "Plateforme d'Investissement Immobilier",
+        "description": "Application full-stack Next.js avec API REST Node.js et base PostgreSQL : catalogue, filtres responsives, authentification et tableaux de bord — modélisation des données, développement et mise en production."
+      },
+      "en": {
+        "title": "Real Estate Investment Platform",
+        "description": "Next.js full-stack application with a Node.js REST API and PostgreSQL: catalogue, responsive filters, authentication and dashboards — data modelling, development and production deployment."
+      }
+    },
+    {
+      "id": "proj_applyflow",
+      "tech": "Next.js · NestJS · TypeScript · MongoDB · Stripe",
+      "fr": {
+        "title": "ApplyFlow --- Suivi de Candidatures & Extension Chrome",
+        "description": "Application TypeScript de bout en bout : front Next.js, back NestJS, base MongoDB, paiements Stripe et extension Chrome (MV3) — architecture en couches sur une API REST typée, avec gestion des versions et des releases."
+      },
+      "en": {
+        "title": "ApplyFlow --- Job Application Tracker & Chrome Extension",
+        "description": "End-to-end TypeScript application: Next.js front end, NestJS back end, MongoDB, Stripe payments and a Chrome MV3 extension — layered architecture on a typed REST API, with version and release management."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      },
+      "en": {
+        "degree": "Bachelor in Information Systems --- Highest Honors (Mention Très Bien)",
+        "dates": "2022 -- 2025",
+        "location": "Gabes, Tunisia"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      { "name": "Français", "level": "Courant / Professionnel" },
+      { "name": "Anglais", "level": "Professionnel" },
+      { "name": "Arabe", "level": "Langue maternelle" }
+    ]
+  }
+}

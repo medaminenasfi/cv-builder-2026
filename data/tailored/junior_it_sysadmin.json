@@ -1,0 +1,149 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie",
+      "en": "Gabes, Tunisia"
+    },
+    "links": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/" },
+      { "name": "GitHub", "url": "https://github.com/medaminenasfi" },
+      { "name": "Portfolio", "url": "https://mohamedamine-portfolio.onrender.com" }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "en": {
+        "subtitle": "Junior IT System Administrator | IT Support L1/L2 | Windows · Networking · Security & Backups",
+        "summary": "Junior IT support technician with hands-on experience in L1/L2 user support, Windows workstation maintenance, and infrastructure operations. Currently supporting a dental practice end-to-end: diagnosing hardware/software faults, deploying systems and peripherals, and documenting interventions for non-technical staff. Administers Linux servers (VPS, Docker, Nginx, SSL) with uptime monitoring and incident resolution, and has deployed IP surveillance infrastructure covering Ethernet cabling, IP addressing, and router/firewall configuration for secure remote access. Bachelor in Information Systems (Highest Honors); professional English and French, native Arabic; eager to grow into Active Directory, Entra ID, and Microsoft infrastructure under senior guidance.",
+        "skills": [
+          { "category": "IT Support (L1/L2)", "items": "User support for hardware and software issues, Windows workstation maintenance and troubleshooting, PC assembly and deployment, software installations and updates, peripheral setup, documented incident follow-up." },
+          { "category": "Systems", "items": "Windows 10/11 (installation, configuration, troubleshooting), Linux (CLI, server administration: Docker, Nginx, VPS)." },
+          { "category": "Networking", "items": "TCP/IP, IP addressing and subnetting, Ethernet cabling, router configuration, firewall rules, VPN/secure remote access, LAN concepts (DNS/DHCP fundamentals)." },
+          { "category": "Security & Backup", "items": "Access control, SSL certificates, secure remote access, automated backups, data-handling best practices, IT documentation and asset records." },
+          { "category": "Scripting & Tools", "items": "Python scripting for task automation, Git/GitHub, Postman, Microsoft Office (Word, Excel)." }
+        ]
+      },
+      "experience_ids": ["exp_ortho", "exp_freelance_web", "exp_gct"],
+      "project_ids": ["proj_rental", "proj_scraper"]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_ortho",
+      "company": "Cabinet d'Orthodontie Dr Meriem Nasfi",
+      "fr": {
+        "title": "Technicien Support IT --- Freelance",
+        "location": "Gabès, Tunisie",
+        "dates": "Mai 2026 -- Présent",
+        "highlights": [
+          "Maintenance préventive et corrective de postes Windows : diagnostic de pannes matérielles/logicielles, montage et mise en service, installation de logiciels et périphériques pour un personnel non technique.",
+          "Installation complète d'une infrastructure de vidéosurveillance IP : câblage Ethernet, adressage IP statique et configuration routeur/pare-feu pour un accès distant chiffré."
+        ]
+      },
+      "en": {
+        "title": "IT Support Technician --- Freelance",
+        "location": "Gabes, Tunisia",
+        "dates": "May 2026 -- Present",
+        "highlights": [
+          "Delivered proactive and corrective maintenance for Windows workstations: diagnosed hardware/software faults, assembled systems, and deployed software and peripherals for non-technical staff.",
+          "Deployed complete IP video surveillance infrastructure: ran Ethernet cabling, established static IP schemes, and configured router/firewall rules for encrypted remote access."
+        ]
+      }
+    },
+    {
+      "id": "exp_freelance_web",
+      "company": "",
+      "fr": {
+        "title": "Développeur Web & Administrateur Système Linux --- Freelance (Remote)",
+        "location": "",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Administration et sécurisation de serveurs Linux : hébergement VPS, conteneurisation Docker, configuration Nginx, certificats SSL, supervision et résolution d'incidents en production.",
+          "Conception et déploiement de 4 applications web clientes (JavaScript, React.js, Node.js, PostgreSQL), de l'analyse des besoins à la mise en production."
+        ]
+      },
+      "en": {
+        "title": "Web Developer & Linux Systems Administrator --- Freelance (Remote)",
+        "location": "",
+        "dates": "Nov 2025 -- Present",
+        "highlights": [
+          "Administered and hardened Linux servers: VPS hosting, Docker containerization, Nginx configuration, SSL certificates, uptime monitoring, and production incident resolution.",
+          "Designed, built, and deployed 4 client web applications (JavaScript, React.js, Node.js, PostgreSQL) from requirements analysis to live production."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Développeur Web --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Développement d'un outil d'automatisation de données (PHP, SQL) réduisant de 70 % le temps de saisie pour une équipe de 5 personnes.",
+          "Rédaction de la documentation technique et des guides utilisateurs ; recueil des besoins auprès de l'équipe métier."
+        ]
+      },
+      "en": {
+        "title": "Web Developer --- Intern",
+        "location": "Gabes, Tunisia",
+        "dates": "Jul 2024 -- Aug 2024",
+        "highlights": [
+          "Engineered an internal data automation tool (PHP, SQL), cutting manual data-entry time by 70% for a 5-person team.",
+          "Authored technical documentation and user guides; gathered requirements directly from business teams."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_rental",
+      "tech": "Python · PyQt5 · SQLite · PyInstaller",
+      "fr": {
+        "title": "Rental Management System --- ERP Desktop Windows",
+        "description": "Application desktop Windows hors ligne : contrats de location, facturation automatisée, statistiques et sauvegardes de données automatisées."
+      },
+      "en": {
+        "title": "Rental Management System --- Windows Desktop ERP",
+        "description": "Offline-first Windows desktop ERP managing rental agreements, automated billing cycles, real-time analytics, and automated SQLite backups."
+      }
+    },
+    {
+      "id": "proj_scraper",
+      "tech": "Python · BeautifulSoup · Scrapy · Selenium · Pandas",
+      "fr": {
+        "title": "Universal Web Scraper --- Collecte de Données",
+        "description": "Outil Python de collecte automatisée de données avec extraction et nettoyage structurés (JSON/CSV)."
+      },
+      "en": {
+        "title": "Universal Web Scraper --- Data Harvesting",
+        "description": "Python data harvesting engine handling static and dynamic websites, exporting structured JSON/CSV datasets."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      },
+      "en": {
+        "degree": "Bachelor in Information Systems --- Highest Honors (Mention Très Bien)",
+        "dates": "2022 -- 2025",
+        "location": "Gabes, Tunisia"
+      }
+    }
+  ],
+  "languages": {
+    "en": [
+      { "name": "English", "level": "Professional Working" },
+      { "name": "French", "level": "Professional Working" },
+      { "name": "Arabic", "level": "Native" }
+    ]
+  }
+}

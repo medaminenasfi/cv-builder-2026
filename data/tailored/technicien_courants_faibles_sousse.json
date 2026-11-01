@@ -1,0 +1,155 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie — Mobile Sousse",
+      "en": "Gabes, Tunisia — Mobile for Sousse"
+    },
+    "links": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/" },
+      { "name": "GitHub", "url": "https://github.com/medaminenasfi" },
+      { "name": "Portfolio", "url": "https://mohamedamine-portfolio.onrender.com" }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Technicien Courants Faibles & Réseaux | Vidéosurveillance · Câblage · Réseaux IP | Permis B · Mobile Sousse",
+        "summary": "Technicien de terrain spécialisé dans l'installation et la maintenance de systèmes de vidéosurveillance IP et d'équipements réseau. J'ai déployé de bout en bout un système de vidéosurveillance complet : câblage Ethernet, adressage IP, configuration routeur, accès distant sécurisé et mise en service, puis assuré la maintenance et le dépannage au quotidien. À l'aise sur les interventions chez le client, le diagnostic de pannes matérielles et logicielles, la configuration de réseaux IP et la documentation des installations. Licence en Systèmes d'Information (mention Très Bien), Permis B, disponible à Sousse et pour les déplacements sur sites clients. Sérieux, autonome, polyvalent et à l'aise dans le travail en équipe.",
+        "skills": [
+          { "category": "Courants Faibles & Sécurité", "items": "Installation complète de systèmes de vidéosurveillance IP (caméras, enregistrement, accès distant sécurisé), maintenance préventive et corrective des installations, dépannage sur site." },
+          { "category": "Câblage & Réseaux IP", "items": "Câblage informatique Ethernet, adressage IP et sous-réseaux, TCP/IP, DNS/DHCP, VPN, configuration routeur et pare-feu, Wi-Fi." },
+          { "category": "Configuration & Mise en Service", "items": "Configuration d'équipements réseau et de points d'accès, tests de connectivité, certificats SSL, accès distant sécurisé, mise en service et vérification des installations." },
+          { "category": "Maintenance & Diagnostic", "items": "Diagnostic de pannes matérielles et logicielles, tests et mesures, remplacement de composants, maintenance du parc informatique et des équipements." },
+          { "category": "Interventions & Relation Client", "items": "Interventions chez le client, travail selon procédures, comptes rendus d'intervention et documentation technique, accompagnement d'utilisateurs non techniques." },
+          { "category": "Systèmes & Outils", "items": "Windows (installation, configuration, dépannage), Linux (VPS, Docker, Nginx), suite bureautique, Git." },
+          { "category": "Mobilité", "items": "Permis B ; disponible à Sousse et pour les déplacements sur sites clients." }
+        ]
+      },
+      "experience_ids": ["exp_ortho", "exp_freelance_web", "exp_gct"],
+      "project_ids": ["proj_rental", "proj_eventify"]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_ortho",
+      "company": "Cabinet d'Orthodontie Dr Meriem Nasfi",
+      "fr": {
+        "title": "Technicien Courants Faibles & Support Informatique --- Freelance",
+        "location": "Gabès, Tunisie",
+        "dates": "Mai 2026 -- Présent",
+        "highlights": [
+          "Installation et mise en service d'un système de vidéosurveillance IP de bout en bout : pose des caméras, câblage Ethernet, adressage IP, configuration routeur et accès distant sécurisé.",
+          "Maintenance préventive et corrective des installations et du parc informatique : diagnostic de pannes, tests, remplacement de composants et dépannage sur site.",
+          "Câblage et configuration du réseau local du cabinet, avec documentation des interventions et accompagnement des utilisateurs au quotidien."
+        ]
+      },
+      "en": {
+        "title": "Low-Voltage & IT Support Technician --- Freelance",
+        "location": "Gabes, Tunisia",
+        "dates": "May 2026 -- Present",
+        "highlights": [
+          "Installed and commissioned an IP video surveillance system end-to-end: camera mounting, Ethernet cabling, IP addressing, router configuration and secure remote access.",
+          "Preventive and corrective maintenance of installations and the IT estate: fault diagnosis, testing, component replacement and on-site repair.",
+          "Cabled and configured the practice's local network, documenting interventions and supporting users day to day."
+        ]
+      }
+    },
+    {
+      "id": "exp_freelance_web",
+      "company": "Clients Internationaux",
+      "fr": {
+        "title": "Administrateur Système & Maintenance --- Freelance (Remote)",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Administration d'environnements serveur Linux (VPS, Docker, Nginx) : déploiement, configuration réseau, certificats SSL et supervision de disponibilité.",
+          "Diagnostic et résolution d'incidents techniques pour 4 clients, avec suivi documenté et comptes rendus d'intervention.",
+          "Installation, paramétrage et mise à jour d'applications sur les environnements clients."
+        ]
+      },
+      "en": {
+        "title": "System Administration & Maintenance --- Freelance (Remote)",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Present",
+        "highlights": [
+          "Administered Linux server environments (VPS, Docker, Nginx): deployment, network configuration, SSL certificates and uptime monitoring.",
+          "Diagnosed and resolved technical incidents for 4 clients, with documented follow-up and intervention reports.",
+          "Installed, configured and updated applications on client environments."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Assistant Gestion de Données --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Recueil des besoins auprès d'une équipe opérationnelle et travail selon les procédures internes du site.",
+          "Mise en place d'un outil réduisant de 70 % le temps de saisie, avec documentation et accompagnement des utilisateurs."
+        ]
+      },
+      "en": {
+        "title": "Data Management Assistant --- Intern",
+        "location": "Gabes, Tunisia",
+        "dates": "Jul 2024 -- Aug 2024",
+        "highlights": [
+          "Gathered requirements from an operational team and worked to the site's internal procedures.",
+          "Deployed a tool cutting data-entry time by 70%, with documentation and user support."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_rental",
+      "tech": "Python · PyQt5 · SQLite",
+      "fr": {
+        "title": "Rental Management System --- Installation & Maintenance chez un Client",
+        "description": "Application installée sur poste client : mise en service, configuration, sauvegardes et support après déploiement."
+      },
+      "en": {
+        "title": "Rental Management System --- Client-Site Installation & Maintenance",
+        "description": "Application installed on a client workstation: commissioning, configuration, backups and post-deployment support."
+      }
+    },
+    {
+      "id": "proj_eventify",
+      "tech": "React.js · Node.js · PostgreSQL · Stripe",
+      "fr": {
+        "title": "Eventify --- Plateforme de Réservation en Ligne",
+        "description": "Service en production déployé sur serveur Linux : configuration du domaine, certificat SSL, sauvegardes et supervision de disponibilité."
+      },
+      "en": {
+        "title": "Eventify --- Online Booking Platform",
+        "description": "Production service deployed on a Linux server: domain configuration, SSL certificate, backups and uptime monitoring."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      },
+      "en": {
+        "degree": "Bachelor in Information Systems --- Highest Honors (Mention Très Bien)",
+        "dates": "2022 -- 2025",
+        "location": "Gabes, Tunisia"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      { "name": "Français", "level": "Courant / Professionnel" },
+      { "name": "Arabe", "level": "Langue maternelle" },
+      { "name": "Anglais", "level": "Professionnel" }
+    ]
+  }
+}

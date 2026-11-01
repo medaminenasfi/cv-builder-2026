@@ -1,0 +1,73 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.4cm,noheadfoot]{geometry}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+  \usepackage{microtype}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont=lmroman10-bold.otf,
+    ItalicFont=lmroman10-italic.otf,
+    BoldItalicFont=lmroman10-bolditalic.otf,
+    SmallCapsFont=lmromancaps10-regular.otf,
+    Ligatures=NoCommon]
+\fi
+
+\definecolor{accent}{HTML}{2563EB}
+\definecolor{navy}{HTML}{1F2937}
+\definecolor{greytext}{HTML}{555555}
+
+\hypersetup{
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent,
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{7pt}
+\urlstyle{same}
+
+\begin{document}
+
+% ---------- LETTERHEAD (matches CV identity) ----------
+\begin{center}
+    \textbf{\Huge \color{navy} Mohamed Amine Nasfi} \\[3pt]
+    \small \textbf{\color{accent} Junior IT System Administrator | IT Support L1/L2 | Windows \textperiodcentered{} Networking \textperiodcentered{} Security \& Backups} \\[3pt]
+    \footnotesize \color{greytext}
+    +216 27 711 810 $\;|\;$
+    \href{mailto:medaminenasfy@gmail.com}{\underline{medaminenasfy@gmail.com}} $\;|\;$
+    Gabes, Tunisia
+\end{center}
+
+\vspace{8pt}
+\hfill Gabes, October 30, 2026
+
+\vspace{12pt}
+
+
+\vspace{10pt}
+\textbf{Subject:} Application — Junior IT System Administrator
+
+\vspace{4pt}
+Dear Hiring Manager,
+
+I am applying for the Junior IT System Administrator position. I currently provide hands-on IT support for a dental practice — Windows workstations, hardware and software faults, installations, peripherals, and documented follow-up for non-technical users — while administering Linux servers (VPS, Docker, Nginx, SSL) with uptime monitoring and production incident resolution.
+
+My infrastructure experience covers the foundations your role asks for: Ethernet cabling, IP addressing and subnetting, router and firewall configuration, secure remote access, access control, SSL, and backup discipline — including automated backups in a rental-management ERP I built. I maintain IT documentation and asset records, communicate clearly with non-technical users, and work independently while collaborating with the broader team. I also use Python for task automation, which gives me a practical basis for learning PowerShell.
+
+I hold a Bachelor in Information Systems (Highest Honors) and work in professional English and French. I am keen to deepen my Active Directory and Entra ID skills within a Microsoft-centric team, and would welcome the opportunity to discuss how I can support your IT operations.
+
+Yours faithfully,
+
+\vspace{14pt}
+\hfill \textbf{Mohamed Amine Nasfi}
+
+\end{document}

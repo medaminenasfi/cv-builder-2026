@@ -1,0 +1,173 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie",
+      "en": "Gabes, Tunisia"
+    },
+    "links": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/" },
+      { "name": "GitHub", "url": "https://github.com/medaminenasfi" },
+      { "name": "Portfolio", "url": "https://mohamedamine-portfolio.onrender.com" }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "en": {
+        "subtitle": "React.js Front-End Developer | TypeScript · Next.js · Tailwind | REST APIs & AI-Ready Automation | Professional English",
+        "summary": "Front-end-focused developer with hands-on React.js delivery across four client web applications built end-to-end, from requirements to production. Strong JavaScript (ES6+) and React fundamentals — Hooks, component architecture, routing, and state management — combined with REST API integration experience across Stripe and Twilio. Works daily with TypeScript, Next.js, and Tailwind CSS, shipping reusable components, interactive dashboards, and automated CI/CD pipelines. Uses generative AI coding assistants in daily development and applies secure REST integration patterns ready for LLM/OpenAI-style APIs. Bachelor in Information Systems (Highest Honors); professional English.",
+        "skills": [
+          { "category": "Front-End", "items": "React.js (Hooks, component architecture, routing, state management), Next.js, JavaScript (ES6+), TypeScript, HTML5, CSS3, Tailwind CSS, responsive UI, reusable component libraries." },
+          { "category": "API & Data", "items": "REST API integration, asynchronous data handling, JWT authentication, third-party services (Stripe payments, Twilio SMS OTP), secure API and data handling." },
+          { "category": "AI & Automation", "items": "Automation of forms and data workflows (Chrome MV3 extension, Python data harvesting), daily use of generative-AI coding assistants, REST integration patterns (auth, async, error handling) ready for LLM/OpenAI-style APIs." },
+          { "category": "DevOps & Tools", "items": "Git, GitHub, GitHub Actions (CI/CD), Docker, Linux, Postman, automated testing." },
+          { "category": "Databases", "items": "PostgreSQL, MongoDB, SQL." }
+        ]
+      },
+      "experience_ids": ["exp_freelance_fullstack", "exp_pfe", "exp_gct"],
+      "project_ids": ["proj_realestate", "proj_eventify", "proj_applyflow", "proj_scraper"]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_freelance_fullstack",
+      "company": "",
+      "fr": {
+        "title": "Développeur Full-Stack --- Freelance (Remote)",
+        "location": "",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Développement et livraison de 4 applications web clientes de bout en bout (React.js, Next.js, Node.js, Express.js, PostgreSQL).",
+          "Interfaces responsives en composants React réutilisables, routage et gestion d'état ; intégration d'API REST avec données asynchrones.",
+          "Intégration de services tiers (paiement Stripe, OTP SMS Twilio) et pipelines CI/CD GitHub Actions avec tests automatisés."
+        ]
+      },
+      "en": {
+        "title": "Full-Stack Developer --- Freelance (Remote)",
+        "location": "",
+        "dates": "Nov 2025 -- Present",
+        "highlights": [
+          "Built and shipped 4 client web applications end-to-end (React.js, Next.js, Node.js, Express.js, PostgreSQL), from requirements to production.",
+          "Developed responsive UIs with reusable React components, routing, and state management; integrated REST APIs with asynchronous data handling.",
+          "Integrated third-party services (Stripe payments, Twilio SMS OTP) and maintained GitHub Actions CI/CD pipelines with automated tests."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack --- Projet de Fin d'Études (PFE)",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 -- Juin 2025",
+        "highlights": [
+          "Développement d'une plateforme web full-stack (React.js, Node.js, Express.js, MongoDB) intégrant des API externes ; authentification JWT et SSL, livrée en sprints Agile."
+        ]
+      },
+      "en": {
+        "title": "Full-Stack Developer --- Final Year Project",
+        "location": "Gabes, Tunisia",
+        "dates": "Feb 2025 -- Jun 2025",
+        "highlights": [
+          "Built a full-stack web platform (React.js, Node.js, Express.js, MongoDB) consuming third-party APIs, with JWT authentication and SSL, delivered in Agile sprints."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Développeur Web --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Développement d'un outil web d'automatisation de données (PHP, SQL) réduisant de 70 % le temps de saisie pour une équipe de 5 personnes.",
+          "Documentation des procédures techniques et recueil des besoins auprès de l'équipe métier."
+        ]
+      },
+      "en": {
+        "title": "Web Developer --- Intern",
+        "location": "Gabes, Tunisia",
+        "dates": "Jul 2024 -- Aug 2024",
+        "highlights": [
+          "Engineered an internal data automation tool (PHP, SQL), cutting manual data-entry time by 70% for a 5-person team.",
+          "Gathered business requirements and authored technical documentation and user guides."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_realestate",
+      "tech": "Next.js · Node.js · PostgreSQL",
+      "fr": {
+        "title": "Club Rendement+ --- Portail Investisseurs",
+        "description": "Plateforme Next.js : parcours d'onboarding, formulaires dynamiques de capture de leads et tableau de bord admin — interfaces métier et dashboards interactifs."
+      },
+      "en": {
+        "title": "Club Rendement+ --- Investor Portal (Next.js)",
+        "description": "Next.js platform with onboarding workflows, dynamic lead-capture forms, and an admin pipeline dashboard — business-facing UI and interactive dashboards."
+      }
+    },
+    {
+      "id": "proj_eventify",
+      "tech": "React.js · Node.js · PostgreSQL · Stripe · Twilio",
+      "fr": {
+        "title": "Eventify --- Réservation & Paiement en Ligne",
+        "description": "Application React.js : disponibilités en temps réel, tunnel de paiement Stripe et vérification OTP par SMS — UI responsive et intégrations REST asynchrones."
+      },
+      "en": {
+        "title": "Eventify --- Booking & Payment Platform",
+        "description": "React.js application with real-time availability, Stripe checkout, and Twilio OTP verification — responsive UI and asynchronous REST integration."
+      }
+    },
+    {
+      "id": "proj_applyflow",
+      "tech": "Next.js · NestJS · TypeScript · MongoDB · Stripe",
+      "fr": {
+        "title": "ApplyFlow --- Suivi & Extension Chrome",
+        "description": "Application Next.js/NestJS/TypeScript avec interface Kanban et extension Chrome (MV3) de remplissage automatique de formulaires — automatisation navigateur et composants réutilisables."
+      },
+      "en": {
+        "title": "ApplyFlow --- Tracker & Chrome Extension",
+        "description": "Next.js/NestJS/TypeScript application with a Kanban interface and a Manifest V3 Chrome extension that autofills forms — browser automation and reusable front-end components."
+      }
+    },
+    {
+      "id": "proj_scraper",
+      "tech": "Python · BeautifulSoup · Scrapy · Selenium · Pandas",
+      "fr": {
+        "title": "Universal Web Scraper --- Collecte de Données",
+        "description": "Outil d'extraction et de nettoyage automatisés de données (sites statiques et dynamiques) avec export JSON/CSV — automatisation de flux de données."
+      },
+      "en": {
+        "title": "Universal Web Scraper --- Data Harvesting",
+        "description": "Automated extraction and cleaning engine handling static and dynamic websites, exporting structured JSON/CSV — automation of data workflows."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      },
+      "en": {
+        "degree": "Bachelor in Information Systems --- Highest Honors (Mention Très Bien)",
+        "dates": "2022 -- 2025",
+        "location": "Gabes, Tunisia"
+      }
+    }
+  ],
+  "languages": {
+    "en": [
+      { "name": "English", "level": "Professional Working" },
+      { "name": "French", "level": "Professional Working" },
+      { "name": "Arabic", "level": "Native" }
+    ]
+  }
+}

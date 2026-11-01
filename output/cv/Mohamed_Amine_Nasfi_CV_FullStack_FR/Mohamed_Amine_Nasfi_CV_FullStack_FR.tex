@@ -19,7 +19,12 @@
   \DisableLigatures[f]{encoding = *, family = *}
 \else
   \usepackage{fontspec}
-  \defaultfontfeatures{Ligatures=NoCommon}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont=lmroman10-bold.otf,
+    ItalicFont=lmroman10-italic.otf,
+    BoldItalicFont=lmroman10-bolditalic.otf,
+    SmallCapsFont=lmromancaps10-regular.otf,
+    Ligatures=NoCommon]
 \fi
 
 % Blue accent matching the Word version (#2563EB)
@@ -92,8 +97,8 @@
 
 % ---------- HEADER ----------
 \begin{center}
-    \textbf{\Huge \scshape \color{navy} Mohamed Amine Nasfi} \\[3pt]
-    \small \textbf{\color{accent} Développeur Full-Stack | React/Next.js | Node.js | DevOps (Docker, CI/CD, Linux)} \\[3pt]
+    \textbf{\Huge \color{navy} Mohamed Amine Nasfi} \\[3pt]
+    \small \textbf{\color{accent} Développeur Full-Stack | React \textperiodcentered{} Next.js \textperiodcentered{} TypeScript \textperiodcentered{} Node.js | DevOps (Docker \textperiodcentered{} CI/CD \textperiodcentered{} Linux)} \\[3pt]
     \footnotesize \color{greytext}
     +216 27 711 810 $\quad|\quad$
     \href{mailto:medaminenasfy@gmail.com}{\underline{medaminenasfy@gmail.com}} $\quad|\quad$
@@ -105,7 +110,7 @@
 % ---------- SUMMARY ----------
 \section{Résumé}
 \begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=1.5pt, parsep=0pt]
-\item \footnotesize{Développeur full-stack maîtrisant React.js/Next.js, Node.js/Express.js et PHP, avec une expérience concrète de conception et d'intégration d'API REST de bout en bout, sur des bases de données relationnelles et NoSQL (PostgreSQL, MongoDB). Compétences DevOps solides : déploiement et administration d'infrastructures sous Linux (Docker, Nginx, VPS), pipelines CI/CD (GitHub Actions), gestion de versions Git. A livré 4 projets clients de bout en bout — de l'analyse des besoins à la mise en production et au support — ainsi qu'une plateforme full-stack en équipe (PFE). Diplômé en Systèmes d'Information, autonome, rigoureux, à l'aise en français et en anglais.}
+\item \footnotesize{Développeur full-stack qui prend en charge une application de l'analyse des besoins à la mise en production : conception d'API REST, développement d'interfaces React.js/Next.js et modélisation de bases PostgreSQL/MongoDB. A livré 4 applications clientes en freelance (paiement Stripe, OTP Twilio, authentification JWT) ainsi qu'une plateforme full-stack en équipe livrée en sprints Agile. Administre les environnements de production sous Linux (Docker, Nginx, VPS) avec pipelines CI/CD GitHub Actions et tests automatisés. Diplômé en Systèmes d'Information (Mention Très Bien), également à l'aise en TypeScript/NestJS et Flutter ; autonome, rigoureux, bilingue français-anglais.}
 \end{itemize}\vspace{-3pt}
 
 % ---------- EXPERIENCE ----------

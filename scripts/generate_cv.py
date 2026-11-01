@@ -246,7 +246,12 @@ def build_latex_document(data: dict, track_name: str = "it_support", lang: str =
   \\DisableLigatures[f]{{encoding = *, family = *}}
 \\else
   \\usepackage{{fontspec}}
-  \\defaultfontfeatures{{Ligatures=NoCommon}}
+  \\setmainfont{{lmroman10-regular.otf}}[
+    BoldFont=lmroman10-bold.otf,
+    ItalicFont=lmroman10-italic.otf,
+    BoldItalicFont=lmroman10-bolditalic.otf,
+    SmallCapsFont=lmromancaps10-regular.otf,
+    Ligatures=NoCommon]
 \\fi
 
 % Blue accent matching the Word version (#2563EB)
@@ -319,7 +324,7 @@ def build_latex_document(data: dict, track_name: str = "it_support", lang: str =
 
 % ---------- HEADER ----------
 \\begin{{center}}
-    \\textbf{{\\Huge \\scshape \\color{{navy}} {escape_latex(name)}}} \\\\[3pt]
+    \\textbf{{\\Huge \\color{{navy}} {escape_latex(name)}}} \\\\[3pt]
     \\small \\textbf{{\\color{{accent}} {escaped_subtitle}}} \\\\[3pt]
     \\footnotesize \\color{{greytext}}
     {escape_latex(phone)} $\\quad|\\quad$
