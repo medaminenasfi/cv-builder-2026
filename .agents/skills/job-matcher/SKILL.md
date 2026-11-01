@@ -21,9 +21,9 @@ offer, show the complete match assessment, calculate the score, and identify
 hard disqualifiers before selecting a profile, writing tailored data, calling
 `generate_cv.py`, or preparing a cover letter.
 
-- **Below 60% or hard disqualifier:** stop after the match report. Generate no
+- **Below 50% or hard disqualifier:** stop after the match report. Generate no
   CV, no cover letter, and no application files.
-- **60% or higher with no hard disqualifier:** continue with tailored CV
+- **50% or higher with no hard disqualifier:** continue with tailored CV
   generation and, for TanitJobs, the short text letter.
 
 Never use a generic, frontend, support, or transferable-skills CV to bypass a
@@ -103,9 +103,9 @@ $$\text{Match Score} = (H \times 0.40) + (E \times 0.25) + (T \times 0.20) + (L 
 ### Mandatory generation gate
 
 After calculating the score, stop the application pipeline when the score is
-below 60% or when a hard disqualifier is present. The result is the match
+below 50% or when a hard disqualifier is present. The result is the match
 assessment only. Generate a tailored CV, and for TanitJobs a short text
-cover letter, only when the score is at least 60% and no hard disqualifier is
+cover letter, only when the score is at least 50% and no hard disqualifier is
 identified.
 
 ### Mandatory output states
@@ -115,9 +115,9 @@ Use exactly one of these states after the assessment:
 | State | Condition | Allowed next action |
 | :--- | :--- | :--- |
 | `NEED_DETAILS` | URL inaccessible or JD incomplete | Ask for pasted JD; generate nothing |
-| `STOP_REACH` | Score below 60% | Give match report and preparation advice; generate nothing |
+| `STOP_REACH` | Score below 50% | Give match report and preparation advice; generate nothing |
 | `STOP_HARD_GAP` | Hard disqualifier present | Give match report and explain the blocker; generate nothing |
-| `GO` | Score at least 60% and no hard disqualifier | Tailor and generate the CV |
+| `GO` | Score at least 50% and no hard disqualifier | Tailor and generate the CV |
 
 When state is `GO`, show the complete match report **before** invoking the CV
 generator. The final response must repeat the score, selected track, selected

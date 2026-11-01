@@ -18,9 +18,9 @@ or cover-letter work. Do not select a fallback profile, create tailored data,
 call `generate_cv.py`, or create application files until the gate decision is
 complete.
 
-- **Below 60% or hard disqualifier:** stop after the match report. Generate no
+- **Below 50% or hard disqualifier:** stop after the match report. Generate no
   CV, no cover letter, and no application output.
-- **60% or higher with no hard disqualifier:** continue with tailored CV
+- **50% or higher with no hard disqualifier:** continue with tailored CV
   generation; for TanitJobs applications, provide the short text letter.
 
 The score is a stop/go decision, not just explanatory context. Never use a
@@ -92,10 +92,11 @@ The job-match assessment must always be shown to the user **before** any CV gene
 For every job URL, pasted job description, or job offer:
 1. Ingest the URL or pasted text. If a URL cannot be read or the description is incomplete, stop with `NEED_DETAILS` and ask the user to paste the job description.
 2. Display the match report with the score icon, recommended track, direct matches, transferable matches, hard gaps, and logistical risks.
-3. Apply the generation gate: generate a CV only for a score of **60% or
-   higher** and no hard disqualifier. For a Tier 3 / score below 60% or a
-   hard disqualifier, stop after the match report and do not generate a CV or
-   cover letter.
+3. Apply the generation gate: generate a CV only for a score of **50% or
+   higher** and no hard disqualifier. For a score below 50% or a hard
+   disqualifier, stop after the match report and do not generate a CV or cover
+   letter. Scores from 50% to 59% may remain classified as Tier 3 / Reach, but
+   are eligible for generation under this gate.
 4. If the gate passes, show the complete report first, then tailor the profile and generate the CV.
 5. In the final response, include the match summary, decision icon, generated CV path, language, and verified page count.
 
