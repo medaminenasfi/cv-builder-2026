@@ -5,7 +5,7 @@ from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from generate_cv import compile_with_tectonic, escape_latex, get_field
+from generate_cv import add_compiler_arguments, compile_pdf, escape_latex, get_field, resolve_project_path
 
 MOIS_FR = ["janvier", "février", "mars", "avril", "mai", "juin",
            "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
@@ -25,6 +25,7 @@ def build_letter_document(data: dict, lang: str) -> str:
     if lang in letters:
         letter = letters[lang]
     elif "fr" in letters:
+        print(f"Warning: no '{lang}' letter content, using French instead.", file=sys.stderr)
         letter = letters["fr"]
     else:
         raise SystemExit("Error: no letter content found in input JSON.")
@@ -135,13 +136,13 @@ def main():
     parser.add_argument("--input", "-i", required=True, help="Path to letter JSON file (data/letters/...)")
     parser.add_argument("--lang", "-l", default="fr", choices=["fr", "en"], help="Language: 'fr' or 'en'")
     parser.add_argument("--name", "-n", default=None, help="Application folder name (default: input file stem)")
-    parser.add_argument("--compile", "-c", action="store_true", default=True, help="Automatically compile to PDF")
     parser.add_argument("--outdir", default="output", help="Base output directory")
+    add_compiler_arguments(parser)
     args = parser.parse_args()
 
-    input_path = Path(args.input)
+    input_path = resolve_project_path(args.input)
     if not input_path.exists():
-        print(f"Error: Input file {input_path} does not exist.")
+        print(f"Error: Input file {input_path} does not exist.", file=sys.stderr)
         return 1
 
     with open(input_path, "r", encoding="utf-8") as f:
@@ -150,7 +151,7 @@ def main():
     app_name = args.name or input_path.stem
     lang_suffix = "fr" if args.lang == "fr" else "en"
 
-    letter_dir = Path(args.outdir) / "cover_letter" / app_name
+    letter_dir = resolve_project_path(args.outdir) / "cover_letter" / app_name
     letter_dir.mkdir(parents=True, exist_ok=True)
 
     tex_filename = f"cover_letter_{lang_suffix}.tex"
@@ -163,11 +164,14 @@ def main():
 
     print(f"Generated LaTeX cover letter at: {tex_path.resolve()} (Lang: {args.lang})")
 
-    if args.compile:
-        if compile_with_tectonic(tex_path, letter_dir):
-            pdf_path = tex_path.with_suffix(".pdf")
-            if pdf_path.exists():
-                print(f"Generated PDF cover letter at: {pdf_path.resolve()}")
+    if not args.no_compile:
+        pdf_path = tex_path.with_suffix(".pdf")
+        if not compile_pdf(tex_path, letter_dir, args.tex_engine):
+            return 1
+        if not pdf_path.exists():
+            print(f"Error: compiler reported success but {pdf_path} is missing.", file=sys.stderr)
+            return 1
+        print(f"Generated PDF cover letter at: {pdf_path.resolve()}")
 
     return 0
 

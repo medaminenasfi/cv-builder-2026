@@ -8,11 +8,20 @@ Outputs all results to the output/ directory.
 """
 
 import json
-import re
 import os
+import re
+import shutil
 import subprocess
 import argparse
+import sys
+import unicodedata
+import zlib
 from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+# Track key -> filename fragment used for default output names
+TRACK_LABELS = {"it_support": "IT_Support", "fullstack": "FullStack", "tailored": "Tailored"}
 
 # Section header translations
 SECTION_TITLES = {
@@ -35,43 +44,49 @@ SECTION_TITLES = {
 }
 
 
+LATEX_REPLACEMENTS = {
+    "\\": r"\textbackslash{}",
+    "&": r"\&",
+    "%": r"\%",
+    "$": r"\$",
+    "#": r"\#",
+    "_": r"\_",
+    "{": r"\{",
+    "}": r"\}",
+    "~": r"\textasciitilde{}",
+    "^": r"\textasciicircum{}",
+}
+LATEX_SPECIAL = re.compile("([" + re.escape("".join(LATEX_REPLACEMENTS)) + "])")
+
+
+def escape_plain(text: str) -> str:
+    escaped = LATEX_SPECIAL.sub(lambda m: LATEX_REPLACEMENTS[m.group(1)], text)
+    # Tectonic runs XeTeX, where font-level ligature disabling is unavailable with the
+    # bundled fonts; a zero-width glue keeps "ff" out of the ligature glyph so ATS text
+    # extraction reads "Office", not U+FB00.
+    return escaped.replace("ff", r"f\hspace{0pt}f")
+
+
 def escape_latex(text: str) -> str:
     """
-    Escapes LaTeX special characters while preserving markdown bold (**bold**) and deliberate syntax.
+    Escapes LaTeX special characters while preserving markdown bold (**bold**).
     """
     if not text:
         return ""
-    
-    # 1. Preserve markdown bold: **text** -> temporary placeholder
-    bold_matches = []
-    def save_bold(match):
-        bold_matches.append(match.group(1))
-        return f"BOLDTOKENXYZ{len(bold_matches)-1}ENDTOKEN"
 
-    text = re.sub(r"\*\*(.+?)\*\*", save_bold, text)
+    bold_spans = []
 
-    # 2. Escape reserved LaTeX characters
-    replacements = [
-        ("&", r"\&"),
-        ("%", r"\%"),
-        ("$", r"\$"),
-        ("#", r"\#"),
-        ("_", r"\_"),
-    ]
-    for char, escaped in replacements:
-        text = text.replace(char, escaped)
+    def stash(match):
+        bold_spans.append(match.group(1))
+        return f"\x00{len(bold_spans) - 1}\x00"
 
-    # 3. Restore bold tokens as \textbf{...}
-    for idx, bold_content in enumerate(bold_matches):
-        escaped_bold = bold_content
-        for char, escaped in replacements:
-            escaped_bold = escaped_bold.replace(char, escaped)
-        text = text.replace(f"BOLDTOKENXYZ{idx}ENDTOKEN", f"\\textbf{{{escaped_bold}}}")
+    text = re.sub(r"\*\*(.+?)\*\*", stash, text)
+    text = escape_plain(text)
 
-    # Convert bullet dots
-    text = text.replace("·", r"\textperiodcentered{}")
+    for idx, bold_content in enumerate(bold_spans):
+        text = text.replace(f"\x00{idx}\x00", f"\\textbf{{{escape_plain(bold_content)}}}")
 
-    return text
+    return text.replace("·", r"\textperiodcentered{}")
 
 
 def get_field(obj: dict, key: str, lang: str, default: str = "") -> str:
@@ -84,6 +99,118 @@ def get_field(obj: dict, key: str, lang: str, default: str = "") -> str:
     return val if val else default
 
 
+def get_language_section(content: dict, lang: str, label: str) -> dict:
+    """
+    Returns the requested language block, warning loudly when it falls back to French.
+    """
+    if isinstance(content.get(lang), dict):
+        return content[lang]
+    if isinstance(content.get("fr"), dict):
+        print(f"Warning: no '{lang}' content for {label}, using French instead.", file=sys.stderr)
+        return content["fr"]
+    return content
+
+
+MONTH_TOKENS = {
+    "jan": 1, "janv": 1, "feb": 2, "fev": 2, "fevr": 2, "mar": 3, "apr": 4, "avr": 4,
+    "may": 5, "mai": 5, "jun": 6, "juin": 6, "jul": 7, "juil": 7, "aug": 8, "aou": 8,
+    "sep": 9, "sept": 9, "oct": 10, "nov": 11, "dec": 12,
+}
+
+DATE_START = re.compile(r"([a-z]{3,6})\.?\s+((?:19|20)\d{2})")
+
+
+def experience_start_key(exp: dict, lang: str):
+    """
+    Parses the leading "Month Year" of an experience date range as a sort key,
+    or returns None when the string is not a recognisable date.
+    """
+    for candidate in (lang, "fr", "en"):
+        section = exp.get(candidate)
+        dates = section.get("dates", "") if isinstance(section, dict) else ""
+        if not dates:
+            continue
+        ascii_text = unicodedata.normalize("NFKD", dates).encode("ascii", "ignore").decode().lower()
+        match = DATE_START.search(ascii_text)
+        if match:
+            month = MONTH_TOKENS.get(match.group(1)) or MONTH_TOKENS.get(match.group(1)[:3])
+            if month:
+                return (int(match.group(2)), month)
+    return None
+
+
+def sort_by_recency(experiences: list, lang: str) -> list:
+    """
+    Applies the reverse-chronological order ATS expects, but only when every
+    selected experience has a parseable start date, so an unrecognised date
+    string can never silently reshuffle a deliberately ordered profile.
+    """
+    keys = [experience_start_key(e, lang) for e in experiences]
+    if not keys or None in keys:
+        return experiences
+    ordered = sorted(zip(keys, range(len(keys)), experiences), key=lambda t: (-t[0][0], -t[0][1], t[1]))
+    return [exp for _, _, exp in ordered]
+
+
+def _content_block(track_data: dict, lang: str) -> dict:
+    """
+    Returns the editable language block of a profile, creating it when the track has none.
+    """
+    for key in (lang, "fr"):
+        if isinstance(track_data.get(key), dict):
+            return track_data[key]
+    return track_data.setdefault(lang, {})
+
+
+def apply_overrides(
+    data: dict,
+    track_name: str,
+    lang: str,
+    subtitle: str = None,
+    summary: str = None,
+    skills_file: str = None,
+    experience_ids: list = None,
+    project_ids: list = None,
+) -> list:
+    """
+    Tailors a track in memory so one command produces a job-specific CV, without writing
+    a JSON profile per offer. Returns warnings for references that do not exist.
+    """
+    warnings = []
+    track = data.setdefault("profiles", {}).setdefault(track_name, {})
+    if not isinstance(track, dict):
+        raise SystemExit(f"Error: profile '{track_name}' is not an object and cannot be tailored.")
+
+    content = _content_block(track, lang)
+    if subtitle:
+        content["subtitle"] = subtitle
+    if summary:
+        content["summary"] = summary
+    if skills_file:
+        path = resolve_project_path(skills_file)
+        if not path.exists():
+            raise SystemExit(f"Error: skills file {path} does not exist.")
+        content["skills"] = json.loads(path.read_text(encoding="utf-8"))
+
+    known_exps = {e["id"] for e in data.get("experiences", []) if "id" in e}
+    known_projects = {p["id"] for p in data.get("projects", []) if "id" in p}
+    for key, ids, known, label in (
+        ("experience_ids", experience_ids, known_exps, "experience"),
+        ("project_ids", project_ids, known_projects, "project"),
+    ):
+        if ids is None:
+            continue
+        unknown = [i for i in ids if i not in known]
+        if unknown:
+            warnings.append(
+                f"unknown {label} id(s) ignored: {', '.join(unknown)} "
+                f"(available: {', '.join(sorted(known)) or 'none'})"
+            )
+        track[key] = [i for i in ids if i in known]
+
+    return warnings
+
+
 def build_latex_document(data: dict, track_name: str = "it_support", lang: str = "fr") -> str:
     """
     Renders the complete LaTeX document string from parsed JSON.
@@ -93,14 +220,13 @@ def build_latex_document(data: dict, track_name: str = "it_support", lang: str =
     personal = data.get("personal_info", {})
     profiles = data.get("profiles", {})
     track_data = profiles.get(track_name, {})
+    if not track_data:
+        raise SystemExit(
+            f"Error: profile '{track_name}' not found. Available profiles: {', '.join(sorted(profiles)) or 'none'}"
+        )
 
     # Extract bilingual profile config
-    if lang in track_data:
-        profile_content = track_data[lang]
-    elif "fr" in track_data:
-        profile_content = track_data["fr"]
-    else:
-        profile_content = track_data
+    profile_content = get_language_section(track_data, lang, f"profile '{track_name}'")
 
     name = personal.get("name", "Mohamed Amine Nasfi")
     subtitle = profile_content.get("subtitle", "")
@@ -124,25 +250,16 @@ def build_latex_document(data: dict, track_name: str = "it_support", lang: str =
     all_exps = {e["id"]: e for e in data.get("experiences", []) if "id" in e}
     active_exp_ids = track_data.get("experience_ids", [e["id"] for e in data.get("experiences", [])])
     
-    selected_exps = [all_exps[eid] for eid in active_exp_ids if eid in all_exps]
+    selected_exps = sort_by_recency([all_exps[eid] for eid in active_exp_ids if eid in all_exps], lang)
 
     exp_blocks = []
     for exp in selected_exps:
-        # Check if experience has language-specific sub-dict
-        if lang in exp:
-            exp_info = exp[lang]
-        elif "fr" in exp:
-            exp_info = exp["fr"]
-        else:
-            exp_info = exp
+        exp_info = get_language_section(exp, lang, f"experience '{exp.get('id', '')}'")
 
         exp_title = escape_latex(exp_info.get("title", ""))
         exp_dates = escape_latex(exp_info.get("dates", ""))
         exp_company = escape_latex(exp.get("company", exp_info.get("company", "")))
         exp_location = escape_latex(exp_info.get("location", ""))
-
-        exp_title = exp_title.replace("---", "---").replace("--", "--")
-        exp_dates = exp_dates.replace("---", "---").replace("--", "--")
 
         items = []
         for hl in exp_info.get("highlights", []):
@@ -173,12 +290,7 @@ def build_latex_document(data: dict, track_name: str = "it_support", lang: str =
 
     proj_blocks = []
     for proj in selected_projects:
-        if lang in proj:
-            proj_info = proj[lang]
-        elif "fr" in proj:
-            proj_info = proj["fr"]
-        else:
-            proj_info = proj
+        proj_info = get_language_section(proj, lang, f"project '{proj.get('id', '')}'")
 
         p_title = escape_latex(proj_info.get("title", ""))
         p_tech = escape_latex(proj.get("tech", ""))
@@ -191,16 +303,23 @@ def build_latex_document(data: dict, track_name: str = "it_support", lang: str =
         proj_blocks.append(block)
 
     projects_str = "\n\n".join(proj_blocks)
+    projects_section = (
+        f"""% ---------- PROJECTS ----------
+\\section{{{labels["projects"]}}}
+\\resumeSubHeadingListStart
+
+{projects_str}
+
+\\resumeSubHeadingListEnd\\vspace{{-3pt}}
+"""
+        if projects_str
+        else ""
+    )
 
     # Format education
     edu_blocks = []
     for edu in data.get("education", []):
-        if lang in edu:
-            edu_info = edu[lang]
-        elif "fr" in edu:
-            edu_info = edu["fr"]
-        else:
-            edu_info = edu
+        edu_info = get_language_section(edu, lang, f"education '{edu.get('institution', '')}'")
 
         degree = escape_latex(edu_info.get("degree", ""))
         dates = escape_latex(edu_info.get("dates", ""))
@@ -223,7 +342,7 @@ def build_latex_document(data: dict, track_name: str = "it_support", lang: str =
         lang_items.append(f"{l_name} ({l_level})")
     languages_str = " \\textperiodcentered{} ".join(lang_items)
 
-    escaped_subtitle = escape_latex(subtitle).replace(r"\|", "|")
+    escaped_subtitle = escape_latex(subtitle)
 
     latex_code = f"""\\documentclass[letterpaper,9pt]{{article}}
 \\usepackage[utf8]{{inputenc}}
@@ -356,14 +475,7 @@ def build_latex_document(data: dict, track_name: str = "it_support", lang: str =
 }}
 \\end{{itemize}}\\vspace{{-3pt}}
 
-% ---------- PROJECTS ----------
-\\section{{{labels["projects"]}}}
-\\resumeSubHeadingListStart
-
-{projects_str}
-
-\\resumeSubHeadingListEnd\\vspace{{-3pt}}
-
+{projects_section}
 % ---------- EDUCATION ----------
 \\section{{{labels["education"]}}}
 \\resumeSubHeadingListStart
@@ -383,58 +495,232 @@ def build_latex_document(data: dict, track_name: str = "it_support", lang: str =
     return latex_code
 
 
-def compile_with_tectonic(tex_path: Path, output_dir: Path) -> bool:
-    """
-    Compiles the .tex file into a .pdf file using bin/tectonic.exe.
-    """
-    # Look for tectonic in bin/ or system PATH
-    tectonic_bin = Path("bin/tectonic.exe")
-    if not tectonic_bin.exists():
-        tectonic_bin = Path("tectonic")
+TEX_ENGINES = ("tectonic", "xelatex", "pdflatex")
 
-    output_dir.mkdir(parents=True, exist_ok=True)
-    
-    cmd = [str(tectonic_bin), str(tex_path), "--outdir", str(output_dir)]
-    print(f"Compiling PDF: {' '.join(cmd)}")
-    
-    try:
-        res = subprocess.run(cmd, capture_output=True, text=True, check=True)
-        print("Compilation successful!")
-        return True
-    except (subprocess.CalledProcessError, FileNotFoundError) as e:
-        print(f"Compilation warning/error: {e}")
-        if hasattr(e, "stderr") and e.stderr:
-            print(f"Details: {e.stderr[:300]}")
+
+def is_runnable(path: Path) -> bool:
+    if not path.is_file() or not os.access(path, os.X_OK):
         return False
+    if sys.platform == "win32":
+        return True
+    # A Windows binary copied into a Unix checkout is present but unusable.
+    with path.open("rb") as handle:
+        return handle.read(2) != b"MZ"
+
+
+def resolve_tex_engine(explicit: str = None) -> Path:
+    """
+    Finds a usable LaTeX engine: CLI override, TEX_ENGINE env var, project bin/, then PATH.
+    """
+    tried = []
+
+    if explicit:
+        tried.append(Path(explicit))
+    if os.environ.get("TEX_ENGINE"):
+        tried.append(Path(os.environ["TEX_ENGINE"]))
+
+    for name in TEX_ENGINES:
+        for suffix in ("", ".exe"):
+            tried.append(PROJECT_ROOT / "bin" / (name + suffix))
+        found = shutil.which(name)
+        if found:
+            tried.append(Path(found))
+
+    for candidate in tried:
+        if is_runnable(candidate):
+            return candidate
+
+    raise SystemExit(
+        "Error: no usable LaTeX engine found. Tried:\n  "
+        + "\n  ".join(str(c) for c in tried)
+        + "\nInstall Tectonic (https://tectonic-typesetting.github.io) or a TeX distribution, "
+        "or point --tex-engine / TEX_ENGINE at a binary."
+    )
+
+
+def engine_command(engine: Path, tex_path: Path, output_dir: Path) -> list:
+    if engine.stem.lower().startswith("tectonic"):
+        return [str(engine), str(tex_path), "--outdir", str(output_dir)]
+    return [
+        str(engine),
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        f"-output-directory={output_dir}",
+        str(tex_path),
+    ]
+
+
+def compile_pdf(tex_path: Path, output_dir: Path, tex_engine: str = None) -> bool:
+    """
+    Compiles the .tex file into a .pdf file. Returns False and reports the failure loudly on stderr.
+    """
+    engine = resolve_tex_engine(tex_engine)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    cmd = engine_command(engine, tex_path, output_dir)
+    print(f"Compiling PDF with {engine}: {' '.join(cmd)}")
+
+    try:
+        subprocess.run(cmd, capture_output=True, text=True, check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Compilation FAILED (exit {e.returncode}):", file=sys.stderr)
+        print((e.stdout or "")[-800:] or (e.stderr or "")[-800:], file=sys.stderr)
+        return False
+    except OSError as e:
+        print(f"Compilation FAILED: could not run {engine}: {e}", file=sys.stderr)
+        return False
+
+    print("Compilation successful!")
+    return True
+
+
+PAGE_OBJECT_RE = re.compile(rb"/Type\s*/Page(?![s\w])")
+PDFINFO_PAGES_RE = re.compile(r"^Pages:\s+(\d+)\s*$", re.MULTILINE)
+
+
+def _count_page_objects(blob: bytes) -> int:
+    return len(PAGE_OBJECT_RE.findall(blob))
+
+
+def _inflate_pdf_streams(raw: bytes) -> bytes:
+    """
+    Best-effort FlateDecode inflate so compressed object streams become searchable.
+    Tectonic/xdvipdfmx PDFs usually hide /Type/Page inside compressed streams.
+    """
+    chunks = []
+    for part in re.split(rb"stream\r?\n", raw)[1:]:
+        data = part.split(rb"endstream", 1)[0]
+        if data.endswith(b"\r\n"):
+            data = data[:-2]
+        elif data.endswith(b"\n"):
+            data = data[:-1]
+        try:
+            chunks.append(zlib.decompress(data))
+        except zlib.error:
+            continue
+    return b"\n".join(chunks)
+
+
+def pdf_page_count(path: Path) -> int:
+    """
+    Counts pages in a PDF without third-party packages.
+    Order: pdfinfo (if installed) → inflated stream scan → raw byte scan.
+    """
+    pdfinfo = shutil.which("pdfinfo")
+    if pdfinfo:
+        try:
+            info = subprocess.run(
+                [pdfinfo, str(path)],
+                capture_output=True,
+                text=True,
+                check=True,
+            ).stdout
+            match = PDFINFO_PAGES_RE.search(info or "")
+            if match:
+                return int(match.group(1))
+        except (OSError, subprocess.CalledProcessError, ValueError):
+            pass
+
+    raw = path.read_bytes()
+    for blob in (_inflate_pdf_streams(raw), raw):
+        pages = _count_page_objects(blob)
+        if pages:
+            return pages
+    return 0
+
+
+def assert_single_page_cv(pdf_path: Path) -> bool:
+    """
+    Enforces the project rule: every CV PDF must be exactly one page.
+    """
+    try:
+        pages = pdf_page_count(pdf_path)
+    except OSError as e:
+        print(f"Error: could not read PDF page count for {pdf_path}: {e}", file=sys.stderr)
+        return False
+    if pages == 1:
+        return True
+    if pages == 0:
+        print(
+            f"Error: could not determine page count for {pdf_path}. "
+            "Install poppler-utils (pdfinfo) or rebuild; use --allow-multipage only for debugging.",
+            file=sys.stderr,
+        )
+        return False
+    print(
+        f"Error: CV must be exactly 1 page (got {pages}). "
+        "Trim experiences, bullets, projects or skills and rebuild. "
+        "Use --allow-multipage only for debugging.",
+        file=sys.stderr,
+    )
+    return False
+
+
+def resolve_project_path(raw: str) -> Path:
+    """
+    Accepts a path relative to the current directory or to the repository root.
+    """
+    path = Path(raw)
+    if path.is_absolute() or path.exists():
+        return path
+    root_relative = PROJECT_ROOT / path
+    return root_relative if root_relative.exists() else path
+
+
+def add_compiler_arguments(parser: argparse.ArgumentParser) -> None:
+    parser.add_argument("--no-compile", action="store_true", help="Write the .tex file only, skip PDF compilation")
+    parser.add_argument("--tex-engine", default=None, help="Path to tectonic/xelatex/pdflatex (default: auto-detect)")
+    parser.add_argument(
+        "--allow-multipage",
+        action="store_true",
+        help="Debug only: allow CV PDFs longer than 1 page (default rejects them)",
+    )
 
 
 def main():
     parser = argparse.ArgumentParser(description="Generate LaTeX and PDF CV from JSON data.")
     parser.add_argument("--input", "-i", default="data/cv_master.json", help="Path to input JSON file")
     parser.add_argument("--output", "-o", default=None, help="Name of output .tex file (saved into output/)")
-    parser.add_argument("--track", "-t", default="it_support", choices=["it_support", "fullstack", "tailored"], help="Profile track to render")
+    parser.add_argument("--track", "-t", default="it_support", choices=sorted(TRACK_LABELS), help="Profile track to render")
     parser.add_argument("--lang", "-l", default="fr", choices=["fr", "en"], help="Language: 'fr' or 'en'")
-    parser.add_argument("--compile", "-c", action="store_true", default=True, help="Automatically compile to PDF")
     parser.add_argument("--outdir", default="output", help="Directory where results are stored")
+    parser.add_argument("--subtitle", default=None, help="Override the profile subtitle for this job")
+    parser.add_argument("--summary", default=None, help="Override the profile summary for this job")
+    parser.add_argument("--skills-file", default=None, help="Path to a JSON array of {category, items} skill lines")
+    parser.add_argument("--exp", nargs="*", default=None, help="Experience ids to include, in order")
+    parser.add_argument("--projects", nargs="*", default=None, help="Project ids to include, in order")
+    add_compiler_arguments(parser)
     args = parser.parse_args()
 
-    input_path = Path(args.input)
+    input_path = resolve_project_path(args.input)
     if not input_path.exists():
-        print(f"Error: Input file {input_path} does not exist.")
+        print(f"Error: Input file {input_path} does not exist.", file=sys.stderr)
         return 1
 
     with open(input_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
+    for warning in apply_overrides(
+        data,
+        track_name=args.track,
+        lang=args.lang,
+        subtitle=args.subtitle,
+        summary=args.summary,
+        skills_file=args.skills_file,
+        experience_ids=args.exp,
+        project_ids=args.projects,
+    ):
+        print(f"Warning: {warning}", file=sys.stderr)
+
     # Determine output file name
-    outdir = Path(args.outdir)
+    outdir = resolve_project_path(args.outdir)
     outdir.mkdir(parents=True, exist_ok=True)
 
     if args.output:
         tex_filename = args.output if args.output.endswith(".tex") else f"{args.output}.tex"
     else:
         lang_suffix = "EN" if args.lang == "en" else "FR"
-        track_suffix = "IT_Support" if args.track == "it_support" else "FullStack"
+        track_suffix = TRACK_LABELS[args.track]
         tex_filename = f"Mohamed_Amine_Nasfi_CV_{track_suffix}_{lang_suffix}.tex"
 
     # Type-first layout: output/cv/<CV-name>/ for CVs, output/cover_letter/<name>/ for letters
@@ -451,11 +737,16 @@ def main():
     print(f"Generated LaTeX CV at: {tex_path.resolve()} (Track: {args.track}, Lang: {args.lang})")
 
     # Compile to PDF
-    if args.compile:
-        pdf_success = compile_with_tectonic(tex_path, cv_dir)
+    if not args.no_compile:
         pdf_path = tex_path.with_suffix(".pdf")
-        if pdf_success and pdf_path.exists():
-            print(f"Generated PDF CV at: {pdf_path.resolve()}")
+        if not compile_pdf(tex_path, cv_dir, args.tex_engine):
+            return 1
+        if not pdf_path.exists():
+            print(f"Error: compiler reported success but {pdf_path} is missing.", file=sys.stderr)
+            return 1
+        if not args.allow_multipage and not assert_single_page_cv(pdf_path):
+            return 1
+        print(f"Generated PDF CV at: {pdf_path.resolve()}")
 
     return 0
 

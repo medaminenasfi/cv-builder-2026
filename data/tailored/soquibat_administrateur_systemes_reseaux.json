@@ -1,0 +1,141 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie — mobilité nationale"
+    },
+    "links": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/medaminenasfi"
+      },
+      {
+        "name": "Portfolio",
+        "url": "https://mohamedamine-portfolio.onrender.com"
+      }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Technicien Systèmes & Réseaux | VLAN, routage, VPN, pare-feu, Wi-Fi · Support technique N1/N2 · Sauvegardes et bases de données · Administration Linux",
+        "summary": "Technicien systèmes et réseaux, Licence en Systèmes d'Information (Bac+3, Mention Très Bien), avec une première expérience terrain complète : conception et déploiement de l'infrastructure réseau d'un site (plan d'adressage IPv4, DHCP/DNS, routeur et switchs managés en VLAN, pare-feu, VPN et accès distant sécurisé, câblage Ethernet serti et testé) et administration de serveurs Linux en production (Docker multi-services, reverse-proxy Nginx, certificats SSL renouvelés automatiquement, sauvegardes, suivi actif des logs et de la disponibilité des services). Assure le support de niveau 1 et 2 auprès d'utilisateurs non-techniques, avec diagnostic et résolution des incidents matériels et logiciels en moins de 2 heures. Travaille les bases de données relationnelles et NoSQL (PostgreSQL, MySQL, SQLite, MongoDB) côté schéma, requêtes, contrôle d'accès et sauvegarde/restauration. Rigoureux, documente ses interventions et ses procédures ; autonome et habitué au travail en équipe.",
+        "skills": [
+          {
+            "category": "Réseaux & sécurité",
+            "items": "Adressage IPv4 et sous-réseaux, DHCP/DNS, VLAN sur routeurs et switchs managés, routage, redirection de ports, pare-feu, VPN et accès distant sécurisé, Wi-Fi protégé, câblage Ethernet RJ45 (sertissage et test) ; dépannage des connexions et de l'accès aux ressources partagées."
+          },
+          {
+            "category": "Serveurs & systèmes",
+            "items": "Linux Debian/Ubuntu (ligne de commande, bash), Docker et Docker Compose, reverse-proxy Nginx, certificats SSL Let's Encrypt, hébergement VPS, suivi actif des logs et de la disponibilité des services, sauvegardes automatisées ; Windows 10/11 côté client (installation, formatage, masterisation, pilotes, dépannage)."
+          },
+          {
+            "category": "Bases de données",
+            "items": "PostgreSQL, MySQL, SQLite, MongoDB : conception de schémas, requêtes, contrôle d'accès par rôles, sauvegarde et restauration planifiées ; automatisation des tâches récurrentes en Python/Bash."
+          },
+          {
+            "category": "Support technique N1/N2",
+            "items": "Qualification, diagnostic et résolution d'incidents matériels et logiciels sous 2 heures, assistance à distance (AnyDesk, TeamViewer), remplacement de composants (RAM, SSD, alimentation), mise en service d'imprimantes et de scanners, formation des utilisateurs non-techniques et documentation technique."
+          },
+          {
+            "category": "Parc & outillage",
+            "items": "Montage et mise en service de postes, maintenance préventive et corrective, inventaire matériel ; vidéosurveillance IP (installation, configuration, alimentation et cheminement des câbles, accès distant aux flux) ; Git/GitHub, GitHub Actions, Postman ; Pack Office / Microsoft 365 en usage utilisateur."
+          }
+        ]
+      },
+      "experience_ids": [
+        "exp_ortho",
+        "exp_freelance_web",
+        "exp_pfe",
+        "exp_gct"
+      ],
+      "project_ids": []
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_ortho",
+      "company": "Cabinet d'Orthodontie Dr Meriem Nasfi",
+      "fr": {
+        "title": "Technicien Systèmes & Réseaux --- Freelance",
+        "location": "Gabès, Tunisie",
+        "dates": "Mai 2026 -- Septembre 2026",
+        "highlights": [
+          "Conception et déploiement de l'infrastructure réseau du site : plan d'adressage IPv4 local, DHCP/DNS, configuration du routeur et des switchs managés (VLAN), pare-feu, accès distant sécurisé et câblage Ethernet tiré, serti et testé.",
+          "Installation et configuration de l'infrastructure de vidéosurveillance IP : caméras, alimentation et cheminement des câbles, configuration des flux et accès distant sécurisé depuis smartphone et ordinateur.",
+          "Support de niveau 1 et 2 auprès d'un personnel médical non-technique : maintenance préventive et corrective des postes Windows 10/11, remplacement de composants, mise en service d'imprimantes et de scanners, incidents matériels et logiciels résolus en moins de 2 heures, procédures d'exploitation documentées."
+        ]
+      }
+    },
+    {
+      "id": "exp_freelance_web",
+      "company": "Indépendant (Freelance / Remote)",
+      "fr": {
+        "title": "Administrateur Système & Développeur d'Outils --- Freelance",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Administration et sécurisation de serveurs Linux en production : hébergement VPS, conteneurisation Docker multi-services, reverse-proxy Nginx, renouvellement automatisé des certificats SSL, suivi des logs, de la disponibilité des services et des sauvegardes.",
+          "Gestion de bases de données PostgreSQL et MySQL pour des applications livrées à des clients : conception des schémas, contrôle d'accès par rôles, requêtes d'exploitation et sauvegardes automatisées.",
+          "Diagnostic et résolution d'incidents d'exploitation, déploiements automatisés via pipelines CI/CD GitHub Actions avec tests et linting avant mise en production."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack --- Projet de Fin d'Études (PFE)",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 -- Juin 2025",
+        "highlights": [
+          "Développement d'une application web (React.js, Node.js/Express, MongoDB) pour un client institutionnel : authentification JWT, sécurisation SSL, consommation d'API externes, spécifications validées avec le client et recette avant livraison."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Stagiaire --- Automatisation & Documentation",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Développement d'un outil métier PHP/SQL reprenant les saisies manuelles d'une équipe de 5 personnes : temps de saisie réduit de **70%** ; tests avec les utilisateurs avant mise en service et procédures internes rédigées."
+        ]
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information (Bac+3) --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      {
+        "name": "Arabe",
+        "level": "Langue maternelle"
+      },
+      {
+        "name": "Français",
+        "level": "Courant --- B2 (TCF TP)"
+      },
+      {
+        "name": "Anglais",
+        "level": "Professionnel"
+      }
+    ]
+  }
+}

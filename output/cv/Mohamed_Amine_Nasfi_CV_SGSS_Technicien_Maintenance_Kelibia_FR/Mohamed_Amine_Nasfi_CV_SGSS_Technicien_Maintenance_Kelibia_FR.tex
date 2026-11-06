@@ -1,0 +1,178 @@
+\documentclass[letterpaper,9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+  \usepackage{microtype}
+  \DisableLigatures[f]{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \defaultfontfeatures{Ligatures=NoCommon}
+\fi
+
+% Blue accent matching the Word version (#2563EB)
+\definecolor{accent}{HTML}{2563EB}
+\definecolor{navy}{HTML}{1F2937}
+\definecolor{greytext}{HTML}{555555}
+
+\hypersetup{
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent,
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+\raggedright
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+
+% Section titles — blue, matching Word headers
+\titleformat{\section}{
+  \vspace{-1pt}\color{accent}\scshape\raggedright\large
+}{}{0em}{}[\color{accent}\titlerule \vspace{-1pt}]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{\color{greytext}#2} \\
+    \textit{\small\color{greytext} #3} & \textit{\small\color{greytext} #4}
+  \end{tabular*}\vspace{-2pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & #2
+  \end{tabular*}\vspace{-1pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=2.5pt, parsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.24in, label={}, itemsep=0.9pt, topsep=1.2pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeProjectListStart}{\begin{itemize}[leftmargin=0.24in, label={}, itemsep=0.9pt, topsep=1.2pt, parsep=0pt]}
+\newcommand{\resumeProjectListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeLangHeading}[2]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2
+  \end{tabular*}\vspace{-1pt}
+}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+    \textbf{\Huge \scshape \color{navy} Mohamed Amine Nasfi} \\[3pt]
+    \small \textbf{\color{accent} Technicien de Maintenance Informatique | Diagnostic \& dépannage matériel \textperiodcentered{} Installation systèmes et logiciels \textperiodcentered{} Support aux utilisateurs} \\[3pt]
+    \footnotesize \color{greytext}
+    +216 27 711 810 $\quad|\quad$
+    \href{mailto:medaminenasfy@gmail.com}{\underline{medaminenasfy@gmail.com}} $\quad|\quad$
+    Gabès, Tunisie — mobilité nationale \\[2pt]
+    \href{https://www.linkedin.com/in/mohamed-amine-nasfi/}{\underline{LinkedIn}} $\quad|\quad$ \href{https://github.com/medaminenasfi}{\underline{GitHub}} $\quad|\quad$ \href{https://mohamedamine-portfolio.onrender.com}{\underline{Portfolio}}
+\end{center}
+\vspace{-5pt}
+
+% ---------- SUMMARY ----------
+\section{Résumé}
+\begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=1.5pt, parsep=0pt]
+\item \footnotesize{Technicien de maintenance informatique : diagnostic et dépannage matériel (remplacement RAM, SSD, alimentation), montage et mise en service de postes de travail, installation et configuration de Windows 10/11, des pilotes et des applications, pannes matérielles et logicielles résolues en moins de 2 heures. Habitué à intervenir chez l'utilisateur et à expliquer le geste technique à un public non-initié. Double culture hardware et logiciel : développe et livre des applications de gestion sur postes Windows et administre des serveurs Linux (Docker, Nginx, sauvegardes). A aussi déployé une infrastructure de vidéosurveillance IP de bout en bout — caméras, câblage, réseau et accès distant — dans un environnement de santé. Sérieux, organisé et à l'aise en équipe comme en relation directe avec le client.}
+\end{itemize}\vspace{-3pt}
+
+% ---------- EXPERIENCE ----------
+\section{Expérience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading{Technicien de Maintenance Informatique \& Réseaux --- Freelance}{Mai 2026 -- Septembre 2026}{Cabinet d'Orthodontie Dr Meriem Nasfi}{Gabès, Tunisie}
+    \resumeItemListStart
+      \resumeItem{Maintenance préventive et corrective des postes de travail Windows 10/11 : montage et mise en service de nouveaux équipements, installation et configuration du système, des pilotes et des logiciels métier, remplacement de composants (RAM, SSD) ; pannes matérielles et logicielles diagnostiquées et résolues en moins de 2 heures.}
+      \resumeItem{Déploiement de bout en bout d'une infrastructure de vidéosurveillance IP pour un site de santé : installation et configuration des caméras, tirage et raccordement du câblage Ethernet, plan d'adressage IPv4 local, configuration routeur/switchs et pare-feu, accès distant sécurisé.}
+      \resumeItem{Assistance et formation d'un personnel médical non-technique : prise en main des outils, résolution des demandes courantes et documentation des procédures d'exploitation.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Administrateur Système \& Développeur d'Outils --- Freelance}{Nov 2025 -- Présent}{Indépendant (Freelance / Remote)}{Remote}
+    \resumeItemListStart
+      \resumeItem{Administration et sécurisation de serveurs Linux en production : hébergement VPS, conteneurisation Docker multi-services, reverse-proxy Nginx, renouvellement automatisé des certificats SSL, suivi des logs et sauvegardes.}
+      \resumeItem{Développement et livraison d'applications de gestion déployées sur postes Windows (PyQt5, SQLite), dont un logiciel de facturation avec sauvegardes automatisées ; déploiements automatisés via GitHub Actions.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Développeur Full-Stack --- Projet de Fin d'Études (PFE)}{Fév 2025 -- Juin 2025}{Laghazala du Désert}{Gabès, Tunisie}
+    \resumeItemListStart
+      \resumeItem{Développement d'une application web (React.js, Node.js/Express, MongoDB) pour un client institutionnel, spécifications validées avec lui et recette avant livraison.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Stagiaire --- Automatisation \& Documentation}{Juil 2024 -- Août 2024}{Groupe Chimique Tunisien (GCT)}{Gabès, Tunisie}
+    \resumeItemListStart
+      \resumeItem{Développement d'un outil métier PHP/SQL reprenant les saisies manuelles d'une équipe de 5 personnes : temps de saisie réduit de \textbf{70\%} sur la tâche concernée.}
+      \resumeItem{Recueil des besoins auprès des utilisateurs terrain, tests avec eux avant mise en service, rédaction des procédures internes et du guide d'utilisation.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd\vspace{-2pt}
+
+% ---------- TECHNICAL SKILLS ----------
+\section{Compétences Techniques}
+\begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
+\footnotesize{
+  \item \textbf{Maintenance \& réparation matériel:} Diagnostic de pannes, remplacement de composants (RAM, SSD, alimentation), montage et mise en service de postes, maintenance préventive et corrective, périphériques : imprimantes et scanners.
+  \item \textbf{Systèmes, pilotes \& logiciels:} Windows 10/11 : installation, formatage, masterisation, pilotes, configuration et mises à jour des applications ; dépannage logiciel et registre ; bases locales MySQL, PostgreSQL, SQLite.
+  \item \textbf{Support utilisateurs \& relation client:} Qualification et résolution d'incidents matériels et logiciels sous 2 heures, assistance à distance (AnyDesk, TeamViewer), formation d'utilisateurs non-techniques, documentation technique et guides d'utilisation.
+  \item \textbf{Réseaux locaux \& vidéosurveillance IP:} Adressage IPv4 et sous-réseaux, DHCP/DNS, routeurs et switchs managés (VLAN), pare-feu, sécurisation Wi-Fi, accès distant, câblage Ethernet (sertissage et test) ; installation, configuration et mise en service de caméras IP.
+  \item \textbf{Systèmes \& outillage:} Linux Ubuntu/Debian (ligne de commande, bash), Docker, Nginx, serveurs VPS, suivi des logs et sauvegardes ; Git/GitHub, Postman ; Python/Bash ; Pack Of\hspace{0pt}fice / Microsoft 365 en usage utilisateur.
+}
+\end{itemize}\vspace{-3pt}
+
+% ---------- PROJECTS ----------
+\section{Projets}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading{\textbf{Application de gestion et facturation --- Bureau Windows} $\quad$ --- $\quad$ \emph{\color{greytext}Python \textperiodcentered{} PyQt5 \textperiodcentered{} SQLite \textperiodcentered{} PyInstaller}}{}
+    \resumeProjectListStart
+      \resumeItem{Application de bureau hors-ligne déployée sur postes Windows : suivi des articles et des contrats, calculs tarifaires et facturation, tableau de bord d'activité, sauvegarde automatisée horodatée de la base SQLite.}
+    \resumeProjectListEnd
+
+\resumeSubHeadingListEnd\vspace{-3pt}
+
+% ---------- EDUCATION ----------
+\section{Formation}
+\resumeSubHeadingListStart
+  \resumeSubheading{Licence en Systèmes d'Information --- Mention Très Bien}{2022 -- 2025}{ESSAT Gabès}{Gabès, Tunisie}
+\resumeSubHeadingListEnd\vspace{-1pt}
+
+% ---------- LANGUAGES ----------
+\section{Langues}
+\begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
+\footnotesize{
+  \item Arabe (Langue maternelle) \textperiodcentered{} Français (Courant --- B2 (TCF TP)) \textperiodcentered{} Anglais (Professionnel)
+}
+\end{itemize}
+
+\end{document}

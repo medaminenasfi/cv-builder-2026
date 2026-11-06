@@ -1,0 +1,217 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie — mobilité nationale",
+      "en": "Gabes, Tunisia — nationwide mobility"
+    },
+    "links": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/medaminenasfi"
+      },
+      {
+        "name": "Portfolio",
+        "url": "https://mohamedamine-portfolio.onrender.com"
+      }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Technicien Informatique, Réseaux & Vidéosurveillance | Maintenance du parc · Câblage RJ45 · Support technique clients",
+        "summary": "Technicien informatique spécialisé réseaux et vidéosurveillance, avec une expérience terrain de déploiement complet : installation et configuration de caméras IP, tirage et raccordement du câblage Ethernet, plan d'adressage IP, configuration routeur et switchs pour un accès aux flux à distance sécurisé depuis smartphone et ordinateur. Assure la maintenance préventive et corrective d'un parc de postes Windows (montage, masterisation, diagnostic de panne résolu en moins de 2 heures) et l'assistance technique auprès d'utilisateurs non-techniques. Administration de serveurs Linux en production (VPS, Docker, Nginx, SSL) et rédaction de procédures techniques. Licence en Systèmes d'Information — Mention Très Bien, rigoureux et habitué au travail en équipe.",
+        "skills": [
+          {
+            "category": "Vidéosurveillance",
+            "items": "Caméras IP : installation, configuration et mise en service ; cheminement et alimentation des câbles ; accès distant sécurisé aux flux (smartphone et ordinateur)."
+          },
+          {
+            "category": "Réseaux",
+            "items": "Adressage IPv4 et sous-réseaux, DHCP/DNS, routeurs et switchs managés (VLAN), redirection de ports, pare-feu, sécurisation Wi-Fi, câblage Ethernet RJ45 (sertissage et test)."
+          },
+          {
+            "category": "Postes & Matériel",
+            "items": "Windows 10/11 (installation, masterisation, pilotes, dépannage), montage et mise en service de postes, remplacement de composants, maintenance préventive et corrective, périphériques."
+          },
+          {
+            "category": "Support technique",
+            "items": "Assistance utilisateurs N1/N2, diagnostic et résolution d'incidents, aide à distance (AnyDesk, TeamViewer), formation d'utilisateurs non-techniques, documentation des interventions."
+          },
+          {
+            "category": "Serveurs & Systèmes",
+            "items": "Linux Ubuntu/Debian (ligne de commande, bash), Docker, Nginx, serveurs VPS, certificats SSL, supervision de logs et sauvegardes."
+          },
+          {
+            "category": "Outils & Développement",
+            "items": "Git/GitHub, Postman, PostgreSQL, MySQL, SQLite ; Python/Bash ; outils internes PHP/SQL et PyQt5."
+          }
+        ]
+      },
+      "experience_ids": [
+        "exp_ortho",
+        "exp_freelance_web",
+        "exp_pfe",
+        "exp_gct"
+      ],
+      "project_ids": [
+        "proj_rental"
+      ]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_ortho",
+      "company": "Cabinet d'Orthodontie Dr Meriem Nasfi",
+      "fr": {
+        "title": "Technicien Informatique & Réseaux --- Freelance",
+        "location": "Gabès, Tunisie",
+        "dates": "Mai 2026 -- Septembre 2026",
+        "highlights": [
+          "Déploiement de bout en bout d'une infrastructure de vidéosurveillance : installation et configuration de caméras IP, tirage et raccordement du câblage Ethernet, plan d'adressage IP local, configuration routeur/switchs et pare-feu, accès distant sécurisé aux flux.",
+          "Maintenance préventive et corrective de postes de travail Windows : montage et masterisation des nouveaux équipements, diagnostic de pannes matérielles et logicielles résolu en moins de 2 heures, remplacement de composants et installation de périphériques.",
+          "Assistance technique et formation du personnel médical non-technique : prise en main des outils, résolution des demandes courantes et documentation des procédures d'exploitation."
+        ]
+      },
+      "en": {
+        "title": "IT & Network Technician --- Freelance",
+        "location": "Gabes, Tunisia",
+        "dates": "May 2026 -- September 2026",
+        "highlights": [
+          "Deployed a complete video surveillance infrastructure end to end: IP camera installation and configuration, Ethernet cabling runs and terminations, local IP addressing plan, router/switch and firewall setup, and secure remote stream access.",
+          "Delivered proactive and corrective maintenance for Windows workstations: assembly and system imaging, hardware/software fault diagnosis resolved within 2 hours, component replacement and peripheral installation.",
+          "Provided technical support and training for non-technical medical staff, handling day-to-day requests and documenting operating procedures."
+        ]
+      }
+    },
+    {
+      "id": "exp_freelance_web",
+      "company": "Indépendant (Freelance / Remote)",
+      "fr": {
+        "title": "Administrateur Système & Développeur d'Outils --- Freelance",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Administration et sécurisation de serveurs Linux en production : hébergement VPS, conteneurisation Docker multi-services, reverse-proxy Nginx, renouvellement automatisé des certificats SSL et supervision des logs.",
+          "Diagnostic et résolution d'incidents d'exploitation, déploiements automatisés via pipelines CI/CD GitHub Actions et développement d'outils internes sur bases PostgreSQL."
+        ]
+      },
+      "en": {
+        "title": "Systems Administrator & Tools Developer --- Freelance",
+        "location": "",
+        "dates": "Nov 2025 -- Present",
+        "highlights": [
+          "Administered and hardened production Linux servers: VPS hosting, multi-service Docker containerization, Nginx reverse proxy, automated SSL certificate renewal and log supervision.",
+          "Diagnosed and resolved operational incidents, with automated GitHub Actions CI/CD releases and internal tooling on PostgreSQL databases."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack --- Projet de Fin d'Études (PFE)",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 -- Juin 2025",
+        "highlights": [
+          "Développement d'une plateforme full-stack (React.js, Node.js, Express.js, MongoDB) intégrant des API externes ; authentification JWT et SSL, livré en sprints Agile."
+        ]
+      },
+      "en": {
+        "title": "Full-Stack Developer --- Final Year Project (PFE)",
+        "location": "Gabes, Tunisia",
+        "dates": "Feb 2025 -- Jun 2025",
+        "highlights": [
+          "Developed a full-stack platform (React.js, Node.js, Express.js, MongoDB) consuming external APIs, with JWT authentication and SSL, delivered in Agile sprints."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Développeur Web --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Développement d'un outil d'automatisation de données (PHP, SQL) réduisant le temps de saisie de **70%** pour une équipe de 5 personnes.",
+          "Documentation des procédures techniques et recueil des besoins directement avec l'équipe métier."
+        ]
+      },
+      "en": {
+        "title": "Web Developer --- Intern",
+        "location": "Gabes, Tunisia",
+        "dates": "Jul 2024 -- Aug 2024",
+        "highlights": [
+          "Engineered an internal data automation tool (PHP, SQL) cutting manual data entry time by **70%** for a 5-person operational team.",
+          "Documented technical procedures and gathered requirements directly with the business team."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_rental",
+      "tech": "Python · PyQt5 · SQLite · PyInstaller",
+      "fr": {
+        "title": "Rental Management System --- ERP Desktop Windows",
+        "description": "Application de bureau hors-ligne pour la gestion de locations : contrats, facturation, statistiques et sauvegardes automatisées de la base de données."
+      },
+      "en": {
+        "title": "Rental Management System --- Windows Desktop ERP",
+        "description": "Offline-first Windows desktop application managing rental contracts, billing cycles, analytics and automated database backups."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      },
+      "en": {
+        "degree": "Bachelor in Information Systems --- Highest Honors (Mention Très Bien)",
+        "dates": "2022 -- 2025",
+        "location": "Gabes, Tunisia"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      {
+        "name": "Français",
+        "level": "B2 — TCF TP"
+      },
+      {
+        "name": "Anglais",
+        "level": "Professionnel"
+      },
+      {
+        "name": "Arabe",
+        "level": "Langue maternelle"
+      }
+    ],
+    "en": [
+      {
+        "name": "French",
+        "level": "Professional (TCF B2)"
+      },
+      {
+        "name": "English",
+        "level": "Professional Working"
+      },
+      {
+        "name": "Arabic",
+        "level": "Native"
+      }
+    ]
+  }
+}

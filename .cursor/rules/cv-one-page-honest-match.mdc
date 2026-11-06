@@ -1,0 +1,37 @@
+---
+description: Always keep CVs to 1 page and match experience to the JD without inventing facts
+alwaysApply: true
+---
+
+# CV: 1 page + honest JD match
+
+When building, tailoring, or regenerating any CV for this repo:
+
+## Hard constraints
+- **Exactly 1 page.** If the PDF is longer, trim content and rebuild until it fits. Never ship a multi-page CV.
+- **Never invent experience, tools, employers, dates, metrics, or certifications.** Only use facts from `MASTER_PROFILE.md` and `data/cv_master.json`.
+- Prefer truth over keyword stuffing. A smaller honest match beats a fabricated perfect match.
+
+## Match experience to the job (without lying)
+1. Read the JD; list must-haves vs nice-to-haves.
+2. Pick the track (`it_support` / `fullstack` / tailored) that best fits real skills.
+3. Select **2–4** real experience ids whose work is closest to the JD duties. Drop unrelated roles.
+4. For each selected role, keep **2–3** bullets that echo JD vocabulary using **real** tools/tasks only. Rephrase for relevance; do not add skills he does not have.
+5. Rewrite subtitle + summary so they target the role title and top JD themes — still factual.
+6. Skills block: reorder / slim to JD-relevant confirmed skills only (5–7 categories).
+7. Projects: **0–2**, only if they support the JD; drop the section if space is tight.
+
+## Forbidden claims (confirmed gaps)
+Do **not** write: Active Directory / GPO, NVR/DVR hands-on config, vendor brands (Cisco/HP/Ubiquiti/Fortinet) as configured gear, POS/caisse peripherals, M365 *administration*, "véhiculé", Java developer, ML engineer, Claude Code CLI / Codex agents.
+
+## 1-page content budget
+- Summary ≤ ~3 lines
+- ≤ 4 experiences, ≤ 3 bullets each
+- ≤ 2 projects (or none)
+- Compact skills; no fluff sections
+
+## Build & verify
+- Use `scripts/generate_cv.py` (or tailored JSON + overrides). Compile must succeed.
+- Generator rejects PDFs that are not exactly 1 page unless `--allow-multipage` (debug only).
+- After build: confirm PDF path, language, and that bullets map to JD themes without lies.
+- Cover letters are **not** part of default "build" — only when the user asks.

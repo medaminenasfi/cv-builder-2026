@@ -1,0 +1,251 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie — mobilité nationale",
+      "en": "Gabes, Tunisia — nationwide mobility"
+    },
+    "links": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/medaminenasfi"
+      },
+      {
+        "name": "Portfolio",
+        "url": "https://mohamedamine-portfolio.onrender.com"
+      }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Développeur Full-Stack Junior (AI-Native) | React.js / Next.js · Node.js / TypeScript · PostgreSQL & MongoDB",
+        "summary": "Développeur full-stack autonome, capable de prendre une tâche du cadrage à la mise en production : 4 applications web clients livrées de bout en bout (React.js/Next.js, Node.js/Express.js, TypeScript, PostgreSQL), de la collecte du besoin au déploiement sur serveur Linux. Travail quotidien avec les outils d'IA générative pour le code (Claude, Cursor, GitHub Copilot) pour la génération, le refactoring et le débogage, avec relecture critique systématique du code produit avant livraison. Bases solides en SQL relationnel et NoSQL (PostgreSQL, MySQL, MongoDB), workflow Git/GitHub et pipelines CI/CD avec tests automatisés. À l'aise en méthode Agile Scrum sur des livrables fréquents. Licence en Systèmes d'Information — Mention Très Bien, bon niveau de français (TCF B2).",
+        "skills": [
+          {
+            "category": "Full-Stack",
+            "items": "TypeScript, JavaScript (ES6+), Node.js, Express.js, NestJS, React.js, Next.js, Python, PHP."
+          },
+          {
+            "category": "Front-End",
+            "items": "React.js, Next.js, HTML5/CSS3, Tailwind CSS, Redux, intégrations responsive."
+          },
+          {
+            "category": "IA générative pour le code",
+            "items": "Claude, Cursor, GitHub Copilot en pratique réelle : génération de code, refactoring, débogage et revue, avec relecture critique du code généré avant mise en production."
+          },
+          {
+            "category": "Bases de données",
+            "items": "SQL relationnel (PostgreSQL, MySQL, SQLite), NoSQL (MongoDB) : modélisation, requêtes, migrations."
+          },
+          {
+            "category": "API & Intégrations",
+            "items": "Conception et consommation d'API REST, webhooks, authentification JWT/OAuth, API tierces (Stripe, Twilio)."
+          },
+          {
+            "category": "Versioning, Tests & DevOps",
+            "items": "Git/GitHub (workflow de versioning), GitHub Actions CI/CD, tests et linting avant déploiement, Docker, Nginx, Linux VPS, SSL."
+          },
+          {
+            "category": "Méthodes",
+            "items": "Agile Scrum en sprints courts, cadrage technique léger, documentation fonctionnelle et technique, reporting d'avancement."
+          }
+        ]
+      },
+      "en": {
+        "subtitle": "Junior Full-Stack Engineer (AI-Native) | React.js / Next.js · Node.js / TypeScript · PostgreSQL & MongoDB",
+        "summary": "Autonomous full-stack engineer able to carry a task from scoping to production: 4 client web applications delivered end to end (React.js/Next.js, Node.js/Express.js, TypeScript, PostgreSQL), from requirement gathering to deployment on Linux servers. Daily use of generative AI coding tools (Claude, Cursor, GitHub Copilot) for code generation, refactoring, debugging and review, with systematic critical reading of generated code before release. Strong relational SQL and NoSQL foundations (PostgreSQL, MySQL, MongoDB), Git/GitHub workflow and CI/CD pipelines with automated testing. Comfortable with light Agile Scrum and frequent deliverables. Bachelor in Information Systems (Highest Honors), professional French and English.",
+        "skills": [
+          {
+            "category": "Full-Stack",
+            "items": "TypeScript, JavaScript (ES6+), Node.js, Express.js, NestJS, React.js, Next.js, Python, PHP."
+          },
+          {
+            "category": "Front-End",
+            "items": "React.js, Next.js, HTML5/CSS3, Tailwind CSS, Redux, responsive implementation."
+          },
+          {
+            "category": "Generative AI for Code",
+            "items": "Claude, Cursor, GitHub Copilot in real daily practice: code generation, refactoring, debugging and review, with critical reading of generated code before production."
+          },
+          {
+            "category": "Databases",
+            "items": "Relational SQL (PostgreSQL, MySQL, SQLite) and NoSQL (MongoDB): modelling, queries, migrations."
+          },
+          {
+            "category": "APIs & Integrations",
+            "items": "REST API design and consumption, webhooks, JWT/OAuth authentication, third-party APIs (Stripe, Twilio)."
+          },
+          {
+            "category": "Versioning, Testing & DevOps",
+            "items": "Git/GitHub workflow, GitHub Actions CI/CD, automated testing and linting before release, Docker, Nginx, Linux VPS, SSL."
+          },
+          {
+            "category": "Methods",
+            "items": "Agile Scrum in short sprints, light technical scoping, functional and technical documentation, progress reporting."
+          }
+        ]
+      },
+      "experience_ids": [
+        "exp_freelance_fullstack",
+        "exp_pfe",
+        "exp_gct"
+      ],
+      "project_ids": [
+        "proj_applyflow",
+        "proj_eventify"
+      ]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_freelance_fullstack",
+      "company": "Indépendant (Freelance / Remote)",
+      "fr": {
+        "title": "Développeur Full-Stack --- Freelance",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Conception et développement de 4 applications clients de bout en bout (React.js, Next.js, Node.js, Express.js, TypeScript, PostgreSQL), du cadrage du besoin jusqu'à la mise en production et au suivi en exploitation.",
+          "Production assistée par IA générative (Claude, Cursor, GitHub Copilot) pour la génération de code, le refactoring et le débogage, avec relecture critique du code généré avant chaque livraison.",
+          "Conception et intégration d'API REST, y compris des API tierces sensibles : tunnel de paiement Stripe et vérification SMS OTP (Twilio), authentification JWT/OAuth.",
+          "Déploiement et administration de l'infrastructure sous Linux (Docker, Nginx, VPS, SSL), pipelines CI/CD GitHub Actions avec tests automatisés avant chaque release.",
+          "Maintenance évolutive de projets existants et reprise de code tiers non écrit (audit, correction de dette technique, extensions de fonctionnalités)."
+        ]
+      },
+      "en": {
+        "title": "Full-Stack Developer --- Freelance",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Present",
+        "highlights": [
+          "Designed and delivered 4 client applications end to end (React.js, Next.js, Node.js, Express.js, TypeScript, PostgreSQL), from requirement scoping to production release and post-launch support.",
+          "AI-assisted production with generative coding tools (Claude, Cursor, GitHub Copilot) for code generation, refactoring and debugging, with critical review of generated code before every release.",
+          "Engineered REST APIs integrating sensitive third-party services: Stripe payment checkout and Twilio SMS OTP verification, JWT/OAuth authentication.",
+          "Deployed and administered Linux infrastructure (Docker, Nginx, VPS, SSL) with GitHub Actions CI/CD pipelines running automated tests before each release.",
+          "Maintained and extended existing projects, taking over third-party code (audit, technical debt fixes, feature extensions)."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack --- Projet de Fin d'Études (PFE)",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 -- Juin 2025",
+        "highlights": [
+          "Développement d'une plateforme full-stack (React.js, Node.js, Express.js, MongoDB) avec cartographie interactive et messagerie temps réel (Socket.io), API externes et authentification JWT.",
+          "Livraison en sprints Agile Scrum bimensuels avec revues régulières et intégration des retours utilisateurs."
+        ]
+      },
+      "en": {
+        "title": "Full-Stack Developer --- Final Year Project (PFE)",
+        "location": "Gabes, Tunisia",
+        "dates": "Feb 2025 -- Jun 2025",
+        "highlights": [
+          "Built a full-stack platform (React.js, Node.js, Express.js, MongoDB) featuring interactive mapping and real-time chat (Socket.io), external APIs and JWT authentication.",
+          "Delivered in two-week Agile Scrum sprints with regular reviews and user feedback integration."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Développeur Web --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Développement d'un outil interne d'automatisation et de validation de données (PHP, SQL) réduisant le temps de saisie manuelle de **70%** pour une équipe de 5 personnes.",
+          "Recueil des besoins avec les utilisateurs métier et rédaction de la documentation technique et des guides d'utilisation."
+        ]
+      },
+      "en": {
+        "title": "Web Developer --- Intern",
+        "location": "Gabes, Tunisia",
+        "dates": "Jul 2024 -- Aug 2024",
+        "highlights": [
+          "Built an internal data automation and validation tool (PHP, SQL) cutting manual entry time by **70%** for a 5-person team.",
+          "Gathered business requirements and authored technical documentation and user guides."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_applyflow",
+      "tech": "Next.js · NestJS · TypeScript · MongoDB · Stripe",
+      "fr": {
+        "title": "ApplyFlow --- Suivi de candidatures & Extension Chrome",
+        "description": "Application full-stack complète : tableau Kanban, stockage multi-CV PDF, facturation Stripe et extension Chrome Manifest V3 de remplissage automatique des formulaires."
+      },
+      "en": {
+        "title": "ApplyFlow --- Job Application Tracker & Chrome Extension",
+        "description": "Complete full-stack product: Kanban board, multi-CV PDF storage, Stripe billing and a Manifest V3 Chrome Extension that autofills application forms."
+      }
+    },
+    {
+      "id": "proj_eventify",
+      "tech": "Node.js · PostgreSQL · React.js · Flutter · Stripe",
+      "fr": {
+        "title": "Eventify --- Plateforme de Réservation d'Événements",
+        "description": "Plateforme web et mobile : API Node.js/PostgreSQL, tunnel de paiement Stripe, vérification OTP Twilio et tableau de bord analytique pour les organisateurs."
+      },
+      "en": {
+        "title": "Eventify --- Event Booking Platform",
+        "description": "Web and mobile platform: Node.js/PostgreSQL API, Stripe payment flow, Twilio OTP verification and an organizer analytics dashboard."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      },
+      "en": {
+        "degree": "Bachelor in Information Systems --- Highest Honors (Mention Très Bien)",
+        "dates": "2022 -- 2025",
+        "location": "Gabes, Tunisia"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      {
+        "name": "Français",
+        "level": "B2 — TCF TP"
+      },
+      {
+        "name": "Anglais",
+        "level": "Professionnel"
+      },
+      {
+        "name": "Arabe",
+        "level": "Langue maternelle"
+      }
+    ],
+    "en": [
+      {
+        "name": "French",
+        "level": "Professional (TCF B2)"
+      },
+      {
+        "name": "English",
+        "level": "Professional Working"
+      },
+      {
+        "name": "Arabic",
+        "level": "Native"
+      }
+    ]
+  }
+}
