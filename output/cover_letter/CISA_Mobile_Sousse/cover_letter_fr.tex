@@ -1,0 +1,75 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.4cm,noheadfoot]{geometry}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+  \usepackage{microtype}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont=lmroman10-bold.otf,
+    ItalicFont=lmroman10-italic.otf,
+    BoldItalicFont=lmroman10-bolditalic.otf,
+    SmallCapsFont=lmromancaps10-regular.otf,
+    Ligatures=NoCommon]
+\fi
+
+\definecolor{accent}{HTML}{2563EB}
+\definecolor{navy}{HTML}{1F2937}
+\definecolor{greytext}{HTML}{555555}
+
+\hypersetup{
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent,
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{7pt}
+\urlstyle{same}
+
+\begin{document}
+
+% ---------- LETTERHEAD (matches CV identity) ----------
+\begin{center}
+    \textbf{\Huge \color{navy} Mohamed Amine Nasfi} \\[3pt]
+    \small \textbf{\color{accent} Développeur Applications Mobiles | Flutter \textperiodcentered{} Dart \textperiodcentered{} API REST} \\[3pt]
+    \footnotesize \color{greytext}
+    +216 27 711 810 $\;|\;$
+    \href{mailto:medaminenasfy@gmail.com}{\underline{medaminenasfy@gmail.com}} $\;|\;$
+    Gabès, Tunisie
+\end{center}
+
+\vspace{8pt}
+\hfill Gabès, le 6 novembre 2026
+
+\vspace{12pt}
+CISA Informatique \\ Sousse, Tunisie
+
+\vspace{10pt}
+\textbf{Objet :} Candidature au poste de Développeur applications mobiles
+
+\vspace{4pt}
+Madame, Monsieur,
+
+Titulaire d'une Licence en Systèmes d'Information et passionné par le développement mobile multiplateforme, je souhaite vous proposer ma candidature au poste de Développeur applications mobiles au sein de CISA Informatique. Votre environnement ERP et vos projets pour tablettes correspondent à mon intérêt pour les solutions métier utiles et maintenables.
+
+Le projet Eventify m'a permis de développer une solution web et mobile avec Flutter, Dart, API REST, authentification JWT, vérification OTP Twilio et paiement Stripe. En freelance, j'ai également livré 4 applications de l'analyse des besoins à la mise en production, en intégrant des bases SQL, des tests, Git et des pipelines CI/CD. Cette expérience m'a appris à comprendre un besoin, documenter une solution et assurer sa maintenance.
+
+Je suis particulièrement motivé par la possibilité de contribuer à vos applicatifs ERP et de progresser rapidement sur votre environnement Microsoft (C\#, .NET, ASP.NET Core, Blazor et SQL Server). Sérieux, autonome et à l'aise en français comme en anglais technique, je serais heureux d'échanger avec vous sur ma contribution à vos équipes de développement.
+
+Je suis disponible pour un entretien à votre convenance. Dans l'attente de votre retour, je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.
+
+
+
+\vspace{14pt}
+\hfill \textbf{Mohamed Amine Nasfi}
+
+\end{document}

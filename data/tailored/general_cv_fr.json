@@ -1,0 +1,153 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie — Mobile Grand Tunis",
+      "en": "Gabes, Tunisia — Mobile for Greater Tunis"
+    },
+    "links": [
+      { "name": "LinkedIn : linkedin.com/in/mohamed-amine-nasfi", "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/" },
+      { "name": "GitHub : github.com/medaminenasfi", "url": "https://github.com/medaminenasfi" },
+      { "name": "Portfolio : mohamedamine-portfolio.onrender.com", "url": "https://mohamedamine-portfolio.onrender.com" }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Candidat en Master | Jeune diplômé en Informatique de Gestion",
+        "summary": "Titulaire d'une Licence en Informatique de Gestion, candidat à l'intégration d'un Master afin d'approfondir ses compétences en systèmes d'information, développement et gestion des données. Expérience concrète en développement d'outils web, conception d'applications full-stack, support informatique et administration d'environnements Linux. Curieux, motivé et rigoureux, capable d'analyser un besoin, de mener un projet technique et de documenter une solution. Mention Très Bien, bon niveau en français et en anglais, permis B et mobilité sur le Grand Tunis.",
+        "skills": [
+          { "category": "Gestion & Organisation", "items": "Suivi de dossiers, collecte et vérification de données, classement documentaire, respect des procédures, priorisation et reporting." },
+          { "category": "Bureautique & Outils", "items": "Microsoft Word, Excel, PowerPoint, e-mail, visioconférence, Trello et GitHub Projects." },
+          { "category": "Informatique & Développement", "items": "Windows, Linux, diagnostic de pannes, installation de logiciels et périphériques, bases de données SQL, documentation technique, JavaScript, React.js, Node.js, Python." },
+          { "category": "Outils & Méthodes", "items": "Git, GitHub, Docker, API REST, déploiement web, analyse des besoins et résolution de problèmes." },
+          { "category": "Profil académique", "items": "Motivation, curiosité, capacité d'apprentissage, esprit d'analyse, rigueur, autonomie et intérêt pour les nouvelles technologies." },
+          { "category": "Mobilité", "items": "Permis B, conduite régulière, mobile sur le Grand Tunis." }
+        ]
+      },
+      "experience_ids": ["exp_ortho", "exp_freelance_fullstack", "exp_pfe", "exp_gct"],
+      "project_ids": ["proj_rental", "proj_eventify"]
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_freelance_fullstack",
+      "company": "Clients Internationaux",
+      "fr": {
+        "title": "Développeur Full-Stack --- Freelance (Remote)",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Conçu et développé 4 applications clients de bout en bout avec React.js, Next.js, Node.js, Express.js et PostgreSQL, de l'analyse des besoins à la mise en production.",
+          "Déployé et administré l'infrastructure serveur sous Linux, Docker, Nginx et VPS, avec supervision et résolution d'incidents en production.",
+          "Intégré des API REST, Stripe et Twilio OTP, puis mis en place des pipelines CI/CD avec tests automatisés via GitHub Actions."
+        ]
+      }
+    },
+    {
+      "id": "exp_freelance_web",
+      "company": "Clients Internationaux",
+      "fr": {
+        "title": "Développeur Web & Administrateur Système --- Freelance",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Développé et déployé 4 applications web clients, de l'analyse des besoins à la mise en production.",
+          "Administré des serveurs Linux : hébergement VPS, conteneurisation Docker, configuration Nginx, certificats SSL et résolution d'incidents.",
+          "Géré les bases de données PostgreSQL et les requêtes SQL utilisées par les applications déployées."
+        ]
+      }
+    },
+    {
+      "id": "exp_freelance_client",
+      "company": "Clients Internationaux",
+      "fr": {
+        "title": "Gestion de la Relation Client & Suivi Administratif --- Freelance (Remote)",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Géré de bout en bout les demandes de 4 clients internationaux : recueil des besoins, préparation des propositions, livraison et support après-vente.",
+          "Communiqué quotidiennement en français et en anglais avec des interlocuteurs non techniques, par écrit et en visioconférence.",
+          "Assuré la facturation, l'encaissement et le suivi administratif rigoureux des prestations via des paiements en ligne sécurisés."
+        ]
+      }
+    },
+    {
+      "id": "exp_ortho",
+      "company": "Cabinet d'Orthodontie Dr Meriem Nasfi",
+      "fr": {
+        "title": "Technicien Support IT --- Freelance",
+        "location": "Gabès, Tunisie",
+        "dates": "Mai 2026 -- Sept 2026",
+        "highlights": [
+          "Assuré la maintenance préventive et corrective des postes Windows : diagnostic des pannes matérielles et logicielles, installation de logiciels et mise en service des équipements.",
+          "Installé et configuré les postes de travail, périphériques et équipements réseau selon les besoins du cabinet.",
+          "Déployé un système de vidéosurveillance : câblage, adressage IP et configuration du routeur pour un accès à distance sécurisé."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack --- Projet de Fin d'Études",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 -- Juin 2025",
+        "highlights": [
+          "Développé une plateforme full-stack avec React.js, Node.js, Express.js et MongoDB, intégrant des API externes, l'authentification JWT et le chiffrement SSL.",
+          "Livré la solution en sprints Agile en assurant la documentation et la correction des anomalies."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Développeur Web --- Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Développé un outil web d'automatisation des données avec PHP et SQL, réduisant de 70 % le temps de saisie d'une équipe opérationnelle de 5 personnes.",
+          "Recueilli les besoins auprès de l'équipe métier, fiabilisé les données et rédigé la documentation technique et le guide utilisateur."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_rental",
+      "tech": "Python · PyQt5 · SQLite",
+      "fr": {
+        "title": "Rental Management System --- Application de Gestion",
+        "description": "Application desktop conçue de bout en bout pour gérer les contrats, la facturation, les statistiques d'activité et les sauvegardes de données."
+      }
+    },
+    {
+      "id": "proj_eventify",
+      "tech": "React.js · Node.js · PostgreSQL",
+      "fr": {
+        "title": "Eventify --- Plateforme de Réservation en Ligne",
+        "description": "Plateforme permettant de gérer les disponibilités, les paiements sécurisés et les confirmations automatiques, avec support et corrections après livraison."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Informatique de Gestion --- Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      { "name": "Français", "level": "Courant / Professionnel" },
+      { "name": "Arabe", "level": "Langue maternelle" },
+      { "name": "Anglais", "level": "Professionnel" }
+    ]
+  }
+}

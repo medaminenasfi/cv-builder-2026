@@ -73,6 +73,34 @@
       },
       "experience_ids": ["exp_freelance_fullstack", "exp_pfe", "exp_gct"],
       "project_ids": ["proj_eventify", "proj_applyflow", "proj_scraper"]
+    },
+    "tailored": {
+      "fr": {
+        "subtitle": "Développeur Applications Mobiles | Flutter · Dart · API REST | SQL · Tests · Git",
+        "summary": "Développeur logiciel orienté applications mobiles, avec une expérience de conception et de livraison de solutions web et mobiles multiplateformes. A développé Eventify, une plateforme web + mobile Flutter avec API REST, authentification JWT, OTP Twilio et paiement Stripe, et prend en charge les projets de l'analyse des besoins à la mise en production. Habitué à rédiger la documentation technique, intégrer des services externes, tester les fonctionnalités et maintenir des environnements Linux avec Git, Docker et CI/CD. Diplômé en Systèmes d'Information (Mention Très Bien), bilingue français-anglais ; connaissances à approfondir sur C#/.NET, ASP.NET Core, Blazor et SQL Server.",
+        "skills": [
+          { "category": "Mobile", "items": "Flutter, Dart, Android/iOS, Material Design, conception multiplateforme." },
+          { "category": "Développement", "items": "JavaScript, TypeScript, Python, PHP, HTML5, CSS3, conception orientée objet." },
+          { "category": "API & Back-End", "items": "API REST, Node.js, Express.js, NestJS, JWT, Stripe, Twilio, intégration de services tiers." },
+          { "category": "Données", "items": "SQL, PostgreSQL, MongoDB, SQLite, modélisation et requêtes relationnelles." },
+          { "category": "Qualité & Méthodes", "items": "Tests automatisés, débogage, maintenance corrective, documentation technique, Agile/Scrum." },
+          { "category": "Outils & DevOps", "items": "Git, GitHub, GitHub Actions, Docker, Linux, Nginx, Postman." }
+        ]
+      },
+      "en": {
+        "subtitle": "Mobile Application Developer | Flutter · Dart · REST APIs | SQL · Testing · Git",
+        "summary": "Software developer focused on mobile applications, with experience designing and delivering cross-platform web and mobile solutions. Built Eventify, a Flutter web + mobile platform with REST APIs, JWT authentication, Twilio OTP, and Stripe payments, and owns projects from requirements analysis to production release. Comfortable writing technical documentation, integrating external services, testing features, and maintaining Linux environments with Git, Docker, and CI/CD. Bachelor in Information Systems (Highest Honors), French-English bilingual; currently developing deeper expertise in C#/.NET, ASP.NET Core, Blazor, and SQL Server.",
+        "skills": [
+          { "category": "Mobile", "items": "Flutter, Dart, Android/iOS, Material Design, cross-platform development." },
+          { "category": "Development", "items": "JavaScript, TypeScript, Python, PHP, HTML5, CSS3, object-oriented design." },
+          { "category": "APIs & Back-End", "items": "REST APIs, Node.js, Express.js, NestJS, JWT, Stripe, Twilio, third-party integrations." },
+          { "category": "Data", "items": "SQL, PostgreSQL, MongoDB, SQLite, relational modeling and queries." },
+          { "category": "Quality & Methods", "items": "Automated testing, debugging, corrective maintenance, technical documentation, Agile/Scrum." },
+          { "category": "Tools & DevOps", "items": "Git, GitHub, GitHub Actions, Docker, Linux, Nginx, Postman." }
+        ]
+      },
+      "experience_ids": ["exp_freelance_fullstack", "exp_pfe", "exp_gct"],
+      "project_ids": ["proj_eventify", "proj_rental", "proj_applyflow"]
     }
   },
   "experiences": [

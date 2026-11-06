@@ -1,0 +1,128 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie",
+      "en": "Gabes, Tunisia"
+    },
+    "links": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/" },
+      { "name": "GitHub", "url": "https://github.com/medaminenasfi" },
+      { "name": "Portfolio", "url": "https://mohamedamine-portfolio.onrender.com" }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Développeur Python | Automatisation · APIs · Data Processing | Tests & SQL",
+        "summary": "Développeur Python orienté conception, automatisation et traitement de données, avec une expérience de réalisation d'outils desktop, de scripts de collecte et d'applications web. A développé un moteur de web scraping gérant les pages statiques et dynamiques, ainsi qu'un ERP Windows avec PyQt5, SQLite et sauvegardes automatisées. Habitué à analyser les besoins, structurer des données, intégrer des API, documenter les solutions et livrer des fonctionnalités testées. Diplômé en Systèmes d'Information (Mention Très Bien), autonome et motivé par les projets IA, Big Data et R&D.",
+        "skills": [
+          { "category": "Python", "items": "Python, PyQt5, Requests, BeautifulSoup, Scrapy, Selenium, Pandas, PyInstaller." },
+          { "category": "Web & APIs", "items": "API REST, Node.js, Express.js, intégration de services tiers, HTML5, CSS3." },
+          { "category": "Data & Bases", "items": "Pandas, JSON, CSV, SQL, SQLite, PostgreSQL, MongoDB, modélisation relationnelle." },
+          { "category": "Qualité", "items": "Tests automatisés, débogage, maintenance corrective, documentation technique, validation des données." },
+          { "category": "DevOps & Outils", "items": "Git, GitHub, GitHub Actions, Docker, Linux, Nginx, Postman." }
+        ]
+      }
+    },
+    "fullstack": {
+      "fr": {
+        "subtitle": "Développeur Python | Automatisation · APIs · Data Processing | Tests & SQL",
+        "summary": "Développeur Python orienté conception, automatisation et traitement de données, avec une expérience de réalisation d'outils desktop, de scripts de collecte et d'applications web. A développé un moteur de web scraping gérant les pages statiques et dynamiques, ainsi qu'un ERP Windows avec PyQt5, SQLite et sauvegardes automatisées. Habitué à analyser les besoins, structurer des données, intégrer des API, documenter les solutions et livrer des fonctionnalités testées. Diplômé en Systèmes d'Information (Mention Très Bien), autonome et motivé par les projets IA, Big Data et R&D.",
+        "skills": [
+          { "category": "Python", "items": "Python, PyQt5, Requests, BeautifulSoup, Scrapy, Selenium, Pandas, PyInstaller." },
+          { "category": "Web & APIs", "items": "API REST, Node.js, Express.js, intégration de services tiers, HTML5, CSS3." },
+          { "category": "Data & Bases", "items": "Pandas, JSON, CSV, SQL, SQLite, PostgreSQL, MongoDB, modélisation relationnelle." },
+          { "category": "Qualité", "items": "Tests automatisés, débogage, maintenance corrective, documentation technique, validation des données." },
+          { "category": "DevOps & Outils", "items": "Git, GitHub, GitHub Actions, Docker, Linux, Nginx, Postman." }
+        ]
+      }
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_freelance_fullstack",
+      "company": "",
+      "fr": {
+        "title": "Développeur Full-Stack — Freelance (Remote)",
+        "location": "",
+        "dates": "Nov 2025 — Présent",
+        "highlights": [
+          "Conception et développement de 4 applications clients de bout en bout, de l'analyse des besoins à la mise en production.",
+          "Intégration d'API REST, structuration de données et gestion de bases relationnelles pour des applications métier.",
+          "Mise en place de pipelines CI/CD incluant des tests automatisés avant chaque déploiement."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack — Projet de Fin d'Études (PFE)",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 — Juin 2025",
+        "highlights": [
+          "Développement d'une plateforme full-stack intégrant des API externes, une authentification JWT et une livraison en sprints Agile."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Développeur Web — Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 — Août 2024",
+        "highlights": [
+          "Développement d'un outil d'automatisation de données réduisant le temps de saisie de **70%** pour une équipe de 5 personnes.",
+          "Documentation des procédures techniques et recueil des besoins directement avec l'équipe métier."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_scraper",
+      "tech": "Python · BeautifulSoup · Scrapy · Selenium · Pandas",
+      "fr": {
+        "title": "Universal Web Scraper — Moteur de collecte de données",
+        "description": "Moteur Python détectant les sites statiques et dynamiques, avec extraction, nettoyage et export automatisés de jeux de données structurés."
+      }
+    },
+    {
+      "id": "proj_rental",
+      "tech": "Python · PyQt5 · SQLite · PyInstaller",
+      "fr": {
+        "title": "Rental Management System — ERP Desktop Windows",
+        "description": "Application offline-first gérant les contrats, la facturation, les statistiques et les sauvegardes automatisées de données."
+      }
+    },
+    {
+      "id": "proj_eventify",
+      "tech": "Node.js · PostgreSQL · React.js · Flutter",
+      "fr": {
+        "title": "Eventify — Plateforme de Réservation d'Événements",
+        "description": "Plateforme web et mobile intégrant des API externes, une authentification JWT et un parcours de paiement sécurisé."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information — Mention Très Bien",
+        "dates": "2022 — 2025",
+        "location": "Gabès, Tunisie"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      { "name": "Français", "level": "Professionnel" },
+      { "name": "Anglais", "level": "Professionnel" },
+      { "name": "Arabe", "level": "Langue maternelle" }
+    ]
+  }
+}

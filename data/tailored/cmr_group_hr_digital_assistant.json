@@ -1,0 +1,118 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": {
+      "fr": "Gabès, Tunisie — Mobile Ben Arous / Grand Tunis"
+    },
+    "links": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/" },
+      { "name": "GitHub", "url": "https://github.com/medaminenasfi" },
+      { "name": "Portfolio", "url": "https://mohamedamine-portfolio.onrender.com" }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Assistant Digital RH Junior | Automatisation · Data · E-learning | Outils digitaux",
+        "summary": "Jeune diplômé en Systèmes d'Information (Mention Très Bien), avec une première expérience en digitalisation, automatisation de données et accompagnement des utilisateurs. A développé un outil PHP/SQL réduisant de **70%** le temps de saisie d'une équipe opérationnelle, puis livré des applications web et des tableaux de bord intégrant des indicateurs métier. À l'aise avec l'analyse des besoins, la documentation, la création de supports et la prise en main rapide de nouveaux outils digitaux ; intérêt marqué pour le Digital HR, le Learning et l'IA générative.",
+        "skills": [
+          { "category": "Digitalisation & Automatisation", "items": "Automatisation de processus, formulaires et workflows, collecte et fiabilisation des données, API REST, reporting." },
+          { "category": "Data & KPI", "items": "SQL, PostgreSQL, SQLite, modélisation de données, tableaux de bord, analyse et suivi d'indicateurs." },
+          { "category": "Outils digitaux", "items": "Excel API, Word, PowerPoint, GitHub Projects, outils collaboratifs, veille technologique et IA générative." },
+          { "category": "Supports & Accompagnement", "items": "Documentation technique, guides utilisateurs, supports de présentation, formation et assistance d'utilisateurs non-techniques." },
+          { "category": "Développement", "items": "PHP, JavaScript, HTML5, CSS3, React.js, Node.js, Python, intégration d'API." },
+          { "category": "Méthodes", "items": "Analyse des besoins, tests, résolution de problèmes, Agile Scrum, gestion de projet et travail pluridisciplinaire." }
+        ]
+      }
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_freelance_fullstack",
+      "company": "Clients internationaux",
+      "fr": {
+        "title": "Développeur Web & Automatisation — Freelance",
+        "location": "Remote",
+        "dates": "Nov 2025 -- Présent",
+        "highlights": [
+          "Développé et livré 4 applications web de bout en bout, de l'analyse des besoins à la mise en production, en collaborant avec des interlocuteurs internationaux.",
+          "Automatisé des processus récurrents : notifications, synchronisation de données et génération de rapports via API REST et webhooks.",
+          "Documenté les solutions, réalisé les tests et assuré le suivi des anomalies et des demandes d'évolution."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Développeur Web — Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 -- Août 2024",
+        "highlights": [
+          "Développé un outil d'automatisation et de validation de données avec PHP et SQL, réduisant de **70%** le temps de saisie manuelle pour 5 agents.",
+          "Animé le recueil des besoins auprès des utilisateurs métier, puis transformé les besoins en solution concrète et testée.",
+          "Rédigé le guide utilisateur et la documentation technique afin de faciliter l'adoption et la continuité d'exploitation."
+        ]
+      }
+    },
+    {
+      "id": "exp_ortho",
+      "company": "Cabinet d'Orthodontie Dr Meriem Nasfi",
+      "fr": {
+        "title": "Technicien Support IT & Accompagnement Utilisateurs — Freelance",
+        "location": "Gabès, Tunisie",
+        "dates": "Mai 2026 -- Présent",
+        "highlights": [
+          "Accompagné des utilisateurs non-techniques dans la prise en main de leurs équipements, logiciels et outils numériques.",
+          "Diagnostiqué et résolu les incidents matériels et logiciels sur 10+ postes Windows, avec des interventions documentées.",
+          "Déployé une infrastructure IP complète en respectant les exigences de fiabilité, de sécurité et de continuité de service."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_realestate",
+      "tech": "Next.js · Node.js · PostgreSQL",
+      "fr": {
+        "title": "Dashboards analytiques & Reporting",
+        "description": "Conception de tableaux de bord avec collecte de données SQL, indicateurs métier et visualisations pour faciliter le pilotage."
+      }
+    },
+    {
+      "id": "proj_applyflow",
+      "tech": "Next.js · NestJS · TypeScript · MongoDB",
+      "fr": {
+        "title": "ApplyFlow — Automatisation & Workflow",
+        "description": "Application de productivité avec formulaires, automatisation de tâches et suivi visuel des processus."
+      }
+    },
+    {
+      "id": "proj_rental",
+      "tech": "Python · PyQt5 · SQLite",
+      "fr": {
+        "title": "Rental Management System — ERP",
+        "description": "Application de gestion avec contrats, facturation, statistiques d'activité et sauvegardes automatisées."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information — Mention Très Bien",
+        "dates": "2022 -- 2025",
+        "location": "Gabès, Tunisie"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      { "name": "Français", "level": "Professionnel" },
+      { "name": "Anglais", "level": "Professionnel" },
+      { "name": "Arabe", "level": "Langue maternelle" }
+    ]
+  }
+}

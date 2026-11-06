@@ -1,0 +1,191 @@
+\documentclass[letterpaper,9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+  \usepackage{microtype}
+  \DisableLigatures[f]{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont=lmroman10-bold.otf,
+    ItalicFont=lmroman10-italic.otf,
+    BoldItalicFont=lmroman10-bolditalic.otf,
+    SmallCapsFont=lmromancaps10-regular.otf,
+    Ligatures=NoCommon]
+\fi
+
+% Blue accent matching the Word version (#2563EB)
+\definecolor{accent}{HTML}{2563EB}
+\definecolor{navy}{HTML}{1F2937}
+\definecolor{greytext}{HTML}{555555}
+
+\hypersetup{
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent,
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+\raggedright
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+
+% Section titles — blue, matching Word headers
+\titleformat{\section}{
+  \vspace{-1pt}\color{accent}\scshape\raggedright\large
+}{}{0em}{}[\color{accent}\titlerule \vspace{-1pt}]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{\color{greytext}#2} \\
+    \textit{\small\color{greytext} #3} & \textit{\small\color{greytext} #4}
+  \end{tabular*}\vspace{-2pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & #2
+  \end{tabular*}\vspace{-1pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=2.5pt, parsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.24in, label={}, itemsep=0.9pt, topsep=1.2pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeProjectListStart}{\begin{itemize}[leftmargin=0.24in, label={}, itemsep=0.9pt, topsep=1.2pt, parsep=0pt]}
+\newcommand{\resumeProjectListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeLangHeading}[2]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2
+  \end{tabular*}\vspace{-1pt}
+}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+    \textbf{\Huge \color{navy} Mohamed Amine Nasfi} \\[3pt]
+    \small \textbf{\color{accent} Jeune diplômé en Informatique de Gestion | Support \& Outils Numériques} \\[3pt]
+    \footnotesize \color{greytext}
+    +216 27 711 810 $\quad|\quad$
+    \href{mailto:medaminenasfy@gmail.com}{\underline{medaminenasfy@gmail.com}} $\quad|\quad$
+    Gabès, Tunisie — Mobile Grand Tunis \\[2pt]
+    \href{https://www.linkedin.com/in/mohamed-amine-nasfi/}{\underline{LinkedIn : linkedin.com/in/mohamed-amine-nasfi}}
+\end{center}
+\vspace{-5pt}
+
+% ---------- SUMMARY ----------
+\section{Résumé}
+\begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=1.5pt, parsep=0pt]
+\item \footnotesize{Jeune diplômé d'une Licence en Informatique de Gestion, avec une expérience en développement d'outils, gestion de données, support informatique et réalisation de solutions numériques. Habitué à recueillir les besoins, organiser l'information, suivre les demandes et expliquer des solutions à des interlocuteurs non techniques. Motivé, curieux et adaptable, avec un bon sens de l'organisation, une communication professionnelle en français et en anglais, et une maîtrise des outils bureautiques. Permis B et mobilité sur le Grand Tunis.}
+\end{itemize}\vspace{-3pt}
+
+% ---------- EXPERIENCE ----------
+\section{Expérience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading{Technicien Support IT --- Freelance}{Mai 2026 -- Sept 2026}{Cabinet d'Orthodontie Dr Meriem Nasfi}{Gabès, Tunisie}
+    \resumeItemListStart
+      \resumeItem{Assuré la maintenance préventive et corrective des postes Windows : diagnostic des pannes matérielles et logicielles, installation de logiciels et mise en service des équipements.}
+      \resumeItem{Installé et configuré les postes de travail, périphériques et équipements réseau selon les besoins du cabinet.}
+      \resumeItem{Déployé un système de vidéosurveillance : câblage, adressage IP et configuration du routeur pour un accès à distance sécurisé.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Développeur Full-Stack --- Freelance (Remote)}{Nov 2025 -- Présent}{Clients Internationaux}{Remote}
+    \resumeItemListStart
+      \resumeItem{Conçu et développé 4 applications clients de bout en bout avec React.js, Next.js, Node.js, Express.js et PostgreSQL, de l'analyse des besoins à la mise en production.}
+      \resumeItem{Déployé et administré l'infrastructure serveur sous Linux, Docker, Nginx et VPS, avec supervision et résolution d'incidents en production.}
+      \resumeItem{Intégré des API REST, Stripe et Twilio OTP, puis mis en place des pipelines CI/CD avec tests automatisés via GitHub Actions.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Développeur Full-Stack --- Projet de Fin d'Études}{Fév 2025 -- Juin 2025}{Laghazala du Désert}{Gabès, Tunisie}
+    \resumeItemListStart
+      \resumeItem{Développé une plateforme full-stack avec React.js, Node.js, Express.js et MongoDB, intégrant des API externes, l'authentification JWT et le chiffrement SSL.}
+      \resumeItem{Livré la solution en sprints Agile en assurant la documentation et la correction des anomalies.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Développeur Web --- Stagiaire}{Juil 2024 -- Août 2024}{Groupe Chimique Tunisien (GCT)}{Gabès, Tunisie}
+    \resumeItemListStart
+      \resumeItem{Développé un outil web d'automatisation des données avec PHP et SQL, réduisant de 70 \% le temps de saisie d'une équipe opérationnelle de 5 personnes.}
+      \resumeItem{Recueilli les besoins auprès de l'équipe métier, fiabilisé les données et rédigé la documentation technique et le guide utilisateur.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd\vspace{-2pt}
+
+% ---------- TECHNICAL SKILLS ----------
+\section{Compétences Techniques}
+\begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
+\footnotesize{
+  \item \textbf{Gestion \& Organisation:} Suivi de dossiers, collecte et vérification de données, classement documentaire, respect des procédures, priorisation et reporting.
+  \item \textbf{Bureautique \& Outils:} Microsoft Word, Excel, PowerPoint, e-mail, visioconférence, Trello et GitHub Projects.
+  \item \textbf{Informatique \& Développement:} Windows, Linux, diagnostic de pannes, installation de logiciels et périphériques, bases de données SQL, documentation technique, JavaScript, React.js, Node.js, Python.
+  \item \textbf{Outils \& Méthodes:} Git, GitHub, Docker, API REST, déploiement web, analyse des besoins et résolution de problèmes.
+  \item \textbf{Qualités professionnelles:} Motivation, curiosité, adaptabilité, rigueur, autonomie, esprit d'équipe et sens du service.
+  \item \textbf{Mobilité:} Permis B, conduite régulière, mobile sur le Grand Tunis.
+}
+\end{itemize}\vspace{-3pt}
+
+% ---------- PROJECTS ----------
+\section{Projets}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading{\textbf{Rental Management System --- Application de Gestion} $\quad$ --- $\quad$ \emph{\color{greytext}Python \textperiodcentered{} PyQt5 \textperiodcentered{} SQLite}}{}
+    \resumeProjectListStart
+      \resumeItem{Application desktop conçue de bout en bout pour gérer les contrats, la facturation, les statistiques d'activité et les sauvegardes de données.}
+    \resumeProjectListEnd
+
+  \resumeProjectHeading{\textbf{Eventify --- Plateforme de Réservation en Ligne} $\quad$ --- $\quad$ \emph{\color{greytext}React.js \textperiodcentered{} Node.js \textperiodcentered{} PostgreSQL}}{}
+    \resumeProjectListStart
+      \resumeItem{Plateforme permettant de gérer les disponibilités, les paiements sécurisés et les confirmations automatiques, avec support et corrections après livraison.}
+    \resumeProjectListEnd
+
+\resumeSubHeadingListEnd\vspace{-3pt}
+
+% ---------- EDUCATION ----------
+\section{Formation}
+\resumeSubHeadingListStart
+  \resumeSubheading{Licence en Informatique de Gestion --- Mention Très Bien}{2022 -- 2025}{ESSAT Gabès}{Gabès, Tunisie}
+\resumeSubHeadingListEnd\vspace{-1pt}
+
+% ---------- LANGUAGES ----------
+\section{Langues}
+\begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
+\footnotesize{
+  \item Français (Courant / Professionnel) \textperiodcentered{} Arabe (Langue maternelle) \textperiodcentered{} Anglais (Professionnel)
+}
+\end{itemize}
+
+\end{document}

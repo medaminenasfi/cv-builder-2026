@@ -1,0 +1,25 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": { "fr": "Gabès, Tunisie" }
+  },
+  "letters": {
+    "fr": {
+      "subtitle": "Développeur Python | Automatisation · APIs · Data Processing",
+      "company": "Bestlab",
+      "company_address": "Cité El Ghazala, Tunisie",
+      "place": "Gabès",
+      "objet": "Candidature au poste de Développeur Python",
+      "salutation": "Madame, Monsieur,",
+      "paragraphs": [
+        "Titulaire d'une Licence en Systèmes d'Information, je souhaite vous proposer ma candidature au poste de Développeur Python chez Bestlab. Votre positionnement en Intelligence Artificielle, Big Data et R&D correspond à mon intérêt pour les solutions d'automatisation et de traitement de données.",
+        "J'ai développé un moteur Python de web scraping capable de gérer des pages statiques et dynamiques, avec extraction, nettoyage et export de données via BeautifulSoup, Scrapy, Selenium et Pandas. J'ai également réalisé un ERP Windows avec PyQt5 et SQLite, intégrant la gestion métier, les statistiques et les sauvegardes automatisées.",
+        "Mon expérience comprend aussi l'intégration d'API, la conception d'outils d'automatisation, les tests, Git et la documentation technique. Curieux et rigoureux, je souhaite approfondir les frameworks attendus par le poste, notamment Django, Flask ou FastAPI, au sein d'une équipe collaborative et exigeante.",
+        "Je serais heureux de pouvoir échanger avec vous sur ma motivation et mes réalisations. Dans l'attente de votre retour, je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées."
+      ],
+      "closing": ""
+    }
+  }
+}

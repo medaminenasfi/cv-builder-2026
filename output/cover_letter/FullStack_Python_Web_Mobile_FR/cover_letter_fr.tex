@@ -1,0 +1,75 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.4cm,noheadfoot]{geometry}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+  \usepackage{microtype}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont=lmroman10-bold.otf,
+    ItalicFont=lmroman10-italic.otf,
+    BoldItalicFont=lmroman10-bolditalic.otf,
+    SmallCapsFont=lmromancaps10-regular.otf,
+    Ligatures=NoCommon]
+\fi
+
+\definecolor{accent}{HTML}{2563EB}
+\definecolor{navy}{HTML}{1F2937}
+\definecolor{greytext}{HTML}{555555}
+
+\hypersetup{
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent,
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{7pt}
+\urlstyle{same}
+
+\begin{document}
+
+% ---------- LETTERHEAD (matches CV identity) ----------
+\begin{center}
+    \textbf{\Huge \color{navy} Mohamed Amine Nasfi} \\[3pt]
+    \small \textbf{\color{accent} Développeur Full-Stack Python | Web \textperiodcentered{} Mobile \textperiodcentered{} API REST} \\[3pt]
+    \footnotesize \color{greytext}
+    +216 27 711 810 $\;|\;$
+    \href{mailto:medaminenasfy@gmail.com}{\underline{medaminenasfy@gmail.com}} $\;|\;$
+    Gabès, Tunisie
+\end{center}
+
+\vspace{8pt}
+\hfill Gabès, le 6 novembre 2026
+
+\vspace{12pt}
+À l'attention de l'équipe de recrutement \\ L'Aouina, Tunisie
+
+\vspace{10pt}
+\textbf{Objet :} Candidature au poste de Développeur Full-Stack Python Web/Mobile
+
+\vspace{4pt}
+Madame, Monsieur,
+
+Titulaire d'une Licence en Systèmes d'Information, je souhaite vous proposer ma candidature au poste de Développeur Full-Stack Python Web/Mobile. Mon expérience en Python, API REST, React.js, Flutter et PostgreSQL correspond directement aux besoins de vos applications métier.
+
+En freelance, j'ai livré 4 applications de l'analyse des besoins à la mise en production. Le projet Eventify m'a notamment permis de développer une plateforme web et mobile avec Flutter, React.js, API REST, PostgreSQL et authentification JWT. J'ai également réalisé un ERP desktop Windows avec Python, PyQt5 et SQLite.
+
+Rigoureux et autonome, je maîtrise Git, Docker, Linux et les pratiques de tests et de documentation. Je souhaite approfondir FastAPI dans votre équipe et contribuer à des solutions fiables, maintenables et adaptées aux besoins fonctionnels.
+
+Je serais heureux d'échanger avec vous lors d'un entretien. Dans l'attente de votre retour, je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.
+
+
+
+\vspace{14pt}
+\hfill \textbf{Mohamed Amine Nasfi}
+
+\end{document}

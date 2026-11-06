@@ -1,0 +1,75 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.4cm,noheadfoot]{geometry}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+  \usepackage{microtype}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont=lmroman10-bold.otf,
+    ItalicFont=lmroman10-italic.otf,
+    BoldItalicFont=lmroman10-bolditalic.otf,
+    SmallCapsFont=lmromancaps10-regular.otf,
+    Ligatures=NoCommon]
+\fi
+
+\definecolor{accent}{HTML}{2563EB}
+\definecolor{navy}{HTML}{1F2937}
+\definecolor{greytext}{HTML}{555555}
+
+\hypersetup{
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent,
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{7pt}
+\urlstyle{same}
+
+\begin{document}
+
+% ---------- LETTERHEAD (matches CV identity) ----------
+\begin{center}
+    \textbf{\Huge \color{navy} Mohamed Amine Nasfi} \\[3pt]
+    \small \textbf{\color{accent} Développeur Python | Automatisation \textperiodcentered{} APIs \textperiodcentered{} Data Processing} \\[3pt]
+    \footnotesize \color{greytext}
+    +216 27 711 810 $\;|\;$
+    \href{mailto:medaminenasfy@gmail.com}{\underline{medaminenasfy@gmail.com}} $\;|\;$
+    Gabès, Tunisie
+\end{center}
+
+\vspace{8pt}
+\hfill Gabès, le 6 novembre 2026
+
+\vspace{12pt}
+Bestlab \\ Cité El Ghazala, Tunisie
+
+\vspace{10pt}
+\textbf{Objet :} Candidature au poste de Développeur Python
+
+\vspace{4pt}
+Madame, Monsieur,
+
+Titulaire d'une Licence en Systèmes d'Information, je souhaite vous proposer ma candidature au poste de Développeur Python chez Bestlab. Votre positionnement en Intelligence Artificielle, Big Data et R\&D correspond à mon intérêt pour les solutions d'automatisation et de traitement de données.
+
+J'ai développé un moteur Python de web scraping capable de gérer des pages statiques et dynamiques, avec extraction, nettoyage et export de données via BeautifulSoup, Scrapy, Selenium et Pandas. J'ai également réalisé un ERP Windows avec PyQt5 et SQLite, intégrant la gestion métier, les statistiques et les sauvegardes automatisées.
+
+Mon expérience comprend aussi l'intégration d'API, la conception d'outils d'automatisation, les tests, Git et la documentation technique. Curieux et rigoureux, je souhaite approfondir les frameworks attendus par le poste, notamment Django, Flask ou FastAPI, au sein d'une équipe collaborative et exigeante.
+
+Je serais heureux de pouvoir échanger avec vous sur ma motivation et mes réalisations. Dans l'attente de votre retour, je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.
+
+
+
+\vspace{14pt}
+\hfill \textbf{Mohamed Amine Nasfi}
+
+\end{document}

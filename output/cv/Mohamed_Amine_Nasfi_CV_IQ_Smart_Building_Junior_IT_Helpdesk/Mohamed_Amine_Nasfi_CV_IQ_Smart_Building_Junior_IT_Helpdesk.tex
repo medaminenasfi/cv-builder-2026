@@ -1,0 +1,185 @@
+\documentclass[letterpaper,9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+  \usepackage{microtype}
+  \DisableLigatures[f]{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont=lmroman10-bold.otf,
+    ItalicFont=lmroman10-italic.otf,
+    BoldItalicFont=lmroman10-bolditalic.otf,
+    SmallCapsFont=lmromancaps10-regular.otf,
+    Ligatures=NoCommon]
+\fi
+
+% Blue accent matching the Word version (#2563EB)
+\definecolor{accent}{HTML}{2563EB}
+\definecolor{navy}{HTML}{1F2937}
+\definecolor{greytext}{HTML}{555555}
+
+\hypersetup{
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent,
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+\raggedright
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+
+% Section titles — blue, matching Word headers
+\titleformat{\section}{
+  \vspace{-1pt}\color{accent}\scshape\raggedright\large
+}{}{0em}{}[\color{accent}\titlerule \vspace{-1pt}]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{\color{greytext}#2} \\
+    \textit{\small\color{greytext} #3} & \textit{\small\color{greytext} #4}
+  \end{tabular*}\vspace{-2pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & #2
+  \end{tabular*}\vspace{-1pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=2.5pt, parsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.24in, label={}, itemsep=0.9pt, topsep=1.2pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeProjectListStart}{\begin{itemize}[leftmargin=0.24in, label={}, itemsep=0.9pt, topsep=1.2pt, parsep=0pt]}
+\newcommand{\resumeProjectListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeLangHeading}[2]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2
+  \end{tabular*}\vspace{-1pt}
+}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+    \textbf{\Huge \color{navy} Mohamed Amine Nasfi} \\[3pt]
+    \small \textbf{\color{accent} Opérateur Help Desk | Support Utilisateurs \& Suivi des Demandes | Trilingue AR / FR / EN} \\[3pt]
+    \footnotesize \color{greytext}
+    +216 27 711 810 $\quad|\quad$
+    \href{mailto:medaminenasfy@gmail.com}{\underline{medaminenasfy@gmail.com}} $\quad|\quad$
+    Gabès, Tunisie — Mobile Grand Tunis \\[2pt]
+    \href{https://www.linkedin.com/in/mohamed-amine-nasfi/}{\underline{LinkedIn}} $\quad|\quad$ \href{https://github.com/medaminenasfi}{\underline{GitHub}} $\quad|\quad$ \href{https://mohamedamine-portfolio.onrender.com}{\underline{Portfolio}}
+\end{center}
+\vspace{-5pt}
+
+% ---------- SUMMARY ----------
+\section{Résumé}
+\begin{itemize}[leftmargin=0.18in, label={}, itemsep=1.2pt, topsep=1.5pt, parsep=0pt]
+\item \footnotesize{Profil support orienté service client : réception et qualification des demandes, classement par nature et priorité, suivi documenté jusqu'à la résolution et escalade vers les équipes techniques lorsque nécessaire. J'assure actuellement le support quotidien d'utilisateurs non techniques (postes de travail, périphériques, incidents logiciels) et la gestion de la relation client de 4 clients internationaux, avec mise à jour régulière des statuts et reporting. Arabe langue maternelle, français courant et anglais professionnel ; maîtrise des outils bureautiques (Word, Excel) et des outils de suivi de tâches. Rigueur, écoute et sens du service, disponible en horaires décalés (shifts) sur Tunis.}
+\end{itemize}\vspace{-3pt}
+
+% ---------- EXPERIENCE ----------
+\section{Expérience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading{Technicien Support Utilisateurs --- Freelance}{Mai 2026 -- Présent}{Cabinet d'Orthodontie Dr Meriem Nasfi}{Gabès, Tunisie}
+    \resumeItemListStart
+      \resumeItem{Réception et traitement des demandes et incidents du cabinet : qualification, diagnostic, résolution ou escalade, avec mise à jour d'un suivi documenté pour chaque intervention.}
+      \resumeItem{Installation et mise en service de postes de travail et de périphériques, assistance quotidienne d'utilisateurs non techniques avec explications vulgarisées.}
+      \resumeItem{Maintenance du parc et des équipements réseau (câblage, adressage IP, routeur, vidéosurveillance) garantissant la continuité d'activité du cabinet.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Gestion de la Relation Client \& Suivi des Demandes --- Freelance (Remote)}{Nov 2025 -- Présent}{Clients Internationaux}{Remote}
+    \resumeItemListStart
+      \resumeItem{Gestion de bout en bout des demandes de 4 clients internationaux : recueil des besoins, qualification, proposition de solution, suivi jusqu'à la clôture et reporting régulier.}
+      \resumeItem{Communication quotidienne en français et en anglais avec des interlocuteurs non techniques, par écrit et en visioconférence.}
+      \resumeItem{Suivi administratif rigoureux des dossiers (facturation, encaissement) et fidélisation des clients après livraison.}
+    \resumeItemListEnd
+
+  \resumeSubheading{Assistant Gestion de Données --- Stagiaire}{Juil 2024 -- Août 2024}{Groupe Chimique Tunisien (GCT)}{Gabès, Tunisie}
+    \resumeItemListStart
+      \resumeItem{Recueil des besoins auprès d'une équipe opérationnelle de 5 personnes et rédaction de la documentation d'utilisation.}
+      \resumeItem{Mise en place d'un outil réduisant de 70 \% le temps de saisie de l'équipe, avec accompagnement des utilisateurs lors de l'adoption.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd\vspace{-2pt}
+
+% ---------- TECHNICAL SKILLS ----------
+\section{Compétences Techniques}
+\begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
+\footnotesize{
+  \item \textbf{Help Desk \& Support Utilisateurs:} Réception et qualification des demandes et réclamations clients, classement par nature et niveau de priorité selon les procédures, suivi jusqu'à la résolution, escalade vers les équipes techniques, mise à jour des statuts dans les outils de gestion.
+  \item \textbf{Maintenance Informatique:} Diagnostic de pannes matérielles et logicielles, installation et mise en service de postes de travail et de périphériques, dépannage sur site et à distance.
+  \item \textbf{Communication \& Service Client:} Assistance d'utilisateurs non techniques avec écoute et pédagogie, communication professionnelle en arabe (langue maternelle), français et anglais, gestion des demandes avec calme et réactivité.
+  \item \textbf{Outils \& Bureautique:} Microsoft Word, Excel, e-mail et visioconférence, documentation technique et bases de connaissances, outils de suivi (Trello, GitHub Projects).
+  \item \textbf{Organisation:} Respect des procédures établies, suivi documenté des interventions, comptes rendus d'activité, priorisation des demandes et travail en équipe.
+  \item \textbf{Disponibilité:} Horaires décalés (système de shift), mobilité Grand Tunis, Permis B.
+}
+\end{itemize}\vspace{-3pt}
+
+% ---------- PROJECTS ----------
+\section{Projets}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading{\textbf{Rental Management System --- Application de Gestion Livrée à un Client} $\quad$ --- $\quad$ \emph{\color{greytext}Python \textperiodcentered{} PyQt5 \textperiodcentered{} SQLite}}{}
+    \resumeProjectListStart
+      \resumeItem{Outil de gestion installé chez un client : contrats, facturation automatisée, sauvegardes — avec formation des utilisateurs et support après mise en service.}
+    \resumeProjectListEnd
+
+  \resumeProjectHeading{\textbf{Eventify --- Plateforme de Réservation en Ligne} $\quad$ --- $\quad$ \emph{\color{greytext}React.js \textperiodcentered{} Node.js \textperiodcentered{} PostgreSQL \textperiodcentered{} Stripe \textperiodcentered{} Twilio}}{}
+    \resumeProjectListStart
+      \resumeItem{Service utilisé quotidiennement par des clients finaux : disponibilités, paiement sécurisé et confirmations automatiques, avec support et corrections en continu après livraison.}
+    \resumeProjectListEnd
+
+\resumeSubHeadingListEnd\vspace{-3pt}
+
+% ---------- EDUCATION ----------
+\section{Formation}
+\resumeSubHeadingListStart
+  \resumeSubheading{Licence en Systèmes d'Information --- Mention Très Bien}{2022 -- 2025}{ESSAT Gabès}{Gabès, Tunisie}
+\resumeSubHeadingListEnd\vspace{-1pt}
+
+% ---------- LANGUAGES ----------
+\section{Langues}
+\begin{itemize}[leftmargin=0.18in, label={}, topsep=2pt, itemsep=1pt, parsep=0pt]
+\footnotesize{
+  \item Arabe (Langue maternelle) \textperiodcentered{} Français (Courant / Professionnel) \textperiodcentered{} Anglais (Professionnel)
+}
+\end{itemize}
+
+\end{document}
