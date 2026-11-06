@@ -1,0 +1,105 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": { "fr": "Gabès, Tunisie" },
+    "links": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/" },
+      { "name": "GitHub", "url": "https://github.com/medaminenasfi" },
+      { "name": "Portfolio", "url": "https://mohamedamine-portfolio.onrender.com" }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Développeur Mobile | Flutter · Dart · API REST | React.js · iOS/Android",
+        "summary": "Développeur logiciel orienté applications mobiles multiplateformes, avec une expérience en Flutter, Dart, React.js, API REST et intégration de services tiers. A développé Eventify, une plateforme web et mobile intégrant authentification JWT, OTP Twilio et paiement Stripe, et livré 4 applications clientes de l'analyse des besoins à la mise en production. Habitué aux tests, au débogage, à Git et à la maintenance d'applications métier. Diplômé en Systèmes d'Information (Mention Très Bien), autonome et motivé pour approfondir React Native et contribuer à des projets mobiles internationaux.",
+        "skills": [
+          { "category": "Mobile", "items": "Flutter, Dart, applications iOS/Android, Material Design, développement multiplateforme." },
+          { "category": "Front-End", "items": "React.js, Next.js, JavaScript, TypeScript, HTML5, CSS3." },
+          { "category": "API & Intégrations", "items": "API REST, JWT, Stripe, Twilio, intégration de services tiers, consommation d'API." },
+          { "category": "Données", "items": "PostgreSQL, SQLite, MongoDB, SQL, modélisation et requêtes relationnelles." },
+          { "category": "Qualité & Outils", "items": "Tests automatisés, débogage, maintenance corrective, Git, GitHub, Postman." },
+          { "category": "Déploiement", "items": "Docker, Linux VPS, Nginx, GitHub Actions CI/CD." }
+        ]
+      }
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_freelance_fullstack",
+      "company": "",
+      "fr": {
+        "title": "Développeur Full-Stack — Freelance (Remote)",
+        "location": "",
+        "dates": "Nov 2025 — Présent",
+        "highlights": [
+          "Conception et développement de 4 applications clientes de bout en bout, de l'analyse des besoins à la mise en production.",
+          "Conception et intégration d'API REST et de services tiers pour des fonctionnalités mobiles et web.",
+          "Mise en place de pipelines CI/CD incluant des tests automatisés avant chaque déploiement."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack — Projet de Fin d'Études (PFE)",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 — Juin 2025",
+        "highlights": [
+          "Développement d'une plateforme full-stack React.js, Node.js, Express.js et MongoDB avec API externes, JWT et livraison en sprints Agile."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Développeur Web — Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 — Août 2024",
+        "highlights": [
+          "Développement d'un outil d'automatisation de données réduisant le temps de saisie de **70%** pour une équipe de 5 personnes.",
+          "Documentation des procédures techniques et recueil des besoins avec l'équipe métier."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_eventify",
+      "tech": "Node.js · PostgreSQL · React.js · Flutter · Stripe",
+      "fr": {
+        "title": "Eventify — Plateforme de Réservation d'Événements",
+        "description": "Plateforme web et mobile avec Flutter, API REST, PostgreSQL, JWT, vérification OTP Twilio et paiement Stripe."
+      }
+    },
+    {
+      "id": "proj_applyflow",
+      "tech": "Next.js · NestJS · TypeScript · MongoDB · Stripe",
+      "fr": {
+        "title": "ApplyFlow — Assistant de Candidature",
+        "description": "Application web avec suivi Kanban, gestion multi-CV et extension Chrome, intégrant des API et une authentification sécurisée."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information — Mention Très Bien",
+        "dates": "2022 — 2025",
+        "location": "Gabès, Tunisie"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      { "name": "Français", "level": "Professionnel" },
+      { "name": "Anglais", "level": "Professionnel" },
+      { "name": "Arabe", "level": "Langue maternelle" }
+    ]
+  }
+}

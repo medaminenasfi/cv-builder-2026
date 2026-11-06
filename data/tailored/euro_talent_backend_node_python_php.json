@@ -1,0 +1,112 @@
+{
+  "personal_info": {
+    "name": "Mohamed Amine Nasfi",
+    "phone": "+216 27 711 810",
+    "email": "medaminenasfy@gmail.com",
+    "location": { "fr": "Gabès, Tunisie" },
+    "links": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/mohamed-amine-nasfi/" },
+      { "name": "GitHub", "url": "https://github.com/medaminenasfi" },
+      { "name": "Portfolio", "url": "https://mohamedamine-portfolio.onrender.com" }
+    ]
+  },
+  "profiles": {
+    "tailored": {
+      "fr": {
+        "subtitle": "Développeur Back-End | Node.js · Python · PHP | API REST · SQL · Git",
+        "summary": "Développeur back-end orienté conception de services et d'API fiables, avec une expérience en Node.js, Python, PHP, SQL et intégration de services tiers. A livré 4 applications clientes de l'analyse des besoins à la mise en production, conçu des API REST et développé un outil PHP/SQL ayant réduit la saisie manuelle de 70%. Habitué aux bases relationnelles, aux tests, à la documentation technique et au déploiement Linux avec Docker et CI/CD. Diplômé en Systèmes d'Information (Mention Très Bien), autonome, rigoureux et à l'aise dans des contextes internationaux.",
+        "skills": [
+          { "category": "Back-End", "items": "Node.js, Express.js, Python, PHP, API REST, conception orientée objet, intégration de services tiers." },
+          { "category": "Bases de Données", "items": "SQL, PostgreSQL, SQLite, MongoDB, modélisation relationnelle, requêtes et validation des données." },
+          { "category": "Sécurité & Qualité", "items": "JWT, Stripe, Twilio, tests automatisés, débogage, maintenance corrective, documentation technique." },
+          { "category": "DevOps", "items": "Git, GitHub, GitHub Actions, Docker, Linux VPS, Nginx, Postman." },
+          { "category": "Front-End complémentaire", "items": "React.js, Next.js, Flutter, Dart, JavaScript, TypeScript, HTML5, CSS3." }
+        ]
+      }
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp_freelance_fullstack",
+      "company": "",
+      "fr": {
+        "title": "Développeur Full-Stack — Freelance (Remote)",
+        "location": "",
+        "dates": "Nov 2025 — Présent",
+        "highlights": [
+          "Conception et développement de 4 applications clients de bout en bout, de l'analyse des besoins à la mise en production.",
+          "Conception et intégration d'API REST Node.js/Express.js, gestion de bases PostgreSQL et intégration de services Stripe et Twilio.",
+          "Mise en place de pipelines CI/CD incluant des tests automatisés avant chaque déploiement."
+        ]
+      }
+    },
+    {
+      "id": "exp_pfe",
+      "company": "Laghazala du Désert",
+      "fr": {
+        "title": "Développeur Full-Stack — Projet de Fin d'Études (PFE)",
+        "location": "Gabès, Tunisie",
+        "dates": "Fév 2025 — Juin 2025",
+        "highlights": [
+          "Développement d'une plateforme full-stack React.js, Node.js, Express.js et MongoDB avec API externes, JWT et livraison en sprints Agile."
+        ]
+      }
+    },
+    {
+      "id": "exp_gct",
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "fr": {
+        "title": "Développeur Web — Stagiaire",
+        "location": "Gabès, Tunisie",
+        "dates": "Juil 2024 — Août 2024",
+        "highlights": [
+          "Développement d'un outil d'automatisation de données en PHP et SQL réduisant le temps de saisie de **70%** pour une équipe de 5 personnes.",
+          "Documentation des procédures techniques et recueil des besoins avec l'équipe métier."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_eventify",
+      "tech": "Node.js · PostgreSQL · React.js · Flutter · Stripe",
+      "fr": {
+        "title": "Eventify — Plateforme de Réservation d'Événements",
+        "description": "Plateforme web et mobile avec API REST, PostgreSQL, authentification JWT, OTP Twilio et paiement Stripe."
+      }
+    },
+    {
+      "id": "proj_applyflow",
+      "tech": "Next.js · NestJS · TypeScript · MongoDB · Stripe",
+      "fr": {
+        "title": "ApplyFlow — Assistant de Candidature",
+        "description": "Application avec suivi Kanban, gestion multi-CV et extension Chrome, intégrant des API et une authentification sécurisée."
+      }
+    },
+    {
+      "id": "proj_rental",
+      "tech": "Python · PyQt5 · SQLite · PyInstaller",
+      "fr": {
+        "title": "Rental Management System — ERP Desktop Windows",
+        "description": "Application métier offline-first pour contrats, facturation, statistiques et sauvegardes automatisées."
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "ESSAT Gabès",
+      "fr": {
+        "degree": "Licence en Systèmes d'Information — Mention Très Bien",
+        "dates": "2022 — 2025",
+        "location": "Gabès, Tunisie"
+      }
+    }
+  ],
+  "languages": {
+    "fr": [
+      { "name": "Français", "level": "Professionnel" },
+      { "name": "Anglais", "level": "Professionnel" },
+      { "name": "Arabe", "level": "Langue maternelle" }
+    ]
+  }
+}
